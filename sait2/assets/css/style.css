@@ -28,7 +28,9 @@ nav {
   border-width: 0 !important;
 }
 
-
+.noscroll {
+	overflow: hidden;
+}
 
  a.header {
 	color: yellow !important;

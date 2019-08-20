@@ -1,2 +1,2 @@
-# dmitryavilov.github.io
+# Dmitry Avilov
 Repository for my websites

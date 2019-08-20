@@ -43,7 +43,7 @@ nav {
 }
 
 .headerActive {
-	background-color: black !important;
+	background-color: rgb(43, 43, 43, 0.7) !important;
 }
 
 ul.menubar1 {

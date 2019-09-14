@@ -84,6 +84,11 @@ body {
 	background-position-y: center;
 }
 
+.dont_scroll {
+	overflow: hidden;
+}
+
+
 .menu__number {
 	display: -webkit-flex;
 	display: -moz-flex;

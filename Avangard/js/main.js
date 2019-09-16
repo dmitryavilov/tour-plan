@@ -12,5 +12,7 @@ $(document).ready(function() {
 	$('.overlay').on('click', function() {
 		$('.collapse__menu').removeClass('header_collapse-menu_active');
 		$(this).removeClass('overlay_active');
+		$('body').toggleClass('dont_scroll');
+		$('.collapse__icon').toggleClass('collapse_icon_hover');
 	});
 });

@@ -1,3 +1,16 @@
+@media (max-width: 1700px) {
+	.portfolio_image {
+		-webkit-background-size: 450px 267px;
+		background-size: 450px 267px;
+		height: 267px;
+	}
+
+	.big-block__item {
+		height: 417px;
+		width: 452px;
+	}
+}
+
 @media (max-width: 1650px) {
 	.menu__items {
 		width: 51%;
@@ -29,6 +42,25 @@
 
 	.btn__line-item {
 		color: yellow;
+	}
+
+	.portfolio__big-blocks {
+		height: 1000px;
+	}
+
+	.portfolio_bottom {
+		transform: translateY(57%);
+	}
+
+	.portfolio_image {
+		-webkit-background-size: 410px 237px;
+		background-size: 410px 237px;
+		height: 237px;
+	}
+
+	.big-block__item {
+		height: 370px;
+		width: 412px;
 	}
 }
 
@@ -72,6 +104,31 @@
 	.about__title-block {
     	z-index: 1;
     	position: relative;
+	}
+
+	.portfolio__big-blocks {
+		height: 850px;
+	}
+
+	.portfolio_bottom {
+		transform: translateY(65%);
+	}
+
+	.portfolio_image {
+		-webkit-background-size: 370px 220px;
+		background-size: 370px 220px;
+		height: 220px;
+	}
+
+	.big-block__item {
+		height: 345px;
+		width: 372px;
+	}
+
+	.portfolio__title-and-description {
+    	-webkit-transform: translateX(3%);
+    	-ms-transform: translateX(3%);
+    	transform: translateX(3%);
 	}
 }
 
@@ -124,6 +181,25 @@
 
 	.blocks {
 		height: 650px;
+	}
+
+	.big-block_lg {
+		display: none;
+	}
+
+	.big-block_md {
+		display: flex;
+		width: 90%;
+	}
+
+	.portfolio_bottom {
+		transform: translateY(56%);
+	}
+
+	.portfolio__big-blocks {
+    	height: 1200px;
+    	display: flex;
+    	align-items: center;
 	}
 }
 
@@ -316,6 +392,15 @@
 	.offers__bmw-img-item {
     	left: 42.5%;
 	}
+
+	.portfolio__orange-block {
+    	left: 43%;
+	}
+
+	.big-block_md {
+		display: flex;
+		width: 100%;
+	}
 }
 
 @media (max-width: 816px) {
@@ -350,6 +435,26 @@
 	.benefits__advantages {
 		display: block;
 
+	}
+
+	.big-block_md {
+		display: none;
+	}
+
+
+	.big-block_sm {
+		display: flex;
+	}
+
+	.portfolio__big-blocks {
+    	height: 2600px;
+    	display: flex;
+   	 	align-items: center;
+	}	
+
+
+	.portfolio_bottom {
+		transform: translateY(27%);
 	}
 
 	.benefits__orange-rectangle-2 {
@@ -438,6 +543,10 @@
 	.benefits__orange-block {
 		left: 26%
 	}
+
+	.portfolio__orange-block {
+    	left: 40%;
+	}
 }
 
 @media (max-width: 580px) {
@@ -469,6 +578,10 @@
 	.about__background-title-item {
 		transform: translateY(-250%);
 	}
+
+	.portfolio__orange-block {
+    	left: 43%;
+	}
 }
 
 @media (max-width: 530px) {
@@ -490,7 +603,7 @@
 	}
 
 	.offers__bmw-orange-block {
-    	transform: translateY(-50%);
+    	transform: translateY(-40%);
     	left: 45%;
     	z-index: -1;
 	}
@@ -511,6 +624,11 @@
 	.offers {
 		padding-top: 10px;
 	}
+
+	.portfolio_bottom {
+		transform: translateY(5%);
+	}
+
 
 
 @media (max-width: 490px) {
@@ -589,6 +707,31 @@
 	.about__background-title-item {
 		font-size: 100px;
 	}
+
+	.portfolio__big-blocks {
+		height: 2000px;
+	}
+
+	.portfolio_bottom {
+		transform: translateY(5%);
+	}
+
+	.portfolio_image {
+		-webkit-background-size: 300px 160px;
+		background-size: 300px 160px;
+		height: 160px;
+	}
+
+	.big-block__item {
+		height: 280px;
+		width: 302px;
+	}
+
+	.portfolio__title-and-description {
+    -webkit-transform: translateX(1%);
+    -ms-transform: translateX(1%);
+    transform: translateX(1%);
+}
 }
 
 @media (max-width: 380px) {

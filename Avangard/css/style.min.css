@@ -62,6 +62,11 @@ body {
   margin: 0 auto;
   overflow: hidden; }
 
+.container__portfolio {
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden; }
+
 .header {
   height: 780px;
   background: #252525;
@@ -915,3 +920,173 @@ body {
   background-position-y: center;
   width: 723px;
   height: 444px; }
+
+.portfolio_bottom {
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+  position: relative; }
+
+.portfolio__orange-block {
+  left: 38%; }
+
+.big-block__item {
+  height: 515px;
+  width: 550px;
+  border: 1px solid black;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s; }
+
+.big-block_item_hover {
+  background-color: #ed8101;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  border-color: #ed8101; }
+
+.portfolio__big-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.portfolio__big-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  height: 1200px; }
+
+.image-1 {
+  background-image: url("../img/p_img-1.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  border: 0px solid #ed8101;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s; }
+
+.image-2 {
+  background-image: url("../img/p_img-2.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  border: 0px solid #ed8101;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s; }
+
+.image-3 {
+  background-image: url("../img/p_img-3.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  border: 0px solid #ed8101;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s; }
+
+.image-4 {
+  background-image: url("../img/p_img-4.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  border: 0px solid #ed8101;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s; }
+
+.image-5 {
+  background-image: url("../img/p_img-5.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  border: 0px solid #ed8101;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s; }
+
+.image-6 {
+  background-image: url("../img/p_img-6.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  border: 0px solid #ed8101;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s; }
+
+.portfolio_image {
+  width: 548px;
+  height: 365px; }
+
+.big-block_md {
+  display: none; }
+
+.big-block_sm {
+  display: none; }
+
+.portfolio__title-and-description {
+  -webkit-transform: translateX(10%);
+  -ms-transform: translateX(10%);
+  transform: translateX(10%); }
+
+.image-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+.title-and-description__title {
+  font-family: GilroyBold;
+  font-size: 24px;
+  letter-spacing: 3px;
+  padding: 10px;
+  margin-bottom: 0;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s; }
+
+.title-and-description_title_hover {
+  background-color: #2a2b2b;
+  color: white;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s; }
+
+.title-and-description__title-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.title-and-description__description {
+  font-family: GilroyRegular;
+  font-size: 24px;
+  letter-spacing: 3px;
+  margin-top: 0;
+  padding: 10px;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s; }
+
+.image_hover {
+  border: 15px solid #ed8101;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s; }
+
+.description_hover {
+  color: white;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s; }

@@ -1025,8 +1025,9 @@ body {
   transition: 0.4s; }
 
 .portfolio_image {
+  background-size: 548px 365px;
   width: 548px;
-  height: 365px; }
+  height: 367px; }
 
 .big-block_md {
   display: none; }

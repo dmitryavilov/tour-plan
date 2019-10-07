@@ -1,5 +1,22 @@
 $(document).ready(function() {
 
+	var navLink = $('.scroll');
+
+	navLink.on('click', function(event) {
+		event.preventDefault();
+		var target = $(this).attr('href');
+		console.log(target);
+		var top = $(target).offset().top;
+		$('html,body').animate({scrollTop: top}, 500)
+		$('.collapse__menu').removeClass('header_collapse-menu_active');
+		$('.overlay').removeClass('overlay_active');
+		$('body').removeClass('dont_scroll');
+		$('.collapse__icon').removeClass('collapse_icon_hover');
+		$('.icon_2').toggleClass('icon_2_active');
+		$('.icon_1').toggleClass('icon_1_active');
+		$('.icon_3').toggleClass('icon_3_active');
+	});
+
 	$('.collapse__icon').click(function() {
 		$('body').toggleClass('dont_scroll');
 		$('.icon_2').toggleClass('icon_2_active');

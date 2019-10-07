@@ -67,10 +67,21 @@ body {
   margin: 0 auto;
   overflow: hidden; }
 
+.container__contacts {
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden; }
+
 .header {
   height: 780px;
   background: #252525;
   overflow: hidden; }
+
+#map-sm {
+  display: none; }
+
+#map-xs {
+  display: none; }
 
 .header__menu {
   width: 100%;
@@ -913,6 +924,9 @@ body {
   left: 62.5%;
   z-index: 2; }
 
+#map-md {
+  display: none; }
+
 .bmw__img {
   background-image: url("../img/car2.png");
   background-repeat: no-repeat;
@@ -1094,3 +1108,277 @@ body {
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s; }
+
+.contacts {
+  height: 740px;
+  overflow: hidden;
+  max-width: 1920px;
+  margin: 0 auto; }
+
+.contacts_bottom {
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%); }
+
+.container-1 {
+  background-color: #363636;
+  height: 740px;
+  width: 50%; }
+
+.contacts__title-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  top: 4%; }
+
+.contacts__title {
+  color: white;
+  letter-spacing: 7px; }
+
+.contacts__orange-block {
+  left: 41%; }
+
+.orange-telephone {
+  background-image: url("../img/o_phone.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  width: 32px;
+  height: 35px;
+  -webkit-transform: translateY(-9%);
+  -ms-transform: translateY(-9%);
+  transform: translateY(-9%); }
+
+.orange-telephone__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  max-width: 400px; }
+
+.contacts__telephone-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.contacts__tel-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 400px; }
+
+.contacts__num {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 10%;
+  position: relative; }
+
+.contacts__tel-block {
+  position: relative;
+  left: 5%; }
+
+.contacts__number {
+  position: relative;
+  margin-left: 10px; }
+
+.contacts__tel-and-place {
+  position: relative;
+  top: 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.orange-place__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.contacts__item {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 24px;
+  font-family: GilroyMedium;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 2px;
+  line-height: 1; }
+
+.orange-place {
+  background-image: url("../img/place.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  width: 32px;
+  height: 35px;
+  -webkit-transform: translateY(-9%);
+  -ms-transform: translateY(-9%);
+  transform: translateY(-9%);
+  position: relative;
+  z-index: 1; }
+
+.contacts__place-block {
+  position: relative;
+  left: 12%; }
+
+.contacts__registration-form {
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 54%; }
+
+.contacts__btn-block {
+  margin-top: 80px; }
+
+.contacts__registration-block {
+  -webkit-transform: translate(29%, 50%);
+  -ms-transform: translate(29%, 50%);
+  transform: translate(29%, 50%);
+  position: relative;
+  z-index: 1; }
+
+.registration-input {
+  background-color: rgba(36, 36, 36, 0);
+  border: solid white;
+  border-width: 0 0 1px 0;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-size: 24px;
+  font-family: GilroyMedium;
+  color: white; }
+
+.registration-input::-webkit-input-placeholder {
+  font-size: 24px;
+  font-family: GilroyMedium; }
+
+.registration-input:-ms-input-placeholder {
+  font-size: 24px;
+  font-family: GilroyMedium; }
+
+.registration-input::-ms-input-placeholder {
+  font-size: 24px;
+  font-family: GilroyMedium; }
+
+.registration-input::placeholder {
+  font-size: 24px;
+  font-family: GilroyMedium; }
+
+.registration-input:focus {
+  outline: none; }
+
+.contacts__btn {
+  padding: 20px 20px; }
+
+.audi-img {
+  background-image: url("../img/audi.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  width: 223px;
+  height: 294px;
+  position: absolute;
+  z-index: 0;
+  -webkit-transform: translateY(57%);
+  -ms-transform: translateY(57%);
+  transform: translateY(57%); }
+
+.icon-box {
+  height: 37px;
+  width: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.icon-1 {
+  background-image: url("../img/viber.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  height: 37px;
+  width: 34px;
+  -webkit-transform: translateY(5%);
+  -ms-transform: translateY(5%);
+  transform: translateY(5%); }
+
+.icon-2 {
+  background-image: url("../img/vk.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  height: 32px;
+  width: 32px; }
+
+.icon-3 {
+  background-image: url("../img/inst.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  height: 32px;
+  width: 32px; }
+
+.contacts__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-transform: translateY(600%);
+  -ms-transform: translateY(600%);
+  transform: translateY(600%); }
+
+.contacts__icons-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 170px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.container-2 {
+  width: 50%;
+  height: 744px; }
+
+.map-img {
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  width: 970px;
+  height: 740px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-size: 970px 740px; }
+
+.containers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }

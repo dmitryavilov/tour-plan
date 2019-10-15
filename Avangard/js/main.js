@@ -164,27 +164,33 @@ $(document).ready(function() {
 		$(this).delay(400).queue(function () {$('.benefits__advantage-img-3').css('transform', 'rotate(0deg)');$(this).dequeue();});
 	});
 
-	$('.offers__slider-sm').slick({
-  		slidesToShow: 3,
-  		slidesToScroll: 3,
-  		autoplay: true,
-  		autoplaySpeed: 1000,
-  	responsive: [
-    {
-      breakpoint: 450,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 330,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
-  	
-	});
+	$('.sslider-sm').slick({
+  slidesToShow: 2,
+  slidesToScroll: 2,
+    responsive: [
+	    {
+	      breakpoint: 460,
+	      settings: {
+	        slidesToShow: 1,
+	        slidesToScroll: 1
+	      }
+	    }
+    ]
+});
+
+	$('.portfolio__slider-sm').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+    responsive: [
+	    {
+	      breakpoint: 460,
+	      settings: {
+	        slidesToShow: 1,
+	        slidesToScroll: 1
+	      }
+	    }
+    ]
+});
+
+	
 });

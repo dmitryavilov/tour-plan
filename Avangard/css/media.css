@@ -14,6 +14,11 @@
    		position: relative;
     	left: 8%;
 	}
+
+	.rown {
+		display: flex;
+		flex-direction: row;
+	}
 }
 
 @media (max-width: 1650px) {
@@ -73,9 +78,6 @@
 		color: orange !important;
 	}
 
-	.registration-input::placeholder {
-		color: orange;
-	}
 }
 
 @media (max-width: 1420px) {
@@ -527,6 +529,15 @@
     	height: 300px;
     	width: calc(95%/3);
 	}
+
+	.rown {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		position: relative;
+		left: 2%;
+	}
+
 }
 
 @media (max-width: 950px) {
@@ -758,6 +769,15 @@
    	 	display: block;
 	}
 
+	.rown {
+    	flex-direction: row;
+	}
+
+	.orange-telephone__block {
+    	position: relative;
+    	right: 20px;
+	}
+
 	.audi-img {
     	background-image: url(../img/audi-md.png);
     	width: 192px;
@@ -774,13 +794,13 @@
 	}	
 
 	.contacts__tel-and-place {
-    position: relative;
-    top: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
+	    position: relative;
+	    top: 5%;
+	    display: flex;
+	    flex-direction: row;
+	    justify-content: center;
+	    align-items: center;
+	}
 	.container-1 {
     	background-color: #363636;
     	height: 740px;
@@ -1028,11 +1048,6 @@
 		display: flex;
 		justify-content: flex-start;
 	}
-
-	.orange-telephone__block {
-		right: 8%;
-		position: relative;
-	}
 }
 
 @media (max-width: 655px) {
@@ -1230,6 +1245,10 @@
 		font-size: 28px;
 	}
 
+	.contacts__registration-block {
+    	left: 18%;
+	}
+
 	.info_img_right {
     	left: 3% !important;
 	}
@@ -1275,7 +1294,7 @@
 	
 
 	.contacts_bottom {
-    	transform: translateY(160%);
+    	transform: translateY(5%);
 	}
 
 	.offers__slider-sm {
@@ -1305,13 +1324,11 @@
    		margin-left: 0px;
 	}
 
-	.contacts__btn {
-   		position: relative;
-    	left: 14%;
-    	transform: translateX(-25%);
-	}
-
 @media (max-width: 490px) {
+	
+	.orange-telephone__block {
+    	right: 2%
+	}
 
 	.benefit__title {
 		font-size: 25px;
@@ -1352,9 +1369,59 @@
 }
 
 @media (max-width: 460px) {
+	
+	.orange-place {
+    	width: 26px;
+	}
+
+	.contacts {
+    	height: 1180px;
+	}
+
+	.container-1 {
+	    height: 1180px;
+	}
 
 	.info_img_right {
     	left: 15% !important;
+	}
+
+	.contacts__icons-block {
+	    transform: translateY(420%);
+	}
+
+	.registration-input {
+	    padding-right: 0px;
+	    padding-top: 30px;
+	    padding-bottom: 5px;
+	}
+
+	.contacts__registration-block {
+    	transform: translateY(50%);
+    	width: 500px;
+    	left: 23%;
+	}
+
+	.contacts__registration-form {
+    	height: 100px;
+	}
+
+	.audi-img {
+	    background-image: url(../img/audi-sm.png);
+	    width: 208px;
+	    height: 208px;
+	    transform: translate(-25%,187%);
+	    left: 37%;
+	}
+
+	.contacts__btn {
+    	padding: 0px 10px;
+    	width: auto;
+    	height: 50px;
+	}
+
+	#map-xs {
+    	transform: translate(-0.3%,105%);
 	}
 
 	.header {
@@ -1427,9 +1494,8 @@
 		font-size: 16px;
 	}
 
-	.contacts__btn {
-		padding: 20px 5px;
-		width: auto;
+	.contacts__btn-block {
+    	margin-top: 50px;
 	}
 
 	.contacts__btn-link {
@@ -1437,11 +1503,40 @@
 	}
 
 	.registration-input::placeholder {
-		font-size: 15px;
+		font-size: 20px;
+	}
+
+	.contacts__item {
+    	font-size: 15px;
 	}
 
 	.registration-input {
 		font-size: 15px;
+	}
+
+	.contacts__line-block {
+		transform: translate(-250%,40%);
+	}
+
+	.contacts__registration-block {
+    	left: 23%;
+	}
+
+	.contacts__tel-and-place {
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	    top: 5%;
+	    flex-direction: column;
+	    align-items: flex-start;
+	}
+
+	.rown {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		position: relative;
+		left: 2%;
 	}
 	
 }
@@ -1460,36 +1555,6 @@
 	}
 
 
-
-
-	.contacts__btn-block {
-    	margin-top: 40px;
-	}
-
-	.contacts__btn {
-		padding: 12px 5px;
-    	position: relative;
-    	left: 0%;
-    	transform: translateX(0%);
-	}
-
-	.contacts__btn-link {
-		font-size: 8px;
-	}
-
-	.audi-img {
-    background-image: url(../img/audi.png);
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: center;
-    width: 223px;
-    height: 294px;
-    position: absolute;
-    z-index: 0;
-    -webkit-transform: translateY(57%);
-    -ms-transform: translateY(57%);
-    transform: translateY(45%);
-}
 
 }
 
@@ -1518,20 +1583,6 @@
 		width: 80px;
 	}
 
-	.contacts__btn-link {
-    	font-size: 10px;
-	}
-
-	.contacts__btn {
-		padding: 12px 5px;
-    	position: relative;
-    	left: 0%;
-    	transform: translateX(0%);
-	}
-
-	.contacts__btn-link {
-		font-size: 8px;
-	}
 
 	.portfolio_image {
 		-webkit-background-size: 300px 180px;
@@ -1554,6 +1605,27 @@
 		height: 275px !important;
 	}
 
+	.contacts__registration-block {
+    	left: 18%;
+	}
+	
+	.contacts__btn {
+	    padding: 0px 10px;
+	    width: auto;
+	    height: 50px;
+	}
+
+	.contacts__line-block {
+    	transform: translate(-250%,40%);
+	}
+
+	.contacts__btn-link {
+    	font-size: 10px;
+	}
+
+	.audi-img {
+		transform: translate(-28%,187%);
+	}	
 }
 
 @media (max-width: 350px) {
@@ -1595,6 +1667,14 @@
 	
 	.offers__title-block {
     	left: 0%;
+	}
+
+	.contacts__registration-block {
+		width: 440px;
+	}
+
+	.contacts__registration-block {
+    	left: 17%;
 	}
 }
 

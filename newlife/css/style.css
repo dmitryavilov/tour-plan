@@ -208,17 +208,20 @@ body {
 .advantages {
   position: relative;
   display: flex;
-  width: 1250px;
-  margin-top: 253px;
+  width: 1350px;
+  margin-top: 223px;
   left: 100px;
   justify-content: space-between; }
+
+.advantages-sm {
+  display: none; }
 
 .advantage {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 181px;
-  height: 161px;
+  height: 191px;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 20px 20px 0 0px; }
 

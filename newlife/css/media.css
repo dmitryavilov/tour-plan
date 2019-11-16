@@ -106,7 +106,7 @@
     background-position-x: center;
     background-position-y: center;
     background-attachment: fixed;
-    background-size: cover; } }
+    background-size: cover 100vh; } }
 
 @media (max-width: 500px) {
   .sm-text {

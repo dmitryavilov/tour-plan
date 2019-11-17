@@ -1,0 +1,1 @@
+$(document).ready(function(){toggleClass("d"),toggleClass("s")});

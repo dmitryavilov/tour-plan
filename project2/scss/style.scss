@@ -1,0 +1,388 @@
+// FONTS
+
+@font-face {
+  font-family: "GothamProNormal";
+  src: url("../fonts/GothamPro.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GothamProBold";
+  src: url("../fonts/GothamPro-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Note";
+  src: url("../fonts/15271.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("../fonts/Mont.ttf") format("truetype");
+}
+
+// FONTS
+
+// ______
+
+
+body {
+	margin: 0;
+	background-image: url("../img/bg.png");
+	background-color: purple;
+  	background-repeat: no-repeat;
+  	background-position-x: center;
+  	background-position-y: center;
+  	background-attachment: fixed;
+  	background-size: cover;
+}
+
+.container {
+	width: 99%;
+	margin: 0 auto;
+	max-width: 1920px;
+}
+
+.main {
+	display: flex;
+	overflow: hidden;
+	height: 868px;
+}
+
+.logo {
+	display: none;
+}
+
+.logo-png {
+	width: 215px;
+	height: 108px;
+	background-image: url("../img/logo.png");
+  	background-repeat: no-repeat;
+  	background-position-x: center;
+  	background-position-y: center;
+  	position: relative;
+  	display: none;
+}
+
+.logo-png-2 {
+	padding-right: 60px;
+	padding-bottom: 17px;
+	width: 215px;
+	height: 108px;
+	background-image: url("../img/logo.png");
+  	background-repeat: no-repeat;
+  	background-position-x: center;
+  	background-position-y: center;
+  	position: relative;
+  	top: 10px;
+  	left: 13px;
+
+}
+
+.logo-png-2 {
+	transform: translateX(-15%);
+}
+
+.headline {
+	font-family: Mont;
+	font-weight: bold;
+	font-size: 60px;
+	line-height: 87px; 
+	color: black;
+	margin-top: 0;
+	margin-bottom: 0;
+	height: 210px;
+}
+
+.headline_block {
+	position: relative;
+	width: 1300px;
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.extra-bl {
+	background: #F4F263;
+	filter: blur(6px);
+	border-radius: 40px;
+	position: relative;
+	z-index: 1;
+	width: 1080px;
+	height: 69px;
+	bottom: 75px;
+	right: 25px;
+}
+
+.main_text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	position: relative;
+	top: 42px;
+}
+
+.main-text-block {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.headline_extra{
+	font-size: 60px;
+	line-height: 97px; 
+	color: black;
+	position: relative;
+	z-index: 2;
+	filter: blur(0px);
+}
+
+.description_block {
+	display: flex;
+	align-items: center;
+	position: relative;
+	z-index: 2;
+	width: 1200px;
+}
+
+.description {
+	font-family: GothamProNormal;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 29px;
+	color: #3E3E3E;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.contacts_line {
+	margin-top: 50px;
+	width: 536px;
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	box-sizing: border-box;
+	border-radius: 20px;
+	transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.contacts {
+	display: flex;
+	align-items: center;
+	width: 511px;
+	height: 132.78px;
+	border-radius: 20px;
+	transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.field {
+	top: 6px;
+	position: relative;
+	display: flex;
+	right: 24px;
+}
+
+.i_field {
+	width: 245px;
+	padding:0 3px;
+	font-size: 25px;
+	color:black;
+	height: 50px;
+	background: #E7E7E7;
+	border: 1px solid black;
+	box-sizing: border-box;
+	border-radius: 201.181px;
+}
+
+.i_field:focus {
+	outline: none;
+}
+
+.phone {
+  	width: 25px;
+  	height: 25px;
+  	position: relative;
+	transform: translate(150%, 50%);
+}
+
+.phone_btn {
+	position: relative;
+	transform: translateX(-22%);
+	width: 208px;
+	height: 50px;
+	padding: 0 0 0 5px;
+	border:none;
+	background: #3E3C3C;
+	border-radius: 201.181px;
+	border: 1px solid #3E3C3C;
+	box-sizing: border-box;
+}
+
+.phone_link {
+	font-family: GothamProNormal;
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 24px;
+	color: #F4F263;
+	text-decoration: none;
+}
+
+.contacts_info {
+	position: relative;
+	bottom: 6px;
+	left: 15px;
+}
+
+.contacts_info-item {
+	font-weight: 500;
+	font-size: 20px;
+	font-family: GothamProNormal;
+	color: #3E3C3C;
+	font-weight: bolder;
+}
+
+.right {
+	position: relative;
+	left: 55px;
+}
+
+.w_btn-block {
+	position: relative;
+	left: 490px;
+	position: relative;
+	bottom: 88px;
+}
+
+.w_btn {
+	background: none;
+	border: none;
+	border-radius: 201.181px;
+	width: 297px;
+	height: 60px;
+	position: relative;
+	z-index: 2;
+	display: flex;
+}
+
+.bbtn {
+	background: #F4F263;
+	border: none;
+	filter: blur(13px);
+	border-radius: 201.181px;
+	width: 297px;
+	height: 60px;
+	position: relative;
+	right: 20px;
+	bottom: 60px;
+	z-index: 1;
+}
+
+.w_btn-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: GothamProNormal;
+	font-style: normal;
+	font-weight: bolder;
+	font-size: 17px;
+	color: #3E3C3C;
+	text-decoration: none;
+	position: relative;
+	left: 5px;
+	z-index: 1;
+}
+
+.c_w {
+	position: relative;
+	bottom: 50px;
+}
+
+.wphone {
+	position: relative;
+	right: 10px;
+}
+
+.advantages {
+	position: relative;
+	display: flex;
+	width: 1350px;
+	margin-top: 223px;
+	left: 100px;
+	justify-content: space-between;
+}
+
+.advantages-sm {
+	display: none;
+}
+
+.advantage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 181px;
+	height: 191px;
+	background: rgba(255, 255, 255, 0.8);
+	border-radius: 20px 20px 0 0px;
+}
+
+.round {
+	background-image: url("../img/ppoint.png");
+  	background-repeat: no-repeat;
+  	background-position-x: center;
+  	background-position-y: center;
+	height: 72px;
+	width: 72px;
+}
+
+.text {
+	text-align: center;
+	font-family: GothamProNormal;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 19px;
+	line-height: 18px;
+	text-align: center;
+	color: #B66976;
+	margin-top: 0;
+	position: relative;
+	bottom: 10px;
+}
+
+.advantages2 {
+	display: flex;
+	position: relative;
+	bottom: 150px;
+}
+
+.advantage2 {
+	width: 450px;
+	height: 80px;
+	display: flex;
+	align-items: center;
+}
+
+.text-block-2 {
+	width: 360px;
+	position: relative;
+	left: 20px;
+}
+
+.text2 {
+	width: 360px;
+	font-family: GothamProNormal;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 19px;
+	color: #3E3C3C;
+}
+
+.point2 {
+	background-image: url("../img/wpoint.png");
+  	background-repeat: no-repeat;
+  	background-position-x: center;
+  	background-position-y: center;
+  	height: 47px;
+  	width: 47px;
+  	display: flex;
+}

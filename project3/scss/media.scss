@@ -1,6 +1,7 @@
 @media (max-width: 1620px) {
-	.description_block {
-		margin-top: 70px;
+
+	.headline {
+		font-size: 48px;
 	}
 }
 
@@ -9,15 +10,31 @@
 		left: 0px;
 	}
 
-	.blur {
-		width: 110px;
-		height: 110px;
-		top: 10px;
-		right: 70px;
+	.headline {
+		font-size: 44px;
+	}
+}
+
+@media (max-width: 1440px) {
+	.headline {
+    	font-size: 40px;
 	}
 
-	.logo-png2 {
-		left: 50px;
+	.description_block {
+		margin-top: 90px;
+	}
+
+	.contacts_line {
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+
+	.main {
+		height: 1080px;
+	}
+
+	.advantages {
+		margin-top: 280px;
 	}
 }
 
@@ -41,9 +58,33 @@
 		font-size: 13px;
 	}
 }
+
+@media (max-width: 1350px) {
+	.headline {
+    	font-size: 38px;
+	}
+
+	.headline_extra {
+		font-size: 42px;
+	}
+}
+
+@media (max-width: 1300px) {
+	.headline {
+    	font-size: 35px;
+	}
+}
 	
 
-@media (max-width: 1270px) {
+@media (max-width: 1240px) {
+	.blur {
+		display: none;
+	}
+
+	.logo-png2 {
+		transform: translateX(-70%);
+		position: relative;
+	}
 }
 
 @media (max-width: 1190px) {
@@ -59,9 +100,6 @@
 		display: none;
 	}
 
-	.logo-png2 {
-		left: 0px;
-	}
 
 	.advantage {
 		width: 130px;
@@ -73,6 +111,12 @@
 
 	body {
 		background-size: cover;
+	}
+}
+
+@media (max-width: 1015px) {
+	.headline {
+		font-size: 31px;
 	}
 }
 
@@ -134,7 +178,7 @@
 	}
 
 	.gr-line {
-		width: 270px;
+		width: 440px;
 	}
 
 	.point {
@@ -151,13 +195,13 @@
 	}
 
 	.advantages-sm {
-		top: 180px;
+		top: 200px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		width: 300px;
 		position: relative;
-		left: 45%;
+		left: 38%;
 		transform: translateX(-50%);
 	}
 
@@ -182,15 +226,16 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		font-size: 40px;
+		font-size: 57px;
 		font-family: Montb;
-		line-height: 49px;
+		line-height: 69px;
 		left: 50%;
 		transform: translateX(-50%);
 	}
 
 	.headline_extra {
 		font-family: Montb;
+		font-size: 70px;
 	}
 
 	.description {
@@ -198,12 +243,38 @@
 		right: 40px;
 		position: relative;
 		font-family: Montb;
+		font-size: 40px;
+    	line-height: 47px;
+    	left: -20px;
 	}
 
 	.contacts_line {
 		position: relative;
 		margin-left: 0;
-		left: 20%;
+		left: 6%;
+		margin-top: 80px;
+	}
+
+	.contacts_line {
+		width: 800px;
+		top: 40px;
+	}
+
+	.right {
+	    left: 155px;
+	}
+
+	.contacts {
+		width: 800px;
+	}
+
+	.i_field {
+    	width: 345px;
+	}
+
+	.contacts {
+		width: 641px;
+		justify-content: center;
 	}
 
 	.c_w {
@@ -215,6 +286,7 @@
 	.w_btn-block {
 		position: relative;
 		left: 33%;
+		top: 60px;
 	}
 
 	.sm-text-block {
@@ -233,8 +305,8 @@
 
 	.sm-text {
 		font-family: Mont;
-		font-size: 18px;
-		line-height: 22px;
+		font-size: 27px;
+		line-height: 35px;
 		color: #767676;
 		margin-bottom: 10px;
 	}

@@ -42,6 +42,14 @@ body {
 	max-width: 1920px;
 }
 
+.ext-sm {
+	display: none;
+}
+
+.ext-lg {
+	display: block;
+}
+
 .main {
 	display: flex;
 	overflow: hidden;
@@ -124,6 +132,14 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+}
+
+.d-lg {
+	display: block;
+}
+
+.d-sm {
+	display: none;
 }
 
 .headline_extra{

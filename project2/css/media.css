@@ -1,3 +1,16 @@
+@media (max-width: 1700px) {
+  .headline_extra {
+    font-size: 45px; }
+  .headline {
+    font-size: 45px; }
+  .extra-bl {
+    width: 820px; }
+  .headline_block {
+    justify-content: flex-end; }
+  .main-text-block {
+    position: relative;
+    left: 280px; } }
+
 @media (max-width: 1520px) {
   .advantages {
     left: 0px; } }
@@ -12,48 +25,43 @@
   .advantages {
     width: 1170px; }
   .text {
-    font-size: 13px; } }
-
-@media (max-width: 1340px) {
-  .logo {
-    display: flex; }
-  .logo-png {
-    display: block; }
-  .logo-png-2 {
-    display: none; }
-  .headline_block {
-    flex-direction: row;
-    width: 1000px; }
-  .main-text {
-    position: static; } }
-
-@media (max-width: 1270px) {
+    font-size: 13px; }
+  .extra-bl {
+    width: 730px; }
+  .headline_extra {
+    font-size: 40px; }
+  .headline {
+    font-size: 40px; }
   .main-text-block {
     position: relative;
-    left: 10%; } }
+    left: 370px; } }
 
 @media (max-width: 1190px) {
   .text {
     font-size: 15px; }
+  .headline_extra {
+    font-size: 37px; }
+  .description {
+    font-size: 20px; }
+  .advantage2 {
+    width: 400px; }
+  .headline {
+    font-size: 37px; }
+  .text-block-2 {
+    left: 0; }
+  .logo-png-2 {
+    left: -10px; }
   .main-text-block {
-    position: relative;
-    left: 20%; }
+    left: 460px; }
+  .extra-bl {
+    width: 670px; }
   .advantages {
     width: 990px;
     margin-top: 436px; }
   .advantage {
     width: 150px; }
   .main {
-    height: 1380px; }
-  .headline_extra {
-    font-size: 45px; }
-  .extra-bl {
-    width: 820px; } }
-
-@media (max-width: 1040px) {
-  .main-text-block {
-    position: relative;
-    left: 25%; } }
+    height: 1380px; } }
 
 @media (max-width: 1000px) {
   .text {
@@ -66,10 +74,25 @@
 @media (max-width: 982px) {
   .advantages {
     display: none; }
+  .main {
+    height: 2000px; }
   .advantage-sm {
     display: flex;
     justify-content: flex-start;
     align-items: center; }
+  .ext-lg {
+    display: none; }
+  .ext-sm {
+    display: block; }
+  .main-text-block {
+    left: 0;
+    width: 100%; }
+  .logo-png {
+    display: block; }
+  .logo {
+    display: flex;
+    width: 100%;
+    justify-content: center; }
   .point {
     background-image: url("../img/wpoint.png");
     background-repeat: no-repeat;
@@ -77,58 +100,70 @@
     background-position-y: center;
     width: 39px;
     height: 39px; }
-  .main {
-    height: 1800px; }
+  .i_field {
+    width: 345px; }
   .advantages-sm {
-    top: 80px;
+    top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 300px;
     position: relative;
-    left: 50%;
+    left: 60%;
     transform: translateX(-50%); }
-  .logo-png {
+  .osnov {
     position: relative;
-    left: 50%;
-    transform: translateX(-50%); }
+    z-index: 2; }
+  .right {
+    left: 150px; }
   .headline {
     text-align: center;
-    position: relative;
-    left: 50%;
-    transform: translateX(-53.5%); }
+    font-size: 65px;
+    height: 350px;
+    line-height: 160px;
+    bottom: 20px;
+    position: relative; }
+  .headline_extra {
+    font-size: 54px;
+    line-height: 80px; }
+  .logo-png-2 {
+    display: none; }
+  .headline_block {
+    width: 100%;
+    justify-content: center; }
+  .d-lg {
+    display: none; }
+  .d-sm {
+    display: block; }
   .description {
-    text-align: center; }
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px; }
   .contacts_line {
     position: relative;
-    margin-left: 0; }
-  .w_btn-block {
-    position: relative;
-    left: 33%; }
+    margin-left: 0;
+    left: 42%; }
   .sm-text-block {
     width: 460px;
     position: relative;
     left: 20px; }
   .extra-bl {
-    right: 0; }
-  .contacts_line {
-    left: 48%; }
+    left: 5px;
+    right: 0;
+    bottom: 280px;
+    z-index: 1;
+    height: 90px;
+    width: 570px; }
   .advantages2 {
     display: none; }
   .w_btn-block {
     bottom: 0;
-    left: 62%; }
+    left: 64%; }
+  .description_block {
+    width: 100%;
+    justify-content: center; }
   .description {
-    position: relative;
-    transform: translateX(-50%);
-    left: 39.3%; }
-  .logo {
-    position: relative;
-    left: 50%;
-    transform: translateX(-60%); }
-  .logo-png {
-    position: relative;
-    left: 0%; }
+    position: relative; }
   .point {
     position: relative;
     right: 20px; }

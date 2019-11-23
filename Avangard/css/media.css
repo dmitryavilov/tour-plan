@@ -1,0 +1,1699 @@
+@media (max-width: 1700px) {
+	.portfolio_image {
+		-webkit-background-size: 450px 267px;
+		background-size: 450px 267px;
+		height: 269px;
+	}
+
+	.big-block__item {
+		height: 417px;
+		width: 452px;
+	}
+
+	.contacts__place-block {
+   		position: relative;
+    	left: 8%;
+	}
+
+	.rown {
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+@media (max-width: 1650px) {
+	.menu__items {
+		width: 51%;
+	}
+
+	.registration-input::placeholder {
+		color: white;
+	}
+
+	.header__background-title-block {
+		left: 40%;
+	}
+
+	.menu__item {
+		font-size: 18px;
+	}
+
+	.about__line-4 {
+		display: none;
+	}
+
+	.contacts__item {
+		font-size: 	20px;
+	}
+
+	.contacts__place-block {
+   		position: relative;
+    	left: 12%;
+	}
+
+	.contacts__registration-block {
+    	transform: translateY(50%);
+    	position: relative;
+    	left: 25%;
+	}
+}
+
+@media (max-width: 1470px) {
+	.contacts__place-block {
+   		position: relative;
+    	left: 7%;
+	}
+
+	.contacts__tel-block {
+    	position: relative;
+    	left: 3%;
+	}
+
+	.contacts__line {
+    	position: relative;
+    	width: 50px;
+	}
+
+	.contacts__line-item {
+		color: orange !important;
+	}
+
+}
+
+@media (max-width: 1420px) {
+
+	.number-block__link {
+		margin-left: 25px;
+	}
+
+	.header__background-title-block {
+		left: 31%;
+	}
+
+
+	.btn__line-item {
+		color: #df782e;
+	}
+
+	.portfolio__big-blocks {
+		height: 1000px;
+	}
+
+	.portfolio_bottom {
+		transform: translateY(57%);
+	}
+
+	.portfolio_image {
+		-webkit-background-size: 410px 237px;
+		background-size: 410px 237px;
+		height: 239px;
+	}
+
+	.big-block__item {
+		height: 370px;
+		width: 412px;
+	}
+
+	.orange-place {
+		-webkit-background-size: 28px 28px;
+		background-size: 23px 28px;
+		height: 34px;
+		transform: translateY(0%)
+	}
+
+	.orange-telephone{
+		-webkit-background-size: 28px 28px;
+		background-size: 28px 28px;
+		height: 34px;
+		transform: translateY(0%)
+	}
+}
+
+@media (max-width: 1390px) {
+	.contacts__place-block {
+   		position: relative;
+    	left: 5%;
+	}
+	.contacts__number {
+    	position: relative;
+    	margin-left:5px;
+	}
+}
+
+@media (max-width: 1366px) {
+
+	.number-block__link {
+		margin-left: 15px;
+	}
+
+	.header__background-title-block {
+		left: 28%;
+	}
+
+	.icon__img {
+		margin-top: 3px;
+		background-size: 80%;
+	}
+	
+	.offers__orange-block {
+    	left: 6%;
+	}
+
+	.menu__item {
+		font-size: 14px;
+	}
+}
+
+@media(max-width: 1336px) {
+	.contacts__item {
+		font-size: 	16px;
+	}
+
+	#map-lg {
+		display: none;
+	}
+
+	#map-md {
+		display: block;
+	}
+
+	.contacts__place-block {
+    	left:8%;
+	}
+}
+
+@media (max-width: 1280px) {
+	.benefits__advantage-description {
+		font-size: 20px;
+	}
+
+	.contacts__orange-block {
+    	left: 35%;
+	}
+
+	.about {
+		background-image: none;
+	}
+
+	.about__line-4 {
+		display: flex;
+	}
+
+	.about__title-block {
+    	z-index: 1;
+    	position: relative;
+	}
+
+	.portfolio__big-blocks {
+		height: 850px;
+	}
+
+	.portfolio_bottom {
+		transform: translateY(65%);
+	}
+
+	.portfolio_image {
+		-webkit-background-size: 370px 220px;
+		background-size: 370px 220px;
+		height: 222px;
+	}
+
+	.big-block__item {
+		height: 345px;
+		width: 372px;
+	}
+
+	.portfolio__title-and-description {
+    	-webkit-transform: translateX(3%);
+    	-ms-transform: translateX(3%);
+    	transform: translateX(3%);
+	}
+
+	.contacts__btn {
+    	padding: 20px 5px;
+	}
+}
+
+@media (max-width: 1230px) {
+
+	.icon__img {
+		margin-top: 5px;
+		background-size: 70%;
+	}
+
+	.header__background-title-block {
+		left: 20%;
+	}
+
+	.number-block__link {
+		margin-left: 10px;
+	}
+
+	.menu__items {
+		width: 47%;
+	}
+
+	.menu__item {
+		font-size: 12px;
+	}
+
+	.offers__title-block {
+		margin-bottom: 60px;
+	}
+}
+
+@media (max-width: 1180px) {
+	.orange-rectangle {
+    	height: 170px;
+    	width: 100px;
+	}
+
+	.info__btn-link {
+    	text-decoration: none;
+    	color: white;
+    	font-size: 15px;
+    	font-family: GilroyBold;
+    	letter-spacing: 3px;
+	}
+
+	.offers__title-block {
+		margin-bottom: 200px;
+	}
+
+	.offers__block-1,.offers__block-2,.offers__block-3{
+		width: 1000px;
+	}
+
+	.offers__blocks {
+    	left: 1%;
+    	bottom: 10%
+	}
+
+	.blocks {
+		height: 650px;
+	}
+
+	.big-block_lg {
+		display: none;
+	}
+
+	.big-block_md {
+		display: flex;
+		width: 90%;
+	}
+
+	.portfolio_bottom {
+		transform: translateY(56%);
+	}
+
+	.portfolio__big-blocks {
+    	height: 1200px;
+    	display: flex;
+    	align-items: center;
+	}
+	.contacts__place-block {
+    	left: 5%;
+	}
+}
+
+@media (max-width: 1150px) {
+	.orange-place {
+		-webkit-background-size: 17px 22px;
+		background-size: 17px 22px;
+		height: 34px;
+		transform: translateY(10%)
+	}
+
+	.orange-telephone{
+		-webkit-background-size: 22px 22px;
+		background-size: 22px 22px;
+		height: 34px;
+		transform: translateY(10%)
+	}
+
+	.contacts__item {
+    	font-size: 12px;
+	}
+}
+
+@media (max-width: 1100px) {
+
+	.menu__items {
+		width: 50%;
+	}
+
+	.header__background-title-block {
+		left: 11%;
+	}
+
+	.menu__item {
+		font-size: 12px;
+	}
+
+	.menu__number {
+		position: relative;
+		right: 5.5%;
+	}
+
+	.about__line-1,.about__line-2,.about__line-3,.about__line-4 {
+		display: none;
+	}
+
+	.contacts__line-block {
+		display: none;
+	}
+
+	.contacts__btn-link {
+		font-size: 12px;
+	}
+
+	.contacts__orange-block {
+    	left:34%;
+    	width: 70px;
+	}
+
+	.contacts__title {
+		font-size: 40px;
+	}
+
+}
+
+@media (max-width: 1035px) {
+	.header {
+		height: 900px;
+	}
+
+	.menu__number {
+    	position: relative;
+    	right: 0%;
+    	left: 30%;
+	}
+
+	.block-item {
+    	width: 250px;
+    }
+
+    .offers__block-1,.offers__block-2,.offers__block-3{
+		width: 800px;
+	}
+
+	.line {
+		height: 900px;
+		transform: translateY(-153.5%);
+	}
+
+	.icon_1_active {
+		margin-bottom:-2px !important;
+		transform: rotate(45deg);
+		transition: 0.3s;
+	}
+
+	.icon_3_active {
+		margin-top:-2px !important;
+		transform: rotate(-45deg);
+		transition: 0.3s;
+	}
+
+	.header__info {
+		margin-left: 5%;
+	}
+
+	.header__background-title-block {
+		right: 100%;
+	}
+
+
+	.header__background-title-block {
+		left: 18%;
+	}
+	
+	.btn__line-item {
+		color: #df782e;
+	}
+
+	.icon__img {
+		margin-top: 2px;
+	}
+
+	.menu__items {
+		display: none;
+	}
+
+	.collapse__icon {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 80px;
+		height: 80px;
+		background-color: #2b2b2b;
+		border-radius: 50%;
+		transition: 0.3s;
+		box-shadow: 0 0 6px black;
+	}	
+
+	.collapse {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+	}
+
+	.icon {
+		border-radius: 5px;
+		height: 5px;
+		width: 40px;
+		background-color: orange;
+	}
+
+	.collapse_icon_hover {
+		background-color: #404040;
+		box-shadow: 0 0 5px white;
+		transition: 0.3s;
+	}
+
+	.menu__item {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		top: 10%;
+		font-size: 20px;	
+	}
+
+	.contacts__number {
+		display: flex;
+	}
+
+
+}
+
+@media (max-width: 990px) {
+	.about__box-description-block {
+		left: 0%;
+	}
+
+	.about {
+		height: auto;
+	}
+
+	.center_modify {
+		padding-top: 75px;
+	}
+
+	.benefits__advantage-img-1, .benefits__advantage-img-2, .benefits__advantage-img-3 {
+		width: 80px;
+		height: 80px;
+	}
+
+	.orange-rectangle {
+    	height: 140px;
+   	 	width: 70px;
+	}
+
+	.menu__number {
+    	position: relative;
+    	right: 0%;
+    	left: 25%;
+	}
+
+	.benefits__advantage-description {
+    	font-size: 17px;
+	}
+
+	.benefits__advantage-description-block{
+    	margin-left: 15px;
+	}
+
+	.benefits__advantage-1, .benefits__advantage-2, .benefits__advantage-3 {
+    	height: 300px;
+    	width: calc(95%/3);
+	}
+
+	.rown {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		position: relative;
+		left: 2%;
+	}
+
+}
+
+@media (max-width: 950px) {
+	.contacts__tel-and-place {
+    	position: relative;
+    	top: 4%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.contacts__orange-block {
+    	left: 28%;
+    	width: 60px;
+	}
+
+	.contacts__place-block {
+    	left: 0%;
+	}
+
+	.contacts__tel-block {
+    	position: relative;
+   		left: 0%;
+	}
+
+	.menu__number {
+    	position: relative;
+    	right: 0%;
+    	left: 20%;
+	}
+}
+
+@media (max-width: 880px) {
+	.header__line-1 {
+		display: none;
+	}
+
+	.contacts__orange-block {
+    	left: 32%;
+    	width: 60px;
+	}
+
+	.menu__number {
+    	position: relative;
+    	right: 0%;
+    	left: 15%;
+	}
+
+	.contacts__btn {
+    	padding: 15px 5px;
+	}
+
+	.contacts__btn-link {
+    	font-size: 8px;
+	}
+
+	.offers__bmw-orange-block {
+    	left: 55%;
+	}
+
+	.header__line-2 {
+		right: 45%;
+	}
+
+	.line {
+    	height: 900px;
+    	transform: translateY(-160%);
+	}
+
+	.benefit__title {
+		font-size: 34px;
+	}
+
+	.benefits__orange-block {
+		left: 30%;
+	}
+
+	.benefits__advantage-description {
+    	font-size: 15px;
+	}
+
+	.offers__bmw-img-item {
+    	left: 42.5%;
+	}
+
+	.portfolio__orange-block {
+    	left: 43%;
+	}
+
+	.big-block_md {
+		display: flex;
+		width: 100%;
+	}
+}
+
+@media (max-width: 816px) {
+	.block-item {
+    	width: 200px;
+	}
+
+	.menu__number {
+    	position: relative;
+    	right: 0%;
+    	left: 5%;
+	}
+
+	.line {
+    	height: 900px;
+    	transform: translateY(-164.5%);
+	}
+
+	.offers__block-1, .offers__block-2, .offers__block-3 {
+    	width: 640px;
+	}
+
+	.blocks {
+    	height: 600px;
+	}
+
+	.offers__description {
+    	height: 30px;
+	}
+
+	.offers__orange-block {
+    	left: 8%;
+	}
+}
+
+@media (max-width: 812px) {
+	.offers__bmw-orange-block {
+    	transform: translateY(-87%);
+	}
+
+	.contacts__title {
+    	font-size: 35px;
+	}
+
+	.contacts__orange-block {
+    	left: 28%;
+    	width: 45px;
+	}
+}
+
+@media (max-width: 800px) {
+	.line {
+    	height: 900px;
+    	transform: translateY(-168.8%);
+	}
+}
+
+@media (max-width: 768px) {
+	.benefits__advantages {
+		display: block;
+	}
+
+	
+
+	.big-block_md {
+		display: none;
+	}
+
+
+	.big-block_sm {
+		display: flex;
+	}
+
+	.portfolio__big-blocks {
+    	height: 2600px;
+    	display: flex;
+   	 	align-items: center;
+	}	
+
+
+	.portfolio_bottom {
+		transform: translateY(27%);
+	}
+
+	.benefits__orange-rectangle-2 {
+    	transform: translateX(47%);
+	}
+
+	.benefits__orange-rectangle-3 {
+    	transform: translateX(47%);
+	}
+
+	.benefits__advantages {
+		-ms-align-items: center;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.benefits__advantage-1, .benefits__advantage-2, .benefits__advantage-3 {
+		width: auto;
+		position: relative;
+		justify-content: flex-start;
+	}
+
+	.benefits__advantage-img-block {
+		width: 219px;
+	}
+
+	.benefits__advantage-img-1, .benefits__advantage-img-2, .benefits__advantage-img-3 {
+		width: 118px;
+		height: 118px;
+	}
+
+	.orange-rectangle {
+    	height: 170px;
+   	 	width: 100px;
+	}
+
+	.benefits__advantage-description {
+    	font-size: 20px;
+	}
+
+	.benefits__advantage-description-block{
+    	margin-left: 15px;
+	}
+
+	.benefits__advantage-1, .benefits__advantage-2, .benefits__advantage-3 {
+    	height: 300px;
+    	width: 400px;
+	}
+}
+
+@media (max-width: 740px) {
+	.containers {
+   	 	display: block;
+	}
+
+	.rown {
+    	flex-direction: row;
+	}
+
+	.orange-telephone__block {
+    	position: relative;
+    	right: 20px;
+	}
+
+	.audi-img {
+    	background-image: url(../img/audi-md.png);
+    	width: 192px;
+    	height: 167px;
+    	transform: translateY(87%);
+	}
+
+	.info_img_right {
+    	left: 18% !important;
+	}
+
+	.contacts_bottom {
+    	transform: translateY(75%);
+	}	
+
+	.contacts__tel-and-place {
+	    position: relative;
+	    top: 5%;
+	    display: flex;
+	    flex-direction: row;
+	    justify-content: center;
+	    align-items: center;
+	}
+	.container-1 {
+    	background-color: #363636;
+    	height: 740px;
+    	width: 100%;
+	}
+
+	.contacts__orange-block {
+    	left: 38%;
+    	width: 45px;
+	}
+
+	.contacts__place-block {
+    	left: 0%;
+	}
+
+
+	.contacts__btn-link {
+    	font-size: 12px;
+	}
+
+	.contacts {
+   		height: 1080px;
+	}
+
+	#map-md {
+		display: none;
+	}
+
+	#map-sm {
+		display: block;
+		transform: translate(-0.3%,65%);
+	}
+
+	.container-1 {
+    	background-color: #363636;
+    	height: 1080px;
+    	width: 100%;
+	}
+
+	.contacts__footer {
+		transform: translateY(650%);
+	}
+
+	.contacts__registration-block {
+    	transform: translateY(40%);
+    	position: relative;
+    	left: 30%;
+	}
+
+	.contacts__line-block {
+		display: flex;
+	}
+}
+
+@media (max-width: 785px) {
+	.offers__blocks {
+		display: none;
+	}
+
+	.menu__number {
+    	position: relative;
+    	right: 0%;
+    	left: 13%;
+	}
+
+	.menu__item {
+    	font-size: 18px;
+	}
+
+	.line {
+    	height: 375px;
+    	transform: translateY(-258.3%);
+	}
+
+	.header__line-2-orange {
+    	height: 40px;
+	}
+
+	.header__info {
+    	margin-top: 0px;
+	}
+
+	.header__line-2 {
+    	right: 39%;
+	}
+
+	.header__menu {
+    	height: 100px;
+	}
+
+	.info__title-item {
+    	margin-top: 0;
+	}
+
+	.collapse__icon {
+		width: 60px;
+		height: 60px;
+		background-color: inherit;
+		box-shadow: none;
+	}
+
+	.logo__img {
+    	position: relative;
+    	z-index: 1;
+    	width: 170px;
+    	background-size: 170px;
+    	height: 60px;
+    	background-image: url(../img/logo.png);
+    	background-repeat: no-repeat;
+    	background-position-x: center;
+    	background-position-y: center;
+	}
+
+	.background-title__item-md {
+    	font-size: 66.67px;
+    	z-index: 1.5;
+    	position: relative;
+    	letter-spacing: 10px;
+	}
+
+	.header__background-title-block {
+    	transform: translateY(-140%);
+    	left: 57%;
+	}
+
+	.icon {
+    	background-color: #df782e;
+	}
+
+	.line_center {
+    	width: 60px;
+	}
+
+	.info__btn {
+    	padding: 20px 10px;
+	}		
+
+	.info_img_right {
+    	-webkit-transform: translateY(-110%);
+    	-ms-transform: translateY(-110%);
+    	transform: translateY(-110%);
+    	left: 24%;
+    	z-index: 1;
+    	position: relative;
+   		background-size: 350px 170px;
+	}
+
+	.offers__blocks-md {
+		display: flex;
+	}
+
+	.info__title-item {
+		font-size: 25px;
+		letter-spacing: 3px; 
+	}
+
+	.header__btn-block {
+    	margin-top: 40px;
+	}
+
+	.info__description-item {
+		font-size: 19.44px;
+		letter-spacing: 0.3px;
+	}
+
+	.header {
+		height: 375px;
+	}
+
+	.bmw__orange-block {
+    	height: 1000px;
+    	width: 180px;
+    	background-color: #fa9411;
+	}
+
+	.offers {
+    	padding-top: 0px;
+	}
+
+	.offers__block-1, .offers__block-2{
+    	flex-direction: column;
+    	width: 280px;
+
+    	justify-content: flex-start;
+    	z-index: 3;
+	}
+
+	.offers__block-1 {
+		margin-left: 10px;
+	}
+
+	.bmw__img {
+		background-image: url("../img/car2-2.png");
+		background-size: 443px 240px;
+	}
+	
+	.offers__bmw-img-item {
+    	left: 25%;
+    	transform: translateY(-285%);
+	}
+
+	.offers__background-title-item {
+		display: none;
+	}
+
+    .offers__background-title-item-md {
+		display: flex;
+	}
+
+	.offers__background-title-item {
+    	transform: translate(-50%,-12%);
+    	line-height: 1;
+	}
+
+	.offers__bmw-orange-block {
+    	transform: translateY(-100%);
+    	left: 77%;
+	}
+
+	.offers__title-block {
+    	margin-bottom: 10px;
+    	margin-top: 10px;
+	}
+
+	.offers__title {
+		font-size: 	33,33px;
+	}
+
+
+
+	.container__offers {
+    	height: 1380px;
+	}
+
+	.block-item {
+		z-index: 1;
+	}
+
+	.block-item {
+		width: 270px;
+		margin-bottom: 10px;
+	}
+
+	.contacts__btn-block {
+		display: flex;
+		justify-content: flex-start;
+	}
+}
+
+@media (max-width: 655px) {
+	.blocks {
+    	height: 700px;
+	}
+
+	.info_img_right {
+    	left: 14% !important;
+	}
+
+	.menu__number {
+    	position: relative;
+    	right: 0%;
+    	left: 8%;
+	}
+}
+
+@media (max-width: 650px) {
+	.orange-block {
+		width: 50px;
+	}
+
+	.benefits__orange-block {
+		left: 26%
+	}
+
+	.portfolio__orange-block {
+    	left: 40%;
+	}
+}
+
+@media (max-width: 620px) {
+
+	.menu__number {
+    	position: relative;
+    	right: 0%;
+    	left: 0%;
+	}
+
+	.number-block__link {
+		font-size: 14px;
+	}
+
+	
+}
+
+@media (max-width: 580px) {
+
+	.contacts_bottom {
+    	transform: translateY(3%);
+	}
+
+	.slick-slider {
+    	display: block !important;
+	}
+
+	.big-block_sm {
+		display: none;
+	}
+
+	.portfolio__slider-sm {
+		display: block;
+	}
+
+	.img-block {
+		justify-content: center;
+	}
+
+	.block-item {
+    	height: 200px !important;
+    	display: flex !important;
+    	align-items: center !important;
+	}
+
+	.slick-prev {
+		transform: translate(46%,-50%) !important;
+		z-index: 2 !important;
+		border-radius: 50% !important;
+		-webkit-background-size: 50px 50px !important;
+		background-size: 50px 50px !important;
+		width: 50px !important;
+		height: 50px !important
+	}
+
+	.slick-next {
+		transform: translate(-46%,-50%) !important;
+		z-index: 2 !important;
+		border-radius: 50% !important;
+		-webkit-background-size: 50px 50px !important;
+		background-size: 50px 50px !important;
+		width: 50px !important;
+		height: 50px !important
+	}
+
+	.slick-prev:before, .slick-next:before {
+		font-size: 50px !important;
+	}
+
+	.sslider-sm {
+		width: 100%;
+		position: relative;
+		z-index: 1;
+	}
+
+	.portfolio__slider-sm {
+		width: 100%;
+		position: relative;
+		z-index: 1;: 
+	}
+
+	.its {
+		width: 100%;
+		display: flex !important;
+		justify-content: center !important;
+	}
+
+	.portfolio__big-blocks {
+    	height: 400px;
+	}
+
+	.big-block__item {
+		background-color: white;
+		width: 374px !important;
+	}
+
+	.slider-bg {
+		display: flex;
+		width: 100%;
+		background-color: #f1f1f1;
+		justify-content: center;
+	}
+
+	.bmw__img {
+    background-image: url(../img/car2-2.png);
+    background-size: 660px;
+    
+}
+
+	.info_img_right {
+    	right: 30%;
+	}
+
+	.btn__line-item {
+    	color: yellow;
+	}
+
+	.info {
+		position: relative;
+	}
+
+	.blocks-md {
+		display: none;
+	}
+
+	.blocks-sm {
+		display: flex;
+		justify-content: center;
+	}
+
+	.offers__bmw-orange-block {
+		display: none;
+	}
+
+	.offers__bmw-img-item {
+    	left: 25%;
+    	transform: translateY(-35%);
+    	z-index: 0;
+    	position: relative;
+	}
+
+	.portfolio_bottom {
+   		transform: translateY(0%);
+	}
+
+	.container__offers {
+    	height: 500px;
+	}
+	
+}
+
+@media (max-width: 560px) {
+	#map-sm {
+		display: none;
+	}
+
+	#map-xs {
+		display: block;
+		transform: translate(-0.3%,65%);
+	}
+}
+
+@media (max-width: 550px) {
+	.benefit__title {
+		font-size: 28px;
+	}
+
+	.contacts__registration-block {
+    	left: 18%;
+	}
+
+	.info_img_right {
+    	left: 3% !important;
+	}
+
+	.menu__number {
+    	display: none;
+	}
+
+	.orange-block {
+		width: 35px;
+		height: 5px;
+	}
+
+	.benefits__orange-block {
+		left: 31%;
+	}
+
+	.about__background-title-item {
+		transform: translateY(-250%);
+	}
+
+	.portfolio__orange-block {
+    	left: 43%;
+	}
+
+	.offers__blocks {
+		display: none;
+		z-index: 3;
+	}
+
+	.offers__title-block {
+    	display: flex;
+    	justify-content: center;
+    	left: 0%;
+	}
+	
+	.orange-block {
+		display: none;
+	}
+}
+
+@media (max-width: 530px) {
+	
+
+	.contacts_bottom {
+    	transform: translateY(5%);
+	}
+
+	.offers__slider-sm {
+		position: relative;
+		transform: translateY(-50%);
+		border: solid black;
+		border-width: 0 3px 0 3px;
+		width: 100%;
+	}
+
+	.img-block {
+    	justify-content: center;
+	}
+
+
+	.offers {
+		padding-top: 10px;
+	}
+
+	.block-item {
+    	width: 320px;
+    	margin-bottom: 20px;
+	}
+
+	.offers__block-1 {
+    	width: 320px;
+   		margin-left: 0px;
+	}
+
+@media (max-width: 490px) {
+	
+	.orange-telephone__block {
+    	right: 2%
+	}
+
+	.benefit__title {
+		font-size: 25px;
+	}
+
+	
+
+	.orange-block {
+		width: 30px;
+		height: 3px;
+	}
+
+	.line {
+		display: none;
+	}
+
+	.header {
+		height: 600px;
+	}
+
+
+	.header__collapse-menu {
+		width: 100%;
+		border: none;
+	}
+
+	.info__title-item {
+		font-size: 32px;
+	}
+
+	.info__description-item {
+		font-size: 25px;
+	}
+
+	.contacts__orange-block {
+    	left: 34%;
+	}
+}
+
+@media (max-width: 460px) {
+	
+	.orange-place {
+    	width: 26px;
+	}
+
+	.contacts {
+    	height: 1180px;
+	}
+
+	.container-1 {
+	    height: 1180px;
+	}
+
+	.info_img_right {
+    	left: 15% !important;
+	}
+
+	.contacts__icons-block {
+	    transform: translateY(420%);
+	}
+
+	.registration-input {
+	    padding-right: 0px;
+	    padding-top: 30px;
+	    padding-bottom: 5px;
+	}
+
+	.contacts__registration-block {
+    	transform: translateY(50%);
+    	width: 500px;
+    	left: 23%;
+	}
+
+	.contacts__registration-form {
+    	height: 100px;
+	}
+
+	.audi-img {
+	    background-image: url(../img/audi-sm.png);
+	    width: 208px;
+	    height: 208px;
+	    transform: translate(-25%,187%);
+	    left: 37%;
+	}
+
+	.contacts__btn {
+    	padding: 0px 10px;
+    	width: auto;
+    	height: 50px;
+	}
+
+	#map-xs {
+    	transform: translate(-0.3%,105%);
+	}
+
+	.header {
+		height: 800px;
+	}
+
+	.header__info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 10px;
+	}
+
+	.header__btn-block {
+    	width: 350px;
+    	margin-top: 0px;
+	}
+
+	.info_img_right {
+    	-webkit-transform: translateY(-60%);
+    	-ms-transform: translateY(-60%);
+    	transform: translateY(-60%);
+	}
+
+	.info__title-item {
+		margin-bottom: 5px;
+	}
+
+	.info__title-description {
+		margin-top: 0;
+	}
+
+	.desc-lg {
+		display: none;
+	}
+
+	.btn__line-item {
+    	color: orange;
+	}
+
+	.desc-sm {
+		display: block;
+	}
+
+	.line__block {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 42.5%;
+}
+	
+	.btn__line {
+		height: 45px;
+    	width: 1px;
+	}
+
+	.btn__line-items {
+		position: relative;
+		transform: translate(-65%,160%);
+	}
+
+	.btn-line__block {
+    	position: relative;
+    	
+    	z-index: 3;
+    	transform: translate(-310%,70%);
+	}
+
+	.menu__item {
+		font-size: 16px;
+	}
+
+	.contacts__btn-block {
+    	margin-top: 50px;
+	}
+
+	.contacts__btn-link {
+    	font-size: 10px;
+	}
+
+	.registration-input::placeholder {
+		font-size: 20px;
+	}
+
+	.contacts__item {
+    	font-size: 15px;
+	}
+
+	.registration-input {
+		font-size: 15px;
+	}
+
+	.contacts__line-block {
+		transform: translate(-250%,40%);
+	}
+
+	.contacts__registration-block {
+    	left: 23%;
+	}
+
+	.contacts__tel-and-place {
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	    top: 5%;
+	    flex-direction: column;
+	    align-items: flex-start;
+	}
+
+	.rown {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		position: relative;
+		left: 2%;
+	}
+	
+}
+
+@media (max-width: 400px) {
+	.about__box-description {
+		font-size: 30px;
+	}
+
+	.box__description-we {
+		font-size: 33px;
+	}
+
+	.about__background-title-item {
+		font-size: 100px;
+	}
+
+
+
+}
+
+@media (max-width: 380px) {	
+
+	.benefits__advantage-description-block {
+    	margin-left: 15px;
+	}
+
+	.btn-line__block {
+    	position: relative;
+    	z-index: 3;
+    	transform: translate(-287%,70%);
+	}
+	
+
+	.info__btn-link {
+		font-size: 13px;
+	}
+
+	.benefits__advantage-description {
+   		font-size: 15px;
+	}
+
+	.benefits__advantage-description-block {
+		width: 80px;
+	}
+
+
+	.portfolio_image {
+		-webkit-background-size: 300px 180px;
+		background-size: 300px 180px;
+		height: 182px;
+	}
+
+	.title-and-description__title {
+		margin-top: 0;
+	}
+
+	.portfolio__title-and-description {
+    	-webkit-transform: translateX(1%);
+    	-ms-transform: translateX(1%);
+    	transform: translateX(1%);
+	}
+
+	.big-block__item {
+		width: 300px !important;
+		height: 275px !important;
+	}
+
+	.contacts__registration-block {
+    	left: 18%;
+	}
+	
+	.contacts__btn {
+	    padding: 0px 10px;
+	    width: auto;
+	    height: 50px;
+	}
+
+	.contacts__line-block {
+    	transform: translate(-250%,40%);
+	}
+
+	.contacts__btn-link {
+    	font-size: 10px;
+	}
+
+	.audi-img {
+		transform: translate(-28%,187%);
+	}	
+}
+
+@media (max-width: 350px) {
+	
+	.header__logo {
+		width: 200px;
+	}
+
+	.header-and-desc {
+		position: relative;
+		left: 5%;
+	}
+
+	.info__description-item {
+    	font-size: 23px;
+	}
+
+	.block-item {
+   		width: 310px;
+   	    margin-bottom: 20px;
+	}
+
+	.offers__block-1 {
+    	width: 310px;
+    	margin-left: 0px;
+	}
+
+	.menu__item {
+		font-size: 15px;
+	}
+
+	.logo__img {
+		background-size: 70%;
+		margin-right: auto;
+		width: 200px;
+		height: 60px;
+		transform: translateX(-20%);
+	}
+	
+	.offers__title-block {
+    	left: 0%;
+	}
+
+	.contacts__registration-block {
+		width: 440px;
+	}
+
+	.contacts__registration-block {
+    	left: 17%;
+	}
+}
+
+@media (max-height: 520px) {
+	.collapse__icon {
+		width: 55px;
+		height: 55px;
+	}
+
+	.icon {
+		width: 35px;
+		height: 5px;
+	}
+
+	.icon:nth-child(1) {
+		margin-bottom: 5px;
+	}
+
+	.icon:nth-child(3) {
+		margin-top: 5px;
+	}
+}

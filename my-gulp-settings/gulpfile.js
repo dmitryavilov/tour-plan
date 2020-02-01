@@ -30,12 +30,16 @@ function compScss() {
 function styles() {
 	return gulp.src(cssFiles)
 	.pipe(autoprefixer({
-	    cascade: true
+		"overrideBrowserslist": [
+			"last 25 version",
+			"> 2%"
+		  ],
+	    cascade: false
 	 }))
 	.pipe(cleanCSS({compatibility: 'ie8'}))
+	.pipe(browserSync.stream())
 	.pipe(concat('main.css'))
-	.pipe(gulp.dest('./css'))
-	.pipe(browserSync.stream());
+	.pipe(gulp.dest('./css'));
 }
 
 function scripts() {
@@ -51,12 +55,10 @@ function watch() {
         server: {
             baseDir: "./"
         }
-    });
-
-    gulp.watch('./scss/**/*.scss', compScss)
-    gulp.watch('./css/**/*.css', styles)
+	});
+	gulp.watch('./css/style.css', styles)
+	gulp.watch('./scss/**/*.scss', compScss)
     gulp.watch('./js/**/*.js', scripts)
-    gulp.watch('./*.html').on('change', browserSync.reload);
 }
 
 //<== Functions ==>

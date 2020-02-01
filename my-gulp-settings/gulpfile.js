@@ -58,7 +58,7 @@ function watch() {
 	});
 	gulp.watch('./css/style.css', styles)
 	gulp.watch('./scss/**/*.scss', compScss)
-    gulp.watch('./js/**/*.js', scripts)
+    gulp.watch('./js/**/build.js', scripts)
 }
 
 //<== Functions ==>

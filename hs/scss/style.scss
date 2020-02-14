@@ -1,0 +1,616 @@
+@font-face {
+  font-family: Geometria;
+  src: url('fonts/Geometria.eot'),url('fonts/Geometria.woff'),
+    url('fonts/Geometria.ttf');
+}
+
+@font-face {
+    font-family: GeometriaB;
+    src: url('fonts/Geometria-Bold.eot'),url('fonts/Geometria-Bold.woff'),
+      url('fonts/Geometria-Bold.ttf');
+}
+
+//FONTS
+
+@mixin geo($weight, $size, $color, $lineh) {
+    font-size: $size;
+    font-family: $weight;
+    color: $color;
+    line-height: $lineh;
+}
+
+@mixin geowl ($weight, $size, $color) {
+    font-size: $size;
+    font-family: $weight;
+    color: $color;
+}
+
+
+//MIXINS AND VARS
+
+* {
+    box-sizing: border-box;
+}
+
+//FORALL
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 98%;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+
+    
+
+    &__logo-img {
+        background-image: url('../img/header/logo.png');
+        width: 80px;
+        height: 50px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__logo-title {
+        margin-left: 20px;
+        font-size: 16px;
+        font-family: GeometriaB;
+        color: #284157;
+        span {
+            font-family: Geometria;
+        }
+    }
+
+   
+
+    &__text {
+        @include geo(Geometria, 12px, #284157, 15px);
+        text-align: right;
+    }
+
+    &__clock-img {
+        background-image: url('../img/header/clock-icon.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 18px;
+        height: 18px;
+        margin-left: 25px;
+        position: relative;
+        top: 3px;
+    }
+
+   
+}
+
+.logo-block {
+    display: flex;
+    align-items: center;
+}
+
+.clock-block {
+    margin-left: 314px;
+    display: flex;
+    align-items: center;
+}
+
+.button-block {
+    margin-left: 158px;
+    display: flex;
+    align-items: center;
+
+    
+
+    .button_left {
+        position: relative;
+        left: 26px;
+        top: 2px;
+    }
+}
+
+.button_default {
+    width: 170px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(-221deg, #fb2b2b 0%, #f86c26 100%);
+    border-radius: 5px;
+    border: none;
+}
+
+.graphic {
+    @include geo(GeometriaB, 12px, #284157, 20px);
+}
+
+.telephone {
+    @include geowl(GeometriaB, 15px, #284157);
+    position: relative;
+    top: 7px;
+    right: 1px;
+
+    a {
+        color: #284157;
+        text-decoration: none;
+        transition: 0.4s;
+    }
+
+    a:active {
+        color: #db1721;
+        border: none;
+        outline: none;
+    }
+
+    a:hover {
+        color: #4e98da;
+        transition: 0.4s;
+    }
+}
+
+.phone_text {
+    @include geowl(Geometria, 12px, #284157);
+    text-align: left;
+    letter-spacing: 0.2px;
+}
+
+.text-block_center {
+    position: relative;
+    bottom: 1px;
+}
+
+.button__text {
+    @include geowl(GeometriaB, 12px, #FFF);
+}
+
+.button-block-sm {
+    display: none;
+}
+
+.button__href {
+    text-decoration: none;
+}
+
+.button-block-sm__telephone-btn {
+    background-image: url('../img/header/phone.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+
+// ( Overlay
+
+.overlay1 {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(54, 53, 53, 0.7);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: none;
+    transition: 1s;
+}
+
+.overlay1_active {
+    display: none;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.overlay1__close-btn {
+    background-color: red;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+// Overlay )
+//HEADER 
+
+.main-information {
+    width: 100%;
+    height: 600px;
+    background-image: url('../img/main/mainbg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.main {
+    display: flex;
+}
+
+.text-information, .feedback {
+    max-width: 585px;
+    width: 50%;
+    height: 600px;
+}
+
+.text-information__benefit-1, .text-information__benefit-2 {
+    margin-right: 90px;
+}
+
+.feedback {
+    &_right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+}
+
+.feedback-form {
+    background-image: url('../img/main/mnogoblock.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 369px;
+    height: 417px;
+
+    &_center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__description {
+        text-align: center;
+        @include geo(GeometriaB, 16px, #284157, 20px);
+    }
+
+    &__text-areas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__input {
+        width: 190px;
+        height: 45px;
+        border-radius: 5px;
+        border: 1px solid #dcdcdc;
+        @include geowl(Geometria, 12px, #000000);
+        letter-spacing: 0.12px;
+        text-align: center;
+    }
+
+    .input_first-mgn {
+        margin-top: 35px;
+        margin-bottom: 10px;
+    }
+
+    .input_last-mgn {
+        margin-bottom: 15px;
+    }
+}
+
+.feedback-form_sm {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-5000%, -50%);
+}
+
+.feedback-form_active {
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.text-information {
+       
+    &_flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title-block {
+        margin-top: 70px;
+        text-align: left;
+    }
+
+    &__title {
+        @include geowl(GeometriaB, 36px, #FFF);
+    }
+
+    &__description-block-1 {
+        margin-top: 39px;
+        transform: translateX(5px);
+    }
+
+    &__description-1 {
+        @include geo(Geometria, 18px, #FFF, 26px);
+
+    }
+    
+    &__description-block-2 {
+        margin-top: 45px;
+        transform: translateX(5px);
+    }
+
+    &__description-2 {
+        @include geo(Geometria, 16px, #FFF, 24px);
+    }
+
+    &__benefits {
+        display: flex;
+        flex-direction: row;
+        transform: translateX(5px);
+        margin-top: 184px;
+    }
+
+
+    &__benefit-1, &__benefit-2, &__benefit-3 {
+        @include geo(GeometriaB, 14px, #FFF, 18px);
+    }
+
+    &__benefit-block-3 {
+        span {
+            @include geowl(Geometria, 12px, #FFF);
+            position: relative;
+            top: 6px;
+        }
+    }
+}
+
+.feedback__btn {
+    display: none;
+}
+
+//MAIN
+
+.projects {
+    height: 950px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.projects-title-block {
+    width: 100%;
+    height: 40px;
+    &__title {
+        text-align: center;
+        @include geowl(GeometriaB, 30px, #284157);    
+    }
+
+    &_top {
+        margin-top: 98px;
+    }
+}
+
+.projects-variants-block {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    &_top {
+        margin-top: 60px;
+    }
+
+    &__variant-text {
+        @include geowl(Geometria, 18px, #284157);
+        width: 110px;
+        text-align: center;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.2s;
+        &:hover {
+            border-radius: 5px;
+            border: 2px solid #41596b;
+            transition: 0.2s;
+        }
+    }
+
+    &__variant-1, &__variant-2, &__variant-3{
+        box-sizing: border-box;
+        text-align: center;
+        width: calc(100%/3);
+        position: relative;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &_variant_selected {
+        border-radius: 5px;
+        border: 2px solid #3d77a3;
+        color: #3d77a3;
+    }
+
+    &__variant-1:hover, &__variant-2:hover, &__variant-3:hover{
+        border: 1px solid #284157;
+        border-radius: 5px;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+}
+
+.projects-variants__texts {
+    display: flex;
+    width: 396px;
+    justify-content: center;
+}
+
+.projects-slider-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &_top {
+        margin-top: 60px;
+    }
+}
+
+.slider-block__slides {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    width: 1170px;
+}
+
+.slide {
+    width: 370px;
+    height: 485px;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__img {
+        width: 370px;
+        height: 240px;
+        background-image: url('../img/projects/home.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__title-block {
+        margin-top: 29px;
+    }
+
+    &__title {
+        @include geowl(GeometriaB, 20px, #284157);
+    }
+
+    &__description-block {
+        margin-top: 30px;
+    }
+
+    &__description {
+        @include geo(Geometria, 16px, #284157, 30px);
+        text-align: center;
+    }
+
+    &__button-block {
+        margin-top: 29px;
+    }
+}
+
+.projects-prev:after{
+    content: "";
+    background-image: url('../img/projects/prev-btn.svg');
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 20px;
+    background-size: 12px 20px;
+}
+
+.projects-next:after {
+    content: "";
+    background-image: url('../img/projects/next-btn.svg');
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 20px;
+    background-size: 12px 20px;
+}
+
+.projects-prev {
+    margin-left: 480px;
+}
+
+.projects-next {
+    margin-right: 480px;
+}
+
+.projects-prev, .projects-next {
+    transform: translateY(250px);
+}
+
+.projects-bullet {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid #41596b;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.projects-bullet-active {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 3px solid #41596b;
+    border-radius: 50%;
+}
+
+.projects-pagination {
+    transform: translateY(-150%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-block {
+    height: 600px;
+}
+
+.slider-tab-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.ui-tabs .ui-tabs-panel {
+    padding: 0;
+}
+
+.ui-widget.ui-widget-content {
+    border: none;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    float: none;
+    padding: 0;
+    text-decoration: none;
+    background-color: #fff;
+}
+
+.ui-corner-all {
+    border-radius: 0px
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    float: none;
+}
+
+.ui-tabs .ui-tabs-nav {
+    padding: 0;
+}
+
+.ui-widget-header {
+    border: none;
+    background-color: #fff;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+    border: none;
+    background: #fff;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: none;
+    background-color: white;
+}
+
+
+//PROJECTS

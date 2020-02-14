@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/libcss/reset.css">
+    <link rel="stylesheet" href="css/libcss/swiper.min.css">
+    <link rel="stylesheet" href="css/libcss/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header" id="header">
+                <div class="logo-block">
+                    <div class="header__logo-img"></div>
+                    <div class="header__logo-title">
+                        <h2 class="header_title-md">ДОМА<span>НАВЕКА</span></h2>
+                    </div>
+                </div>
+                <div class="clock-block">
+                    <div class="header__text-block">
+                        <p class="header__text"><span class="graphic">с 9:00 до 21:00</span><br>без выходных</p>
+                    </div>
+                    <div class="header__clock-img"></div>
+                </div>
+                <div class="button-block">
+                    <div class="header__text-block text-block_center">
+                        <p class="header__text phone_text">Есть вопросы? Звоните!<br><span class="telephone"><a
+                                    href="tel:+74952042376">+7 (495) 204-23-76</a> </span></p>
+                    </div>
+                    <a href="tel:+74952042376" class="button__href">
+                        <button class="button button_default button_left button_md button_sm">
+                            <h2 class="button__text button_text_sm">Заказать звонок</h2>
+                        </button>
+                    </a>
+                </div>
+                <div class="button-block-sm">
+                    <a href="tel:+74952042376">
+                        <div class="button-block-sm__telephone-btn"></div>
+                    </a>
+                </div>
+            </div>
+            <!-- /.header -->
+        </div>
+        <!-- /.container -->
+
+    </header>
+
+    <!-- Overlay -->
+
+    <div class="overlay1" id="overlay1">
+        <div class="overlay1__close-btn">X</div>
+    </div>
+
+    <!-- Overlay -->
+
+    <!-- ------------------ -->
+
+    <!-- Overlay-form -->
+
+
+    <form action="/" class="feedback-form feedback-form_center feedback-form_sm" id="fb">
+        <div class="feedback-form__description-block">
+            <p class="feedback-form__description">
+                Бесплатно составим<br>
+                смету на строительство<br>
+                вашего дома уже сегодня!
+            </p>
+        </div>
+        <div class="feedback-form__text-areas">
+            <input type="text" name="name" requiered="Введите имя" id="username2"
+                class="feedback-form__input input_first-mgn" placeholder="Ваше имя">
+            <input type="text" name="telephone" requiered="Введите телефон" id="telephone2"
+                class="feedback-form__input input_last-mgn" placeholder="Ваш телефон">
+            <button class="button button_default">
+                <h2 class="button__text">Заказать смету</h2>
+            </button>
+        </div>
+    </form>
+
+    <!-- Overlay-form -->
+
+    <main>
+        <section class="main-information">
+            <div class="container">
+                <div class="main">
+                    <div class="text-information text-information_flex">
+                        <div class="text-information__title-block">
+                            <h1 class="text-information__title">Строим Дома</h1>
+                        </div>
+                        <div class="text-information__description-block-1">
+                            <p class="text-information__description-1">из бетона, кирпича, поризованных<br>
+                                блоков и пеноблоков</p>
+                        </div>
+                        <div class="text-information__description-block-2">
+                            <p class="text-information__description-2">
+                                в Москве и МО<br>
+                                с гарантией 20 лет
+                            </p>
+                        </div>
+                        <div class="text-information__benefits">
+                            <div class="text-information__benefit-block-1">
+                                <p class="text-information__benefit-1">
+                                    У нас 7 бригад<br>
+                                    строителей
+                                </p>
+                            </div>
+                            <div class="text-information__benefit-block-2">
+                                <p class="text-information__benefit-2">
+                                    Опыт работы<br>
+                                    19 лет
+                                </p>
+                            </div>
+                            <div class="text-information__benefit-block-3">
+                                <p class="text-information__benefit-3">
+                                    Создаем дома<br>
+                                    "под ключ",<br>
+                                </p>
+                                <span>
+                                    реконструируем<br>
+                                    или достраиваем
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.text-information -->
+                    <div class="feedback feedback_right feedback_md-sm">
+                        <form action="/" class="feedback-form feedback-form_center ">
+                            <div class="feedback-form__description-block">
+                                <p class="feedback-form__description">
+                                    Бесплатно составим<br>
+                                    смету на строительство<br>
+                                    вашего дома уже сегодня!
+                                </p>
+                            </div>
+                            <div class="feedback-form__text-areas">
+                                <input type="text" name="name" requiered="Введите имя" id="username"
+                                    class="feedback-form__input input_first-mgn" placeholder="Ваше имя">
+                                <input type="text" name="telephone" requiered="Введите телефон" id="telephone"
+                                    class="feedback-form__input input_last-mgn" placeholder="Ваш телефон">
+                                <button class="button button_default">
+                                    <h2 class="button__text">Заказать смету</h2>
+                                </button>
+                            </div>
+                        </form>
+                        <!-- /.form-lg -->
+                    </div>
+                    <!-- /.feedback -->
+                </div>
+            </div>
+            <!-- container -->
+            <div class="feedback__btn" id="f_btn"><span>заказать смету</span></div>
+        </section>
+        <!-- /.main-information -->
+        <section class="projects">
+            <div class="container">
+                <div class="projects-block">
+                    <div class="projects-title-block projects-title-block_top">
+                        <h2 class="projects-title-block__title">У нас есть уже готовые проекты</h2>
+                    </div>
+                    <!-- /.projects-title-block -->
+                    <div id="tabs" class="slider-tab-block">
+                        <div class="projects-variants-block projects-variants-block_top">
+                            <div class="projects-variants__texts">
+                                <ul>
+                                    <li>
+                                        <a href="#tabs-1">
+                                            <p class="projects-variants-block__variant-text" id="var1">ЭКОНОМ</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#tabs-2">
+                                            <p class="projects-variants-block__variant-text" id="var2">СРЕДНИЙ</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#tabs-3">
+                                            <p class="projects-variants-block__variant-text" id="var3">ПРЕМИУМ</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /.projects-variants-block -->
+                        <div class="projects-slider-block projects-slider-block_top">
+                            <div class="economic-slider-block">
+                                <div class="swiper-container slider-block" id="tabs-1">
+                                    <div class="swiper-wrapper slider-block__slides">
+                                        <div class="swiper-slide slide slide_first">
+                                            <div class="slide__img-block">
+                                                <div class="slide__img"></div>
+                                            </div>
+                                            <div class="slide__text-block">
+                                                <div class="slide__title-block">
+                                                    <h2 class="slide__title">Проект Дома Навека 1</h2>
+                                                </div>
+                                                <div class="slide__description-block">
+                                                    <p class="slide__description">
+                                                        Площадь: 102 м2<br>
+                                                        Размеры: 10х23х5
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="slide__button-block">
+                                                <a href="#" class="button__href">
+                                                    <button class="button button_default">
+                                                        <h2 class="button__text button_text_sm">Подробнее о проекте</h2>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <!-- slide-1 -->
+
+                                        <div class="swiper-slide slide slide_second">
+                                            <div class="slide__img-block">
+                                                <div class="slide__img"></div>
+                                            </div>
+                                            <div class="slide__text-block">
+                                                <div class="slide__title-block">
+                                                    <h2 class="slide__title">Проект Дома Навека 1</h2>
+                                                </div>
+                                                <div class="slide__description-block">
+                                                    <p class="slide__description">
+                                                        Площадь: 102 м2<br>
+                                                        Размеры: 10х23х5
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="slide__button-block">
+                                                <a href="#" class="button__href">
+                                                    <button class="button button_default">
+                                                        <h2 class="button__text button_text_sm">Подробнее о проекте</h2>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <!-- slide-2 -->
+
+                                        <div class="swiper-slide slide slide_third">
+                                            <div class="slide__img-block">
+                                                <div class="slide__img"></div>
+                                            </div>
+                                            <div class="slide__text-block">
+                                                <div class="slide__title-block">
+                                                    <h2 class="slide__title">Проект Дома Навека 1</h2>
+                                                </div>
+                                                <div class="slide__description-block">
+                                                    <p class="slide__description">
+                                                        Площадь: 102 м2<br>
+                                                        Размеры: 10х23х5
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="slide__button-block">
+                                                <a href="#" class="button__href">
+                                                    <button class="button button_default">
+                                                        <h2 class="button__text button_text_sm">Подробнее о проекте</h2>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <!-- slide-3 -->
+
+                                        <div class="swiper-slide slide slide_fourth">
+                                            <div class="slide__img-block">
+                                                <div class="slide__img"></div>
+                                            </div>
+                                            <div class="slide__text-block">
+                                                <div class="slide__title-block">
+                                                    <h2 class="slide__title">Проект Дома Навека 1</h2>
+                                                </div>
+                                                <div class="slide__description-block">
+                                                    <p class="slide__description">
+                                                        Площадь: 102 м2<br>
+                                                        Размеры: 10х23х5
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="slide__button-block">
+                                                <a href="#" class="button__href">
+                                                    <button class="button button_default">
+                                                        <h2 class="button__text button_text_sm">Подробнее о проекте</h2>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <!-- slide-4 -->
+
+                                        <div class="swiper-slide slide slide_fifth">
+                                            <div class="slide__img-block">
+                                                <div class="slide__img"></div>
+                                            </div>
+                                            <div class="slide__text-block">
+                                                <div class="slide__title-block">
+                                                    <h2 class="slide__title">Проект Дома Навека 1</h2>
+                                                </div>
+                                                <div class="slide__description-block">
+                                                    <p class="slide__description">
+                                                        Площадь: 102 м2<br>
+                                                        Размеры: 10х23х5
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="slide__button-block">
+                                                <a href="#" class="button__href">
+                                                    <button class="button button_default">
+                                                        <h2 class="button__text button_text_sm">Подробнее о проекте</h2>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <!-- slide-5 -->
+
+                                        <div class="swiper-slide slide slide_sixth">
+                                            <div class="slide__img-block">
+                                                <div class="slide__img"></div>
+                                            </div>
+                                            <div class="slide__text-block">
+                                                <div class="slide__title-block">
+                                                    <h2 class="slide__title">Проект Дома Навека 1</h2>
+                                                </div>
+                                                <div class="slide__description-block">
+                                                    <p class="slide__description">
+                                                        Площадь: 102 м2<br>
+                                                        Размеры: 10х23х5
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="slide__button-block">
+                                                <a href="#" class="button__href">
+                                                    <button class="button button_default">
+                                                        <h2 class="button__text button_text_sm">Подробнее о проекте</h2>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <!-- slide-6 -->
+
+                                    </div>
+
+                                    <div class="swiper-pagination projects-pagination"></div>
+                                    <div class="swiper-button-prev projects-prev"></div>
+                                    <div class="swiper-button-next projects-next"></div>
+                                </div>
+
+                                <div class="medium-slider-block">
+                                    <div class="swiper-container slider-block" id="tabs-2">
+                                        <div class="swiper-wrapper slider-block__slides">
+                                            <div class="swiper-slide slide slide_first" id="s_first">
+                                                <div class="slide__img-block">
+                                                    <div class="slide__img"></div>
+                                                </div>
+                                                <div class="slide__text-block">
+                                                    <div class="slide__title-block">
+                                                        <h2 class="slide__title">Проект Дома Навека 1</h2>
+                                                    </div>
+                                                    <div class="slide__description-block">
+                                                        <p class="slide__description">
+                                                            Площадь: 125 м2<br>
+                                                            Размеры: 10х23х5
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="slide__button-block">
+                                                    <a href="#" class="button__href">
+                                                        <button class="button button_default">
+                                                            <h2 class="button__text button_text_sm">Подробнее о проекте
+                                                            </h2>
+                                                        </button>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <!-- slide-1 -->
+
+                                            <div class="swiper-slide slide slide_second">
+                                                <div class="slide__img-block">
+                                                    <div class="slide__img"></div>
+                                                </div>
+                                                <div class="slide__text-block">
+                                                    <div class="slide__title-block">
+                                                        <h2 class="slide__title">Проект Дома Навека 1</h2>
+                                                    </div>
+                                                    <div class="slide__description-block">
+                                                        <p class="slide__description">
+                                                            Площадь: 125 м2<br>
+                                                            Размеры: 10х23х5
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="slide__button-block">
+                                                    <a href="#" class="button__href">
+                                                        <button class="button button_default">
+                                                            <h2 class="button__text button_text_sm">Подробнее о проекте
+                                                            </h2>
+                                                        </button>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <!-- slide-2 -->
+
+                                            <div class="swiper-slide slide slide_third">
+                                                <div class="slide__img-block">
+                                                    <div class="slide__img"></div>
+                                                </div>
+                                                <div class="slide__text-block">
+                                                    <div class="slide__title-block">
+                                                        <h2 class="slide__title">Проект Дома Навека 1</h2>
+                                                    </div>
+                                                    <div class="slide__description-block">
+                                                        <p class="slide__description">
+                                                            Площадь: 125 м2<br>
+                                                            Размеры: 10х23х5
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="slide__button-block">
+                                                    <a href="#" class="button__href">
+                                                        <button class="button button_default">
+                                                            <h2 class="button__text button_text_sm">Подробнее о проекте
+                                                            </h2>
+                                                        </button>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <!-- slide-3 -->
+
+                                            <div class="swiper-slide slide slide_fourth">
+                                                <div class="slide__img-block">
+                                                    <div class="slide__img"></div>
+                                                </div>
+                                                <div class="slide__text-block">
+                                                    <div class="slide__title-block">
+                                                        <h2 class="slide__title">Проект Дома Навека 1</h2>
+                                                    </div>
+                                                    <div class="slide__description-block">
+                                                        <p class="slide__description">
+                                                            Площадь: 125 м2<br>
+                                                            Размеры: 10х23х5
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="slide__button-block">
+                                                    <a href="#" class="button__href">
+                                                        <button class="button button_default">
+                                                            <h2 class="button__text button_text_sm">Подробнее о проекте
+                                                            </h2>
+                                                        </button>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <!-- slide-4 -->
+
+                                            <div class="swiper-slide slide slide_fifth">
+                                                <div class="slide__img-block">
+                                                    <div class="slide__img"></div>
+                                                </div>
+                                                <div class="slide__text-block">
+                                                    <div class="slide__title-block">
+                                                        <h2 class="slide__title">Проект Дома Навека 1</h2>
+                                                    </div>
+                                                    <div class="slide__description-block">
+                                                        <p class="slide__description">
+                                                            Площадь: 125 м2<br>
+                                                            Размеры: 10х23х5
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="slide__button-block">
+                                                    <a href="#" class="button__href">
+                                                        <button class="button button_default">
+                                                            <h2 class="button__text button_text_sm">Подробнее о проекте
+                                                            </h2>
+                                                        </button>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <!-- slide-5 -->
+
+                                            <div class="swiper-slide slide slide_sixth">
+                                                <div class="slide__img-block">
+                                                    <div class="slide__img"></div>
+                                                </div>
+                                                <div class="slide__text-block">
+                                                    <div class="slide__title-block">
+                                                        <h2 class="slide__title">Проект Дома Навека 1</h2>
+                                                    </div>
+                                                    <div class="slide__description-block">
+                                                        <p class="slide__description">
+                                                            Площадь: 125 м2<br>
+                                                            Размеры: 10х23х5
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="slide__button-block">
+                                                    <a href="#" class="button__href">
+                                                        <button class="button button_default">
+                                                            <h2 class="button__text button_text_sm">Подробнее о проекте
+                                                            </h2>
+                                                        </button>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <!-- slide-6 -->
+
+                                        </div>
+
+                                        <div class="swiper-pagination projects-pagination"></div>
+                                        <div class="swiper-button-prev projects-prev"></div>
+                                        <div class="swiper-button-next projects-next"></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.economic-slider-block -->
+
+                            <div class="premium-slider-block">
+                                <div class="swiper-container slider-block" id="tabs-3">
+                                    <div class="swiper-wrapper slider-block__slides">
+                                        <div class="swiper-slide slide slide_first">
+                                            <div class="slide__img-block">
+                                                <div class="slide__img"></div>
+                                            </div>
+                                            <div class="slide__text-block">
+                                                <div class="slide__title-block">
+                                                    <h2 class="slide__title">Проект Дома Навека 1</h2>
+                                                </div>
+                                                <div class="slide__description-block">
+                                                    <p class="slide__description">
+                                                        Площадь: 156 м2<br>
+                                                        Размеры: 10х23х5
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="slide__button-block">
+                                                <a href="#" class="button__href">
+                                                    <button class="button button_default">
+                                                        <h2 class="button__text button_text_sm">Подробнее о проекте</h2>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <!-- slide-1 -->
+
+                                        <div class="swiper-slide slide slide_second">
+                                            <div class="slide__img-block">
+                                                <div class="slide__img"></div>
+                                            </div>
+                                            <div class="slide__text-block">
+                                                <div class="slide__title-block">
+                                                    <h2 class="slide__title">Проект Дома Навека 1</h2>
+                                                </div>
+                                                <div class="slide__description-block">
+                                                    <p class="slide__description">
+                                                        Площадь: 156 м2<br>
+                                                        Размеры: 10х23х5
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="slide__button-block">
+                                                <a href="#" class="button__href">
+                                                    <button class="button button_default">
+                                                        <h2 class="button__text button_text_sm">Подробнее о проекте</h2>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <!-- slide-2 -->
+
+                                        <div class="swiper-slide slide slide_third">
+                                            <div class="slide__img-block">
+                                                <div class="slide__img"></div>
+                                            </div>
+                                            <div class="slide__text-block">
+                                                <div class="slide__title-block">
+                                                    <h2 class="slide__title">Проект Дома Навека 1</h2>
+                                                </div>
+                                                <div class="slide__description-block">
+                                                    <p class="slide__description">
+                                                        Площадь: 156 м2<br>
+                                                        Размеры: 10х23х5
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="slide__button-block">
+                                                <a href="#" class="button__href">
+                                                    <button class="button button_default">
+                                                        <h2 class="button__text button_text_sm">Подробнее о проекте</h2>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <!-- slide-3 -->
+
+                                        <div class="swiper-slide slide slide_fourth">
+                                            <div class="slide__img-block">
+                                                <div class="slide__img"></div>
+                                            </div>
+                                            <div class="slide__text-block">
+                                                <div class="slide__title-block">
+                                                    <h2 class="slide__title">Проект Дома Навека 1</h2>
+                                                </div>
+                                                <div class="slide__description-block">
+                                                    <p class="slide__description">
+                                                        Площадь: 156 м2<br>
+                                                        Размеры: 10х23х5
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="slide__button-block">
+                                                <a href="#" class="button__href">
+                                                    <button class="button button_default">
+                                                        <h2 class="button__text button_text_sm">Подробнее о проекте</h2>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <!-- slide-4 -->
+
+                                        <div class="swiper-slide slide slide_fifth">
+                                            <div class="slide__img-block">
+                                                <div class="slide__img"></div>
+                                            </div>
+                                            <div class="slide__text-block">
+                                                <div class="slide__title-block">
+                                                    <h2 class="slide__title">Проект Дома Навека 1</h2>
+                                                </div>
+                                                <div class="slide__description-block">
+                                                    <p class="slide__description">
+                                                        Площадь: 156 м2<br>
+                                                        Размеры: 10х23х5
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="slide__button-block">
+                                                <a href="#" class="button__href">
+                                                    <button class="button button_default">
+                                                        <h2 class="button__text button_text_sm">Подробнее о проекте</h2>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <!-- slide-5 -->
+
+                                        <div class="swiper-slide slide slide_sixth">
+                                            <div class="slide__img-block">
+                                                <div class="slide__img"></div>
+                                            </div>
+                                            <div class="slide__text-block">
+                                                <div class="slide__title-block">
+                                                    <h2 class="slide__title">Проект Дома Навека 1</h2>
+                                                </div>
+                                                <div class="slide__description-block">
+                                                    <p class="slide__description">
+                                                        Площадь: 156 м2<br>
+                                                        Размеры: 10х23х5
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="slide__button-block">
+                                                <a href="#" class="button__href">
+                                                    <button class="button button_default">
+                                                        <h2 class="button__text button_text_sm">Подробнее о проекте</h2>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <!-- slide-6 -->
+
+                                    </div>
+
+                                    <div class="swiper-pagination projects-pagination"></div>
+                                    <div class="swiper-button-prev projects-prev"></div>
+                                    <div class="swiper-button-next projects-next"></div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- /.projects-slider-block -->
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.projects -->
+    </main>
+    <!-- /.main -->
+
+    <script src="js/swiperSlider/swiper.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/jqAndJqPlug/jquery-3.4.1.min.js"></script>
+    <script src="js/jqAndJqPlug/jquery-ui.min.js"></script>
+    <script src="js/jqAndJqPlug/jq.js"></script>
+</body>
+
+</html>

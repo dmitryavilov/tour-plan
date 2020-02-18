@@ -162,7 +162,7 @@
 .main-information {
   width: 100%;
   height: 600px;
-  background-image: url("../img/main/mainbg.png");
+  background-image: url("../img/main/mainbg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
@@ -375,7 +375,7 @@
   .slide__img {
     width: 370px;
     height: 240px;
-    background-image: url("../img/projects/home.png");
+    background-image: url("../img/projects/home.webp");
     background-repeat: no-repeat;
     background-size: cover; }
   .slide__title-block {
@@ -483,3 +483,153 @@
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
   border: none;
   background-color: white; }
+
+.plans {
+  height: 1439px;
+  width: 100%;
+  background-image: url("../img/plans/plansbg.webp"); }
+
+.plan-text-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 184px; }
+
+.plan-text-wrapper__title-block {
+  margin-top: 20px; }
+
+.plan-text-wrapper__title {
+  font-size: 30px;
+  font-family: GeometriaB;
+  color: #284157;
+  line-height: 40px;
+  text-align: center; }
+
+.plan-text-wrapper__img {
+  background-image: url("../img/plans/lists.png");
+  background-repeat: no-repeat;
+  background-size: 477px 80px;
+  width: 477px;
+  height: 80px; }
+
+.plan-slider-description-block {
+  text-align: center; }
+  .plan-slider-description-block_top {
+    margin-top: 58px; }
+  .plan-slider-description-block__description {
+    font-size: 20px;
+    font-family: Geometria;
+    color: #284157; }
+
+.plan-slider-block {
+  height: 245px;
+  width: 100%; }
+  .plan-slider-block_top {
+    margin-top: 59px; }
+
+.plan-swiper-container {
+  width: 1170px;
+  height: 245px; }
+
+.plan-slide-1 {
+  background-image: url("../img/plans/home-1.jpg"); }
+
+.plan-slide-2 {
+  background-image: url("../img/plans/home-2.jpg"); }
+
+.plan-slide-3 {
+  background-image: url("../img/plans/home-3.jpg"); }
+
+.plan-slide-4 {
+  background-image: url("../img/plans/home-4.jpg"); }
+
+.plan-slide-5 {
+  background-image: url("../img/plans/home-5.jpg"); }
+
+.plan-button-prev {
+  width: 40px;
+  height: 40px;
+  margin-left: -10px; }
+  .plan-button-prev:after {
+    content: '';
+    background-image: url("../img/plans/prev-btn.svg");
+    background-repeat: no-repeat;
+    background-size: 12px 20px;
+    background-position: center center;
+    background-color: #fff;
+    width: 40px;
+    height: 40px; }
+
+.plan-button-next {
+  width: 40px;
+  height: 40px;
+  margin-right: -10px; }
+  .plan-button-next:after {
+    content: '';
+    background-image: url("../img/plans/next-btn.svg");
+    background-repeat: no-repeat;
+    background-size: 12px 20px;
+    background-position: center center;
+    background-color: #fff;
+    width: 40px;
+    height: 40px; }
+
+.plan-slide {
+  width: 370px;
+  height: 245px; }
+  .plan-slide_selected {
+    background-image: url("../img/plans/home-click.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 370px;
+    height: 245px; }
+
+.plan-form {
+  width: 100%;
+  height: 350px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .plan-form_top {
+    margin-top: 60px; }
+  .plan-form__title-wrapper {
+    margin-top: 75px; }
+  .plan-form__description-wrapper {
+    margin-top: 30px; }
+  .plan-form__title-wrapper, .plan-form__description-wrapper, .plan-form__feedback-wrapper {
+    width: 970px; }
+  .plan-form__title {
+    font-size: 22px;
+    font-family: GeometriaB;
+    color: #284157;
+    line-height: 30px; }
+  .plan-form__description {
+    font-size: 16px;
+    font-family: Geometria;
+    color: #284157; }
+  .plan-form__feedback-wrapper {
+    display: flex;
+    margin-top: 40px; }
+  .plan-form__name-field, .plan-form__phone-field {
+    width: 270px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid #dcdcdc;
+    font-size: 12px;
+    font-family: Geometria;
+    color: #000;
+    letter-spacing: .12px;
+    box-sizing: border-box;
+    padding-left: 20px; }
+  .plan-form__name-field {
+    margin-right: 25px; }
+  .plan-form__phone-field {
+    margin-right: 15px; }
+  .plan-form_button {
+    height: 60px;
+    width: 270px;
+    border-radius: 10px; }

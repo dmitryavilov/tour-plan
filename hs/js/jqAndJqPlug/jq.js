@@ -4,3 +4,4 @@ $(function(){
         hide: { effect: "fade", duration: 300 },
     });
 });
+

@@ -25,6 +25,14 @@
     color: $color;
 }
 
+@mixin title {
+    font-size: 27px;
+    font-family: GeometriaB;
+    color: #284157;
+    text-align: center;
+    line-height: 35px;
+}
+
 
 //MIXINS AND VARS
 
@@ -384,7 +392,7 @@
     height: 40px;
     &__title {
         text-align: center;
-        @include geowl(GeometriaB, 30px, #284157);    
+        @include title; 
     }
 
     &_top {
@@ -635,8 +643,7 @@
     }
 
     &__title {
-        @include geo(GeometriaB, 30px, #284157, 40px);
-        text-align: center;
+        @include title;
     }
 
     &__img {
@@ -653,10 +660,10 @@
     &_top {
         margin-top: 58px;
     }
+}
 
-    &__description {
-        @include geowl(Geometria, 20px, #284157);
-    }
+.description {
+    @include geowl(Geometria, 20px, #284157);
 }
 
 .plan-slider-block {
@@ -674,6 +681,9 @@
 }
 
 .plan-slide {
+    width: 370px;
+    height: 245px;
+    border-radius: 5px;
     &-1 {
         background-image: url('../img/plans/home-1.jpg');
     }
@@ -692,6 +702,16 @@
 
     &-5 {
         background-image: url('../img/plans/home-5.jpg');
+    }
+
+    &_selected {
+        background-image: url('../img/plans/home-click.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        width: 370px;
+        height: 245px;
+        border-radius: 5px;
     }
 }
 
@@ -729,17 +749,10 @@
     }
 }
 
-.plan-slide {
-    width: 370px;
-    height: 245px;
-    &_selected {
-        background-image: url('../img/plans/home-click.png');
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        width: 370px;
-        height: 245px;
-    }
+.plan-form-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .plan-form {
@@ -769,6 +782,10 @@
 
     &__title {
         @include geo(GeometriaB, 22px, #284157, 30px);
+    }
+
+    &_title_md {
+        display: none;
     }
 
     &__description {
@@ -808,3 +825,48 @@
     }
 }
 //PLANS
+
+.control {
+    width: 100%;
+    height: 900px;
+
+    &__title {
+        @include title;
+    }
+
+    &__title-wrapper {
+        margin-top: 99px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__description-wrapper {
+        margin-top: 59px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    &__description {
+        text-align: center;
+        line-height: 25px;
+    }
+
+    &__img-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 55px;
+        width: 100%;
+    }
+
+    &__img {
+        width: 914px;
+        height: 478px;
+        background-image: url('../img/control/homeImg.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+//CONTROL

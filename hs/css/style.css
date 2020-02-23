@@ -300,9 +300,11 @@
   height: 40px; }
   .projects-title-block__title {
     text-align: center;
-    font-size: 30px;
+    font-size: 27px;
     font-family: GeometriaB;
-    color: #284157; }
+    color: #284157;
+    text-align: center;
+    line-height: 35px; }
   .projects-title-block_top {
     margin-top: 98px; }
 
@@ -500,11 +502,11 @@
   margin-top: 20px; }
 
 .plan-text-wrapper__title {
-  font-size: 30px;
+  font-size: 27px;
   font-family: GeometriaB;
   color: #284157;
-  line-height: 40px;
-  text-align: center; }
+  text-align: center;
+  line-height: 35px; }
 
 .plan-text-wrapper__img {
   background-image: url("../img/plans/lists.png");
@@ -517,10 +519,11 @@
   text-align: center; }
   .plan-slider-description-block_top {
     margin-top: 58px; }
-  .plan-slider-description-block__description {
-    font-size: 20px;
-    font-family: Geometria;
-    color: #284157; }
+
+.description {
+  font-size: 20px;
+  font-family: Geometria;
+  color: #284157; }
 
 .plan-slider-block {
   height: 245px;
@@ -532,20 +535,28 @@
   width: 1170px;
   height: 245px; }
 
-.plan-slide-1 {
-  background-image: url("../img/plans/home-1.jpg"); }
-
-.plan-slide-2 {
-  background-image: url("../img/plans/home-2.jpg"); }
-
-.plan-slide-3 {
-  background-image: url("../img/plans/home-3.jpg"); }
-
-.plan-slide-4 {
-  background-image: url("../img/plans/home-4.jpg"); }
-
-.plan-slide-5 {
-  background-image: url("../img/plans/home-5.jpg"); }
+.plan-slide {
+  width: 370px;
+  height: 245px;
+  border-radius: 5px; }
+  .plan-slide-1 {
+    background-image: url("../img/plans/home-1.jpg"); }
+  .plan-slide-2 {
+    background-image: url("../img/plans/home-2.jpg"); }
+  .plan-slide-3 {
+    background-image: url("../img/plans/home-3.jpg"); }
+  .plan-slide-4 {
+    background-image: url("../img/plans/home-4.jpg"); }
+  .plan-slide-5 {
+    background-image: url("../img/plans/home-5.jpg"); }
+  .plan-slide_selected {
+    background-image: url("../img/plans/home-click.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 370px;
+    height: 245px;
+    border-radius: 5px; }
 
 .plan-button-prev {
   width: 40px;
@@ -575,16 +586,10 @@
     width: 40px;
     height: 40px; }
 
-.plan-slide {
-  width: 370px;
-  height: 245px; }
-  .plan-slide_selected {
-    background-image: url("../img/plans/home-click.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    width: 370px;
-    height: 245px; }
+.plan-form-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%; }
 
 .plan-form {
   width: 100%;
@@ -607,6 +612,8 @@
     font-family: GeometriaB;
     color: #284157;
     line-height: 30px; }
+  .plan-form_title_md {
+    display: none; }
   .plan-form__description {
     font-size: 16px;
     font-family: Geometria;
@@ -633,3 +640,38 @@
     height: 60px;
     width: 270px;
     border-radius: 10px; }
+
+.control {
+  width: 100%;
+  height: 900px; }
+  .control__title {
+    font-size: 27px;
+    font-family: GeometriaB;
+    color: #284157;
+    text-align: center;
+    line-height: 35px; }
+  .control__title-wrapper {
+    margin-top: 99px;
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+  .control__description-wrapper {
+    margin-top: 59px;
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+  .control__description {
+    text-align: center;
+    line-height: 25px; }
+  .control__img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+    width: 100%; }
+  .control__img {
+    width: 914px;
+    height: 478px;
+    background-image: url("../img/control/homeImg.webp");
+    background-size: cover;
+    background-repeat: no-repeat; }

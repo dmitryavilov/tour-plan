@@ -1,30 +1,31 @@
-  var overlayCl = document.getElementById('overlay1').classList;
-  var overlay = document.getElementById('overlay1');
-  var feedback = document.getElementById('fb').classList;
-  var body = document.getElementById('header');
-  var fbtn = document.getElementById('f_btn');
-  // HEADER-VARS
-  var var1 = document.getElementById('var1').classList;
-  var var2 = document.getElementById('var2').classList;
-  var var3 = document.getElementById('var3').classList;
-  var vardef1 = document.getElementById('var1');
-  var vardef2 = document.getElementById('var2');
-  var vardef3 = document.getElementById('var3');
-  // PROJECTS-VARS
-  var planSlideOne = document.getElementById('pl-1');
-  var planSlideTwo = document.getElementById('pl-2');
-  var planSlideThree = document.getElementById('pl-3');
-  var planSlideFour = document.getElementById('pl-4');
-  var planSlideFive = document.getElementById('pl-5');
-  var planSlideSix = document.getElementById('pl-6');
-  var planSlideSeven = document.getElementById('pl-7');
-  var planSlideEight = document.getElementById('pl-8');
-  var planSlideNine = document.getElementById('pl-9');
-  var planSlideTen = document.getElementById('pl-10');
+  const overlayCl = document.querySelector('.overlay1').classList,
+   overlay = document.querySelector('.overlay1'),
+   feedback = document.querySelector('.feedback-form').classList,
+   body = document.querySelector('.header'),
+   fbtn = document.querySelector('.feedback__btn');
+  // HEADER-CONSTS
+  const tabs = document.querySelectorAll('.projects-variants-block__variant-text');
+  const tabSelected = (e) => {
+    tabs.forEach(function(el){
+      el.classList.remove('projects-variants-block_variant_selected');
+    });
+    t = event.target;
+    t.classList.add('projects-variants-block_variant_selected');
+  };
+  // PROJECTS-CONSTS/FUNCTIONS
 
-  // PLANS-VARS
+  const planSlides = document.querySelectorAll('.plan-slide');
+  const planSlideSelected = (e) => {
+    planSlides.forEach(function(el){
+      el.innerHTML = '';
+    });
+    t = event.target;
+    t.innerHTML = '<div class="plan-slide_selected"></div>';
+  };
 
-// VARS
+  // PLANS-CONSTS/FUNCTIONS
+
+// LET'S/CONSTS
 
     function overlayOn() {
         overlayCl.add('overlay1_active');
@@ -79,29 +80,10 @@
     });
     //PROJECTS-SLIDER
 
-    function selectVar1() {
-      var1.add('projects-variants-block_variant_selected');
-      var2.remove('projects-variants-block_variant_selected');
-      var3.remove('projects-variants-block_variant_selected');
+    for (i = 0; i<tabs.length; i++){
+      tabs[i].addEventListener('click', tabSelected);
     }
-
-    function selectVar2() {
-      var1.remove('projects-variants-block_variant_selected');
-      var2.add('projects-variants-block_variant_selected');
-      var3.remove('projects-variants-block_variant_selected');
-    }
-
-    function selectVar3() {
-      var1.remove('projects-variants-block_variant_selected');
-      var2.remove('projects-variants-block_variant_selected');
-      var3.add('projects-variants-block_variant_selected');
-    }
-    // PROJECTS-VARIANTS-SELECT-FUNCTIONS
-
-    vardef1.addEventListener('click', selectVar1);
-    vardef2.addEventListener('click', selectVar2);
-    vardef3.addEventListener('click', selectVar3);
-    // PROJECTS-VARIANT-SELECT-EVENTS
+    // PROJECTS-VARIANTS-SELECT-CYCLES
 
 // PROJECTS-SLIDER-BLOCK
 
@@ -112,105 +94,31 @@
       navigation: {
         nextEl: '.plan-button-next',
         prevEl: '.plan-button-prev',
+      },
+      breakpoints: {
+
+        940: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+        },
+
+        640: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+        },
+
+        320: {
+          slidesPerView: 1,
+          slidesPerGroup: 1,
+        }
       }
     });
     // PLANS-SLIDER
 
-    function plSelectedOne() {
-      planSlideOne.innerHTML="<div class='plan-slide_selected'></div>";
-      planSlideTwo.innerHTML="";
-      planSlideThree.innerHTML="";
-      planSlideFour.innerHTML="";
-      planSlideFive.innerHTML="";
+    for (i = 0; i < planSlides.length; i++){
+      planSlides[i].addEventListener('click', planSlideSelected);
     }
-
-    function plSelectedTwo() {
-      planSlideOne.innerHTML="";
-      planSlideTwo.innerHTML="<div class='plan-slide_selected'></div>";
-      planSlideThree.innerHTML="";
-      planSlideFour.innerHTML="";
-      planSlideFive.innerHTML="";
-    }
-
-    function plSelectedThree() {
-      planSlideOne.innerHTML="";
-      planSlideTwo.innerHTML="";
-      planSlideThree.innerHTML="<div class='plan-slide_selected'></div>";
-      planSlideFour.innerHTML="";
-      planSlideFive.innerHTML="";
-    }
-
-    function plSelectedFour() {
-      planSlideOne.innerHTML="";
-      planSlideTwo.innerHTML="";
-      planSlideThree.innerHTML="";
-      planSlideFour.innerHTML="<div class='plan-slide_selected'></div>";
-      planSlideFive.innerHTML="";
-    }
-
-    function plSelectedFive() {
-      planSlideOne.innerHTML="";
-      planSlideTwo.innerHTML="";
-      planSlideThree.innerHTML="";
-      planSlideFour.innerHTML="";
-      planSlideFive.innerHTML="<div class='plan-slide_selected'></div>";
-    }
-
-    function plSelectedSix() {
-      planSlideSix.innerHTML="<div class='plan-slide_selected'></div>";
-      planSlideSeven.innerHTML="";
-      planSlideEight.innerHTML="";
-      planSlideNine.innerHTML="";
-      planSlideTen.innerHTML="";
-    }
-
-    function plSelectedSeven() {
-      planSlideSix.innerHTML="";
-      planSlideSeven.innerHTML="<div class='plan-slide_selected'></div>";
-      planSlideEight.innerHTML="";
-      planSlideNine.innerHTML="";
-      planSlideTen.innerHTML="";
-    }
-
-    function plSelectedEight() {
-      planSlideSix.innerHTML="";
-      planSlideSeven.innerHTML="";
-      planSlideEight.innerHTML="<div class='plan-slide_selected'></div>";
-      planSlideNine.innerHTML="";
-      planSlideTen.innerHTML="";
-    }
-
-    function plSelectedNine() {
-      planSlideSix.innerHTML="";
-      planSlideSeven.innerHTML="";
-      planSlideEight.innerHTML="";
-      planSlideNine.innerHTML="<div class='plan-slide_selected'></div>";
-      planSlideTen.innerHTML="";
-    }
-
-    function plSelectedTen() {
-      planSlideSix.innerHTML="";
-      planSlideSeven.innerHTML="";
-      planSlideEight.innerHTML="";
-      planSlideNine.innerHTML="";
-      planSlideTen.innerHTML="<div class='plan-slide_selected'></div>";
-    }
-    //PLANS-SLIDE-SELECTED-FUNCTIONS
-    
-
-    planSlideOne.addEventListener('click', plSelectedOne);
-    planSlideTwo.addEventListener('click', plSelectedTwo);
-    planSlideThree.addEventListener('click', plSelectedThree);
-    planSlideFour.addEventListener('click', plSelectedFour);
-    planSlideFive.addEventListener('click', plSelectedFive);
-    planSlideSix.addEventListener('click', plSelectedSix);
-    planSlideSeven.addEventListener('click', plSelectedSeven);
-    planSlideEight.addEventListener('click', plSelectedEight);
-    planSlideNine.addEventListener('click', plSelectedNine);
-    planSlideTen.addEventListener('click', plSelectedTen);
-    //PLANS-SLIDE-EVENTS
-
-    
+    //PLANS-SLIDE-CYCLES
 
 // PLANS-SLIDER-BLOCK
 

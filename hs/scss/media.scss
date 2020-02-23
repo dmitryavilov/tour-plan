@@ -1,11 +1,21 @@
 @media (max-width: 1200px){
     .header {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
 
         .button-block {
             margin: 0;
         }
+
+        .button_left {
+            left: 0%;
+        }
+    }
+
+    .button-block {
+        width: 350px;
+        display: flex;
+        justify-content: space-between;
     }
 
     .clock-block {
@@ -45,12 +55,77 @@
        justify-content: center;
    }
 
+    .plan-slide {
+        width: 330px;
+        height: 205px;
+        background-size: 330px 205px;
+        background-repeat: no-repeat;
+        &_selected {
+            width: 330px;
+            height: 205px;
+        }
+    }
+
+    .plan-swiper-container {
+        width: 1050px;
+        height: 205px;
+    }
+
+    .plan-form {
+        width: 1050px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .plan-swiper-container {
+        width: 900px;
+        height: 175px;
+    }
+
+    .plan-slide {
+        width: 280px;
+        height: 175px;
+        background-size: 280px 175px;
+        background-repeat: no-repeat;
+        &_selected {
+            width: 280px;
+            height: 175px;
+        }
+    }
+
+    .plan-wrapper {
+        height: 150px;
+    }
+
+    .plan-form__description-wrapper, .plan-form__feedback-wrapper, .plan-form__title-wrapper {
+        width: 870px;
+    }
+
+    .plan-form__title {
+        font-size: 19px;
+    }
+
+    .plan-form {
+        width: 900px;
+    }
 }
 
 @media (max-width: 1000px) {
     .text-information {
         &__benefit-1, &__benefit-2 {
             margin-right: 40px;
+        }
+    }
+
+    .control {
+        height: 700px;
+
+        &__img {
+            width: 714px;
+            height: 378px;
+            background-image: url('../img/control/homeImg.webp');
+            background-size: 714px 378px;
+            background-repeat: no-repeat;
         }
     }
 
@@ -71,6 +146,69 @@
         justify-content: space-between;
     }
 
+}
+
+@media (max-width: 940px) {
+    .plan-swiper-container {
+        width: 580px;
+    }
+
+    .plan-text-wrapper__title {
+        font-size: 25px;
+    }
+
+    .plan-slider-description-block_top {
+        margin-top: 35px;
+    }
+
+    .plan-slide {
+        width: 275px;
+        height: 175px;
+        background-size: 280px 175px;
+        background-repeat: no-repeat;
+        &_selected {
+            width: 275px;
+            height: 175px;
+        }
+    }
+
+    .plan-form__title {
+        font-size: 15px;
+    }
+
+    
+
+    .plan-form__description {
+        font-size: 12px;
+    }
+
+    .plan-form__name-field, .plan-form__phone-field {
+        width: 210px;
+    }
+
+    .plan-form_button {
+        width: 215px;
+    }
+
+    .plan-form__description-wrapper, .plan-form__feedback-wrapper, .plan-form__title-wrapper {
+        width: 680px;
+    }
+
+    .plan-form {
+        width: 710px;
+
+        &_top {
+            margin-top: 35px;
+        }
+
+        &__name-field {
+            margin-right: 15px;
+        }
+    }
+
+    .description {
+        font-size: 15px
+    }
 }
 
 @media (max-width: 850px) {
@@ -106,6 +244,10 @@
 @media (max-width: 780px) {
     .feedback_md-sm {
         display: none;
+    }
+
+    .control__title-wrapper {
+        margin-top: 59px;
     }
 
     .feedback-form_sm {
@@ -169,6 +311,112 @@
     }
 }
 
+@media (max-width: 740px) {
+    .description {
+        font-size: 13px;
+    }
+
+    .control__description-wrapper {
+        margin-top: 29px;
+    }
+
+    .control__img-wrapper {
+        margin-top: 35px;
+    }
+
+    .control {
+        height: 650px;
+
+        &__img {
+            width: 614px;
+            height: 328px;
+            background-image: url('../img/control/homeImg.webp');
+            background-size: 614px 328px;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .plan-form {
+        height: 400px;
+        width: 550px;
+
+        &_title_lg {
+            display: none;
+        }
+
+        &_title_md {
+            display: block;
+        }
+    }
+
+    .main_title_md {
+        font-size: 22px;
+    }
+
+    .plan-form__title {
+        font-size: 15px;
+    }
+
+    .plan-form__description {
+        font-size: 12px;
+    }
+
+    .plan-form__name-field, .plan-form__phone-field {
+        width: 230px;
+        height: 50px;
+    }
+
+    .plan-form__feedback-wrapper {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .plan-form__title-wrapper {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .plan-form__title-wrapper {
+        margin-top: 35px;
+    }
+
+    .plan-form__name-field, .plan-form__phone-field {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .plan-form__feedback-wrapper {
+        margin-top: 15px;
+    }
+
+    .plan-form__description-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .plan-form__description-wrapper {
+        margin-top: 20px;
+    }
+
+    .plan-form__description-wrapper, .plan-form__feedback-wrapper, .plan-form__title-wrapper {
+        width: 550px;
+    }
+
+    .plan-form__feedback-wrapper {
+        height: 200px;
+        margin-top: 30px;
+    }
+
+    .plan-form__name-field {
+        margin-bottom: 15px;
+    }
+    .plan-form__phone-field {
+        margin-bottom: 10px;
+    }
+}
+
 @media (max-width: 670px) {
     .header__logo-title  {
         font-size: 13px;
@@ -198,6 +446,18 @@
         margin-left: 510px;
     }
 
+    .control {
+        height: 550px;
+
+        &__img {
+            width: 514px;
+            height: 268px;
+            background-image: url('../img/control/homeImg.webp');
+            background-size: 514px 268px;
+            background-repeat: no-repeat;
+        }
+    }
+
     .slider-block__slides>.slide.slide_first {
         margin-left: 255px;
     }
@@ -213,6 +473,27 @@
     .projects-next {
         margin-right: 320px;
     }
+
+    .plan-swiper-container {
+        width: 320px;
+        height: 200px;
+    }
+
+    .plan-slide {
+        width: 320px;
+        height: 200px;
+        background-size: 320px 200px;
+
+        &_selected {
+            width: 320px;
+            height: 200px;
+            background-size: 320px 200px;
+        }
+    }
+
+    .plan-wrapper {
+        height: 200px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -223,11 +504,49 @@
     .main-information {
         background-position: 25% 50%;
     }
+
+    .main_title_sm {
+        font-size: 19px;
+    }
+
+    .plan-form__title {
+        font-size: 12px;
+    }
+
+    .plan-form__name-field, .plan-form__phone-field {
+        width: 230px;
+        height: 45px;
+        font-size: 10px;
+    }
+
+    .plan-form__description {
+        font-size: 10px;
+    }
+
+    .plan-form {
+        width: 450px;
+    }
+
+    .plan-form__description-wrapper, .plan-form__feedback-wrapper, .plan-form__title-wrapper {
+        width: 450px;
+    }
 }
 
 @media (max-width: 580px) {
     .button_md {
         width: 80px;
+    }
+
+    .plan-form_button {
+        width: 130px;
+    }
+
+    .description {
+        font-size: 11px;
+    }
+
+    .main_title_sm {
+        font-size: 17px;
     }
 
     .button_text_sm {
@@ -281,12 +600,25 @@
     .projects-title-block {
         height: 50px;
     }
+
+    .control {
+        height: 550px;
+
+        &__img {
+            width: 434px;
+            height: 228px;
+            background-image: url('../img/control/homeImg.webp');
+            background-size: 434px 228px;
+            background-repeat: no-repeat;
+        }
+    }
+    
 }
 
 
 @media (max-width: 500px) {
     .header__logo-title {
-        font-size: 10px;
+        font-size: 12px;
     }
     .header__logo-img {
         width: 42px;
@@ -303,7 +635,7 @@
         align-items: center;
         border-radius: 50%;
         border: solid 0.5px red;
-        transform: translate(-5px, 3px);
+        transform: translate(-5px, 2px);
         width: 30px;
         height: 30px;
         background-color: rgb(233, 233, 233);
@@ -334,5 +666,141 @@
 
     .text-information__description-2 {
         font-size: 14px;
+    }
+}
+
+@media (max-width: 485px) {
+    
+
+    .plan-slider-description-block {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header__clock-img {
+        display: none;
+    }
+    
+
+    .description {
+        font-size: 12px;
+        width: 320px;
+        line-height: 15px;
+    }
+
+    .control {
+        height: 450px;
+
+        &__img {
+            width: 320px;
+            height: 158px;
+            background-image: url('../img/control/homeImg.webp');
+            background-size: 320px 158px;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .control__description {
+        width: 240px;
+    }
+
+    .plan-form__title {
+        font-size: 11px;
+        line-height: 20px;
+    }
+
+    .plan-form__title-wrapper {
+        margin-top: 45px;
+    }
+
+    .plan-form__description {
+        width: 310px;
+        text-align: center;
+        line-height: 18px;
+    }
+
+    .plan-form__description-wrapper, .plan-form__feedback-wrapper, .plan-form__title-wrapper {
+        width: 370px;
+    }
+
+    .plan-form {
+        width: 390px;
+    }
+
+    .main_title_sm {
+        font-size: 17px;
+        width: 320px;
+        line-height: 26px;
+    }
+
+    .plan-text-block {
+        height: 240px;
+    }
+
+    .projects-title-block {
+        display: flex;
+        justify-content: center;
+    }
+
+    .plan-text-wrapper__img {
+        background-image: url(../img/plans/lists.png);
+        background-repeat: no-repeat;
+        background-size: 320px 50px;
+        width: 320px;
+        height: 50px;
+    }
+
+    .plan-slider-description-block_top {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 410px) {
+    .plan-form__title {
+        font-size: 9px;
+    }
+
+    .plan-form__title-wrapper {
+        width: 305px;
+    }
+
+    .plan-form__feedback-wrapper {
+        width: 305px;
+    }
+
+    .plan-form__name-field, .plan-form__phone-field {
+        width: 220px;
+        height: 40px;
+    }
+
+    .plan-form_button {
+        height: 50px;
+    }
+
+    .plan-form {
+        width: 313px;
+        
+        box-sizing: border-box;
+    }
+
+    .plan-swiper-container {
+        width: 310px;
+        height: 190px;
+    }
+
+    .plan-slide {
+        width: 310px;
+        height: 190px;
+        background-size: 310px 190px;
+
+        &_selected {
+            width: 310px;
+            height: 190px;
+            background-size: 310px 190px;
+        }
+    }
+
+    .main_title_sm {
+        font-size: 16.5px;
     }
 }

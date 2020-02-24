@@ -685,23 +685,38 @@
     height: 245px;
     border-radius: 5px;
     &-1 {
-        background-image: url('../img/plans/home-1.jpg');
+        background-image: url('../img/plans/home-1.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
     }
 
     &-2 {
-        background-image: url('../img/plans/home-2.jpg');
+        background-image: url('../img/plans/home-2.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
     }
 
     &-3 {
-        background-image: url('../img/plans/home-3.jpg');
+        background-image: url('../img/plans/home-3.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
     }
 
     &-4 {
-        background-image: url('../img/plans/home-4.jpg');
+        background-image: url('../img/plans/home-4.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
     }
 
     &-5 {
-        background-image: url('../img/plans/home-5.jpg');
+        background-image: url('../img/plans/home-5.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
     }
 
     &_selected {

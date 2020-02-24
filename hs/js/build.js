@@ -90,6 +90,7 @@
     var swiper = new Swiper('.plan-swiper-container', {
       slidesPerView: 3,
       slidesPerGroup: 3,
+      preloadImages: true,
       spaceBetween: 30,
       navigation: {
         nextEl: '.plan-button-next',

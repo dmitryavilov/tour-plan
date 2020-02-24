@@ -531,7 +531,7 @@
   .plan-slider-block_top {
     margin-top: 59px; }
 
-.plan-swiper-container {
+.plan-swiper-container, .plan-swiper-container-2 {
   width: 1170px;
   height: 245px; }
 
@@ -560,6 +560,31 @@
     background-size: cover;
     background-position: center center; }
   .plan-slide-5 {
+    background-image: url("../img/plans/home-5.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  .plan-slide-6 {
+    background-image: url("../img/plans/home-1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  .plan-slide-7 {
+    background-image: url("../img/plans/home-2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  .plan-slide-8 {
+    background-image: url("../img/plans/home-3.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  .plan-slide-9 {
+    background-image: url("../img/plans/home-4.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  .plan-slide-10 {
     background-image: url("../img/plans/home-5.webp");
     background-repeat: no-repeat;
     background-size: cover;

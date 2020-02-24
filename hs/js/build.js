@@ -114,6 +114,34 @@
         }
       }
     });
+
+    var swiper = new Swiper('.plan-swiper-container-2', {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      preloadImages: true,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.plan-button-next',
+        prevEl: '.plan-button-prev',
+      },
+      breakpoints: {
+
+        940: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+        },
+
+        640: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+        },
+
+        320: {
+          slidesPerView: 1,
+          slidesPerGroup: 1,
+        }
+      }
+    });
     // PLANS-SLIDER
 
     for (i = 0; i < planSlides.length; i++){

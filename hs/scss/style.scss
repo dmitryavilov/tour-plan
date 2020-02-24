@@ -675,7 +675,7 @@
     }
 }
 
-.plan-swiper-container {
+.plan-swiper-container, .plan-swiper-container-2 {
     width: 1170px;
     height: 245px;
 }
@@ -713,6 +713,41 @@
     }
 
     &-5 {
+        background-image: url('../img/plans/home-5.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    &-6 {
+        background-image: url('../img/plans/home-1.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    &-7 {
+        background-image: url('../img/plans/home-2.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    &-8 {
+        background-image: url('../img/plans/home-3.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    &-9 {
+        background-image: url('../img/plans/home-4.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    &-10 {
         background-image: url('../img/plans/home-5.webp');
         background-repeat: no-repeat;
         background-size: cover;

@@ -920,3 +920,99 @@
     }
 }
 //CONTROL
+
+.materials {
+    height: 599px;
+    background-color: #284157;
+}
+
+.materials-title-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &_top {
+        margin-top: 100px;
+    }
+
+    &__title {
+        @include title;
+        text-align: center;
+        color: white;
+    }
+}
+
+.materials-blocks-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    &_top {
+        margin-top: 60px;
+    }
+}
+
+.materials-blocks {
+    display: flex;
+    width: 1170px;
+    justify-content: space-between;
+}
+
+.materials-block {
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title-wrapper {
+        margin-top: 30px;
+        margin-bottom: 28px;
+    }
+
+    &__title {
+        @include geowl(Geometria, 14px, #fff);
+        text-transform: uppercase;
+    }
+
+    &__img {
+        width: 270px;
+        height: 190px;
+    }
+    
+    &_img {
+        &-1 {
+            background-image: url('../img/materials/concrete.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        &-2 {
+            background-image: url('../img/materials/brick.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        &-3 {
+            background-image: url('../img/materials/blocks.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        &-4 {
+            background-image: url('../img/materials/foamBlock.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+    }
+
+    &__link {
+        @include geowl(Geometria, 14px, #fff);
+    }
+}
+
+
+//MATERIALS

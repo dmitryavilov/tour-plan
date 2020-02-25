@@ -715,3 +715,75 @@
     background-image: url("../img/control/homeImg.webp");
     background-size: cover;
     background-repeat: no-repeat; }
+
+.materials {
+  height: 599px;
+  background-color: #284157; }
+
+.materials-title-block {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .materials-title-block_top {
+    margin-top: 100px; }
+  .materials-title-block__title {
+    font-size: 27px;
+    font-family: GeometriaB;
+    color: #284157;
+    text-align: center;
+    line-height: 35px;
+    text-align: center;
+    color: white; }
+
+.materials-blocks-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center; }
+  .materials-blocks-wrapper_top {
+    margin-top: 60px; }
+
+.materials-blocks {
+  display: flex;
+  width: 1170px;
+  justify-content: space-between; }
+
+.materials-block {
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .materials-block__title-wrapper {
+    margin-top: 30px;
+    margin-bottom: 28px; }
+  .materials-block__title {
+    font-size: 14px;
+    font-family: Geometria;
+    color: #fff;
+    text-transform: uppercase; }
+  .materials-block__img {
+    width: 270px;
+    height: 190px; }
+  .materials-block_img-1 {
+    background-image: url("../img/materials/concrete.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  .materials-block_img-2 {
+    background-image: url("../img/materials/brick.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  .materials-block_img-3 {
+    background-image: url("../img/materials/blocks.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  .materials-block_img-4 {
+    background-image: url("../img/materials/foamBlock.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  .materials-block__link {
+    font-size: 14px;
+    font-family: Geometria;
+    color: #fff; }

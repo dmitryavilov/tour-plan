@@ -92,6 +92,15 @@
         height: 175px;
     }
 
+    .president-video-block__video {
+        width: 520px;
+        height: 251px;
+    }
+
+    .president-main-wrapper {
+        width: 850px;
+    }
+
     .plan-slide {
         width: 280px;
         height: 175px;
@@ -237,6 +246,28 @@
     .main-information {
         background-position: 30% 50%;
     }
+
+    .president-main-wrapper {
+        flex-direction: column;
+    }
+
+    .president {
+        height: 850px;
+    }
+
+    .president-text-block {
+        border: 1px solid #149014;
+        padding-left: 10px;
+        box-sizing: border-box;
+        border-width: 0 0 0 3px;
+    }
+
+    .president-text-block_left {
+        margin-top: 20px;
+        margin-left: 0;
+        margin-right: 124px;
+    }
+
 }
 
 @media (max-width: 800px) {
@@ -675,6 +706,38 @@
         }
     }
     
+    .president-video-block__video {
+        width: 420px;
+        height: 191px;
+    }
+
+    .president-text-block_left {
+        margin-right: 30px;
+    }
+
+    .president-text-block__title {
+        font-size: 16px;
+    }
+
+    .president-text-block__description {
+        font-size: 11px;
+    }
+
+    .president-text-block__text-wrapper-1, .president-text-block__text-wrapper-2 {
+        height: 85px;
+    }
+
+    .president-text-block {
+        height: 260px;
+    }
+
+    .president-text-block_left {
+        margin-right: 110px;
+    }
+
+    .president {
+        height: 730px;
+    }
 }
 
 
@@ -848,6 +911,10 @@
 
     .plan-form__title-wrapper {
         width: 305px;
+    }
+
+    .president-video-block__video {
+        width: 298px;
     }
 
     .plan-form__feedback-wrapper {

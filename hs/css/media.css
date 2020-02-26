@@ -139,6 +139,18 @@
     background-position: 30% 50%; } }
 
 @media (max-width: 800px) {
+  .advantages-benefit__title {
+    font-size: 14px; }
+  .advantages-benefit__description {
+    font-size: 11px; }
+  .advantages-benefit__text-block {
+    width: 400px; }
+  .advantages-benefit {
+    width: 550px;
+    height: 100px; }
+  .advantages-benefit__img {
+    width: 140px;
+    height: 100px; }
   .slide__img {
     width: 290px;
     height: 240px;
@@ -353,7 +365,17 @@
   .button-block {
     width: 185px; }
   .clock-block {
-    width: 105px; } }
+    width: 105px; }
+  .advantages-benefit__title {
+    font-size: 12px; }
+  .advantages-benefit__description {
+    font-size: 10px; }
+  .advantages-benefit__text-block {
+    width: 300px;
+    height: 62px; }
+  .advantages-benefit {
+    width: 450px;
+    height: 100px; } }
 
 @media (max-width: 530px) {
   .projects-title-block__title {
@@ -456,6 +478,20 @@
     height: 50px; }
   .plan-slider-description-block_top {
     margin-top: 0px; } }
+
+@media (max-width: 460px) {
+  .advantages-benefit__title {
+    font-size: 9.5px; }
+  .advantages-benefit__description {
+    font-size: 8px; }
+  .advantages-benefit__text-block {
+    width: 180px; }
+  .advantages-benefit {
+    width: 305px;
+    height: 80px; }
+  .advantages-benefit__img {
+    width: 120px;
+    height: 80px; } }
 
 @media (max-width: 410px) {
   .plan-form__title {

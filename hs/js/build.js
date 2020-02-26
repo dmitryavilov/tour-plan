@@ -108,7 +108,7 @@
           slidesPerGroup: 2,
         },
 
-        320: {
+        0: {
           slidesPerView: 1,
           slidesPerGroup: 1,
         }
@@ -136,7 +136,7 @@
           slidesPerGroup: 2,
         },
 
-        320: {
+        0: {
           slidesPerView: 1,
           slidesPerGroup: 1,
         }

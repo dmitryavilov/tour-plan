@@ -787,3 +787,155 @@
     font-size: 14px;
     font-family: Geometria;
     color: #fff; }
+
+.advantages {
+  width: 100%;
+  height: 780px;
+  background-image: url("../img/advantages/advBg.webp");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.advantages-title-block {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .advantages-title-block__title {
+    font-size: 27px;
+    font-family: GeometriaB;
+    color: #284157;
+    text-align: center;
+    line-height: 35px;
+    text-align: center; }
+  .advantages-title-block_top {
+    margin-top: 100px; }
+
+.advantages-benefits-block {
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+  .advantages-benefits-block_top {
+    margin-top: 79px; }
+
+.advantages-benefits-wrapper {
+  display: flex;
+  height: 440px;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.advantages-benefit {
+  width: 776px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .advantages-benefit__img {
+    width: 170px;
+    height: 120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; }
+  .advantages-benefit_img-1 {
+    background-image: url("../img/advantages/bulldozer.webp"); }
+  .advantages-benefit_img-2 {
+    background-image: url("../img/advantages/worker.webp"); }
+  .advantages-benefit_img-3 {
+    background-image: url("../img/advantages/graphic.webp"); }
+  .advantages-benefit__text-block {
+    height: 82px;
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .advantages-benefit__title {
+    font-size: 18px;
+    font-family: GeometriaB;
+    color: #284157; }
+  .advantages-benefit__description {
+    font-size: 14px;
+    font-family: Geometria;
+    color: #284157; }
+
+.president {
+  width: 100%;
+  height: 630px;
+  background-color: #ffffff; }
+
+.president-title-block {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .president-title-block__title {
+    font-size: 27px;
+    font-family: GeometriaB;
+    color: #284157;
+    text-align: center;
+    line-height: 35px;
+    text-align: center; }
+  .president-title-block_top {
+    margin-top: 100px; }
+
+.president-main-block {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .president-main-block_top {
+    margin-top: 60px; }
+
+.president-main-wrapper {
+  width: 1170px;
+  display: flex;
+  align-items: center; }
+
+.president-video-block__video {
+  width: 670px;
+  height: 301px;
+  background-image: url("../img/president/video.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.president-video-block__play-button {
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/president/playBtn.png");
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  background-position: center center;
+  cursor: pointer;
+  transition: 0.05s; }
+  .president-video-block__play-button:hover {
+    width: 45px;
+    height: 45px;
+    transition: 0.05s;
+    background-size: 45px 45px; }
+
+.president-text-block {
+  height: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  .president-text-block__text-wrapper-1, .president-text-block__text-wrapper-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px; }
+  .president-text-block__title {
+    font-size: 20px;
+    font-family: GeometriaB;
+    color: #284157; }
+  .president-text-block__phone {
+    text-decoration: none;
+    color: #284157;
+    transition: 0.3s; }
+    .president-text-block__phone:hover {
+      color: blue;
+      transition: 0.3s; }
+  .president-text-block__description {
+    font-size: 16px;
+    font-family: Geometria;
+    color: #284157;
+    line-height: 20px; }
+  .president-text-block_left {
+    margin-left: 29px; }

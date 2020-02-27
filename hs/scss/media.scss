@@ -74,11 +74,23 @@
     .plan-form {
         width: 1050px;
     }
+
+    .face-block__text {
+        font-size: 13px;
+    }
+
+    .face-block__text-block {
+        width: 82%;
+    }
 }
 
 @media (max-width: 1150px) {
     .materials-block__img {
         width: 220px;
+    }
+
+    .faces-main-wrapper {
+        width: 950px;
     }
 
     .materials-blocks {
@@ -99,6 +111,14 @@
 
     .president-main-wrapper {
         width: 850px;
+    }
+
+    .face-block {
+        width: 250px;
+    }
+
+    .face-block__text-block {
+        width: 95%;
     }
 
     .plan-slide {
@@ -126,6 +146,9 @@
 
     .plan-form {
         width: 900px;
+    }
+    .questions-main-block_top {
+        margin-top: 50px;
     }
 }
 
@@ -313,7 +336,27 @@
 
     .slide {
         width: 290px !important;
-    }   
+    }
+    
+    .faces {
+        height: 1830px;
+    }
+
+    .faces-main-wrapper {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 1600px;
+    }
+
+    .face-block {
+        width: 285px;
+        height: 500px;
+    }
+
+    .face-block__text-block {
+        height: 254px;
+    }
 }
 
 @media (max-width: 780px) {
@@ -389,6 +432,10 @@
 @media (max-width: 740px) {
     .description {
         font-size: 13px;
+    }
+
+    .questions {
+        background-position: left center;
     }
 
     .control__description-wrapper {
@@ -677,6 +724,35 @@
         width: 450px;
         height: 100px;
     }
+
+    .questions-description-block__description {
+        font-size: 16px;
+    }
+
+    .question-block__question {
+        font-size: 12px;
+    }
+
+    .question-block__round {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+    }
+
+    .question-block__round-num {
+        transform: translateX(7%);
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .question-block__text-block {
+        height: 25px;
+        transform: translateY(4px);
+    }
+
+    .questions-main-wrapper {
+        width: 410px;
+    }
 }
 
 @media (max-width: 530px) {
@@ -901,6 +977,45 @@
     .advantages-benefit__img {
         width: 120px;
         height: 80px;
+    }
+}
+
+@media (max-width: 430px) {
+    .question-block__question {
+        font-size: 10.5px;
+    }
+
+    .questions-description-block__description {
+        font-size: 14px;
+    }
+
+    .questions-main-wrapper {
+        width: 312px;
+    }
+
+    .question-block__round {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+
+    .questions-description-block__description {
+        font-size: 13px;
+    }
+
+    .questions-description-block_top {
+        margin-top: 40px;
+    }
+
+    .question-block__round-num {
+        font-size: 11px;
+        transform: translateX(4%);
+        height: 20px;
+    }
+
+    .question-block__text-block {
+        height: 20px;
+        transform: translateY(0px);
     }
 }
 

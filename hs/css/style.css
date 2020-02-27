@@ -786,7 +786,9 @@
   .materials-block__link {
     font-size: 14px;
     font-family: Geometria;
-    color: #fff; }
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #fff; }
 
 .advantages {
   width: 100%;
@@ -939,3 +941,158 @@
     line-height: 20px; }
   .president-text-block_left {
     margin-left: 29px; }
+
+.faces {
+  width: 100%;
+  height: 840px;
+  background-color: #ebf3fa; }
+
+.faces-title-block {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .faces-title-block__title {
+    font-size: 27px;
+    font-family: GeometriaB;
+    color: #284157;
+    text-align: center;
+    line-height: 35px;
+    text-align: center; }
+  .faces-title-block_top {
+    margin-top: 100px; }
+
+.faces-main-block {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .faces-main-block_top {
+    margin-top: 60px; }
+
+.faces-main-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px; }
+
+.face-block {
+  width: 370px;
+  height: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+  .face-block__img {
+    background-image: url("../img/faces/face.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 148px;
+    height: 170px; }
+  .face-block__title {
+    font-size: 18px;
+    font-family: GeometriaB;
+    color: #284157; }
+  .face-block__description {
+    font-size: 14px;
+    font-family: Geometria;
+    color: #284157; }
+  .face-block__text-block {
+    background-image: url("../img/faces/textbg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 264px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px; }
+  .face-block__wrapper {
+    width: 310px;
+    height: 165px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+  .face-block__text {
+    font-size: 14px;
+    font-family: Geometria;
+    color: #284157;
+    text-align: center; }
+
+.questions {
+  background-image: url("../img/questions/questionsBg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 748px; }
+
+.questions-title-block {
+  display: flex;
+  justify-content: center; }
+  .questions-title-block_top {
+    margin-top: 100px; }
+  .questions-title-block__title {
+    font-size: 27px;
+    font-family: GeometriaB;
+    color: #284157;
+    text-align: center;
+    line-height: 35px;
+    text-align: center;
+    color: #fff; }
+
+.questions-description-block {
+  display: flex;
+  justify-content: center; }
+  .questions-description-block__description {
+    font-size: 20px;
+    font-family: Geometria;
+    color: #fff;
+    text-align: center; }
+  .questions-description-block_top {
+    margin-top: 60px; }
+
+.questions-main-block {
+  display: flex;
+  justify-content: start;
+  width: 100%; }
+  .questions-main-block_top {
+    margin-top: 68px; }
+
+.questions-main-wrapper {
+  width: 540px;
+  height: 395px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.question-block {
+  display: flex;
+  align-items: center; }
+  .question-block__round {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 20px; }
+  .question-block__round-num {
+    font-size: 16px;
+    font-family: Geometria;
+    color: #fff;
+    transform: translateX(15%);
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .question-block__text-block {
+    height: 30px;
+    transform: translateY(7px); }
+  .question-block__question {
+    font-size: 16px;
+    font-family: Geometria;
+    color: #fff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-bottom: 1px solid #fff; }

@@ -41,11 +41,17 @@
     width: 1050px;
     height: 205px; }
   .plan-form {
-    width: 1050px; } }
+    width: 1050px; }
+  .face-block__text {
+    font-size: 13px; }
+  .face-block__text-block {
+    width: 82%; } }
 
 @media (max-width: 1150px) {
   .materials-block__img {
     width: 220px; }
+  .faces-main-wrapper {
+    width: 950px; }
   .materials-blocks {
     width: 950px; } }
 
@@ -58,6 +64,10 @@
     height: 251px; }
   .president-main-wrapper {
     width: 850px; }
+  .face-block {
+    width: 250px; }
+  .face-block__text-block {
+    width: 95%; }
   .plan-slide {
     width: 280px;
     height: 175px;
@@ -73,7 +83,9 @@
   .plan-form__title {
     font-size: 19px; }
   .plan-form {
-    width: 900px; } }
+    width: 900px; }
+  .questions-main-block_top {
+    margin-top: 50px; } }
 
 @media (max-width: 1000px) {
   .text-information__benefit-1, .text-information__benefit-2 {
@@ -180,7 +192,19 @@
   .slider-block__slides > .slide.slide_first {
     margin-left: 95px; }
   .slide {
-    width: 290px !important; } }
+    width: 290px !important; }
+  .faces {
+    height: 1830px; }
+  .faces-main-wrapper {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 1600px; }
+  .face-block {
+    width: 285px;
+    height: 500px; }
+  .face-block__text-block {
+    height: 254px; } }
 
 @media (max-width: 780px) {
   .feedback_md-sm {
@@ -232,6 +256,8 @@
 @media (max-width: 740px) {
   .description {
     font-size: 13px; }
+  .questions {
+    background-position: left center; }
   .control__description-wrapper {
     margin-top: 29px; }
   .control__img-wrapper {
@@ -393,7 +419,24 @@
     height: 62px; }
   .advantages-benefit {
     width: 450px;
-    height: 100px; } }
+    height: 100px; }
+  .questions-description-block__description {
+    font-size: 16px; }
+  .question-block__question {
+    font-size: 12px; }
+  .question-block__round {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px; }
+  .question-block__round-num {
+    transform: translateX(7%);
+    height: 25px;
+    font-size: 12px; }
+  .question-block__text-block {
+    height: 25px;
+    transform: translateY(4px); }
+  .questions-main-wrapper {
+    width: 410px; } }
 
 @media (max-width: 530px) {
   .projects-title-block__title {
@@ -527,6 +570,29 @@
   .advantages-benefit__img {
     width: 120px;
     height: 80px; } }
+
+@media (max-width: 430px) {
+  .question-block__question {
+    font-size: 10.5px; }
+  .questions-description-block__description {
+    font-size: 14px; }
+  .questions-main-wrapper {
+    width: 312px; }
+  .question-block__round {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px; }
+  .questions-description-block__description {
+    font-size: 13px; }
+  .questions-description-block_top {
+    margin-top: 40px; }
+  .question-block__round-num {
+    font-size: 11px;
+    transform: translateX(4%);
+    height: 20px; }
+  .question-block__text-block {
+    height: 20px;
+    transform: translateY(0px); } }
 
 @media (max-width: 410px) {
   .plan-form__title {

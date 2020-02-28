@@ -40,7 +40,7 @@
     line-height: 15px;
     text-align: right; }
   .header__clock-img {
-    background-image: url("../img/header/clock-icon.png");
+    background-image: url("../img/header/clock-icon.svg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 18px;
@@ -901,7 +901,7 @@
 .president-video-block__play-button {
   width: 40px;
   height: 40px;
-  background-image: url("../img/president/playBtn.png");
+  background-image: url("../img/president/playBtn.svg");
   background-repeat: no-repeat;
   background-size: 40px 40px;
   background-position: center center;
@@ -981,7 +981,7 @@
   align-items: center;
   justify-content: space-between; }
   .face-block__img {
-    background-image: url("../img/faces/face.webp");
+    background-image: url("../img/faces/face.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

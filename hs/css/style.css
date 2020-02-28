@@ -401,17 +401,17 @@
   content: "";
   background-image: url("../img/projects/prev-btn.svg");
   background-repeat: no-repeat;
-  width: 12px;
+  width: 20px;
   height: 20px;
-  background-size: 12px 20px; }
+  background-size: 18px 18px; }
 
 .projects-next:after {
   content: "";
   background-image: url("../img/projects/next-btn.svg");
   background-repeat: no-repeat;
-  width: 12px;
+  width: 20px;
   height: 20px;
-  background-size: 12px 20px; }
+  background-size: 18px 18px; }
 
 .projects-prev {
   margin-left: 480px; }
@@ -420,7 +420,7 @@
   margin-right: 480px; }
 
 .projects-prev, .projects-next {
-  transform: translateY(250px); }
+  transform: translateY(251px); }
 
 .projects-bullet {
   width: 20px;
@@ -606,7 +606,7 @@
     content: '';
     background-image: url("../img/plans/prev-btn.svg");
     background-repeat: no-repeat;
-    background-size: 12px 20px;
+    background-size: 18px 18px;
     background-position: center center;
     background-color: #fff;
     width: 40px;
@@ -620,7 +620,7 @@
     content: '';
     background-image: url("../img/plans/next-btn.svg");
     background-repeat: no-repeat;
-    background-size: 12px 20px;
+    background-size: 18px 18px;
     background-position: center center;
     background-color: #fff;
     width: 40px;

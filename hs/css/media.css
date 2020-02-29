@@ -85,7 +85,9 @@
   .plan-form {
     width: 900px; }
   .questions-main-block_top {
-    margin-top: 50px; } }
+    margin-top: 50px; }
+  .address-block-wrapper_left {
+    margin-left: 40px; } }
 
 @media (max-width: 1000px) {
   .text-information__benefit-1, .text-information__benefit-2 {
@@ -115,7 +117,9 @@
   .materials-blocks {
     flex-direction: column;
     align-items: space-between;
-    height: 1300px; } }
+    height: 1300px; }
+  .address-block__title {
+    width: 320px; } }
 
 @media (max-width: 940px) {
   .plan-swiper-container, .plan-swiper-container-2 {
@@ -251,7 +255,45 @@
     .feedback__btn span {
       color: #ffecce;
       font-family: sans-serif;
-      font-weight: bold; } }
+      font-weight: bold; }
+  .office-wrapper {
+    display: flex;
+    flex-direction: column-reverse; }
+  .address-block {
+    justify-content: center; }
+    .address-block-wrapper {
+      align-items: center; }
+    .address-block__title {
+      text-align: center; }
+    .address-block__information {
+      background-position: center top;
+      justify-content: center;
+      align-items: flex-end; }
+      .address-block__information-text {
+        text-align: center; }
+    .address-block_information_location {
+      height: 85px; }
+    .address-block_information_phone {
+      height: 62px; }
+    .address-block_information_clock {
+      height: 62px; }
+  .office {
+    height: 1060px;
+    border: ridge #cbdceb;
+    border-width: 0 0 3px 0; }
+  .map-block, .address-block {
+    width: 100%; }
+  .map-block {
+    border: ridge #cbdceb;
+    border-width: 3px 0 3px 0;
+    box-sizing: border-box;
+    height: 535px; }
+  .address-block-wrapper {
+    height: 450px; }
+    .address-block-wrapper_left {
+      margin-left: 0; }
+  .footer-wrapper {
+    justify-content: center; } }
 
 @media (max-width: 740px) {
   .description {
@@ -314,7 +356,13 @@
   .plan-form__name-field {
     margin-bottom: 15px; }
   .plan-form__phone-field {
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+  .consultation_description {
+    text-align: center; }
+  .consultation {
+    height: 500px; }
+  .consultation_form {
+    height: 460px; } }
 
 @media (max-width: 670px) {
   .header__logo-title {
@@ -372,6 +420,8 @@
     font-size: 19px; }
   .plan-form__title {
     font-size: 12px; }
+  .consultation_title_sm {
+    font-size: 15px; }
   .plan-form__name-field, .plan-form__phone-field {
     width: 230px;
     height: 45px;
@@ -475,11 +525,12 @@
 
 @media (max-width: 500px) {
   .header__logo-title {
-    font-size: 12px; }
+    font-size: 12px;
+    margin-left: 9px; }
   .header__logo-img {
     width: 42px;
-    height: 22px;
-    background-size: 42px 22px; }
+    height: 28px;
+    background-size: 42px 28px; }
   .button-block {
     display: none; }
   .button-block-sm {
@@ -529,10 +580,12 @@
   .plan-form__title {
     font-size: 11px;
     line-height: 20px; }
+  .consultation_title_sm {
+    font-size: 13px; }
   .plan-form__title-wrapper {
     margin-top: 45px; }
   .plan-form__description {
-    width: 310px;
+    width: 270px;
     text-align: center;
     line-height: 18px; }
   .plan-form__description-wrapper, .plan-form__feedback-wrapper, .plan-form__title-wrapper {
@@ -555,7 +608,9 @@
     width: 320px;
     height: 50px; }
   .plan-slider-description-block_top {
-    margin-top: 0px; } }
+    margin-top: 0px; }
+  .consultation_description {
+    width: 270px; } }
 
 @media (max-width: 460px) {
   .advantages-benefit__title {
@@ -597,6 +652,8 @@
 @media (max-width: 410px) {
   .plan-form__title {
     font-size: 9px; }
+  .consultation_title_sm {
+    font-size: 11px; }
   .plan-form__title-wrapper {
     width: 305px; }
   .president-video-block__video {
@@ -623,4 +680,8 @@
       height: 190px;
       background-size: 310px 190px; }
   .main_title_sm {
-    font-size: 16.5px; } }
+    font-size: 16.5px; }
+  .address-block__title {
+    font-size: 18px; }
+  .address-block__description {
+    font-size: 15px; } }

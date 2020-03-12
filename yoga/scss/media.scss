@@ -1,0 +1,154 @@
+@media (max-width: 910px) {
+    .main-title-block__title {
+        font-size: 53px;
+    }
+
+    .about-text-block__description {
+        font-size: 13px;
+    }
+
+    .about-wrapper {
+        justify-content: flex-start;
+        width: 770px;
+    }
+
+    .about-text-block_md {
+        transform: translateX(20px);
+    }
+}
+
+@media (max-width: 770px) {
+    .about-wrapper {
+        height: 1000px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .about {
+        height: 1050px;
+    }
+
+    .about-text-block_md {
+        transform: translateX(0px);
+        text-align: center;
+    }
+
+    .about-text-block__tags-wrapper {
+        align-items: center;
+    }
+}
+
+@media (max-width: 635px) {
+    .main-title-block__title {
+        font-size: 43px;
+    }
+
+    .phone-block__text {
+        font-size: 11.5px;
+    }
+
+    .phone-block__link {
+        font-size: 17px;
+    }
+
+    .button_main {
+        width: 250px;
+    }
+}
+
+@media (max-width: 530px) {
+    .main-title-block__title {
+        font-size: 37px;
+    }
+
+    .main-information {
+        background-position: 49% center;
+    }
+
+    .main-tags-block__tags {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 450px) {
+    .main-title-block__title {
+        font-size: 32px;
+    }
+
+    .about-image-block__image {
+        width: 315px;
+    }
+
+    .phone-block__text {
+        font-size: 10px;
+    }
+
+    .phone-block__link {
+        font-size: 15px;
+    }
+
+    .phone-block {
+        height: 35px;
+    }
+}
+
+@media (max-width: 420px) {
+    .information_top {
+        margin-top: 0;
+    }
+
+    .main-information {
+        height: 680px;
+    }
+
+    .feedback-icons-block_top {
+        margin-top: 30px;
+    }
+
+    .main-button-block_top {
+        margin-top: 80px;
+    }
+
+    .main-information {
+        height: 570px;
+    }
+
+    .header {
+        height: 180px;
+    }
+}
+
+@media (max-width: 380px) {
+    .main-title-block__title {
+        font-size: 26px;
+    }
+
+    .main-tags-block__tags {
+        font-size: 12px;
+    }
+
+    .main-description-block__description {
+        font-size: 13px;
+    }
+
+    .button_main {
+        width: 220px;
+    }
+
+    .about-text-block__description {
+        font-size: 12px;
+    }
+
+    .phone-block__link {
+        font-size: 13px;
+    }
+
+    .phone-block__text {
+        font-size: 9px;
+    }
+
+    .phone-block {
+        height: 30px;
+    }
+}

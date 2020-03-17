@@ -3,8 +3,8 @@ var swiper = new Swiper('.stock-slider-block', {
   slideActiveClass: 'stock-slide-active',
   slideVisibleClass: 'stock-slide-duplicate-active',
   slidesToScroll: 1,
-  centeredSlides: true,
   loop: true,
+  centeredSlides: true,
   initialSlide: 1,
   slideClass: 'stock-slide',
   spaceBetween: 30,
@@ -22,4 +22,11 @@ var swiper = new Swiper('.stock-slider-block', {
     }
   }
 });
+
+function onload(){
+  const slBlock = document.querySelector('.stock-slider-block').classList;
+  slBlock.add('slider-block_optimize');
+};
+
+
 

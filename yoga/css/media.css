@@ -231,4 +231,7 @@
   .stock-slider-block {
     height: 230px; }
   .expectations {
-    height: 400px; } }
+    height: 400px; }
+  .stock-slider-wrapper {
+    height: 190px;
+    width: 1000px; } }

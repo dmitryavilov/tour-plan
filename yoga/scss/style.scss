@@ -441,7 +441,6 @@
 .stock-slider-block {
   height: 530px;
   width: 100%;
-
   &_top {
     margin-top: 82px;
   }
@@ -450,6 +449,10 @@
 .stock-slider-wrapper {
   display: flex;
   align-items: center;
+}
+
+.slider-block_optimize {
+  width: 0;
 }
 
 .stock-slide {
@@ -462,6 +465,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 
   &__gray-wrapper {
     width: 940px;

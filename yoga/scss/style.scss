@@ -150,10 +150,13 @@
   }
 
   .main-button-block {
-    height: 70px;
     &_top {
       margin-top: 100px;
     }
+  }
+
+  .information-button-block {
+    height: 70px;
   }
 
   .button {
@@ -173,6 +176,11 @@
         box-shadow:1px 2px 11px 0px rgba(255,255,255,0.87);
         transition: 0.4s;
       }
+    }
+
+    &__link {
+      text-decoration: none;
+      color: inherit;
     }
   }
 
@@ -335,8 +343,8 @@
   align-items: center;
   justify-content: space-between;
 
-  &_top {
-    margin-top: 80px;
+  &_top, &_bottom {
+    margin: 80px 0;
   }
 
   &__title {
@@ -423,7 +431,7 @@
 }
 //REASONS
 
-.expectations {
+.expectations, .programm {
   width: 100%;
   height: 800px;
   background-image: url('../img/expectations/background.webp');
@@ -470,7 +478,7 @@
   &__gray-wrapper {
     width: 940px;
     height: 528px;
-    background-color: rgba(48, 48, 48, 0.7);
+    background-color: rgba(48, 48, 48, 0.6);
     display: flex;
     align-items: center;
     justify-content: center; 
@@ -530,8 +538,123 @@
     background-image: url('../img/expectations/rightslide.webp');
   }
 }
-
 //EXPECTATIONS
+
+.schedule {
+  height: 680px;
+}
+
+.schedule-variants-block {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.schedule-variants-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  align-items: space-between;
+  flex-wrap: wrap;
+}
+
+.schedule-variants-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.schedule-variant {
+  height: 180px;
+  background-color: #fff8e6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 220px;
+
+  &__text-block {
+    height: 120px;
+  }
+
+  &__date-wrapper {
+    margin-top: 31px;
+  }
+
+  &__date {
+    @include mulwl(MulL, 14px, #4b4b4b);
+  }
+
+  &__title-wrapper {
+    margin-top: 13px;
+  }
+
+  &__title {
+    @include mulwl(MulM, 18px, black);
+  }
+
+  &__link-wrapper {
+    margin-top: 19px;
+  }
+
+  &__link {
+    @include mulwl(Mul, 12px, #5a56af);
+    text-decoration: none;
+    border-bottom: 1px solid #5a56af;
+    transition: 0.3s;
+
+    &:hover {
+      transition: 0.3s;
+      color: #9491ca;
+      border-bottom: 1px solid #9491ca;
+    }
+  }
+}
+
+.schedule-button_top {
+  margin-top: 8px;
+}
+
+.button_schedule {
+  width: 180px;
+  height: 40px;
+  border: 2px solid #e28234;
+  color: #e28234;
+  font-size: 12px;
+  transition: 0.5s;
+
+  &:hover {
+    transition: 0.5s;
+    background-color: rgba(226, 130, 52, 1);
+    color: white;
+  }
+}
+//SCHEDULE
+
+.programm {
+  width: 100%;
+  height: 800px;
+  background-image: url('../img/expectations/background.webp');
+  background-position: center top;
+  background-size: 1920px 487px;
+  background-repeat: no-repeat;
+}
+
+.programm-slide {
+  &_1 {
+    background-image: url('../img/programm/people.webp');
+  }
+
+  &_2 {
+    background-image: url('../img/programm/home.webp');
+  }
+
+  &_3 {
+    background-image: url('../img/programm/moto.webp');
+  }
+}
+//PROGRAMM
 
 
 

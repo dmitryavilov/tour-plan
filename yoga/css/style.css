@@ -104,10 +104,11 @@
 .main-description-block_top {
   margin-top: 14px; }
 
-.main-button-block {
+.main-button-block_top {
+  margin-top: 100px; }
+
+.information-button-block {
   height: 70px; }
-  .main-button-block_top {
-    margin-top: 100px; }
 
 .button {
   position: relative;
@@ -123,6 +124,9 @@
     .button_main:hover {
       box-shadow: 1px 2px 11px 0px rgba(255, 255, 255, 0.87);
       transition: 0.4s; }
+  .button__link {
+    text-decoration: none;
+    color: inherit; }
 
 .feedback-icons-block {
   display: flex;
@@ -245,8 +249,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between; }
-  .page-title-block_top {
-    margin-top: 80px; }
+  .page-title-block_top, .page-title-block_bottom {
+    margin: 80px 0; }
   .page-title-block__title {
     font-family: MulM;
     font-size: 36px;
@@ -307,7 +311,7 @@
   .reason_5 {
     background-image: url("../img/reasons/img-5.webp"); }
 
-.expectations {
+.expectations, .programm {
   width: 100%;
   height: 800px;
   background-image: url("../img/expectations/background.webp");
@@ -347,7 +351,7 @@
   .stock-slide__gray-wrapper {
     width: 940px;
     height: 528px;
-    background-color: rgba(48, 48, 48, 0.7);
+    background-color: rgba(48, 48, 48, 0.6);
     display: flex;
     align-items: center;
     justify-content: center; }
@@ -394,3 +398,92 @@
 
 .expectations-slide_3 {
   background-image: url("../img/expectations/rightslide.webp"); }
+
+.schedule {
+  height: 680px; }
+
+.schedule-variants-block {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
+.schedule-variants-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  align-items: space-between;
+  flex-wrap: wrap; }
+
+.schedule-variants-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+
+.schedule-variant {
+  height: 180px;
+  background-color: #fff8e6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 220px; }
+  .schedule-variant__text-block {
+    height: 120px; }
+  .schedule-variant__date-wrapper {
+    margin-top: 31px; }
+  .schedule-variant__date {
+    font-family: MulL;
+    font-size: 14px;
+    color: #4b4b4b; }
+  .schedule-variant__title-wrapper {
+    margin-top: 13px; }
+  .schedule-variant__title {
+    font-family: MulM;
+    font-size: 18px;
+    color: black; }
+  .schedule-variant__link-wrapper {
+    margin-top: 19px; }
+  .schedule-variant__link {
+    font-family: Mul;
+    font-size: 12px;
+    color: #5a56af;
+    text-decoration: none;
+    border-bottom: 1px solid #5a56af;
+    transition: 0.3s; }
+    .schedule-variant__link:hover {
+      transition: 0.3s;
+      color: #9491ca;
+      border-bottom: 1px solid #9491ca; }
+
+.schedule-button_top {
+  margin-top: 8px; }
+
+.button_schedule {
+  width: 180px;
+  height: 40px;
+  border: 2px solid #e28234;
+  color: #e28234;
+  font-size: 12px;
+  transition: 0.5s; }
+  .button_schedule:hover {
+    transition: 0.5s;
+    background-color: #e28234;
+    color: white; }
+
+.programm {
+  width: 100%;
+  height: 800px;
+  background-image: url("../img/expectations/background.webp");
+  background-position: center top;
+  background-size: 1920px 487px;
+  background-repeat: no-repeat; }
+
+.programm-slide_1 {
+  background-image: url("../img/programm/people.webp"); }
+
+.programm-slide_2 {
+  background-image: url("../img/programm/home.webp"); }
+
+.programm-slide_3 {
+  background-image: url("../img/programm/moto.webp"); }

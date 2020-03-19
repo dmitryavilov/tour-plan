@@ -13,7 +13,7 @@
         }
     }
 
-    .expectations {
+    .expectations, .programm {
         height: 650px;
         background-size: 1920px 387px;
     }
@@ -24,6 +24,21 @@
         &_top {
             margin-top: 32px;
         }
+    }
+}
+
+@media (max-width: 960px) {
+    .schedule-variant {
+        width: 170px;
+    }
+
+    .button_schedule {
+        width: 140px;
+        font-size: 11px;
+    }
+
+    .schedule-variants-wrapper {
+        width: 720px;
     }
 }
 
@@ -91,7 +106,7 @@
         }
     }
 
-    .expectations {
+    .expectations, .programm {
         height: 600px;
         background-size: 1920px 310px;
     }
@@ -116,6 +131,25 @@
 
     .about-text-block__tags-wrapper {
         align-items: center;
+    }
+}
+
+@media (max-width: 750px) {
+    .schedule-variant {
+        width: 150px;
+
+        &__title {
+            font-size: 17px;
+        }
+    }
+
+    .button_schedule {
+        width: 125px;
+        font-size: 10.5px
+    }
+
+    .schedule-variants-wrapper {
+        width: 640px;
     }
 }
 
@@ -160,16 +194,46 @@
         }
     }
 
-    .expectations {
+    .expectations, .programm {
         height: 470px;
     }
 
     .stock-slider-block {
         height: 300px;
+    }
 
-        &_top {
-            margin-top: 15px;
+    .page-title-block {    
+        &_top, &_bottom {
+          margin: 40px 0;
         }
+    }
+}
+
+@media (max-width: 670px) {
+    .schedule {
+        height: 1800px;
+    }
+
+    .schedule-variants-wrapper {
+        height: 1600px;
+    }
+
+    .schedule-variants-group {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .schedule-variant {
+        width: 180px;
+
+        &__title {
+            font-size: 18px;
+        }
+    }
+
+    .button_schedule {
+        width: 145px;
     }
 }
 
@@ -220,7 +284,7 @@
     }
 
     .page-title-block_title_md {
-        font-size: 26px;
+        font-size: 24px;
     }
 
     .page-title-block_md {
@@ -250,7 +314,7 @@
         height: 176px;
     }
 
-    .expectations {
+    .expectations, .programm {
         height: 400px;
         background-size: 1920px 250px;
     }
@@ -293,6 +357,10 @@
 
     .phone-block {
         height: 35px;
+    }
+
+    .page-title-block_title_sm {
+        font-size: 21px;
     }
 }
 
@@ -351,7 +419,7 @@
     }
 
     .page-title-block_title_sm {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
@@ -409,8 +477,9 @@
         height: 230px;
     }
 
-    .expectations {
-        height: 400px;
+    .expectations, .programm {
+        height: 360px;
+        background-size: 1920px 200px;
     }
 
     .stock-slider-wrapper {

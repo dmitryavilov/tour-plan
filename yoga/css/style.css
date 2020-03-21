@@ -487,3 +487,70 @@
 
 .programm-slide_3 {
   background-image: url("../img/programm/moto.webp"); }
+
+.aurveda {
+  height: 1950px; }
+
+.aurveda-text-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  height: 170px;
+  text-align: center; }
+  .aurveda-text-block__text {
+    font-family: MulL;
+    font-size: 18px;
+    color: black;
+    line-height: 20px; }
+
+.programs-title-block__title {
+  font-family: MulM;
+  font-size: 24px;
+  color: black; }
+
+.aurveda-programs {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .aurveda-programs_top {
+    margin-top: 63px; }
+
+.programs-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 720px; }
+  .programs-wrapper_top {
+    margin-top: 62px; }
+
+.aurveda-program {
+  height: 120px;
+  width: 620px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-size: 120px 120px;
+  background-repeat: no-repeat;
+  background-position: left center; }
+  .aurveda-program__text-wrapper {
+    width: 465px;
+    display: flex;
+    justify-content: flex-start; }
+  .aurveda-program__text {
+    font-family: MulL;
+    font-size: 18px;
+    color: black;
+    line-height: 20px; }
+  .aurveda-program_program-1 {
+    background-image: url("../img/aurveda/program-1.webp"); }
+  .aurveda-program_program-2 {
+    background-image: url("../img/aurveda/program-2.webp"); }
+  .aurveda-program_program-3 {
+    background-image: url("../img/aurveda/program-3.webp"); }
+  .aurveda-program_program-4 {
+    background-image: url("../img/aurveda/program-4.webp"); }
+  .aurveda-program_program-5 {
+    background-image: url("../img/aurveda/program-5.webp"); }

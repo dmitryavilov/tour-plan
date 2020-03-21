@@ -16,6 +16,12 @@
     .stock-slider-block_top {
       margin-top: 32px; } }
 
+@media (max-width: 1050px) {
+  .aurveda-text-block__text {
+    font-size: 15px; }
+  .aurveda-program__text {
+    font-size: 15px; } }
+
 @media (max-width: 960px) {
   .schedule-variant {
     width: 170px; }
@@ -24,6 +30,10 @@
     font-size: 11px; }
   .schedule-variants-wrapper {
     width: 720px; } }
+
+@media (max-width: 820px) {
+  .aurveda-text-block__text {
+    font-size: 13px; } }
 
 @media (max-width: 910px) {
   .main-title-block__title {
@@ -116,7 +126,30 @@
   .stock-slider-block {
     height: 300px; }
   .page-title-block_top, .page-title-block_bottom {
-    margin: 40px 0; } }
+    margin: 40px 0; }
+  .aurveda-text-block {
+    height: 290px; }
+    .aurveda-text-block__text {
+      width: 380px; }
+  .programs-wrapper {
+    height: 1200px; }
+  .aurveda-program {
+    background-position: center top;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 180px;
+    width: 100%; }
+    .aurveda-program__text-wrapper {
+      justify-content: center;
+      align-items: flex-end;
+      text-align: center;
+      height: 60px; }
+  .aurveda-program__text {
+    font-size: 13px;
+    line-height: 14px; }
+  .programs-title-block__title {
+    font-size: 18px; } }
 
 @media (max-width: 670px) {
   .schedule {
@@ -189,6 +222,8 @@
   .main-information {
     background-position: 49% center; }
   .main-tags-block__tags {
+    font-size: 15px; }
+  .programs-title-block__title {
     font-size: 15px; } }
 
 @media (max-width: 450px) {
@@ -230,13 +265,20 @@
     .stock-slide__title {
       font-size: 13px; }
     .stock-slide__description {
-      font-size: 9.5px; } }
+      font-size: 9.5px; }
+  .aurveda-text-block__text {
+    width: 310px;
+    font-size: 11px; }
+  .programs-title-block__title {
+    font-size: 13px; } }
 
 @media (max-width: 400px) {
   .page-title-block_sm {
     height: 38px; }
   .page-title-block_title_sm {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .aurveda-program__text {
+    font-size: 12px; } }
 
 @media (max-width: 380px) {
   .main-title-block__title {
@@ -254,7 +296,9 @@
   .phone-block__text {
     font-size: 9px; }
   .phone-block {
-    height: 30px; } }
+    height: 30px; }
+  .programs-title-block__title {
+    font-size: 12px; } }
 
 @media (max-width: 340px) {
   .stock-slide {
@@ -273,4 +317,9 @@
     background-size: 1920px 200px; }
   .stock-slider-wrapper {
     height: 190px;
-    width: 1000px; } }
+    width: 1000px; }
+  .aurveda-text-block__text {
+    width: 290px;
+    font-size: 10px; }
+  .aurveda-program__text {
+    font-size: 10.5px; } }

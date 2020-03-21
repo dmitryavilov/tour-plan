@@ -656,6 +656,94 @@
 }
 //PROGRAMM
 
+.aurveda {
+  height: 1950px;
+}
+
+.aurveda-text-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  height: 170px;
+  text-align: center;
+
+  &__text {
+    @include mul(MulL, 18px, black, 20px);
+  }
+}
+
+.programs-title-block {
+
+  &__title {
+    @include mulwl(MulM, 24px, black);
+  }
+}
+
+.aurveda-programs {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &_top {
+    margin-top: 63px;
+  }
+}
+
+.programs-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 720px;
+
+  &_top {
+    margin-top: 62px;
+  }
+}
+
+.aurveda-program {
+  height: 120px;
+  width: 620px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-size: 120px 120px;
+  background-repeat: no-repeat;
+  background-position: left center;
+
+  &__text-wrapper {
+    width: 465px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__text {
+    @include mul(MulL, 18px, black, 20px);
+  }
+
+  &_program-1 {
+    background-image: url('../img/aurveda/program-1.webp');
+  }
+
+  &_program-2 {
+    background-image: url('../img/aurveda/program-2.webp');
+  }
+
+  &_program-3 {
+    background-image: url('../img/aurveda/program-3.webp');
+  }
+
+  &_program-4 {
+    background-image: url('../img/aurveda/program-4.webp');
+  }
+
+  &_program-5 {
+    background-image: url('../img/aurveda/program-5.webp');
+  }
+}
+//AURVEDA
 
 
 

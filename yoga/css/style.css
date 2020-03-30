@@ -630,3 +630,93 @@
       line-height: 15px;
       position: relative;
       left: 30px; }
+
+.instructors {
+  height: 1350px;
+  width: 100%;
+  background-image: url("../img/instructors/bg.webp");
+  background-position: center top;
+  background-size: 1920px 1140px;
+  background-repeat: no-repeat; }
+
+.instructors-slider-block {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .instructors-slider-block-1_bottom {
+    margin-bottom: 20px; }
+
+.instructors-slide {
+  width: 945px;
+  height: 540px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 945px 540px;
+  display: flex;
+  align-items: flex-end; }
+  .instructors-slide_1 {
+    background-image: url("../img/instructors/1.webp"); }
+  .instructors-slide_2 {
+    background-image: url("../img/instructors/2.webp"); }
+  .instructors-slide_3 {
+    background-image: url("../img/instructors/1.webp"); }
+  .instructors-slide_4 {
+    background-image: url("../img/instructors/2.webp"); }
+  .instructors-slide_5 {
+    background-image: url("../img/instructors/1.webp"); }
+  .instructors-slide__content-wrapper {
+    width: 100%;
+    height: 170px;
+    background-color: rgba(68, 68, 68, 0.58);
+    display: flex;
+    align-items: center; }
+  .instructors-slide__name {
+    margin-left: 60px;
+    width: 295px;
+    border-right: 2px solid white;
+    height: 90px; }
+  .instructors-slide__title {
+    font-family: MulB;
+    font-size: 30px;
+    color: white; }
+  .instructors-slide__profession-wrapper {
+    margin-top: 20px; }
+  .instructors-slide__profession {
+    font-family: MulI;
+    font-size: 16px;
+    color: white;
+    line-height: 20px; }
+  .instructors-slide__description-wrapper {
+    margin-left: 47px; }
+  .instructors-slide__description {
+    font-family: Mul;
+    font-size: 14px;
+    color: white;
+    line-height: 18px; }
+
+.instructors-slide * {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.7s; }
+
+.instructors-slide-active * {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.7s; }
+
+.instructors-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+
+.instructors-pagination__bullet {
+  margin-left: 7px;
+  transform: translateX(-10px);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: white; }
+  .instructors-pagination__bullet-active {
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0); }

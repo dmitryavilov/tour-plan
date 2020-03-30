@@ -46,7 +46,7 @@
   .schedule-variants-wrapper {
     width: 720px; }
   .aurveda {
-    height: 1950px; }
+    height: 2050px; }
   .aurveda-center-wrapper {
     background-size: 600px 500px;
     width: 860px; }
@@ -60,7 +60,13 @@
     margin-top: 35px; }
   .center-text-block__benefit-text {
     left: 23px;
-    font-size: 10px; } }
+    font-size: 10px; }
+  .instructors-slide {
+    width: 810px; }
+    .instructors-slide__description {
+      font-size: 11.5px; }
+  .instructors-slider-block {
+    width: 810px; } }
 
 @media (max-width: 910px) {
   .main-title-block__title {
@@ -106,6 +112,26 @@
     width: 350px; }
   .center-text-block {
     width: 385px; } }
+
+@media (max-width: 860px) {
+  .instructors-slide {
+    width: 650px;
+    height: 440px;
+    background-size: 690px 440px; }
+    .instructors-slide__content-wrapper {
+      height: 120px; }
+    .instructors-slide__description {
+      font-size: 8.5px;
+      line-height: 13px; }
+    .instructors-slide__title {
+      font-size: 25px; }
+    .instructors-slide__profession {
+      font-size: 13px; }
+  .instructors-slider-block {
+    width: 650px; }
+  .instructors {
+    height: 1150px;
+    background-size: 870px 940px; } }
 
 @media (max-width: 820px) {
   .aurveda-text-block__text {
@@ -212,7 +238,35 @@
     font-size: 13px;
     line-height: 14px; }
   .programs-title-block__title {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .aurveda {
+    height: 2550px; }
+  .instructors-slide {
+    width: 550px;
+    height: 380px;
+    background-size: 610px 420px; }
+    .instructors-slide__content-wrapper {
+      height: 120px; }
+    .instructors-slide__description {
+      font-size: 8.5px;
+      line-height: 13px; }
+    .instructors-slide__title {
+      font-size: 20px; }
+    .instructors-slide__title-wrapper {
+      margin-top: 10px; }
+    .instructors-slide__profession {
+      font-size: 11px; }
+    .instructors-slide__name {
+      margin-left: 30px;
+      width: 180px;
+      height: 80px; }
+    .instructors-slide__profession-wrapper {
+      margin-top: 10px; }
+  .instructors-slider-block {
+    width: 550px; }
+  .instructors {
+    height: 970px;
+    background-size: 870px 840px; } }
 
 @media (max-width: 670px) {
   .schedule {
@@ -239,6 +293,36 @@
     font-size: 17px; }
   .button_main {
     width: 250px; } }
+
+@media (max-width: 580px) {
+  .instructors-slide {
+    width: 420px;
+    height: 320px;
+    background-size: 480px 320px; }
+    .instructors-slide__content-wrapper {
+      height: 90px; }
+    .instructors-slide__description {
+      font-size: 7px;
+      line-height: 13px; }
+    .instructors-slide__title {
+      font-size: 16px; }
+    .instructors-slide__title-wrapper {
+      margin-top: 0px; }
+    .instructors-slide__profession {
+      font-size: 11px; }
+    .instructors-slide__name {
+      margin-left: 15px;
+      width: 145px;
+      height: 60px; }
+    .instructors-slide__profession-wrapper {
+      margin-top: 10px; }
+    .instructors-slide__description-wrapper {
+      margin-left: 20px; }
+  .instructors-slider-block {
+    width: 420px; }
+  .instructors {
+    height: 850px;
+    background-size: 870px 740px; } }
 
 @media (max-width: 560px) {
   .reasons {
@@ -302,7 +386,9 @@
     width: 320px;
     left: 10px; }
   .center-text-block {
-    width: 350px; } }
+    width: 350px; }
+  .aurveda {
+    height: 2450px; } }
 
 @media (max-width: 450px) {
   .main-title-block__title {
@@ -316,7 +402,45 @@
   .phone-block {
     height: 35px; }
   .page-title-block_title_sm {
-    font-size: 21px; } }
+    font-size: 21px; }
+  .instructors-slide {
+    width: 350px;
+    height: 270px;
+    background-size: 400px 270px; }
+    .instructors-slide__content-wrapper {
+      height: 75px; }
+    .instructors-slide__description {
+      font-size: 6px;
+      line-height: 13px; }
+    .instructors-slide__title {
+      font-size: 13px; }
+    .instructors-slide__title-wrapper {
+      margin-top: 5px; }
+    .instructors-slide__profession {
+      font-size: 9px;
+      line-height: 13px; }
+    .instructors-slide__name {
+      margin-left: 15px;
+      width: 120px;
+      height: 60px; }
+    .instructors-slide__profession-wrapper {
+      margin-top: 10px; }
+    .instructors-slide__description-wrapper {
+      margin-left: 10px; }
+  .instructors-slider-block {
+    width: 350px; }
+  .instructors {
+    height: 730px;
+    background-size: 870px 600px; }
+  .instructors-pagination__bullet {
+    width: 3px;
+    height: 3px;
+    margin-left: 4px; }
+  .instructors-pagination__bullet-active {
+    border: 1px solid white; }
+  .instructors-pagination {
+    height: 10px;
+    transform: translate(5px, 10px); } }
 
 @media (max-width: 420px) {
   .information_top {
@@ -387,6 +511,37 @@
   .center-text-block__benefits-wrapper {
     width: 278px;
     left: 8px; } }
+
+@media (max-width: 370px) {
+  .instructors-slide {
+    width: 290px;
+    height: 210px;
+    background-size: 340px 210px; }
+    .instructors-slide__content-wrapper {
+      height: 60px; }
+    .instructors-slide__description {
+      font-size: 5.2px;
+      line-height: 8.5px; }
+    .instructors-slide__title {
+      font-size: 10px; }
+    .instructors-slide__title-wrapper {
+      margin-top: 2px; }
+    .instructors-slide__profession {
+      font-size: 6px;
+      line-height: 10px; }
+    .instructors-slide__name {
+      margin-left: 15px;
+      width: 90px;
+      height: 40px; }
+    .instructors-slide__profession-wrapper {
+      margin-top: 5px; }
+    .instructors-slide__description-wrapper {
+      margin-left: 6px; }
+  .instructors-slider-block {
+    width: 290px; }
+  .instructors {
+    height: 600px;
+    background-size: 870px 500px; } }
 
 @media (max-width: 340px) {
   .stock-slide {

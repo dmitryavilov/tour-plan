@@ -639,14 +639,14 @@
   background-size: 1920px 1140px;
   background-repeat: no-repeat; }
 
-.instructors-slider-block {
+.instructors-slider-block, .instructors-slider-block-2 {
   width: 100%;
   display: flex;
   justify-content: center; }
-  .instructors-slider-block-1_bottom {
+  .instructors-slider-block-1_bottom, .instructors-slider-block-2-1_bottom {
     margin-bottom: 20px; }
 
-.instructors-slide {
+.instructors-slide, .instructors-slide_slider-2 {
   width: 945px;
   height: 540px;
   background-repeat: no-repeat;
@@ -654,41 +654,41 @@
   background-size: 945px 540px;
   display: flex;
   align-items: flex-end; }
-  .instructors-slide_1 {
+  .instructors-slide_1, .instructors-slide_slider-2_1 {
     background-image: url("../img/instructors/1.webp"); }
-  .instructors-slide_2 {
+  .instructors-slide_2, .instructors-slide_slider-2_2 {
     background-image: url("../img/instructors/2.webp"); }
-  .instructors-slide_3 {
+  .instructors-slide_3, .instructors-slide_slider-2_3 {
     background-image: url("../img/instructors/1.webp"); }
-  .instructors-slide_4 {
+  .instructors-slide_4, .instructors-slide_slider-2_4 {
     background-image: url("../img/instructors/2.webp"); }
-  .instructors-slide_5 {
+  .instructors-slide_5, .instructors-slide_slider-2_5 {
     background-image: url("../img/instructors/1.webp"); }
-  .instructors-slide__content-wrapper {
+  .instructors-slide__content-wrapper, .instructors-slide_slider-2__content-wrapper {
     width: 100%;
     height: 170px;
     background-color: rgba(68, 68, 68, 0.58);
     display: flex;
     align-items: center; }
-  .instructors-slide__name {
+  .instructors-slide__name, .instructors-slide_slider-2__name {
     margin-left: 60px;
     width: 295px;
     border-right: 2px solid white;
     height: 90px; }
-  .instructors-slide__title {
+  .instructors-slide__title, .instructors-slide_slider-2__title {
     font-family: MulB;
     font-size: 30px;
     color: white; }
-  .instructors-slide__profession-wrapper {
+  .instructors-slide__profession-wrapper, .instructors-slide_slider-2__profession-wrapper {
     margin-top: 20px; }
-  .instructors-slide__profession {
+  .instructors-slide__profession, .instructors-slide_slider-2__profession {
     font-family: MulI;
     font-size: 16px;
     color: white;
     line-height: 20px; }
-  .instructors-slide__description-wrapper {
+  .instructors-slide__description-wrapper, .instructors-slide_slider-2__description-wrapper {
     margin-left: 47px; }
-  .instructors-slide__description {
+  .instructors-slide__description, .instructors-slide_slider-2__description {
     font-family: Mul;
     font-size: 14px;
     color: white;
@@ -699,24 +699,114 @@
   opacity: 0;
   transition: 0.7s; }
 
+.instructors-slide_slider-2 * {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.7s; }
+
 .instructors-slide-active * {
   visibility: visible;
   opacity: 1;
   transition: 0.7s; }
 
-.instructors-pagination {
+.instructors-slide-active-2 * {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.7s; }
+
+.instructors-pagination, .instructors-pagination-2 {
   display: flex;
   align-items: center;
   justify-content: flex-end; }
 
-.instructors-pagination__bullet {
+.instructors-pagination__bullet, .instructors-pagination__bullet-2 {
   margin-left: 7px;
   transform: translateX(-10px);
   width: 4px;
   height: 4px;
   border-radius: 50%;
   background-color: white; }
-  .instructors-pagination__bullet-active {
+  .instructors-pagination__bullet-active, .instructors-pagination__bullet-active-2, .instructors-pagination__bullet-2-active, .instructors-pagination__bullet-2-active-2 {
     border: 2px solid white;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0); }
+
+.reviews {
+  width: 100%;
+  height: 510px;
+  background-color: #fff; }
+  .reviews-next-btn::after {
+    background-image: url("../img/reviews/next.svg"); }
+  .reviews-prev-btn::after {
+    background-image: url("../img/reviews/prev.svg"); }
+  .reviews-next-btn::after, .reviews-prev-btn::after {
+    content: '';
+    width: 36px;
+    height: 35px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 36px 35px; }
+  .reviews-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(10px); }
+  .reviews-bullet {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #b4b4b4;
+    margin: 0 5px; }
+    .reviews-bullet-active {
+      background-color: rgba(180, 180, 180, 0);
+      width: 10px;
+      height: 10px;
+      border: 1px solid #b4b4b4; }
+
+.reviews-slider-block {
+  width: 940px;
+  height: 228px; }
+
+.review {
+  width: 940px;
+  height: 155px;
+  display: flex;
+  justify-content: center; }
+  .review_top {
+    margin-top: 40px; }
+  .review__wrapper {
+    background-image: url("../img/reviews/ava.webp");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 150px 150px;
+    display: flex;
+    justify-content: flex-end;
+    width: 760px;
+    height: inherit; }
+  .review__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; }
+  .review__name {
+    font-family: Mul;
+    font-size: 18px;
+    color: black; }
+    .review__name-bold {
+      font-family: MulB; }
+  .review__link {
+    font-family: MulL;
+    font-size: 12px;
+    color: #c94410;
+    text-decoration: none;
+    border-bottom: 1px solid #f8c9b6;
+    transition: 0.4s; }
+    .review__link:hover {
+      transition: 0.4s;
+      color: #d38161; }
+  .review__message {
+    font-family: MulI;
+    font-size: 14px;
+    color: #393939;
+    line-height: 17px; }
+    .review__message-wrapper {
+      margin-top: 18px; }

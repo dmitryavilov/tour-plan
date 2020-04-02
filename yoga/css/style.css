@@ -654,16 +654,6 @@
   background-size: 945px 540px;
   display: flex;
   align-items: flex-end; }
-  .instructors-slide_1, .instructors-slide_slider-2_1 {
-    background-image: url("../img/instructors/1.webp"); }
-  .instructors-slide_2, .instructors-slide_slider-2_2 {
-    background-image: url("../img/instructors/2.webp"); }
-  .instructors-slide_3, .instructors-slide_slider-2_3 {
-    background-image: url("../img/instructors/1.webp"); }
-  .instructors-slide_4, .instructors-slide_slider-2_4 {
-    background-image: url("../img/instructors/2.webp"); }
-  .instructors-slide_5, .instructors-slide_slider-2_5 {
-    background-image: url("../img/instructors/1.webp"); }
   .instructors-slide__content-wrapper, .instructors-slide_slider-2__content-wrapper {
     width: 100%;
     height: 170px;
@@ -693,6 +683,18 @@
     font-size: 14px;
     color: white;
     line-height: 18px; }
+
+.instructors-slide_1 {
+  background-image: url("../img/instructors/1.webp"); }
+
+.instructors-slide_2 {
+  background-image: url("../img/instructors/2.webp"); }
+
+.instructors-slide_3 {
+  background-image: url("../img/instructors/3.webp"); }
+
+.instructors-slide_4 {
+  background-image: url("../img/instructors/4.webp"); }
 
 .instructors-slide * {
   visibility: hidden;
@@ -810,3 +812,224 @@
     line-height: 17px; }
     .review__message-wrapper {
       margin-top: 18px; }
+
+.advantages {
+  width: 100%;
+  height: 890px;
+  background-color: #f8f2e4; }
+
+.advantages-list-block {
+  width: 100%;
+  height: 570px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+
+.advantages-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+
+.advantage {
+  height: 263px;
+  width: 260px;
+  background-position: center top;
+  background-size: 120px 120px;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end; }
+  .advantage__content {
+    height: 105px;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+  .advantage_1 {
+    background-image: url("../img/advantages/1.svg"); }
+  .advantage_2 {
+    background-image: url("../img/advantages/2.svg"); }
+  .advantage_3 {
+    background-image: url("../img/advantages/3.svg"); }
+  .advantage_4 {
+    background-image: url("../img/advantages/4.svg"); }
+  .advantage_5 {
+    background-image: url("../img/advantages/5.svg"); }
+  .advantage_6 {
+    background-image: url("../img/advantages/6.svg"); }
+  .advantage__title {
+    font-family: MulB;
+    font-size: 18px;
+    color: black; }
+    .advantage__title-wrapper {
+      margin-bottom: 20px; }
+  .advantage__description {
+    font-family: MulL;
+    font-size: 16px;
+    color: black;
+    line-height: 18px; }
+
+.work {
+  width: 100%;
+  height: 490px;
+  background-color: #fff; }
+
+.page-title-block_work_top {
+  margin-bottom: 37px; }
+
+.work-steps-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.steps-title-block__title {
+  font-family: MulI;
+  font-size: 18px;
+  color: #3f3f3f; }
+
+.steps-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .steps-wrapper_top {
+    margin-top: 60px; }
+
+.step {
+  width: 145px;
+  height: 160px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+  .step__img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px solid #f3f3f3;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 40px 40px; }
+  .step_img_1 {
+    background-image: url("../img/work/1.svg"); }
+  .step_img_2 {
+    background-image: url("../img/work/2.svg"); }
+  .step_img_3 {
+    background-image: url("../img/work/3.svg");
+    background-position: 60% center; }
+  .step_img_4 {
+    background-image: url("../img/work/4.svg"); }
+  .step_img_5 {
+    background-image: url("../img/work/5.svg"); }
+  .step_img_6 {
+    background-image: url("../img/work/6.svg"); }
+  .step__description {
+    font-family: Mul;
+    font-size: 12px;
+    color: #3f3f3f;
+    line-height: 14px; }
+    .step__description-wrapper {
+      height: 41px;
+      display: flex;
+      align-items: flex-start; }
+    .step__description-link {
+      color: #ea7231;
+      border-bottom: 1px solid #ea7231;
+      text-decoration: none;
+      transition: 0.4s; }
+      .step__description-link:hover {
+        color: #e4a887;
+        border-bottom: 1px solid #e4a887;
+        transition: 0.4s; }
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/work/arrow.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 30px 30px; }
+  .arrow_center {
+    transform: translateY(-30px); }
+
+.price {
+  height: 1120px;
+  width: 100%;
+  background-color: #f8f2e4; }
+  .price-list {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+
+.cost-wrapper {
+  width: 820px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff; }
+
+.cost-list {
+  height: 210px;
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.price-button-block {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: #f4e1b6; }
+  .price-button-block__description {
+    font-family: MulM;
+    font-size: 20px;
+    color: black; }
+    .price-button-block__description-wrapper {
+      margin-left: 50px; }
+
+.cost {
+  display: flex;
+  align-items: center; }
+  .cost__description {
+    font-family: Mul;
+    font-size: 21px;
+    color: black; }
+    .cost__description-bold {
+      font-family: MulB; }
+    .cost__description-wrapper {
+      width: 550px; }
+  .cost__price {
+    font-family: MulB;
+    font-size: 21px;
+    color: #dd490f; }
+    .cost__price-wrapper {
+      margin-left: 80px; }
+  .cost_1 {
+    margin-top: 50px; }
+  .cost_2, .cost_3 {
+    margin-top: 30px; }
+  .cost_center {
+    margin-left: 50px; }
+
+.main-button-block_price_left {
+  margin-left: 66px; }
+
+.button_price {
+  width: 140px;
+  height: 40px;
+  border: 2px solid #e28234;
+  font-family: "MulB";
+  font-size: 12px;
+  transition: 0.4s; }
+  .button_price:hover {
+    background-color: #e28234; }
+  .button_price_link {
+    text-decoration: none;
+    color: #e28234; }
+    .button_price_link:hover {
+      color: white;
+      transition: 0.4s; }

@@ -56,7 +56,9 @@
   .arrow {
     width: 20px;
     height: 40px;
-    background-size: 20px 40px; } }
+    background-size: 20px 40px; }
+  .garanty-description-block__description {
+    font-size: 13px; } }
 
 @media (max-width: 960px) {
   .schedule-variant {
@@ -87,7 +89,9 @@
     .instructors-slide__description, .instructors-slide_slider-2__description {
       font-size: 11.5px; }
   .instructors-slider-block, .instructors-slider-block-2 {
-    width: 810px; } }
+    width: 810px; }
+  .documents-wrapper {
+    width: 100%; } }
 
 @media (max-width: 910px) {
   .main-title-block__title {
@@ -186,7 +190,9 @@
   .price-button-block__description {
     font-size: 16px; }
     .price-button-block__description-wrapper {
-      margin-left: 30px; } }
+      margin-left: 30px; }
+  .garanty-description-block__description {
+    font-size: 12px; } }
 
 @media (max-width: 820px) {
   .aurveda-text-block__text {
@@ -228,7 +234,18 @@
       .advantages-group_2 {
         transform: translateY(-40px); }
   .advantage {
-    height: 250px; } }
+    height: 250px; }
+  .bonuses-description-block__description {
+    font-size: 16px; }
+  .document__description {
+    font-size: 11px; }
+  .document {
+    background-size: 120px 170px;
+    width: 145px;
+    height: 200px; }
+  .garanty-description-block__description {
+    font-size: 13px;
+    width: 410px; } }
 
 @media (max-width: 770px) {
   .about-wrapper {
@@ -297,7 +314,17 @@
     .arrow_center {
       transform: translateY(0px) rotate(90deg); }
   .steps-title-block__title {
-    font-size: 15px; } }
+    font-size: 15px; }
+  .bonuses-wrapper {
+    width: 100%; }
+  .bonus {
+    width: 570px; }
+    .bonus__text {
+      font-size: 15px; }
+      .bonus__text-wrapper {
+        width: 545px; }
+  .bonuses-description-block__description {
+    font-size: 14px; } }
 
 @media (max-width: 700px) {
   .reason__text {
@@ -381,6 +408,8 @@
     background-size: 870px 840px; }
   .reviews {
     height: 480px; }
+  .price {
+    height: 1050px; }
   .cost__description {
     font-size: 14.5px; }
     .cost__description-wrapper {
@@ -418,7 +447,20 @@
   .button_schedule {
     width: 145px; }
   .page-title-block_title_advantages {
-    font-size: 31px; } }
+    font-size: 31px; }
+  .garanty {
+    height: 1386px; }
+  .documents-wrapper {
+    flex-direction: column;
+    align-items: center;
+    height: 950px; }
+  .document {
+    width: 165px;
+    height: 195px; }
+    .document__description {
+      font-size: 12px; }
+  .documents-title-block__title {
+    font-size: 21px; } }
 
 @media (max-width: 635px) {
   .main-title-block__title {
@@ -428,7 +470,17 @@
   .phone-block__link {
     font-size: 17px; }
   .button_main {
-    width: 250px; } }
+    width: 250px; }
+  .bonuses-description-block__description {
+    font-size: 12px; }
+  .bonus {
+    width: 465px; }
+    .bonus__text {
+      font-size: 12px; }
+    .bonus__text-wrapper {
+      width: 435px; }
+  .bonuses-wrapper_off {
+    height: 40px; } }
 
 @media (max-width: 580px) {
   .instructors-slide, .instructors-slide_slider-2 {
@@ -578,6 +630,21 @@
     font-size: 13px;
     width: 310px;
     text-align: center;
+    line-height: 15px; }
+  .bonus {
+    width: 405px; }
+    .bonus__text {
+      font-size: 10.5px; }
+    .bonus__text-wrapper {
+      width: 381px; }
+    .bonus_on {
+      background-size: 12px 8px; }
+    .bonus_off {
+      background-size: 8px 8px; }
+  .bonus-title-block__title {
+    font-size: 20px; }
+  .bonuses-description-block__description {
+    font-size: 10px;
     line-height: 15px; } }
 
 @media (max-width: 460px) {
@@ -595,7 +662,12 @@
   .center-text-block {
     width: 350px; }
   .aurveda {
-    height: 2450px; } }
+    height: 2450px; }
+  .garanty-description-block__description {
+    font-size: 11px;
+    width: 380px; }
+  .documents-title-block__title {
+    font-size: 17px; } }
 
 @media (max-width: 450px) {
   .main-title-block__title {
@@ -647,7 +719,25 @@
     border: 1px solid white; }
   .instructors-pagination, .instructors-pagination-2 {
     height: 10px;
-    transform: translate(5px, 10px); } }
+    transform: translate(5px, 10px); }
+  .bonus {
+    width: 350px; }
+    .bonus__text {
+      font-size: 9px; }
+    .bonus__text-wrapper {
+      width: 327px; }
+    .bonus_on {
+      background-size: 10px 6px; }
+    .bonus_off {
+      background-size: 7px 7px; }
+  .bonuses-description-block__description {
+    font-size: 8.5px; }
+  .bonus-title-block__title {
+    font-size: 16px; }
+  .bonus-title-block_bottom {
+    margin-bottom: 25px; }
+  .price {
+    height: 980px; } }
 
 @media (max-width: 420px) {
   .information_top {
@@ -693,7 +783,9 @@
   .cost__description {
     font-size: 11px; }
   .price-button-block__description {
-    font-size: 11.3px; } }
+    font-size: 11.3px; }
+  .documents-title-block__title {
+    font-size: 14px; } }
 
 @media (max-width: 380px) {
   .main-title-block__title {
@@ -756,7 +848,22 @@
     height: 600px;
     background-size: 870px 500px; }
   .steps-title-block__title {
-    font-size: 11.5px; } }
+    font-size: 11.5px; }
+  .bonus {
+    width: 298px; }
+    .bonus__text {
+      font-size: 9px;
+      line-height: 13px; }
+    .bonus__text-wrapper {
+      width: 280px; }
+  .bonuses-description-block__description {
+    font-size: 9px;
+    width: 236px; }
+  .bonus-title-block__title {
+    font-size: 14px; }
+  .garanty-description-block__description {
+    font-size: 9px;
+    width: 300px; } }
 
 @media (max-width: 340px) {
   .stock-slide {

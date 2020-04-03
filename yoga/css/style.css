@@ -955,7 +955,7 @@
     transform: translateY(-30px); }
 
 .price {
-  height: 1120px;
+  height: 1150px;
   width: 100%;
   background-color: #f8f2e4; }
   .price-list {
@@ -1024,12 +1024,133 @@
   border: 2px solid #e28234;
   font-family: "MulB";
   font-size: 12px;
-  transition: 0.4s; }
+  transition: 0.4s;
+  color: #e28234; }
   .button_price:hover {
-    background-color: #e28234; }
-  .button_price_link {
-    text-decoration: none;
-    color: #e28234; }
-    .button_price_link:hover {
-      color: white;
-      transition: 0.4s; }
+    background-color: #e28234;
+    color: white;
+    transition: 0.4s; }
+
+.bonuses-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
+  .bonuses-block_top {
+    margin-top: 50px; }
+
+.bonus-title-block_bottom {
+  margin-bottom: 38px; }
+
+.bonus-title-block__title {
+  font-family: MulM;
+  font-size: 24px;
+  color: black; }
+
+.bonuses-wrapper {
+  width: 690px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+  .bonuses-wrapper_on {
+    height: 225px; }
+  .bonuses-wrapper_off {
+    height: 50px; }
+
+.bonus {
+  width: 685px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: left center; }
+  .bonus_on {
+    background-image: url("../img/price/ok.svg");
+    background-size: 14px 10px; }
+  .bonus_off {
+    background-image: url("../img/price/no.svg");
+    background-size: 10px 10px; }
+  .bonus__text {
+    font-family: Mul;
+    font-size: 18px;
+    color: #4e4e4e; }
+    .bonus__text-wrapper {
+      width: 655px;
+      display: flex;
+      justify-content: flex-start; }
+
+.bonuses-description-block {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center; }
+  .bonuses-description-block_top {
+    margin-top: 48px; }
+  .bonuses-description-block__description {
+    font-family: Mul;
+    font-size: 18px;
+    color: black;
+    line-height: 20px; }
+
+.garanty {
+  width: 100%;
+  height: 686px;
+  background-color: #fff; }
+  .garanty-description-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center; }
+    .garanty-description-block__description {
+      font-family: MulLI;
+      font-size: 15.5px;
+      color: black;
+      line-height: 20px; }
+
+.documents-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .documents-block_top {
+    margin-top: 61px; }
+
+.documents-title-block {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .documents-title-block__title {
+    font-family: MulM;
+    font-size: 24px;
+    color: black; }
+  .documents-title-block_bottom {
+    margin-bottom: 35px; }
+
+.documents-wrapper {
+  width: 905px;
+  display: flex;
+  justify-content: space-between; }
+
+.document {
+  width: 185px;
+  height: 206px;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  background-position: center top;
+  background-size: 140px 180px;
+  background-repeat: no-repeat; }
+  .document_1 {
+    background-image: url("../img/garanty/doc1.webp"); }
+  .document_2 {
+    background-image: url("../img/garanty/doc2.webp"); }
+  .document_3 {
+    background-image: url("../img/garanty/doc3.webp"); }
+  .document_4 {
+    background-image: url("../img/garanty/doc4.webp"); }
+  .document__description {
+    font-family: Mul;
+    font-size: 14px;
+    color: black; }

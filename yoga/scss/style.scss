@@ -1272,7 +1272,7 @@
 //WORK
 
 .price {
-  height: 1120px;
+  height: 1150px;
   width: 100%;
   background-color: #f8f2e4;
 
@@ -1366,22 +1366,178 @@
   font-family: "MulB";
   font-size: 12px;
   transition: 0.4s;
+  color: #e28234;
 
   &:hover {
     background-color: #e28234;
+    color: white;
+    transition: 0.4s;
+  }
+}
+
+.bonuses-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  &_top {
+    margin-top: 50px;
+  }
+}
+
+.bonus-title-block {
+
+  &_bottom {
+    margin-bottom: 38px;
   }
 
-  &_link {
-    text-decoration: none;
-    color: #e28234;
+  &__title {
+    @include mulwl(MulM, 24px, black);
+  }
+}
 
-    &:hover {
-      color: white;
-      transition: 0.4s;
+.bonuses-wrapper {
+  width: 690px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  &_on {
+    height: 225px;
+  }
+
+  &_off {
+    height: 50px;
+  }
+}
+
+.bonus {
+  width: 685px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: left center;
+
+  &_on {
+    background-image: url('../img/price/ok.svg');
+    background-size: 14px 10px;
+  }
+
+  &_off {
+    background-image: url('../img/price/no.svg');
+    background-size: 10px 10px;
+  }
+
+  &__text {
+    @include mulwl(Mul, 18px, #4e4e4e);
+
+    &-wrapper {
+      width: 655px;
+      display: flex;
+      justify-content: flex-start;
     }
   }
 }
+
+.bonuses-description-block {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  &_top {
+    margin-top: 48px;
+  }
+
+  &__description {
+    @include mul(Mul, 18px, black, 20px);
+  }
+}
 //PRICE
+
+.garanty {
+  width: 100%;
+  height: 686px;
+  background-color: #fff;
+
+  &-description-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    &__description {
+      @include mul(MulLI, 15.5px, black, 20px);
+    }
+  }
+}
+
+.documents-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &_top {
+    margin-top: 61px;
+  }
+}
+
+.documents-title-block {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &__title {
+    @include mulwl(MulM, 24px, black);
+  }
+
+  &_bottom {
+    margin-bottom: 35px;
+  }
+}
+
+.documents-wrapper {
+  width: 905px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.document {
+  width: 185px;
+  height: 206px;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  background-position: center top;
+  background-size: 140px 180px;
+  background-repeat: no-repeat;
+
+  &_1 {
+    background-image: url('../img/garanty/doc1.webp');
+  }
+
+  &_2 {
+    background-image: url('../img/garanty/doc2.webp');
+  }
+
+  &_3 {
+    background-image: url('../img/garanty/doc3.webp');
+  }
+
+  &_4 {
+    background-image: url('../img/garanty/doc4.webp');
+  }
+
+  &__description {
+    @include mulwl(Mul, 14px, black);
+  }
+}
+//GARANTY
 
 
 

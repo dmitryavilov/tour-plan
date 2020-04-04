@@ -1538,6 +1538,231 @@
   }
 }
 //GARANTY
+.contacts {
+  width: 100%;
+  height: 390px;
+  background-color: #fcf9f1;
+
+  &-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &_top {
+      margin-top: 50px;
+    }
+  }
+
+  &-content {
+    width: 620px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.contacts-title-block {
+
+  &__title {
+    @include mulwl(MulM, 17px, black);
+  }
+}
+
+.feedback-wrapper {
+  width: 545px;
+  display: flex;
+  justify-content: space-between;
+  height: 72px;
+
+  &_top {
+    margin-top: 28px;
+  }
+}
+
+.social-links-block {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+  justify-content: space-between;
+  width: 190px;
+  &__title {
+    @include mulwl(MulM, 16px, black);
+  }
+}
+
+.feedback-phone-block {
+  width: 225px;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+
+  &__phone-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 13px;
+    height: 50px;
+  }
+
+  &__title {
+    @include mulwl(MulM, 16px, black);
+  }
+
+  &__description {
+    @include mulwl(MulLI, 12px, black);
+  }
+
+  &__phone {
+    @include mulwl(MulB, 28px, black);
+    text-decoration: none;
+    transition: 0.4s;
+
+    &:hover {
+      color: rgb(61, 61, 61);
+      transition: 0.4s;
+    }
+  }
+}
+
+.feedback-icons-block_contacts {
+  width: 183px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fb-icon_contacts {
+  border-color: #e28234;
+  width: 40px;
+  height: 40px;
+
+  &_1 {
+    background-image: url('../img/contacts/vk.svg');
+    background-size: 30px 22px;
+  }
+
+  &_2 {
+    background-image: url('../img/contacts/fb.svg');
+    background-size: 18px 27px;
+  }
+
+  &_3 {
+    background-image: url('../img/contacts/inst.svg');
+    background-size: 20px 25px;
+  }
+}
+
+.location-wrapper {
+  width: 625px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &_top {
+    margin-top: 43px;
+  }
+}
+
+.location-title-block {
+
+  &__title {
+    @include mulwl(MulM, 16px, black);
+  }
+}
+
+.maps-wrapper {
+  display: flex;
+  width: inherit;
+  justify-content: space-between;
+}
+
+.map-block {
+  width: 200px;
+  height: 106px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__description {
+    @include mulwl(Mul, 11px, black);
+  }
+}
+//CONTACTS
+
+.footer {
+  width: 100%;
+  height: 90px;
+  background-color: #383838;
+
+  &-wrapper {
+  display: flex;
+  width: 100%;
+  height: inherit;
+  justify-content: space-between;
+    &_top {
+      margin-top: 12px;
+    }
+  }
+}
+
+.footer-logo-block {
+  width: 310px;
+  display: flex;
+  height: 66px;
+  align-items: center;
+  justify-content: space-between;
+
+  &__text-wrapper {
+    height: 41px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__text {
+    @include mulwl(Mul, 12px, white);
+  }
+
+  &__link {
+    @include mulwl(Mulb, 18px, white);
+    border-bottom: 1px solid white;
+    transition: 0.4s;
+    text-decoration: none;
+
+    &:hover {
+      transition: 0.4s;
+      color: rgb(255, 249, 198);
+      border-color: rgb(255, 249, 198);
+    }
+  }
+}
+
+.logo_footer {
+  width: 51px;
+  height: 66px;
+  background-size: 51px 66px;
+}
+
+.author-block {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__name {
+    @include mulwl(Mul, 12px, white);
+  }
+
+  &__document {
+    @include mul(Mul, 12px, white, 15px);
+  }
+
+  &_top {
+    margin-top: 14px;
+  }
+}
+//FOOTER
 
 
 

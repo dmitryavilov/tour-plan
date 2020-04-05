@@ -7,12 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/libcss/reset.css">
     <link rel="stylesheet" href="css/libcss/swiper.min.css">
+    <link rel="stylesheet" href="css/libcss/animate.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
 </head>
 
 <body>
-    <main>
+    <main class="main">
         <section class="main-information">
             <header class="header header_top">
                 <div class="container">
@@ -34,31 +35,36 @@
                 <div class="container">
                     <div class="information-wrapper">
                         <div class="main-title-block">
-                            <h1 class="main-title-block__title">
+                            <h1 class="main-title-block__title wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
                                 йога-туры в Индию
                             </h1>
                         </div>
                         <div class="main-tags-block main-tags-block_top">
-                            <p class="main-tags-block__tags">
+                            <p class="main-tags-block__tags wow fadeIn" data-wow-duration="1s" data-wow-delay="1.7s">
                                 океан / йога / путешествия / аюрведа
                             </p>
                         </div>
                         <div class="main-description-block main-description-block_top">
-                            <p class="main-description-block__description">
+                            <p class="main-description-block__description wow fadeIn" data-wow-duration="1s"
+                                data-wow-delay="2.4s">
                                 Индия, штат Керала, побережье океана
                             </p>
                         </div>
                         <div class="main-button-block information-button-block main-button-block_top">
-                            <button class="button button_main">ПОДАТЬ ЗАЯВКУ</button>
+                            <button class="button button_main wow fadeIn" data-wow-duration="1s"
+                                data-wow-delay="3.1s">ПОДАТЬ ЗАЯВКУ</button>
                         </div>
                         <div class="feedback-icons-block feedback-icons-block_top">
-                            <a href="#" class="feedback-icons-block__link">
+                            <a href="#" class="feedback-icons-block__link wow fadeIn" data-wow-duration="0.4s"
+                                data-wow-delay="3.5s">
                                 <div class="fb-icon fb-icon_vk"></div>
                             </a>
-                            <a href="#" class="feedback-icons-block__link">
+                            <a href="#" class="feedback-icons-block__link wow fadeIn" data-wow-duration="0.4s"
+                                data-wow-delay="3.8s">
                                 <div class="fb-icon fb-icon_fcb"></div>
                             </a>
-                            <a href="#" class="feedback-icons-block__link">
+                            <a href="#" class="feedback-icons-block__link wow fadeIn" data-wow-duration="0.4s"
+                                data-wow-delay="4.1s">
                                 <div class="fb-icon fb-icon_inst"></div>
                             </a>
                         </div>
@@ -1501,28 +1507,28 @@
                         </h2>
                     </div>
                     <div class="documents-wrapper documents-wrapper_top">
-                        <div class="document document_1">
+                        <div class="document document_1" @click="select()">
                             <div class="document__description-wrapper">
                                 <p class="document__description">
                                     Договор на оказание услуг
                                 </p>
                             </div>
                         </div>
-                        <div class="document document_2">
+                        <div class="document document_2" @click="select()">
                             <div class="document__description-wrapper">
                                 <p class="document__description">
                                     Чек об оплате аванса
                                 </p>
                             </div>
                         </div>
-                        <div class="document document_3">
+                        <div class="document document_3" @click="select()">
                             <div class="document__description-wrapper">
                                 <p class="document__description">
                                     Бронь отеля
                                 </p>
                             </div>
                         </div>
-                        <div class="document document_4">
+                        <div class="document document_4" @click="select()">
                             <div class="document__description-wrapper">
                                 <p class="document__description">
                                     Туристический сертификат
@@ -1530,6 +1536,7 @@
                             </div>
                         </div>
                     </div>
+                    <div class="overlay" @click="unselect()"></div>
                     <!-- /.documents-wrapper -->
                 </div>
                 <!-- /.documents-block -->
@@ -1572,7 +1579,7 @@
                                 </div>
                                 <div class="feedback-phone-block__phone-wrapper">
                                     <span class="feedback-phone-block__description">
-                                        Звонки со всех номеров РФ бесплатно 
+                                        Звонки со всех номеров РФ бесплатно
                                     </span>
                                     <a href="tel:+78005053587" class="feedback-phone-block__phone">8 800 505 35 87</a>
                                 </div>
@@ -1590,7 +1597,10 @@
                             <div class="maps-wrapper">
                                 <div class="map-block">
                                     <div class="map-block__map">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d917.8522627898551!2d60.596563917880324!3d56.82822508759843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c16ef211649435%3A0x2d12f6a7d9e2f4c!2z0YPQuy4g0JLQsNC50L3QtdGA0LAsIDYwLCDQldC60LDRgtC10YDQuNC90LHRg9GA0LMsINCh0LLQtdGA0LTQu9C-0LLRgdC60LDRjyDQvtCx0LsuLCA2MjAwMTQ!5e0!3m2!1sru!2sru!4v1586016361628!5m2!1sru!2sru" width="200" height="80" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d917.8522627898551!2d60.596563917880324!3d56.82822508759843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c16ef211649435%3A0x2d12f6a7d9e2f4c!2z0YPQuy4g0JLQsNC50L3QtdGA0LAsIDYwLCDQldC60LDRgtC10YDQuNC90LHRg9GA0LMsINCh0LLQtdGA0LTQu9C-0LLRgdC60LDRjyDQvtCx0LsuLCA2MjAwMTQ!5e0!3m2!1sru!2sru!4v1586016361628!5m2!1sru!2sru"
+                                            width="200" height="80" frameborder="0" style="border:0;" allowfullscreen=""
+                                            aria-hidden="false" tabindex="0"></iframe>
                                     </div>
                                     <div class="map-block__description-wrapper">
                                         <p class="map-block__description">
@@ -1600,7 +1610,10 @@
                                 </div>
                                 <div class="map-block">
                                     <div class="map-block__map">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1413.094811657968!2d30.346802156745976!3d59.94180160664924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310ab1bf592f%3A0x27e6d7be1102eb4d!2z0JvQuNGC0LXQudC90YvQuSDQv9GALiwgMjksINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTEwMjg!5e0!3m2!1sru!2sru!4v1586016500020!5m2!1sru!2sru" width="200" height="80" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1413.094811657968!2d30.346802156745976!3d59.94180160664924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310ab1bf592f%3A0x27e6d7be1102eb4d!2z0JvQuNGC0LXQudC90YvQuSDQv9GALiwgMjksINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTEwMjg!5e0!3m2!1sru!2sru!4v1586016500020!5m2!1sru!2sru"
+                                            width="200" height="80" frameborder="0" style="border:0;" allowfullscreen=""
+                                            aria-hidden="false" tabindex="0"></iframe>
                                     </div>
                                     <div class="map-block__description-wrapper">
                                         <p class="map-block__description">
@@ -1610,7 +1623,10 @@
                                 </div>
                                 <div class="map-block">
                                     <div class="map-block__map">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1442.5903922403515!2d39.59702868148544!3d43.68600482399025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f433fadb6dfcd7%3A0xac9beea145c615ea!2z0YPQuy4g0JTQtdC60LDQsdGA0LjRgdGC0L7QsiwgMTYxLCDQodC-0YfQuCwg0JrRgNCw0YHQvdC-0LTQsNGA0YHQutC40Lkg0LrRgNCw0LksIDM1NDIwOA!5e0!3m2!1sru!2sru!4v1586016549450!5m2!1sru!2sru" width="200" height="80" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1442.5903922403515!2d39.59702868148544!3d43.68600482399025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f433fadb6dfcd7%3A0xac9beea145c615ea!2z0YPQuy4g0JTQtdC60LDQsdGA0LjRgdGC0L7QsiwgMTYxLCDQodC-0YfQuCwg0JrRgNCw0YHQvdC-0LTQsNGA0YHQutC40Lkg0LrRgNCw0LksIDM1NDIwOA!5e0!3m2!1sru!2sru!4v1586016549450!5m2!1sru!2sru"
+                                            width="200" height="80" frameborder="0" style="border:0;" allowfullscreen=""
+                                            aria-hidden="false" tabindex="0"></iframe>
                                     </div>
                                     <div class="map-block__description-wrapper">
                                         <p class="map-block__description">
@@ -1636,14 +1652,13 @@
                     <a href="index.html">
                         <div class="logo logo_footer"></div>
                     </a>
-    
                     <div class="footer-logo-block__text-wrapper">
                         <p class="footer-logo-block__text">
                             Все наши йога-туры на главном сайте
                         </p>
                         <p class="footer-logo-block__link-text">
                             <a href="#" class="footer-logo-block__link">
-                                www.yogamore.ru 
+                                www.yogamore.ru
                             </a>
                         </p>
                     </div>
@@ -1671,8 +1686,13 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="js/jqAndJqPlug/jquery-3.4.1.min.js"></script>
 <script src="js/swiperSlider/swiper.min.js"></script>
+<script src="js/wowMinJs/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 <script src="js/index.js"></script>
-<script type=”text/javascript” src=”js/webpjs-0.0.2.min.js”> </script> <script>(function(){var WebP=new Image();WebP.onload=WebP.onerror=function(){
+<script type=”text/javascript” src=”js/webpjs-0.0.2.min.js”></script>
+<script>(function(){var WebP=new Image();WebP.onload=WebP.onerror=function(){
     if(WebP.height!=2){var sc=document.createElement('script');sc.type='text/javascript';sc.async=true;
     var s=document.getElementsByTagName('script')[0];sc.src='js/webpjs-0.0.2.min.js';s.parentNode.insertBefore(sc,s);}};
     WebP.src='data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';})();

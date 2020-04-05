@@ -93,5 +93,48 @@
   //SLIDER-OPTIMIZE-FUNCTION
 //STOCK-SLIDER-BLOCK
 
+  var app = new Vue({
+    el: '.garanty',
+    methods: {
+      preventDefault(e){
+        e = e || window.event;
+        if (e.preventDefault)
+          e.preventDefault();
+        e.returnValue = false;  
+      },
+      select(e){
+        const documents = document.querySelectorAll('.document');
+        const overlay = document.querySelector('.overlay');
+        const active = document.querySelector('.document_active');
+        documents.forEach(function(el){
+          el.classList.remove('document_active');
+        });
+        t = event.target;
+        if(t.classList.contains('document')) {
+          overlay.classList.add('overlay_active');
+          t.classList.add('document_active');
+          window.addEventListener('DOMMouseScroll', this.preventDefault, false);
+          document.addEventListener('wheel', this.preventDefault, {passive: false});
+          document.addEventListener('scroll', this.preventDefault, {passive: false});
+        } else {
+          return;
+        }
+      },
+      unselect(){
+        const overlay = document.querySelector('.overlay');
+        const documents = document.querySelectorAll('.document');
+        overlay.classList.remove('overlay_active');
+        documents.forEach(function(el){
+          el.classList.remove('document_active');
+        });
+        window.removeEventListener('DOMMouseScroll', this.preventDefault, false);
+        document.removeEventListener('wheel', this.preventDefault, {passive: false});
+        document.removeEventListener('scroll', this.preventDefault, {passive: false});
+      }
+    }
+  })
+  //DOCUMENTS-SELECT-FUNCTION
+//GARANTY-BLOCK
+
 
 

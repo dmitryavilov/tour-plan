@@ -5,6 +5,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const pipeline = require('readable-stream').pipeline;
 const uglify = require('gulp-uglify-es').default;
+const babel = require('gulp-babel');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
 sass.compiler = require('node-sass');

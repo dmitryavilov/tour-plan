@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/libcss/animate.css">
+    <link rel="stylesheet" href="css/libcss/reset.css">
+    <link rel="stylesheet" href="css/main.css">   
+    <title>ЕЦПВ</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header-wrapper header-wrapper_top">
+                    <div class="header-content">
+                        <div class="navigation-sm-btn" @click="navActive()">
+                            <div class="navigation-sm-btn__blue-line navigation-sm-btn_line_1"></div>
+                            <div class="navigation-sm-btn__green-line navigation-sm-btn_line_2"></div>
+                            <div class="navigation-sm-btn__blue-line navigation-sm-btn_line_3"></div>
+                        </div>
+                        <nav class="navigation-block navigation-block_1 navigation-block_sm-none">
+                            <a href="#" class="navigation-block__link">приложения</a>
+                            <div class="navigation-block__slesh-wrapper">
+                                <div class="navigation-block__slesh"></div>
+                            </div>
+                            <a href="#" class="navigation-block__link">яндекс-такси</a>
+                        </nav>
+                        <!-- /.navigation-block -->
+                        <div class="logo-block">
+                            <a href="index.html"><div class="logo"></div></a>
+                        </div>
+                        <!-- /.logo-block -->
+                        <nav class="navigation-block navigation-block_2 navigation-block_sm-none">
+                            <a href="#" class="navigation-block__link">вакансии</a>
+                            <div class="navigation-block__slesh-wrapper">
+                                <div class="navigation-block__slesh"></div>
+                            </div>
+                            <a href="#" class="navigation-block__link">контакты</a>
+                        </nav>
+                        <!-- /.navigation-block -->
+                    </div>
+                    <nav class="navigation-block-sm">
+                        <div class="navigation-block-sm__links-wrapper">
+                            <a href="#" class="navigation-block-sm__link">ПРИЛОЖЕНИЯ</a>
+                            <a href="#" class="navigation-block-sm__link">ЯНДЕКС-ТАКСИ</a>
+                            <a href="#" class="navigation-block-sm__link">ВАКАНСИИ</a>
+                            <a href="#" class="navigation-block-sm__link">КОНТАКТЫ</a>
+                        </div>
+                    </nav>
+                    <!-- /.navigation-block-sm -->
+                    <div class="button-block button-block_header">
+                        <a href="tel:+375445860556" class="button-block__link">
+                            <button class="button-block__button button-block_button_header button_green">+375 44 586 05 56</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- /.header-wrapper -->
+            </div>
+            <!-- /.container -->
+        </header>
+        <!-- /.header -->
+        <main class="main">
+            <section class="main-information">
+                <div class="container">
+                    <div class="main-information-content">
+                        <div class="information-block">
+                            <div class="information-block__wrapper">
+                                <div class="information-block__text-wrapper">
+                                    <div class="information-block__title-wrapper">
+                                        <h1 class="information-block__title">РАБОТА В ТАКСИ</h1>
+                                    </div>
+                                    <!-- /.information-block__title-block -->
+                                    <div class="information-block__description-wrapper">
+                                        <p class="information-block__description">
+                                            ЕДИНЫЙ ЦЕНТР<br>
+                                            ПОДКЛЮЧЕНИЯ<br>
+                                            ВОДИТЕЛЕЙ
+                                        </p>
+                                    </div>
+                                    <!-- /.information-block__description-wrapper -->
+                                    <div class="information-block__bonus-wrapper">
+                                        <p class="information-block__bonus">
+                                            ДАРИМ 50 BYN
+                                        </p>
+                                    </div>
+                                    <!-- /.information-block__bonus-wrapper -->
+                                    <div class="information-block__extra-wrapper">
+                                        <p class="information-block__extra">
+                                            Если вы не заработали  в течении<br>
+                                            3 часов после подключения
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- /.information-block__text-wrapper -->
+                            </div>
+                            <div class="button-block button-block_main-information">
+                                <a href="tel:+375445860556" class="button-block__link">
+                                    <button class="button-block__button button_blue button-block_button_main-information">ПОДРОБНЕЕ</button>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- /.information-block -->
+                        <div class="feedback-block">
+                            <form action="/" class="feedback-block__feedback">
+                                <input type="text" class="feedback-block__feedback-area" required aria-required="true" placeholder="Ваше имя">
+                                <input type="text" class="feedback-block__feedback-area" required aria-required="true" placeholder="Ваш телефон">
+                                <input type="text" class="feedback-block__feedback-area" required aria-required="true" placeholder="E-mail">
+                                <div class="button-block button-block_feedback">
+                                    <a href="tel:+375445860556" class="button-block__link">
+                                        <button class="button-block__button button_green button-block_button_main-information">ОТПРАВИТЬ ЗАЯВКУ</button>
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="feedback-btn" @click="fbActive()">
+                            <p class="feedback-btn__link">ОСТАВИТЬ ЗАЯВКУ</p>
+                        </div>
+                        <!-- /.feedback-block -->
+                        <div class="overlay" @click="overlayHidden()">
+                            <div class="overlay__close-btn">X</div>
+                        </div>
+                        <!-- /.overlay -->
+                    </div>
+                    <!-- /.main-information-content -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <!-- /.main-information -->
+        </main>
+    </div>
+    <!-- /.main -->
+    <!-- /.scripts -->
+    <script src="js/libjs/wow.min.js"></script>
+    <script src="js/libjs/vue.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="js/index.js"></script>
+    <script type=”text/javascript” src=”js/webpjs-0.0.2.min.js”></script>
+    <script>
+        (function() {
+            var WebP = new Image();
+            WebP.onload = WebP.onerror = function() {
+                if (WebP.height != 2) {
+                    var sc = document.createElement('script');
+                    sc.type = 'text/javascript';
+                    sc.async = true;
+                    var s = document.getElementsByTagName('script')[0];
+                    sc.src = 'js/webpjs-0.0.2.min.js';
+                    s.parentNode.insertBefore(sc, s);
+                }
+            };
+            WebP.src = 'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
+        })();
+    </script>
+</body>
+
+</html>

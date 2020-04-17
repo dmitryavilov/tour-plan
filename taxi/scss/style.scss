@@ -38,6 +38,16 @@
   justify-content: space-between;
 }
 
+@mixin flex-jc-end-col {
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+@mixin flex-jc-st-col {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 @mixin flex-ai-cent-col {
   align-items: center;
   flex-direction: column;
@@ -136,6 +146,27 @@
 
 .button_blue {
   background-color: #2eafdf;
+}
+
+.title-block {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &_top {
+    margin-top: 150px;
+  }
+
+  &__wrapper {
+    background-image: url('../img/advantages/greenLine.png');
+    @include image(85% 20px, left bottom);
+    transform: translateX(-40px);
+  }
+
+  &__title {
+    @include fw(Px-S, 60px, #403f3f);
+    transform: translateX(41px);
+  }
 }
 //MAIN-STYLES
 
@@ -346,7 +377,7 @@
 
 .information-block {
   width: 760px;
-  height: 615px;
+  height: 635px;
   
 
   &__wrapper {
@@ -485,17 +516,15 @@
   transition: 0.5s;
 
   &__close-btn {
-    width: 50px;
-    height: 50px;
-    background-color: red;
-    color: white;
-    font-size: 15px;
+    width: 30px;
+    height: 30px;
     display: flex;
     @include flex-center;
-    font-family: Px-B;
+    background-image: url('../img/mainInformation/close.svg');
+    @include image(30px 30px, center center);
     position: fixed;
-    left: 0;
-    top: 0;
+    left: 15px;
+    top: 55px;
   }
 }
 
@@ -505,3 +534,56 @@
   display: block;
 }
 //MAIN-INFORMATION
+
+.advantages {
+  height: 638px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.advantages-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  &_top {
+    margin-top: 129px;
+  }
+}
+
+.advantage {
+  width: 404px;
+  height: 296px;
+  display: flex;
+  @include flex-jc-end-col;
+  align-items: center;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  &__text-wrapper {
+    height: 105px;
+    display: flex;
+    @include flex-jc-st-col;
+    text-align: center;
+  }
+
+  &__text {
+    @include f(Px-S, 30px, #414040, 36px);
+  }
+
+  &_1 {
+    background-image: url('../img/advantages/adv-1.svg');
+    background-size: 83px 186px;
+  }
+
+  &_2 {
+    background-image: url('../img/advantages/adv-2.svg');
+    background-size: 260px 146px;
+  }
+
+  &_3 {
+    background-image: url('../img/advantages/adv-3.svg');
+    background-size: 172px 148px;
+  }
+}
+//ADVANTAGES

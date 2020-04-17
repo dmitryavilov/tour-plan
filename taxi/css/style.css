@@ -43,6 +43,24 @@
 .button_blue {
   background-color: #2eafdf; }
 
+.title-block {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .title-block_top {
+    margin-top: 150px; }
+  .title-block__wrapper {
+    background-image: url("../img/advantages/greenLine.png");
+    background-position: left bottom;
+    background-size: 85% 20px;
+    background-repeat: no-repeat;
+    transform: translateX(-40px); }
+  .title-block__title {
+    font-family: Px-S;
+    font-size: 60px;
+    color: #403f3f;
+    transform: translateX(41px); }
+
 .header {
   width: 100%;
   height: 210px; }
@@ -206,7 +224,7 @@
 
 .information-block {
   width: 760px;
-  height: 615px; }
+  height: 635px; }
   .information-block__wrapper {
     width: 760px;
     display: flex;
@@ -331,20 +349,62 @@
   transform: translate(-50%, -50%);
   transition: 0.5s; }
   .overlay__close-btn {
-    width: 50px;
-    height: 50px;
-    background-color: red;
-    color: white;
-    font-size: 15px;
+    width: 30px;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Px-B;
+    background-image: url("../img/mainInformation/close.svg");
+    background-position: center center;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
     position: fixed;
-    left: 0;
-    top: 0; }
+    left: 15px;
+    top: 55px; }
 
 .overlay_active {
   opacity: 1;
   transition: 0.5s;
   display: block; }
+
+.advantages {
+  height: 638px;
+  width: 100%;
+  background-color: #fff; }
+
+.advantages-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+  .advantages-wrapper_top {
+    margin-top: 129px; }
+
+.advantage {
+  width: 404px;
+  height: 296px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-position: center top;
+  background-repeat: no-repeat; }
+  .advantage__text-wrapper {
+    height: 105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center; }
+  .advantage__text {
+    font-family: Px-S;
+    font-size: 30px;
+    color: #414040;
+    line-height: 36px; }
+  .advantage_1 {
+    background-image: url("../img/advantages/adv-1.svg");
+    background-size: 83px 186px; }
+  .advantage_2 {
+    background-image: url("../img/advantages/adv-2.svg");
+    background-size: 260px 146px; }
+  .advantage_3 {
+    background-image: url("../img/advantages/adv-3.svg");
+    background-size: 172px 148px; }

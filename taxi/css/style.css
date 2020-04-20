@@ -408,3 +408,175 @@
   .advantage_3 {
     background-image: url("../img/advantages/adv-3.svg");
     background-size: 172px 148px; }
+
+.offers {
+  height: 950px;
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden; }
+
+.container_offers {
+  max-width: 1760px; }
+
+.offers-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .offers-wrapper_top {
+    margin-top: 150px; }
+
+.offers-content {
+  width: 1760px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.offer {
+  width: 400px;
+  height: 393px; }
+  .offer__number {
+    font-family: Px-B;
+    font-size: 242px;
+    color: #7ae722; }
+    .offer__number-wrapper {
+      position: relative;
+      z-index: 1;
+      transform: translate(-20px, -55px); }
+  .offer_number-wrapper_1 {
+    transform: translate(-1px, -55px); }
+  .offer__round {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    width: 336px;
+    height: 336px;
+    background-color: #60bee1;
+    border-radius: 50%;
+    transform: translate(35px, -190px);
+    background-position: center 30%;
+    background-size: 86px 86px;
+    background-repeat: no-repeat; }
+  .offer_round_1 {
+    background-image: url("../img/offers/1.png"); }
+  .offer_round_2 {
+    background-image: url("../img/offers/2.png");
+    background-size: 80px 96px; }
+  .offer_round_3 {
+    background-image: url("../img/offers/3.png");
+    background-size: 108px 108px; }
+  .offer__text-wrapper {
+    height: 100px;
+    margin-top: 175px;
+    display: flex;
+    align-items: center;
+    text-align: center; }
+  .offer__text {
+    font-family: Px-S;
+    font-size: 30px;
+    color: white;
+    line-height: 36px; }
+
+.arrow {
+  width: 320px;
+  height: 9px;
+  background-image: url("../img/offers/arrow.svg");
+  background-position: center center;
+  background-size: 320px 9px;
+  background-repeat: no-repeat;
+  transform: translate(0px, 20px); }
+  .arrow_1 {
+    position: static;
+    transform: translate(5px, 20px); }
+  .arrow_2 {
+    position: static;
+    transform: translate(5px, 20px); }
+
+.action {
+  height: 946px;
+  width: 100%;
+  background-image: url("../img/action/bg.webp");
+  background-position: 80% center;
+  background-size: 2166px 946px;
+  background-repeat: no-repeat; }
+
+.action-main-content {
+  width: 977px;
+  height: 328px; }
+  .action-main-content_left {
+    margin-left: auto;
+    margin-top: 210px; }
+
+.action-text-block {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 133px;
+  align-items: center;
+  flex-direction: column; }
+  .action-text-block__title {
+    font-family: Px-B;
+    font-size: 60px;
+    color: #292929;
+    letter-spacing: 6px; }
+  .action-text-block__description {
+    font-family: Px-S;
+    font-size: 48px;
+    color: #292929;
+    letter-spacing: 2.4px; }
+
+.action-button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around; }
+  .action-button-wrapper_top {
+    margin-top: 98px; }
+
+.action-benefits-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .action-benefits-wrapper_top {
+    margin-top: 120px; }
+
+.action-benefits-content {
+  width: 1509px;
+  display: flex;
+  justify-content: space-between; }
+
+.action-benefit-block {
+  width: 405px;
+  height: 207px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+  .action-benefit-block__img-wrapper {
+    width: 100%;
+    height: 127px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center; }
+  .action-benefit-block__img {
+    background-repeat: no-repeat;
+    background-position: center center; }
+  .action-benefit-block_img_1 {
+    background-image: url("../img/action/1.svg");
+    width: 126px;
+    height: 109px;
+    background-size: 126px 109px; }
+  .action-benefit-block_img_2 {
+    background-image: url("../img/action/2.svg");
+    width: 120px;
+    height: 121px;
+    background-size: 120px 121px; }
+  .action-benefit-block_img_3 {
+    background-image: url("../img/action/3.svg");
+    width: 127px;
+    height: 127px;
+    background-size: 127px 127px; }
+  .action-benefit-block__text {
+    font-family: Px-S;
+    font-size: 30px;
+    color: #212121;
+    letter-spacing: 1.5px; }

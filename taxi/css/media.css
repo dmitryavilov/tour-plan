@@ -1,3 +1,30 @@
+@media (max-width: 1870px) {
+  .offer__round {
+    width: 296px;
+    height: 296px; }
+  .offer__number {
+    font-size: 180px; }
+  .offers-content {
+    width: 153 0px; }
+  .arrow {
+    width: 260px;
+    background-size: 260px 9px; }
+  .arrow_1 {
+    transform: translate(15px, -50px); }
+  .arrow_2 {
+    transform: translate(15px, -50px); }
+  .offer__text {
+    font-size: 25px;
+    line-height: 30px; }
+  .offer__text-wrapper {
+    margin-top: 165px; }
+  .offers-wrapper_top {
+    margin-top: 180px; }
+  .offers-wrapper {
+    width: 100%; }
+  .offer {
+    width: 335px; } }
+
 @media (max-width: 1756px) {
   .button-block_header {
     transform: translateX(580px); }
@@ -50,6 +77,89 @@
       transform: translateY(-3px); }
   .button-block_main-information {
     margin-left: 35px; } }
+
+@media (max-width: 1620px) {
+  .offer__round {
+    width: 256px;
+    height: 256px; }
+  .offer__number {
+    font-size: 160px; }
+  .offer__round {
+    background-size: 66px 66px; }
+  .offer_round_2 {
+    background-size: 60px 76px; }
+  .offer__text {
+    font-size: 22px;
+    line-height: 23px; }
+  .offer__text-wrapper {
+    margin-top: 135px; }
+  .offer {
+    width: 295px;
+    height: 303px; }
+  .arrow {
+    width: 240px;
+    background-size: 240px 9px; }
+  .offers-content {
+    width: 1370px;
+    transform: translateX(-20px); }
+  .offers-wrapper_top {
+    margin-top: 200px; }
+  .offers {
+    height: 820px; }
+  .action-text-block__title {
+    font-size: 53px; }
+  .action-text-block__description {
+    font-size: 41px; }
+  .action-text-block {
+    height: 123px; }
+  .action-button-wrapper {
+    width: 90%; }
+  .action-main-content {
+    width: 877px;
+    height: 328px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .action-button-wrapper_top {
+    margin-top: 78px; }
+  .action {
+    height: 876px;
+    width: 100%;
+    background-image: url(../img/action/bg.webp);
+    background-position: 70% center;
+    background-size: 2000px 876px;
+    background-repeat: no-repeat; }
+  .action-benefits-wrapper_top {
+    margin-top: 80px; } }
+
+@media (max-width: 1520px) {
+  .offer__round {
+    width: 226px;
+    height: 226px; }
+  .offer {
+    width: 265px;
+    height: 233px; }
+  .offer__text {
+    font-size: 19px;
+    line-height: 21px; }
+  .offer__number {
+    font-size: 142px; }
+  .offer__number-wrapper {
+    transform: translate(-10px, -85px); }
+  .offer_number-wrapper_1 {
+    transform: translate(5px, -85px); }
+  .offer__text-wrapper {
+    margin-top: 115px; }
+  .arrow {
+    width: 180px;
+    background-size: 180px 9px; }
+  .offers-content {
+    width: 1170px; }
+  .arrow {
+    width: 190px;
+    background-size: 190px 9px; }
+  .offers {
+    height: 760px; } }
 
 @media (max-width: 1490px) {
   .header-content {
@@ -134,7 +244,69 @@
   .title-block__wrapper {
     background-size: 85% 17px; }
   .advantages {
-    height: 590px; } }
+    height: 590px; }
+  .action-text-block__title {
+    font-size: 49px; }
+  .action-text-block__description {
+    font-size: 37px; }
+  .action-text-block {
+    height: 113px; }
+  .action-main-content {
+    width: 777px;
+    height: 278px; }
+  .action-button-wrapper_top {
+    margin-top: 58px; }
+  .action-main-content_left {
+    margin-top: 180px; }
+  .action-benefit-block_img_1 {
+    width: 106px;
+    height: 99px;
+    background-size: 106px 89px; }
+  .action-benefit-block_img_2 {
+    width: 100px;
+    height: 101px;
+    background-size: 100px 1201px; }
+  .action-benefit-block_img_3 {
+    width: 107px;
+    height: 107px;
+    background-size: 107px 107px; }
+  .action-benefit-block__text {
+    font-size: 24px; }
+  .action-benefit-block {
+    height: 187px; }
+  .action {
+    height: 806px;
+    background-size: 1920px 806px; } }
+
+@media (max-width: 1280px) {
+  .offer__round {
+    width: 196px;
+    height: 196px; }
+  .offer__number {
+    font-size: 130px; }
+  .offer {
+    width: 235px;
+    height: 193px; }
+  .offer_number-wrapper_1 {
+    transform: translate(4px, -85px); }
+  .offer__round {
+    background-size: 46px 46px; }
+  .offer_round_2 {
+    background-size: 45px 56px; }
+  .offer_round_3 {
+    background-size: 65px 65px; }
+  .offer__text {
+    font-size: 17px;
+    line-height: 19px; }
+  .offer__text-wrapper {
+    margin-top: 90px; }
+  .arrow {
+    width: 170px;
+    background-size: 170px 9px; }
+  .offers-content {
+    width: 1040px; }
+  .offers {
+    height: 700px; } }
 
 @media (max-width: 1250px) {
   .navigation-block__link {
@@ -208,6 +380,39 @@
     margin-left: 25px;
     width: 300px; } }
 
+@media (max-width: 1200px) {
+  .action-text-block__title {
+    font-size: 40px; }
+  .action-text-block__description {
+    font-size: 29px; }
+  .action-text-block {
+    height: 93px; }
+  .action-main-content {
+    width: 687px;
+    height: 238px; }
+  .action-benefit-block {
+    width: 330px; }
+  .action-benefit-block__text {
+    font-size: 18px; }
+  .action-benefit-block_img_1 {
+    width: 96px;
+    height: 89px;
+    background-size: 96px 89px; }
+  .action-benefit-block_img_2 {
+    width: 90px;
+    height: 91px;
+    background-size: 90px 91px; }
+  .action-benefit-block_img_3 {
+    width: 97px;
+    height: 97px;
+    background-size: 97px 97px; }
+  .action-benefit-block {
+    height: 177px; }
+  .action {
+    height: 746px;
+    background-size: 1800px 746px;
+    background-position: 65% center; } }
+
 @media (max-width: 1150px) {
   .title-block__title {
     font-size: 40px; }
@@ -218,7 +423,33 @@
   .advantages-wrapper_top {
     margin-top: 110px; }
   .advantages {
-    height: 537px; } }
+    height: 537px; }
+  .offer__round {
+    width: 176px;
+    height: 176px; }
+  .offer {
+    width: 215px;
+    height: 143px; }
+  .offer__text {
+    font-size: 16px;
+    line-height: 18px; }
+  .offer__text-wrapper {
+    margin-top: 80px; }
+  .offer__number {
+    font-size: 120px; }
+  .offer__number-wrapper {
+    transform: translate(-10px, -95px); }
+  .offer_number-wrapper_1 {
+    transform: translate(4px, -95px); }
+  .arrow {
+    width: 150px;
+    background-size: 145px 9px; }
+  .offers-content {
+    width: 920px; }
+  .arrow_1, .arrow_2 {
+    transform: translate(10px, -50px); }
+  .offers {
+    height: 625px; } }
 
 @media (max-width: 1050px) {
   .navigation-block__link {
@@ -296,6 +527,45 @@
     background-size: 1400px 552px;
     height: 552px; } }
 
+@media (max-width: 1020px) {
+  .arrow {
+    width: 130px;
+    background-size: 123px 9px; }
+  .offers-content {
+    width: 860px; }
+  .arrow_1, .arrow_2 {
+    transform: translate(15px, -50px); }
+  .offers {
+    height: 595px; }
+  .action-text-block__title {
+    font-size: 35px; }
+  .action-text-block__description {
+    font-size: 26px; }
+  .action-text-block {
+    height: 83px; }
+  .action-main-content {
+    width: 587px;
+    height: 208px; }
+  .action-benefit-block_img_1 {
+    width: 86px;
+    height: 79px;
+    background-size: 86px 79px; }
+  .action-benefit-block_img_2 {
+    width: 80px;
+    height: 81px;
+    background-size: 80px 81px; }
+  .action-benefit-block_img_3 {
+    width: 87px;
+    height: 87px;
+    background-size: 87px 87px; }
+  .action-benefit-block__text {
+    font-size: 15px; }
+  .action-benefit-block {
+    width: 217px; }
+  .action {
+    height: 696px;
+    background-size: 1750px 696px; } }
+
 @media (max-width: 950px) {
   .advantage__text {
     font-size: 16px;
@@ -320,7 +590,33 @@
   .title-block__title {
     font-size: 32px; }
   .title-block__wrapper {
-    background-size: 85% 10px; } }
+    background-size: 85% 10px; }
+  .offer__round {
+    width: 160px;
+    height: 160px; }
+  .offer__text {
+    font-size: 15px;
+    line-height: 16px; }
+  .offer__text-wrapper {
+    margin-top: 70px; }
+  .offer {
+    width: 200px;
+    height: 120px; }
+  .offer__number {
+    font-size: 110px; }
+  .offer__number-wrapper {
+    transform: translate(-5px, -105px); }
+  .offer_number-wrapper_1 {
+    transform: translate(6px, -105px); }
+  .arrow {
+    width: 105px;
+    background-size: 105px 9px; }
+  .arrow_1, .arrow_2 {
+    transform: translate(15px, -55px); }
+  .offers-content {
+    width: 770px; }
+  .offers {
+    height: 555px; } }
 
 @media (max-width: 870px) {
   .navigation-block_sm-none {
@@ -357,7 +653,53 @@
     height: 460px; }
   .main-information {
     background-size: 1500px 562px;
-    height: 472px; } }
+    height: 472px; }
+  .action {
+    height: 876px;
+    width: 100%;
+    background-image: none;
+    background-color: #eeeeed; }
+  .action-main-content_left {
+    margin-left: 0px;
+    margin-top: 80px; }
+  .action-main-content {
+    width: 100%;
+    height: 308px; }
+  .action-button-wrapper_top {
+    margin-top: 28px; }
+  .action-button-wrapper {
+    width: 90%;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 170px; }
+  .action-benefits-wrapper_top {
+    margin-top: 10px; }
+  .action-benefit-block {
+    height: 167px; }
+  .action {
+    height: 1086px; }
+  .action-benefits-content {
+    height: 610px;
+    flex-direction: column;
+    align-items: center; } }
+
+@media (max-width: 850px) {
+  .offers {
+    height: 1055px; }
+  .offers-content {
+    flex-direction: column;
+    height: 750px; }
+  .arrow_1, .arrow_2 {
+    transform: translate(15px, -60px) rotate(90deg);
+    width: 135px;
+    background-size: 135px 9px; }
+  .offers-content {
+    width: 240px;
+    transform: translateX(-15px); }
+  .offers {
+    height: 1200px; }
+  .offers-wrapper_top {
+    margin-top: 165px; } }
 
 @media (max-width: 730px) {
   .advantages-wrapper {
@@ -376,7 +718,17 @@
     font-size: 14px;
     line-height: 19px; }
   .title-block_top {
-    margin-top: 70px; } }
+    margin-top: 70px; }
+  .offers {
+    height: 1140px; } }
+
+@media (max-width: 580px) {
+  .action-text-block__title {
+    width: 340px;
+    line-height: 50px;
+    text-align: center; }
+  .action-text-block {
+    height: 163px; } }
 
 @media (max-width: 550px) {
   .information-block__title {
@@ -477,6 +829,36 @@
   .main-information {
     background-size: 1200px 510px;
     height: 412px; } }
+
+@media (max-width: 420px) {
+  .action-text-block__title {
+    font-size: 29px;
+    width: 300px;
+    line-height: 40px; }
+  .action-text-block__description {
+    font-size: 18px; }
+  .action-text-block {
+    height: 133px; }
+  .action-button-wrapper {
+    height: 153px; }
+  .action-benefit-block_img_1 {
+    width: 76px;
+    height: 69px;
+    background-size: 76px 69px; }
+  .action-benefit-block_img_2 {
+    width: 70px;
+    height: 71px;
+    background-size: 70px 71px; }
+  .action-benefit-block_img_3 {
+    width: 77px;
+    height: 77px;
+    background-size: 77px 77px; }
+  .action-benefit-block__text {
+    font-size: 13px; }
+  .action-benefits-content {
+    height: 585px; }
+  .action {
+    height: 1056px; } }
 
 @media (max-width: 360px) {
   .feedback-btn__link {

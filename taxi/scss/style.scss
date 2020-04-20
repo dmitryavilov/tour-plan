@@ -587,3 +587,223 @@
   }
 }
 //ADVANTAGES
+.offers {
+  height: 950px;
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.container_offers {
+  max-width: 1760px;
+}
+
+.offers-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &_top {
+    margin-top: 150px;
+  }
+}
+
+.offers-content {
+  width: 1760px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offer {
+  width: 400px;
+  height: 393px;
+
+  &__number {
+    @include fw(Px-B, 242px, #7ae722);
+
+    &-wrapper {
+      position: relative;
+      z-index: 1;
+      transform: translate(-20px, -55px);
+    }
+  }
+
+  &_number-wrapper_1 {
+    transform: translate(-1px, -55px);
+  }
+
+  &__round {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    width: 336px;
+    height: 336px;
+    background-color: #60bee1;
+    border-radius: 50%;
+    transform: translate(35px, -190px);
+    @include image(86px 86px,center 30%);
+  }
+
+  &_round {
+    
+    &_1 {
+      background-image: url('../img/offers/1.png');
+    }
+
+    &_2 {
+      background-image: url('../img/offers/2.png');
+      background-size: 80px 96px;
+    }
+
+    &_3 {
+      background-image: url('../img/offers/3.png');
+      background-size: 108px 108px;
+    }
+  }
+
+  &__text-wrapper {
+    height: 100px;
+    margin-top: 175px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__text {
+    @include f(Px-S, 30px, white, 36px);
+  }
+}
+
+.arrow {
+  width: 320px;
+  height: 9px;
+  background-image: url('../img/offers/arrow.svg');
+  @include image(320px 9px, center center);
+  transform: translate(0px, 20px);
+
+  &_1 {
+    position: static;
+    transform: translate(5px, 20px);
+  }
+
+  &_2 {
+    position: static;
+    transform: translate(5px, 20px);
+  }
+}
+//OFFERS
+
+.action {
+  height: 946px;
+  width: 100%;
+  background-image: url('../img/action/bg.webp');
+  @include image(2166px 946px, 80% center);
+}
+
+.action-main-content {
+  width: 977px;
+  height: 328px;
+
+  &_left {
+    margin-left: auto;
+    margin-top: 210px;
+  }
+}
+
+.action-text-block {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 133px;
+  @include flex-ai-cent-col;
+
+  &__title {
+    @include fw(Px-B, 60px, #292929);
+    letter-spacing: 6px;
+  }
+
+  &__description {
+    @include fw(Px-S, 48px, #292929);
+    letter-spacing: 2.4px;
+  }
+}
+
+.action-button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  &_top {
+    margin-top: 98px;
+  }
+}
+
+.action-benefits-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &_top {
+    margin-top: 120px;
+  }
+}
+
+.action-benefits-content {
+  width: 1509px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.action-benefit-block {
+  width: 405px;
+  height: 207px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  &__img-wrapper {
+    width: 100%;
+    height: 127px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  &__img {
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &_img {
+
+    &_1 {
+      background-image: url('../img/action/1.svg');
+      width: 126px;
+      height: 109px;
+      background-size: 126px 109px;
+    }
+
+    &_2 {
+      background-image: url('../img/action/2.svg');
+      width: 120px;
+      height: 121px;
+      background-size: 120px 121px;
+    }
+
+    &_3 {
+      background-image: url('../img/action/3.svg');
+      width: 127px;
+      height: 127px;
+      background-size: 127px 127px;
+    }
+  }
+
+  &__text {
+    @include fw(Px-S, 30px, #212121);
+    letter-spacing: 1.5px;
+  }
+}
+//ACTION

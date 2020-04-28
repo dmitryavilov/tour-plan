@@ -26,8 +26,6 @@
     width: 335px; } }
 
 @media (max-width: 1756px) {
-  .button-block_header {
-    transform: translateX(580px); }
   .button-block_button_header {
     width: 270px; }
   .header-content {
@@ -68,7 +66,7 @@
     margin-top: 50px; }
   .button-block_header {
     transform: translateX(515px);
-    top: 70px; }
+    top: 80px; }
   .navigation-block__slesh {
     width: 4px;
     height: 18px;
@@ -77,6 +75,14 @@
       transform: translateY(-3px); }
   .button-block_main-information {
     margin-left: 35px; } }
+
+@media (max-width: 1650px) {
+  .calculator-block_range-wrapper_hours-and-days {
+    width: 645px; }
+  .calculator-block__content-wrapper {
+    width: 1450px; }
+  .calculator-block__checkboxes {
+    width: 100%; } }
 
 @media (max-width: 1620px) {
   .offer__round {
@@ -224,7 +230,20 @@
     height: 15px; }
   .button-block_header {
     transform: translateX(465px);
-    top: 64px; } }
+    top: 74px; } }
+
+@media (max-width: 1450px) {
+  .calculator-block__title {
+    font-size: 27px; }
+  .calculator-block__checkbox-label-text {
+    font-size: 22px; }
+  .calculator-block__checkbox-label::before {
+    width: 40px;
+    height: 40px; }
+  .calculator-block_range-wrapper_hours-and-days {
+    width: 565px; }
+  .calculator-block__range-wrapper {
+    margin-top: 20px; } }
 
 @media (max-width: 1366px) {
   .advantage__text {
@@ -276,12 +295,19 @@
     height: 187px; }
   .action {
     height: 806px;
-    background-size: 1920px 806px; } }
+    background-size: 1920px 806px; }
+  .calculator-block__checkbox-wrapper {
+    width: 45%; }
+  .calculator-block_range-wrapper_hours-and-days {
+    width: 45%; } }
 
 @media (max-width: 1280px) {
   .offer__round {
     width: 196px;
     height: 196px; }
+  .calculator-block__title {
+    font-size: 23px;
+    line-height: 28px; }
   .offer__number {
     font-size: 130px; }
   .offer {
@@ -321,8 +347,7 @@
   .header-content {
     width: 650px; }
   .button-block_header {
-    transform: translateX(395px);
-    top: 63px; }
+    transform: translateX(395px); }
   .navigation-block__slesh-wrapper {
     transform: translateY(0px); }
   .button-block_button_header {
@@ -449,7 +474,14 @@
   .arrow_1, .arrow_2 {
     transform: translate(10px, -50px); }
   .offers {
-    height: 625px; } }
+    height: 625px; }
+  .calculator-block__title {
+    font-size: 21px;
+    letter-spacing: 2px; }
+  .calculator-block__checkbox-label-text {
+    font-size: 20px; }
+  .calculator-block__milleage {
+    margin-top: 20px; } }
 
 @media (max-width: 1050px) {
   .navigation-block__link {
@@ -473,7 +505,7 @@
     height: 132px; }
   .button-block_header {
     transform: translateX(335px);
-    top: 59px; }
+    top: 69px; }
   .information-block__title {
     font-size: 38px; }
   .information-block__description {
@@ -564,7 +596,30 @@
     width: 217px; }
   .action {
     height: 696px;
-    background-size: 1750px 696px; } }
+    background-size: 1750px 696px; }
+  .calculator-block__checkbox-label-text {
+    font-size: 16px; }
+  .calculator-block__checkbox-item-wrapper {
+    margin-bottom: 15px; }
+  .calculator-block__checkbox-group {
+    margin-top: 20px; }
+  .calculator-block__checkboxes {
+    height: 350px; }
+  .v-slider--horizontal .v-slider__tick .v-slider__tick-label {
+    font-size: 15px; }
+  .calculator-block__title {
+    font-size: 19px;
+    letter-spacing: 2px; }
+  .calculator-block__content-wrapper {
+    height: 893px; }
+  .calculator {
+    height: 1200px; }
+  .calculator-block__result {
+    font-size: 30px; }
+  .calculator-block__final-price-text {
+    font-size: 23px; }
+  .calculator-block__final-price-wrapper {
+    height: 60px; } }
 
 @media (max-width: 950px) {
   .advantage__text {
@@ -617,6 +672,16 @@
     width: 770px; }
   .offers {
     height: 555px; } }
+
+@media (max-width: 900px) {
+  .calculator-block__title {
+    font-size: 17px; }
+  .calculator-block__checkbox-label-text {
+    font-size: 14px;
+    margin-left: 12px; }
+  .calculator-block__checkbox-label::before {
+    width: 35px;
+    height: 35px; } }
 
 @media (max-width: 870px) {
   .navigation-block_sm-none {
@@ -681,7 +746,9 @@
   .action-benefits-content {
     height: 610px;
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+  .header-wrapper_top {
+    margin-top: 15px; } }
 
 @media (max-width: 850px) {
   .offers {
@@ -699,7 +766,82 @@
   .offers {
     height: 1200px; }
   .offers-wrapper_top {
-    margin-top: 165px; } }
+    margin-top: 165px; }
+  .calculator-block_range-wrapper_md {
+    display: none; }
+  .calculator {
+    height: 1900px; }
+  .calculator-block__content-wrapper {
+    height: 1593px; }
+  .calculator-block__sm-ranges {
+    height: 500px;
+    border-bottom: 2px solid #6195ff; }
+  .v-slider--vertical {
+    min-height: 400px; }
+  .v-slider--vertical .v-slider__track-container {
+    width: 5px; }
+  .v-slider__thumb {
+    width: 25px;
+    height: 25px;
+    left: -12px; }
+  .v-slider__tick-label {
+    transform: translate(18px, -5px);
+    font-size: 17px; }
+  .calculator-block_title-wrapper_sm-none {
+    display: none; }
+  .calculator-block__time {
+    display: none; }
+  .calculator-block__checkbox-wrapper {
+    align-items: center;
+    text-align: center; }
+  .calculator-block__sm-ranges {
+    display: flex; }
+  .calculator-block__checkbox-label-text {
+    font-size: 12px;
+    margin-left: 0px; }
+  .calculator-block__checkbox-label {
+    flex-direction: column; }
+  .calculator-block__checkbox-group {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .calculator-block__checkbox-item:checked + .calculator-block__checkbox-label::before {
+    font-size: 50px; }
+  .calculator-block__checkbox-label::before {
+    width: 30px;
+    height: 30px; }
+  .calculator-block__title {
+    font-size: 16px;
+    width: 200px;
+    letter-spacing: 1px;
+    line-height: 23px; }
+  .calculator-block__checkbox-label {
+    height: 55px;
+    justify-content: space-around; }
+  .calculator-block__content-wrapper {
+    height: 1000px; }
+  .calculator {
+    height: 1250px; }
+  .calculator-block__final-price-wrapper {
+    height: 60px;
+    display: none; }
+  .calculator-block_title_sm {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    line-height: 15px; }
+  .calculator-block__final-price-text-wrapper {
+    margin-left: 15px; }
+  .calculator-block__final-price-text {
+    font-size: 13px; }
+  .calculator-block__result {
+    font-size: 20px;
+    margin-left: 8px;
+    letter-spacing: 1px; }
+  .calculator-block__result-r {
+    font-size: 20px; }
+  .calculator-block__result-wrapper-sm {
+    display: flex; } }
 
 @media (max-width: 730px) {
   .advantages-wrapper {
@@ -728,11 +870,14 @@
     line-height: 50px;
     text-align: center; }
   .action-text-block {
-    height: 163px; } }
+    height: 163px; }
+  .calculator-block__content-wrapper {
+    width: 450px; }
+  .calculator-block_title_sm {
+    font-size: 11px;
+    letter-spacing: 0.3px; } }
 
 @media (max-width: 550px) {
-  .information-block__title {
-    font-size: 31px; }
   .information-block__description {
     font-size: 23px;
     line-height: 30px;
@@ -758,7 +903,7 @@
     background-size: 1500px 550px;
     height: 432px; }
   .title-block__title {
-    font-size: 22px; }
+    font-size: 20px; }
   .title-block__wrapper {
     background-size: 85% 7px; }
   .advantage__text {
@@ -828,7 +973,26 @@
     width: 290px; }
   .main-information {
     background-size: 1200px 510px;
-    height: 412px; } }
+    height: 412px; }
+  .calculator-block__title {
+    font-size: 10px;
+    width: 120px;
+    letter-spacing: 0.2px;
+    line-height: 15px; }
+  .calculator-block__checkbox-label-text {
+    font-size: 10px;
+    width: 100px;
+    height: 20px; }
+  .calculator-block_title_sm {
+    font-size: 8px;
+    width: 104px;
+    letter-spacing: 0px;
+    line-height: 12px; }
+  .calculator-block__checkbox-group {
+    margin-top: 20px; }
+  .v-slider__tick-label {
+    transform: translate(18px, -3px);
+    font-size: 12px; } }
 
 @media (max-width: 420px) {
   .action-text-block__title {
@@ -836,7 +1000,7 @@
     width: 300px;
     line-height: 40px; }
   .action-text-block__description {
-    font-size: 18px; }
+    font-size: 16px; }
   .action-text-block {
     height: 133px; }
   .action-button-wrapper {

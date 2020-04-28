@@ -240,7 +240,7 @@
 
   &_header {
     position: absolute;
-    top: 75px;
+    top: 85px;
     transform: translateX(650px);
     z-index: 1;
   }
@@ -464,6 +464,7 @@
       @include fw(Px, 30px, black);
       letter-spacing: 3px;
       margin-top: 60px;
+      background-color: white;
 
       &::placeholder {
         @include fw(Px, 30px, #737272);
@@ -807,3 +808,240 @@
   }
 }
 //ACTION
+
+.calculator {
+  height: 1350px;
+  width: 100%;
+  background-color: white;
+}
+
+.calculator-block {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &_top {
+    margin-top: 100px;
+  }
+
+  &__content-wrapper {
+    width: 1580px;
+    height: 1093px;
+  }
+
+  &__checkboxes {
+    width: 1530px;
+    height: 430px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__checkbox-wrapper {
+    display: flex;
+    @include flex-ai-spb-col;
+    height: 415px;
+    width: 630px;
+  }
+
+  &__title {
+    @include f(Px-S, 33px, black, 35px);
+    letter-spacing: 3px;
+  }
+
+  &__checkbox-group {
+    height: 295px;
+    margin-top: 30px;
+  }
+
+  &__checkbox-item-wrapper {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  &__checkbox-item {
+    display: none;
+  }
+
+  &__checkbox-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 45px;
+      height: 45px;
+      background-color: #efefef;
+      border-radius: 50%;
+    }
+
+    &-text {
+      margin-left: 20px;
+      @include fw(Px-S, 25px, black);
+    }
+  }
+
+  &__milleage {
+    margin-top: 65px;
+  }
+
+  &__time {
+    margin-top: 65px;
+    border-bottom: 3px solid #6598ff;
+    height: 190px;
+  }
+
+  &__result {
+    &-x, &-y, &-z {
+      font-size: 15px;
+    }
+  }
+
+  &_range-wrapper{
+
+    &_hours-and-days {
+      width: 745px;
+    }
+  }
+
+  &__final-price {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+
+    &-wrapper {
+      width: 245px;
+      height: 65px;
+      display: flex;
+      @include flex-jc-spb-col;
+      align-items: flex-end;
+    }
+
+    &-text {
+      @include fw(Px-S, 25px, #6a667e);
+    }
+  }
+
+  &__result, {
+    @include fw(Px-S, 35px, black);
+    letter-spacing: 2px;
+
+    &-r {
+      @include fw(Px-S, 26px, black);
+      margin-left: 5px;
+    }
+  }
+
+  &__range {
+    height: 18px;
+
+    &-wrapper {
+      margin-top: 30px;
+    }
+  }
+
+  &__checkbox-item:checked + &__checkbox-label::before {
+    content: "\2022";
+    color: #f3f3f3;
+    font-size: 60px;
+    text-align: center;
+    line-height: 18px;
+    background-color: #6598ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__time {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__sm-ranges {
+    display: none;
+    justify-content: space-between;
+  }
+
+  &__range-sm {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__result-wrapper-sm {
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 270px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0 0 6px 0 black;
+    transform: translate(-50%, -300px);
+    transition: 0.6s;
+    display: none;
+  }
+
+  &_result-wrapper-sm_active {
+    transition: 0.6s;
+    transform: translate(-50%, 0px);
+  }
+
+  &__result-content {
+    width: 210px;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    border-right: 1px solid gray;
+  }
+
+  &__result-btn {
+    background-image: url('../img/calculator/close.svg');
+    width: 50px;
+    height: 60px;
+    @include image(25px 25px, center center);
+    cursor: pointer;
+  }
+}
+
+.v-slider--horizontal .v-slider__track-container {
+  width: 100%;
+  height: 8px;
+}
+
+.v-slider__thumb {
+  width: 35px;
+  height: 35px;
+  left: -15px;
+}
+
+.v-slider--horizontal .v-slider__tick .v-slider__tick-label {
+  top: 23px;
+}
+
+.v-slider__thumb:before {
+  display: none;
+}
+
+.v-slider__tick {
+  background-color: #6195ff;
+}
+
+.v-slider__tick-label {
+  font-family: Px;
+  font-size: 20px;
+  transform: translateX(-1px);
+}
+
+.v-slider__tick--filled {
+  color: #6195ff;
+  background-color: #6195ff;
+}
+
+//СALCULATOR

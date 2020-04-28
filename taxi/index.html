@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/libcss/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/libcss/reset.css">
     <link rel="stylesheet" href="css/main.css">   
     <title>ЕЦПВ</title>
@@ -288,16 +291,261 @@
                 <!-- /.container -->
             </section>
             <!-- /.action -->
+            <section class="calculator">
+                <div class="container">
+                    <div class="title-block title-block_top">
+                        <div class="title-block__wrapper">
+                            <h2 class="title-block__title">ПОСЧИТАЙТЕ СВОЙ ДОХОД</h2>
+                        </div>
+                    </div>
+                    <div class="calculator-block calculator-block_top">
+                        <div class="calculator-block__content-wrapper">
+                            <div class="calculator-block__checkboxes">
+                                <div class="calculator-block__checkbox-wrapper calculator-block_checkbox-wrapper_1">
+                                    <div class="calculator-block__title-wrapper">
+                                        <h2 class="calculator-block__title">
+                                            С КАКОЙ СЛУЖБОЙ ВЫ<br>
+                                            ПЛАНИРУЕТЕ СОТРУДНИЧАТЬ?
+                                        </h2>
+                                    </div>
+                                    <!-- /.title-block -->
+                                    <div class="calculator-block__checkbox-group">
+                                        <div class="calculator-block__checkbox-item-wrapper">
+                                            <input type="radio" @input="resultActive()" v-model="comp" value="7" name="company-type" class="calculator-block__checkbox-item" id="comp-1">
+                                            <label class="calculator-block__checkbox-label" for="comp-1">
+                                                <span class="calculator-block__checkbox-label-text">Лайм, IQ Такси, Командир, ЕвроТакси</span>
+                                            </label>
+                                        </div>
+                                        <div class="calculator-block__checkbox-item-wrapper">
+                                            <input type="radio" @input="resultActive()" v-model="comp" value="10" name="company-type" class="calculator-block__checkbox-item" id="comp-2">
+                                            <label class="calculator-block__checkbox-label" for="comp-2">
+                                                <span class="calculator-block__checkbox-label-text">Службы 7788, 135, 152</span>
+                                            </label>
+                                        </div>
+                                        <div class="calculator-block__checkbox-item-wrapper">
+                                            <input type="radio" @input="resultActive()" v-model="comp" value="25" name="company-type" class="calculator-block__checkbox-item" id="comp-3">
+                                            <label class="calculator-block__checkbox-label" for="comp-3">
+                                                <span class="calculator-block__checkbox-label-text">Яндекс Такси/Uber</span>
+                                            </label>
+                                        </div>
+                                        <div class="calculator-block__checkbox-item-wrapper">
+                                            <input type="radio" @input="resultActive()" v-model="comp" value="12" name="company-type" class="calculator-block__checkbox-item" id="comp-4">
+                                            <label class="calculator-block__checkbox-label" for="comp-4">
+                                                <span class="calculator-block__checkbox-label-text">От Борта</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="calculator-block__checkbox-wrapper calculator-block_checkbox-wrapper_2">
+                                    <div class="calculator-block__title-wrapper">
+                                        <h2 class="calculator-block__title">
+                                            НА КАКОМ ТИПЕ ТОПЛИВА ЕЗДИТ<br>
+                                            ВАШ АВТОМОБИЛЬ?
+                                        </h2>
+                                    </div>
+                                    <!-- /.title-block -->                  
+                                    <div class="calculator-block__checkbox-group">
+                                        <div class="calculator-block__checkbox-item-wrapper">
+                                            <input type="radio" @input="resultActive()" v-model="oil" value="3" name="oil-type" class="calculator-block__checkbox-item" id="oil-1">
+                                            <label class="calculator-block__checkbox-label" for="oil-1">
+                                                <span class="calculator-block__checkbox-label-text">ДТ</span>
+                                            </label>
+                                        </div>
+                                        <div class="calculator-block__checkbox-item-wrapper">
+                                            <input type="radio" @input="resultActive()" v-model="oil" value="2" name="oil-type" class="calculator-block__checkbox-item" id="oil-2">
+                                            <label class="calculator-block__checkbox-label" for="oil-2">
+                                                <span class="calculator-block__checkbox-label-text">92</span>
+                                            </label>
+                                        </div>
+                                        <div class="calculator-block__checkbox-item-wrapper">
+                                            <input type="radio" @input="resultActive()" v-model="oil" value="5" name="oil-type" class="calculator-block__checkbox-item" id="oil-3">
+                                            <label class="calculator-block__checkbox-label" for="oil-3">
+                                                <span class="calculator-block__checkbox-label-text">95</span>
+                                            </label>
+                                        </div>
+                                        <div class="calculator-block__checkbox-item-wrapper">
+                                            <input type="radio" @input="resultActive()" v-model="oil" value="4" name="oil-type" class="calculator-block__checkbox-item" id="oil-4">
+                                            <label class="calculator-block__checkbox-label" for="oil-4">
+                                                <span class="calculator-block__checkbox-label-text">98</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.calculator-block__checkboxes -->
+                            <div class="calculator-block__milleage">
+                                <div class="calculator-block__title-wrapper calculator-block_title-wrapper_sm-none">
+                                    <h2 class="calculator-block__title">
+                                        КАКОЙ РАСХОД ТОПЛИВА У ВАШЕГО АВТОМОБИЛЯ НА 100 КМ
+                                    </h2>
+                                </div>
+                                <!-- /.title-block -->
+                                <div class="calculator-block__range-wrapper calculator-block_range-wrapper_md">
+                                        <v-slider
+                                        :tick-labels="milleageList"
+                                        v-model="milleage"
+                                        :color="color"
+                                        :track-color="trColor"
+                                        :thumb-size = "height"
+                                        :max="16"
+                                        step="1"
+                                        ticks
+                                        tick-size="8"
+                                        ></v-slider>
+                                </div>
+                                <div class="calculator-block__sm-ranges">
+                                    <div class="calculator-block__range-sm">
+                                        <div class="calculator-block__sm-title-wrapper">
+                                            <h2 class="calculator-block__title calculator-block_title_sm">
+                                                КОЛ-ВО ЧАСОВ<br>
+                                                РАБОТЫ В<br>
+                                                СУТКИ:
+                                            </h2>
+                                        </div>
+                                        <v-slider
+                                        @input="resultActive()"
+                                        :tick-labels="hoursList"
+                                        v-model="hours"
+                                        :color="color"
+                                        :vertical="true"
+                                        :track-color="trColor"
+                                        :max="4"
+                                        step="1"
+                                        ticks
+                                        tick-size="4"
+                                        ></v-slider>
+                                    </div>
+                                    <div class="calculator-block__range-sm">
+                                        <div class="calculator-block__sm-title-wrapper">
+                                            <h2 class="calculator-block__title calculator-block_title_sm">
+                                                РАСХОД ТОПЛИВА У<br>
+                                                ВАШЕГО АВТОМОБИЛЯ НА<br>
+                                                100 КМ:
+                                            </h2>
+                                        </div>
+                                        <v-slider
+                                        @input="resultActive()"
+                                        :tick-labels="milleageListSm"
+                                        v-model="milleage"
+                                        :color="color"
+                                        :vertical="true"
+                                        :track-color="trColor"
+                                        :thumb-size = "height"
+                                        :max="16"
+                                        step="1"
+                                        ticks
+                                        tick-size="4"
+                                        ></v-slider>
+                                    </div>
+                                    <div class="calculator-block__range-sm">
+                                        <div class="calculator-block__sm-title-wrapper">
+                                            <h2 class="calculator-block__title calculator-block_title_sm">
+                                                КОЛ-ВО РАБОЧИХ<br>
+                                                ДНЕЙ В<br>
+                                                МЕСЯЦ:
+                                            </h2>
+                                        </div>
+                                        <v-slider
+                                        @input="resultActive()"
+                                        :tick-labels="daysList"
+                                        v-model="days"
+                                        :color="color"
+                                        :vertical="true"
+                                        :track-color="trColor"
+                                        :max="4"
+                                        step="1"
+                                        ticks
+                                        tick-size="4"
+                                        ></v-slider>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calculator-block__time">
+                                <div class="calculator-block__hours-wrapper calculator-block_range-wrapper_hours-and-days">
+                                    <div class="calculator-block__title-wrapper">
+                                        <h2 class="calculator-block__title">
+                                            КОЛИЧЕСТВО ЧАСОВ РАБОТЫ В<br>
+                                            СУТКИ
+                                        </h2>
+                                    </div>
+                                    <div class="calculator-block__range-wrapper">
+                                        <v-slider
+                                        :tick-labels="hoursList"
+                                        v-model="hours"
+                                        :color="color"
+                                        :track-color="trColor"
+                                        :max="4"
+                                        step="1"
+                                        class="calculator-block__range"
+                                        ticks
+                                        tick-size="8"
+                                        ></v-slider>
+                                    </div>
+                                    <!-- /.title-block -->
+                                </div>
+                                <div class="calculator-block__days-wrapper calculator-block_range-wrapper_hours-and-days">
+                                    <div class="calculator-block__title-wrapper">
+                                        <h2 class="calculator-block__title">
+                                            КОЛИЧЕСТВО РАБОЧИХ ДНЕЙ В<br>
+                                            МЕСЯЦ
+                                        </h2>
+                                    </div>
+                                    <!-- /.title-block -->
+                                    <div class="calculator-block__range-wrapper">
+                                        <div class="calculator-block__range-wrapper">
+                                            <v-slider
+                                            :tick-labels="daysList"
+                                            v-model="days"
+                                            :color="color"
+                                            :track-color="trColor"
+                                            :max="4"
+                                            step="1"
+                                            ticks
+                                            tick-size="8"
+                                            ></v-slider>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calculator-block__final-price">
+                                <div class="calculator-block__final-price-wrapper">
+                                    <div class="calculator-block__final-price-text-wrapper">
+                                        <p class="calculator-block__final-price-text">Результат</p>
+                                    </div>
+                                    <div class="calculator-block__result-wrapper">
+                                        <span class="calculator-block__result">{{price}}</span><span class="calculator-block__result-r">руб.</span>
+                                    </div>
+                                </div>
+                                <div class="calculator-block__result-wrapper-sm">
+                                    <div class="calculator-block__result-content">
+                                        <div class="calculator-block__final-price-text-wrapper">
+                                            <p class="calculator-block__final-price-text">Результат:</p>
+                                        </div>
+                                        <span class="calculator-block__result">{{price}}</span><span class="calculator-block__result-r">руб.</span>
+                                    </div>
+                                    <div class="calculator-block__result-btn" @click="resultDisable()"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.calculator-block__content-wrapper -->
+                    </div>
+                </div>
+                <!-- /.container -->
+            </section>
+            <!-- /.calculator -->
         </main>
     </div>
     <!-- /.main -->
     <!-- /.scripts -->
+    <script src="js/libjs/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <script src="js/index.js"></script>
     <script src="js/libjs/wow.min.js"></script>
-    <script src="js/libjs/vue.min.js"></script>
     <script>
         new WOW().init();
     </script>
-    <script src="js/index.js"></script>
+    
+    
     <script type=”text/javascript” src=”js/webpjs-0.0.2.min.js”></script>
     <script>
         (function() {

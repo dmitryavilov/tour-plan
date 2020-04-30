@@ -390,7 +390,7 @@
                                         :max="16"
                                         step="1"
                                         ticks
-                                        tick-size="8"
+                                        tick-size="7"
                                         ></v-slider>
                                 </div>
                                 <div class="calculator-block__sm-ranges">
@@ -478,7 +478,7 @@
                                         step="1"
                                         class="calculator-block__range"
                                         ticks
-                                        tick-size="8"
+                                        tick-size="7"
                                         ></v-slider>
                                     </div>
                                     <!-- /.title-block -->
@@ -501,7 +501,7 @@
                                             :max="4"
                                             step="1"
                                             ticks
-                                            tick-size="8"
+                                            tick-size="7"
                                             ></v-slider>
                                         </div>
                                     </div>
@@ -533,6 +533,42 @@
                 <!-- /.container -->
             </section>
             <!-- /.calculator -->
+            <section class="service">
+                <div class="container">
+                    <div class="title-block title-block_service_top">
+                        <div class="title-block__wrapper title-block_wrapper_service">
+                            <h2 class="title-block__title title-block_title_service">СЛУЖБЫ, С КОТОРЫМИ МЫ РАБОТАЕМ</h2>
+                        </div>
+                    </div>
+                    <!-- /.title-block -->
+                    <div class="services-wrapper services-wrapper_top">
+                        <div class="service-block" v-for="serv in service" :style="serv.img">
+                            <!-- /.service-block__image-wrapper -->
+                            <div class="service-block__text-wrapper">
+                                <p class="service-block__text">
+                                    {{serv.text}}
+                                </p>
+                            </div>
+                            <!-- /.service-block__text-wrapper -->
+                            <div class="service-block__btn-wrapper">
+                                <a href="#" class="service-block__btn-link">
+                                    <div class="service-block__btn">
+                                        <span class="service-block__btn-text">Подробнее</span>
+                                        <div class="service-block__btn-img-wrapper">
+                                        <div class="service-block__btn-img"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- /.service-block__btn-wrapper -->
+                        </div>
+                        <div class="space"></div>                        
+                    </div>
+                    <!-- /.services-wrapper -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <!-- /.service -->
         </main>
     </div>
     <!-- /.main -->

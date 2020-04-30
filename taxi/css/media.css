@@ -74,7 +74,15 @@
     .navigation-block__slesh-wrapper {
       transform: translateY(-3px); }
   .button-block_main-information {
-    margin-left: 35px; } }
+    margin-left: 35px; }
+  .service-block, .space {
+    width: 459px; }
+  .space {
+    width: 459px; }
+  .service-block__text {
+    font-size: 21px; }
+  .services-wrapper {
+    height: 2005px; } }
 
 @media (max-width: 1650px) {
   .calculator-block_range-wrapper_hours-and-days {
@@ -136,7 +144,34 @@
     background-size: 2000px 876px;
     background-repeat: no-repeat; }
   .action-benefits-wrapper_top {
-    margin-top: 80px; } }
+    margin-top: 80px; }
+  .service-block:nth-of-type(1) {
+    background-size: 110px 215px !important; }
+  .service-block:nth-of-type(2) {
+    background-size: 283px 121px !important; }
+  .service-block:nth-of-type(3) {
+    background-size: 143px 187px !important; }
+  .service-block:nth-of-type(4) {
+    background-size: 182px 148px !important; }
+  .service-block:nth-of-type(5) {
+    background-size: 189px 189px !important; }
+  .service-block:nth-of-type(6) {
+    background-size: 361px 80px !important; }
+  .service-block:nth-of-type(7) {
+    background-size: 312px 81px !important; }
+  .service-block:nth-of-type(8) {
+    background-size: 236px 42px !important; }
+  .service-block__text {
+    font-size: 19px;
+    width: 370px; }
+  .service-block, .space {
+    width: 429px; }
+  .service-block {
+    height: 601px; }
+    .service-block__btn-wrapper {
+      margin-top: 41px; }
+  .services-wrapper {
+    height: 1905px; } }
 
 @media (max-width: 1520px) {
   .offer__round {
@@ -243,7 +278,12 @@
   .calculator-block_range-wrapper_hours-and-days {
     width: 565px; }
   .calculator-block__range-wrapper {
-    margin-top: 20px; } }
+    margin-top: 20px; }
+  .service-block__text {
+    font-size: 17px;
+    width: 320px; }
+  .service-block, .space {
+    width: 379px; } }
 
 @media (max-width: 1366px) {
   .advantage__text {
@@ -299,7 +339,28 @@
   .calculator-block__checkbox-wrapper {
     width: 45%; }
   .calculator-block_range-wrapper_hours-and-days {
-    width: 45%; } }
+    width: 45%; }
+  .service-block:nth-of-type(1) {
+    background-size: 90px 195px !important; }
+  .service-block:nth-of-type(2) {
+    background-size: 263px 101px !important; }
+  .service-block:nth-of-type(3) {
+    background-size: 123px 167px !important; }
+  .service-block:nth-of-type(4) {
+    background-size: 162px 128px !important; }
+  .service-block:nth-of-type(5) {
+    background-size: 169px 169px !important; }
+  .service-block:nth-of-type(6) {
+    background-size: 341px 60px !important; }
+  .service-block:nth-of-type(7) {
+    background-size: 292px 61px !important; }
+  .service-block:nth-of-type(8) {
+    background-size: 216px 32px !important; }
+  .service-block__text {
+    font-size: 14px;
+    width: 280px; }
+  .service-block, .space {
+    width: 359px; } }
 
 @media (max-width: 1280px) {
   .offer__round {
@@ -403,7 +464,46 @@
     height: 642px; }
   .button-block_main-information {
     margin-left: 25px;
-    width: 300px; } }
+    width: 300px; }
+  .service-block:nth-of-type(1) {
+    background-size: 70px 175px !important; }
+  .service-block:nth-of-type(2) {
+    background-size: 243px 81px !important; }
+  .service-block:nth-of-type(3) {
+    background-size: 103px 147px !important; }
+  .service-block:nth-of-type(4) {
+    background-size: 142px 108px !important; }
+  .service-block:nth-of-type(5) {
+    background-size: 149px 149px !important; }
+  .service-block:nth-of-type(6) {
+    background-size: 281px 40px !important; }
+  .service-block:nth-of-type(7) {
+    background-size: 272px 51px !important; }
+  .service-block:nth-of-type(8) {
+    background-size: 196px 25px !important; }
+  .service-block__text {
+    font-size: 13px;
+    width: 260px; }
+  .service-block {
+    height: 541px; }
+  .service-block, .space {
+    width: 319px; }
+  .service-block__btn-wrapper {
+    margin-top: 21px; }
+  .service-block__btn-text {
+    font-size: 20px; }
+  .service-block__btn {
+    width: 236px; }
+  .service-block__text-wrapper {
+    margin-top: 315px; }
+  .service-block__btn-wrapper {
+    margin-top: 0px; }
+  .service-block__text-wrapper {
+    margin-top: 275px; }
+  .service-block__btn-wrapper {
+    margin-top: 25px; }
+  .services-wrapper {
+    height: 1705px; } }
 
 @media (max-width: 1200px) {
   .action-text-block__title {
@@ -482,6 +582,21 @@
     font-size: 20px; }
   .calculator-block__milleage {
     margin-top: 20px; } }
+
+@media (max-width: 1100px) {
+  .service-block__text-wrapper {
+    margin-top: 235px; }
+  .service-block__text {
+    font-size: 13px;
+    width: 220px; }
+  .service-block__btn-wrapper {
+    margin-top: 75px; }
+  .service-block, .space {
+    width: 289px; }
+  .service-block:nth-of-type(6) {
+    background-size: 251px 40px !important; }
+  .service-block:nth-of-type(7) {
+    background-size: 252px 51px !important; } }
 
 @media (max-width: 1050px) {
   .navigation-block__link {
@@ -619,7 +734,15 @@
   .calculator-block__final-price-text {
     font-size: 23px; }
   .calculator-block__final-price-wrapper {
-    height: 60px; } }
+    height: 60px; }
+  .services-wrapper {
+    height: 2405px; }
+  .service-block:nth-child(2n) {
+    page-break-after: always; }
+  .service-block:nth-child(3n) {
+    page-break-after: unset; }
+  .service-block, .space {
+    width: 310px; } }
 
 @media (max-width: 950px) {
   .advantage__text {
@@ -841,7 +964,9 @@
   .calculator-block__result-r {
     font-size: 20px; }
   .calculator-block__result-wrapper-sm {
-    display: flex; } }
+    display: flex; }
+  .calculator-block__checkbox-item:checked + .calculator-block__checkbox-label::before {
+    background-size: 12px 12px; } }
 
 @media (max-width: 730px) {
   .advantages-wrapper {
@@ -862,7 +987,16 @@
   .title-block_top {
     margin-top: 70px; }
   .offers {
-    height: 1140px; } }
+    height: 1140px; }
+  .services-wrapper {
+    justify-content: center;
+    height: 4685px; }
+  .service-block, .space {
+    width: 340px; } }
+
+@media (max-width: 590px) {
+  .title-block_title_service {
+    font-size: 25px; } }
 
 @media (max-width: 580px) {
   .action-text-block__title {
@@ -993,6 +1127,13 @@
   .v-slider__tick-label {
     transform: translate(18px, -3px);
     font-size: 12px; } }
+
+@media (max-width: 430px) {
+  .title-block_title_service {
+    text-align: center;
+    line-height: 26px; }
+  .title-block_wrapper_service {
+    background: none; } }
 
 @media (max-width: 420px) {
   .action-text-block__title {

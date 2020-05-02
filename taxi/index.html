@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/libcss/animate.css">
+    <link rel="stylesheet" href="css/libcss/toggler.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
@@ -18,7 +19,7 @@
             <div class="container">
                 <div class="header-wrapper header-wrapper_top">
                     <div class="header-content">
-                        <div class="navigation-sm-btn" @click="navActive()">
+                        <div class="navigation-sm-btn" @click="navActive($event)">
                             <div class="navigation-sm-btn__blue-line navigation-sm-btn_line_1"></div>
                             <div class="navigation-sm-btn__green-line navigation-sm-btn_line_2"></div>
                             <div class="navigation-sm-btn__blue-line navigation-sm-btn_line_3"></div>
@@ -117,7 +118,7 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="feedback-btn" @click="fbActive()">
+                        <div class="feedback-btn" @click="fbActive($event)">
                             <p class="feedback-btn__link">ОСТАВИТЬ ЗАЯВКУ</p>
                         </div>
                         <!-- /.feedback-block -->
@@ -569,19 +570,185 @@
                 <!-- /.container -->
             </section>
             <!-- /.service -->
+            <section class="callback callback_top">
+                <div class="container">
+                    <div class="title-block title-block_top">
+                        <div class="title-block__wrapper">
+                            <h2 class="title-block__title">ОТЗЫВЫ</h2>
+                        </div>
+                    </div>
+                    <!-- /.title-block -->
+                    <div class="callback-content callback-content_top">
+                        <div class="callback-img-wrapper">
+                            <div class="callback-img-block">
+                                <div class="callback-img-block__green-round">
+                                    <div class="callback-img-block__img callback-img-block_img_1" @click="cbActive($event)"></div>
+                                </div>
+                                <div class="callback-img-block__img callback-img-block_img_2_pos callback-img-block_img_2" @click="cbActive($event)"></div>
+                                <div class="callback-img-block__img callback-img-block_img_3_pos callback-img-block_img_3 callback-img-block_img_active" @click="cbActive($event)"></div>
+                                <div class="callback-img-block__img callback-img-block_img_4_pos callback-img-block_img_4" @click="cbActive($event)"></div>
+                                <div class="callback-img-block__img callback-img-block_img_5_pos callback-img-block_img_5" @click="cbActive($event)"></div>
+                                <div class="callback-img-block__img callback-img-block_img_6_pos callback-img-block_img_6" @click="cbActive($event)"></div>
+                            </div>
+                        </div>
+                        <!-- /.collback-img-block -->
+                        <div class="callback-person-block callback-person-block_1">
+                            <div class="callback-person-block__img-wrapper">
+                                <div class="callback-person-block__img callback-person-block_img_1"></div>
+                            </div>
+                            <div class="callback-person-block__title-wrapper">
+                                <h2 class="callback-person-block__title">АНТОН БЕЛЯЕВ</h2>
+                            </div>
+                            <div class="callback-person-block__text-wrapper">
+                                <p class="callback-person-block__text">
+                                    Раньше работал в UBER, сотрудничал с другим<br>                   
+                                    превозчиком. Каждую неделю возникали вопросы с<br>                                   
+                                    оплатой. Сейчас сотрудничаю с этой компанией,<br>
+                                     все устраивает, всем доволен.<br>
+                                    Оплата всегда вовремя.
+                                </p>
+                            </div>
+                            <div class="callback-person-block__link-wrapper">                        
+                                <p class="callback-person-block__link-text">
+                                    <a href="#" class="callback-person-block__link">Оставить отзыв</a>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- /.callback-person-block-1 -->
+                        <div class="callback-person-block callback-person-block_2">
+                            <div class="callback-person-block__img-wrapper">
+                                <div class="callback-person-block__img callback-person-block_img_2"></div>
+                            </div>
+                            <div class="callback-person-block__title-wrapper">
+                                <h2 class="callback-person-block__title">ДМИТРИЙ АСТАХОВ</h2>
+                            </div>
+                            <div class="callback-person-block__text-wrapper">
+                                <p class="callback-person-block__text">
+                                    Работаю в такси уже около 3-х лет.<br>
+                                    Всем доволен, заработок стабильный, уверен<br>
+                                    в завтрашнем дне, строим с женой квартиру.<br>
+                                    Рад, что начал сотрудничать именно с ними.
+                                </p>
+                            </div>
+                            <div class="callback-person-block__link-wrapper">                        
+                                <p class="callback-person-block__link-text">
+                                    <a href="#" class="callback-person-block__link">Оставить отзыв</a>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- /.callback-person-block-2 -->
+                        <div class="callback-person-block callback-person-block_3 callback-person-block_active">
+                            <div class="callback-person-block__img-wrapper">
+                                <div class="callback-person-block__img callback-person-block_img_3"></div>
+                            </div>
+                            <div class="callback-person-block__title-wrapper">
+                                <h2 class="callback-person-block__title">ВАСИЛИЙ ПРЯДЬКО</h2>
+                            </div>
+                            <div class="callback-person-block__text-wrapper">
+                                <p class="callback-person-block__text">
+                                    У меня есть основная работа, искал надежного<br>
+                                    перевозчика для подработки. Друг посоветовал<br>
+                                    обратиться. Сейчас езжу по приложениям<br>
+                                    Такси Лайм и IQ-Taxi. После каждой смены<br>
+                                    есть наличные, всем тоже советую!
+                                </p>
+                            </div>
+                            <div class="callback-person-block__link-wrapper">                        
+                                <p class="callback-person-block__link-text">
+                                    <a href="#" class="callback-person-block__link">Оставить отзыв</a>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- /.callback-person-block-3 -->
+                        <div class="callback-person-block callback-person-block_4">
+                            <div class="callback-person-block__img-wrapper">
+                                <div class="callback-person-block__img callback-person-block_img_4"></div>
+                            </div>
+                            <div class="callback-person-block__title-wrapper">
+                                <h2 class="callback-person-block__title">ВИКТОР АСТАФЬЕВ</h2>
+                            </div>
+                            <div class="callback-person-block__text-wrapper">
+                                <p class="callback-person-block__text">
+                                    Решил попробовать себя в такси.<br>
+                                    Думал будет сложно, поработал месяц<br>
+                                    и очень доволен. Деньги хорошие, начал<br>
+                                    откадывать на новую машину.<br>
+                                    Спасибо большое ребятам.
+                                </p>
+                            </div>
+                            <div class="callback-person-block__link-wrapper">                        
+                                <p class="callback-person-block__link-text">
+                                    <a href="#" class="callback-person-block__link">Оставить отзыв</a>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- /.callback-person-block-4 -->
+                        <div class="callback-person-block callback-person-block_5">
+                            <div class="callback-person-block__img-wrapper">
+                                <div class="callback-person-block__img callback-person-block_img_5"></div>
+                            </div>
+                            <div class="callback-person-block__title-wrapper">
+                                <h2 class="callback-person-block__title">ГЕННАДИЙ БРАТУХИН</h2>
+                            </div>
+                            <div class="callback-person-block__text-wrapper">
+                                <p class="callback-person-block__text">
+                                    Хочу оставить положительный отзыв. Вчера, 31.10.2019<br>    
+                                    воспользовался службой такси.Водитель приехал<br> 
+                                    во время, стоял около машины, открыл дверь!<br> 
+                                    Комфортабельный автомобиль(серый Киа рио)<br> 
+                                    с чистым салоном очень порадовал! Огромная<br>
+                                    благодарность за качественную работу!!
+                                </p>
+                            </div>
+                            <div class="callback-person-block__link-wrapper">                        
+                                <p class="callback-person-block__link-text">
+                                    <a href="#" class="callback-person-block__link">Оставить отзыв</a>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- /.callback-person-block-5 -->
+                        <div class="callback-person-block callback-person-block_6">
+                            <div class="callback-person-block__img-wrapper">
+                                <div class="callback-person-block__img callback-person-block_img_6"></div>
+                            </div>
+                            <div class="callback-person-block__title-wrapper">
+                                <h2 class="callback-person-block__title">ВИКТОР КАРЕЛ</h2>
+                            </div>
+                            <div class="callback-person-block__text-wrapper">
+                                <p class="callback-person-block__text">
+                                    Замечательная компания, сотрудники всегда готовы<br>
+                                    помочь и реагируют быстро на все просьбы. Лично для меня<br>
+                                    офис находится в шаговой доступности, всегда<br>
+                                    можно зайти и попить кофейку на кухне! Также в компании<br>
+                                    много разных бонусов для водителей! Благодарен<br>
+                                    за сотрудничество! Ребята, так держать!
+                                </p>
+                            </div>
+                            <div class="callback-person-block__link-wrapper">                        
+                                <p class="callback-person-block__link-text">
+                                    <a href="#" class="callback-person-block__link">Оставить отзыв</a>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- /.callback-person-block-6 -->
+                    </div>
+                    <!-- /.callback-content -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <!-- /.callback -->
         </main>
     </div>
     <!-- /.main -->
     <!-- /.scripts -->
     <script src="js/libjs/vue.js"></script>
+    <script src="js/libjs/toggler.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
-    <script src="js/index.js"></script>
     <script src="js/libjs/wow.min.js"></script>
+    <script src="js/index.js"></script>
     <script>
         new WOW().init();
     </script>
-    
-    
     <script type=”text/javascript” src=”js/webpjs-0.0.2.min.js”></script>
     <script>
         (function() {

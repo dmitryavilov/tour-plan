@@ -120,13 +120,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
             ]
         },
         methods: {
-            preventDefault(e){
+            preventDefault(event){
                 e = e || window.event;
                 if (e.preventDefault)
                   e.preventDefault();
                 e.returnValue = false;  
             },
-            navActive(e){
+            navActive(event){
                 const navCl = document.querySelector('.navigation-block-sm').classList,
                       line1 = document.querySelector('.navigation-sm-btn_line_1').classList,
                       line2 = document.querySelector('.navigation-sm-btn_line_2').classList,
@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                     document.addEventListener('scroll', this.preventDefault, {passive: false});
                 }            
             },
-            fbActive(e){
+            fbActive(event){
                 const fbBlock = document.querySelector('.feedback-block').classList,
                       overlay = document.querySelector('.overlay').classList;
                 fbBlock.add('feedback-block_active');
@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 document.addEventListener('wheel', this.preventDefault, {passive: false});
                 document.addEventListener('scroll', this.preventDefault, {passive: false});
             },
-            overlayHidden(e){
+            overlayHidden(event){
                 const overlay = document.querySelector('.overlay').classList,
                       fbBlock = document.querySelector('.feedback-block').classList;
                 overlay.remove('overlay_active');
@@ -203,6 +203,27 @@ document.addEventListener("DOMContentLoaded", function(event) {
                     cbAll[5].classList.add('callback-person-block_active');
                     cbImgAll[5].classList.add('callback-img-block_img_active');
                 }                
+              },
+              mapActive(event){
+                  const maps = document.querySelectorAll('.map-content-block__map'),
+                        variants = document.querySelectorAll('.map-content-block__variant');
+                  for(i=0;i<maps.length;i++){
+                      maps[i].classList.remove('map-content-block_map_active');
+                      variants[i].classList.remove('map-content-block_variant_active');
+                  }
+                  if(event.target.classList.contains('map-content-block_variant_1')){
+                    maps[0].classList.add('map-content-block_map_active');
+                    variants[0].classList.add('map-content-block_variant_active');
+                  } else if(event.target.classList.contains('map-content-block_variant_2')){
+                      maps[1].classList.add('map-content-block_map_active');
+                      variants[1].classList.add('map-content-block_variant_active');
+                  } else if(event.target.classList.contains('map-content-block_variant_3')){
+                      maps[2].classList.add('map-content-block_map_active');
+                      variants[2].classList.add('map-content-block_variant_active');
+                  } else if(event.target.classList.contains('map-content-block_variant_4')){
+                      maps[3].classList.add('map-content-block_map_active');
+                      variants[3].classList.add('map-content-block_variant_active');
+                  }
               }
         },
         computed: {       

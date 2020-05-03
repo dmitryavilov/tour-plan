@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/libcss/animate.css">
-    <link rel="stylesheet" href="css/libcss/toggler.min.css">
+    <link rel="stylesheet" href="css/libcss/motion.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
@@ -592,7 +592,7 @@
                             </div>
                         </div>
                         <!-- /.collback-img-block -->
-                        <div class="callback-person-block callback-person-block_1">
+                        <div class="animation fade-in delay-03s callback-person-block callback-person-block_1">
                             <div class="callback-person-block__img-wrapper">
                                 <div class="callback-person-block__img callback-person-block_img_1"></div>
                             </div>
@@ -615,7 +615,7 @@
                             </div>
                         </div>
                         <!-- /.callback-person-block-1 -->
-                        <div class="callback-person-block callback-person-block_2">
+                        <div class="animation fade-in delay-03s callback-person-block callback-person-block_2">
                             <div class="callback-person-block__img-wrapper">
                                 <div class="callback-person-block__img callback-person-block_img_2"></div>
                             </div>
@@ -637,7 +637,7 @@
                             </div>
                         </div>
                         <!-- /.callback-person-block-2 -->
-                        <div class="callback-person-block callback-person-block_3 callback-person-block_active">
+                        <div class="animation fade-in delay-03s callback-person-block callback-person-block_3 callback-person-block_active">
                             <div class="callback-person-block__img-wrapper">
                                 <div class="callback-person-block__img callback-person-block_img_3"></div>
                             </div>
@@ -660,7 +660,7 @@
                             </div>
                         </div>
                         <!-- /.callback-person-block-3 -->
-                        <div class="callback-person-block callback-person-block_4">
+                        <div class="animation fade-in delay-03s callback-person-block callback-person-block_4">
                             <div class="callback-person-block__img-wrapper">
                                 <div class="callback-person-block__img callback-person-block_img_4"></div>
                             </div>
@@ -683,7 +683,7 @@
                             </div>
                         </div>
                         <!-- /.callback-person-block-4 -->
-                        <div class="callback-person-block callback-person-block_5">
+                        <div class="animation fade-in delay-03s callback-person-block callback-person-block_5">
                             <div class="callback-person-block__img-wrapper">
                                 <div class="callback-person-block__img callback-person-block_img_5"></div>
                             </div>
@@ -707,7 +707,7 @@
                             </div>
                         </div>
                         <!-- /.callback-person-block-5 -->
-                        <div class="callback-person-block callback-person-block_6">
+                        <div class="animation fade-in delay-03s callback-person-block callback-person-block_6">
                             <div class="callback-person-block__img-wrapper">
                                 <div class="callback-person-block__img callback-person-block_img_6"></div>
                             </div>
@@ -737,12 +737,32 @@
                 <!-- /.container -->
             </section>
             <!-- /.callback -->
+            <section class="map">
+                    <div class="map-content-block">
+                            <div class="map-content-block__variants-wrapper">
+                               <div class="map-content-block__variants-content">
+                                    <div class="map-content-block__variant map-content-block_variant_1" @click="mapActive($event)"></div>
+                                    <div class="map-content-block__variant map-content-block_variant_2" @click="mapActive($event)"></div>
+                                    <div class="map-content-block__variant map-content-block_variant_3 map-content-block_variant_active" @click="mapActive($event)"></div>
+                                    <div class="map-content-block__variant map-content-block_variant_4" @click="mapActive($event)"></div>
+                               </div>
+                            </div>
+                            <!-- /.map-content-block__variants-wrapper -->
+                            <div class="map-content-block__map-wrapper">
+                                <iframe class="animation fade-in delay-03s map-content-block__map map-content-block_yandex-taxi" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1174.2712557966354!2d27.479631754279165!3d53.93987114768786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc5e182875433%3A0x3ceafa740f3e7dbb!2z0K_QvdC00LXQutGBLtCi0LDQutGB0Lg!5e0!3m2!1sru!2sru!4v1588521019233!5m2!1sru!2sru" width="100%" height="479" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                <iframe class="animation fade-in delay-03s map-content-block__map map-content-block_lime-taxi" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5585.632618395731!2d27.592854507476456!3d53.94117304566501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf1c7a33c45b2d3e1!2z0J7QntCeICLQotCw0LrRgdC4INCb0LDQudC8Ig!5e0!3m2!1sru!2sru!4v1588521735488!5m2!1sru!2sru" width="100%" height="479" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                <iframe class="animation fade-in delay-03s map-content-block__map map-content-block_iq-taxi map-content-block_map_active" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.132301671831!2d27.480368221750258!3d53.90657023699178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc5e8c112a757%3A0xf6e7aedce5d51d55!2zSVEg0JDRgNC10L3QtNCw!5e0!3m2!1sru!2sru!4v1588521866537!5m2!1sru!2sru" width="100%" height="479" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                <iframe class="animation fade-in delay-03s map-content-block__map map-content-block_euro-taxi" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1661.8936152495337!2d27.521520623748554!3d53.90913362367579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc55f4bffa3af%3A0xcbcb9521c3d2f13f!2z0JXQstGA0L7QotCw0LrRgdC4!5e0!3m2!1sru!2sru!4v1588521612922!5m2!1sru!2sru" width="100%" height="479" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>                       
+                            </div>
+                    </div>
+                    <!-- /.map-content-block -->
+            </section>
+            <!-- /.map -->
         </main>
     </div>
     <!-- /.main -->
     <!-- /.scripts -->
     <script src="js/libjs/vue.js"></script>
-    <script src="js/libjs/toggler.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
     <script src="js/libjs/wow.min.js"></script>
     <script src="js/index.js"></script>

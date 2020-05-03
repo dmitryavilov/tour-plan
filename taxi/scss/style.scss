@@ -1369,14 +1369,12 @@
   @include flex-jc-spb-col;
   align-items: center;
   text-align: center;
-  transform: translateX(3500px);
-  position: absolute;
+  display: none;
   opacity: 0;
 
   &_active {
-    position: relative;
-    transform: translateX(0px);
     display: flex;
+    transform: translateX(0px);
     opacity: 1;
     transition: 0.6s;
   }
@@ -1446,3 +1444,81 @@
   }
 }
 //CALLBACK
+
+.map {
+  height: 890px;
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.map-content-block {
+
+  &__variants {
+    &-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 407px;
+    }
+
+    &-content {
+      display: flex;
+      justify-content: space-between;
+      width: 1720px;
+    }
+  }
+
+  &__variant {
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 270px;
+    opacity: 0.4;
+    transition: 0.4s;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &_variant {
+
+    &_1 {
+      background-image: url('../img/service/seven.webp');
+      background-size: 322px 91px;
+    }
+
+    &_2 {
+      background-image: url('../img/service/one.webp');
+      background-size: 120px 225px;
+    }
+
+    &_3 {
+      background-image: url('../img/service/two.webp');
+      background-size: 293px 131px;
+    }
+
+    &_4 {
+      background-image: url('../img/service/six.webp');
+      background-size: 352px 78px;
+    }
+
+    &_active {
+      opacity: 1;
+      transition: 0.4s;
+      transform: scale(1.05);
+    }
+  }
+
+  &__map {
+    display: none;
+  }
+
+  &_map_active {
+    display: block;
+  }
+}
+//MAP

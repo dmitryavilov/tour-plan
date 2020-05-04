@@ -45,6 +45,9 @@ function styles() {
 
 function scripts() {
 	return gulp.src('./js/build.js')
+	.pipe(babel({
+		presets: ['@babel/env']
+	}))
     .pipe(uglify())
     .pipe(concat('index.js'))
     .pipe(gulp.dest('./js'))

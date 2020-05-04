@@ -121,10 +121,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
         },
         methods: {
             preventDefault(event){
-                e = e || window.event;
-                if (e.preventDefault)
-                  e.preventDefault();
-                e.returnValue = false;  
+                event = event || window.event;
+                if (event.preventDefault)
+                  event.preventDefault();
+                event.returnValue = false;  
             },
             navActive(event){
                 const navCl = document.querySelector('.navigation-block-sm').classList,

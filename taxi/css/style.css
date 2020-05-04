@@ -1105,3 +1105,82 @@
 
 .map-content-block_map_active {
   display: block; }
+
+.map-content-block_map-wrapper_fix {
+  transform: translateY(10px); }
+
+.footer {
+  width: 100%;
+  background-color: #ebebeb;
+  height: 460px; }
+  .footer-content-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 350px;
+    align-items: center; }
+    .footer-content-block_elem-width {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; }
+    .footer-content-block__logo-wrapper {
+      width: 191px;
+      height: 163px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column; }
+    .footer-content-block__logo {
+      width: 121px;
+      height: 121px;
+      border-radius: 50%;
+      background-color: #fff;
+      background-position: center top;
+      background-size: 121px 121px;
+      background-repeat: no-repeat;
+      background-image: url("../img/header/logo.svg");
+      box-shadow: 0 0 6px 0px gray; }
+      .footer-content-block__logo-title {
+        font-family: Px-S;
+        font-size: 24px;
+        color: #2a2a2a;
+        letter-spacing: 1.2px; }
+      .footer-content-block__logo-link {
+        text-decoration: none; }
+    .footer-content-block__text-group {
+      height: 128px;
+      text-align: left;
+      align-items: flex-start; }
+    .footer-content-block__link {
+      font-family: Px-S;
+      font-size: 24px;
+      color: #4d4c4c;
+      text-decoration: none;
+      letter-spacing: 1.2px;
+      transition: 0.4s; }
+      .footer-content-block__link:hover {
+        color: #747474;
+        transition: 0.4s; }
+  .footer-bottom-links-block {
+    width: 100%;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #959595; }
+    .footer-bottom-links-block__wrapper {
+      width: 425px;
+      display: flex;
+      justify-content: space-between; }
+    .footer-bottom-links-block__link {
+      text-decoration: none;
+      font-family: Px-S;
+      font-size: 24px;
+      color: #3c3b3b;
+      letter-spacing: 1.2px;
+      transition: 0.4s; }
+      .footer-bottom-links-block__link:hover {
+        color: #747474;
+        transition: 0.4s; }

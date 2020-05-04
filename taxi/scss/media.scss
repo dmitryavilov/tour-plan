@@ -403,6 +403,14 @@
         width: 385px;
         height: 385px;
     }
+
+    .footer-content-block__link {
+        font-size: 18px;
+    }
+
+    .footer-content-block__text-group {
+        height: 120px;
+    }
 }
 
 @media (max-width: 1520px) {
@@ -852,6 +860,26 @@
 
     .callback {
         height: 960px;
+    }
+
+    .footer-content-block__link {
+        font-size: 14px;
+    }
+
+    .footer-bottom-links-block__link {
+        font-size: 20px;
+    }
+
+    .footer-content-block {
+        height: 280px;
+    }
+
+    .footer {
+        height: 395px;
+    }
+
+    .footer-content-block__logo-title {
+        font-size: 18px;
     }
 }
 
@@ -1458,6 +1486,49 @@
     .map {
         height: auto;
     }
+
+    .footer-content-block__link {
+        font-size: 12px;
+    }
+
+    .footer-content-block__logo {
+        width: 100px;
+        height: 100px;
+        background-size: 100px 100px;
+    }
+
+    .footer-content-block__logo-title {
+        font-size: 14px;
+    }
+
+    .footer-content-block__logo-wrapper {
+        width: 120px;
+        height: 133px;
+    }
+
+    .footer-content-block__text-group {
+        height: 105px;
+    }
+
+    .footer-bottom-links-block__link {
+        font-size: 15px;
+    }
+
+    .footer-bottom-links-block__wrapper {
+        width: 325px;
+    }
+
+    .footer-bottom-links-block {
+        height: 65px;
+    }
+
+    .footer-content-block {
+        height: 230px;
+    }
+
+    .footer {
+        height: 310px;
+    }
 }
 
 @media (max-width: 1050px) {
@@ -1863,6 +1934,57 @@
 
     .map-content-block__variant {
         width: 270px;
+    }
+
+    .footer {
+        height: 1040px;
+    }
+
+    .footer-content-block {
+        height: 858px;
+        flex-direction: column;
+
+        &_top {
+            margin-top: 35px;
+        }
+    }
+
+    .footer-content-block__link {
+        font-size: 15px;
+    }
+
+    .footer-content-block__text-group {
+        height: 125px;
+        width: 270px;
+        border-bottom: 1px solid gray;
+        padding-bottom: 15px;
+
+        &:last-child {
+            border: none;
+        }
+    }
+
+    .footer-content-block__logo-title {
+        font-size: 16px;
+    }
+
+    .footer-content-block__logo-wrapper {
+        transform: translateY(-10px);
+    }
+
+    .footer-content-block__text-group {
+        align-items: center;
+    }
+
+    .footer-bottom-links-block {
+        height: 135px;
+    }
+
+    .footer-bottom-links-block__wrapper {
+        width: 100px;
+        flex-direction: column;
+        align-items: center;
+        height: 90px;
     }
 }
 

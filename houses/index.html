@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/libcss/animate.css">
+    <link rel="stylesheet" href="css/libcss/reset.css">
+    <link rel="stylesheet" href="css/libcss/swiper.min.css">
+    <link rel="stylesheet" href="css/main.css">   
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="main">
+            <section class="main-and-header">
+                <container>
+                    <header class="header header_top">
+                        <a href="index.html" style="text-decoration: none;">
+                            <div class="logo-block">
+                                <div class="logo-block__logo"></div>
+                                <h2 class="logo-block__logo-text">Degree</h2>
+                            </div>
+                        </a>
+                        <!-- /.logo-block -->
+                        <div class="phone-and-menu-block">
+                            <a href="tel:+78002590936" style="text-decoration: none;">
+                                <div class="phone-and-menu-block__phone-wrapper">
+                                
+                                    <p class="phone-and-menu-block__text">Есть вопросы? Звоните!</p>
+                                    <p class="phone-and-menu-block__phone phone-and-menu-block__phone-link">                                       
+                                        8 /800/ 259 09 36                                       
+                                    </p>                                    
+                                </div>
+                            </a>
+                            <div ref="menuBtn" class="phone-and-menu-block__menu-btn-wrapper" @click="menuToggle()">
+                                <div class="phone-and-menu-block__elems-wrapper">
+                                    <div class="phone-and-menu-block__elem"></div>
+                                    <div class="phone-and-menu-block__elem"></div>
+                                    <div class="phone-and-menu-block__elem"></div>
+                                </div>
+                                <p class="phone-and-menu-block__menu-text">МЕНЮ</p>
+                            </div>
+                            <menu-navigation class="navigation-block_toggle"></menu-navigation>
+                        </div>
+                        <!-- /.phone-and-menu-block -->
+                    </header>
+                    <!-- /.header -->
+                    <section class="main-information">
+                        <div class="main-title-block main-title-block_top">
+                            <h1 class="main-title-block__title">Услуги по 3D моделированию<br>
+                            <span class="main-title-block__title-min">полный спектр услуг</span></h1>
+                        </div>
+                        <!-- /.main-title-block -->
+                        <div class="main-description-block main-description-block_top">
+                            <p class="main-description-block__description">
+                                Оставьте заявку сейчас и получите дизайн интерьера 25кв<span class="main-description-block__description-small">2</span> бесплатно!*
+                            </p>
+                        </div>
+                        <!-- /.main-description-block -->
+                        <form class="main-feedback-block main-feedback-block_center main-feedback-block_top">
+                            <div class="main-feedback-block__inputs-wrapper">
+                                <text-field width="290" height="51" placeholder="Ваше имя" classes="main-feedback-block__input"></text-field>
+                                <text-field width="290" height="51" placeholder="E-mail" classes="main-feedback-block__input"></text-field>
+                                <text-field width="290" height="51" placeholder="Номер телефона" classes="main-feedback-block__input"></text-field>
+                            </div>
+                            <div class="btn-block btn-block_header">
+                                <btn width="232" height="61" btn-text="Оcтавить заявку!" classes="button_effect main-feedback-block_btn" text-size="16" bgc="#19b5fe"></btn>
+                            </div>
+                        </form>
+                        <!-- /.main-feedback-block -->
+                        <div class="main-garanty-block main-garanty-block_top">
+                            <p class="main-garanty-block__garanty">
+                                *Мы гарантируем конфидициальность передаваемых данных
+                            </p>
+                        </div>
+                        <!-- /.main-garanty-block -->
+                        <div class="scroll-button-block scroll-button-block_top">
+                            <div class="scroll-button-block__button" title="Связаться с нами">
+                                <div class="scroll-button-block__mouse"></div>
+                                <div class="scroll-button-block__arrow"></div>
+                                <div class="scroll-button-block__arrow"></div>
+                            </div>
+                        </div>
+                        <!-- /.scroll-button-block -->
+                    </section>
+                    <!-- /.main-information -->
+                </container>
+            </section>
+        </main>
+        <!-- /.main -->
+    </div>
+    <!-- /.scripts -->
+    <script src="js/index.js"></script>
+    <script src="js/libjs/swiper.min.js"></script>
+    <script src="js/libjs/wow.min.js"></script>
+    <script src="js/libjs/vue.js"></script>
+    <script>
+        new WOW().init();
+    </script>   
+    <script type=”text/javascript” src=”js/webpjs-0.0.2.min.js”></script>
+    <script>
+        (function() {
+            var WebP = new Image();
+            WebP.onload = WebP.onerror = function() {
+                if (WebP.height != 2) {
+                    var sc = document.createElement('script');
+                    sc.type = 'text/javascript';
+                    sc.async = true;
+                    var s = document.getElementsByTagName('script')[0];
+                    sc.src = 'js/webpjs-0.0.2.min.js';
+                    s.parentNode.insertBefore(sc, s);
+                }
+            };
+            WebP.src = 'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
+        })();
+    </script>
+</body>
+
+</html>

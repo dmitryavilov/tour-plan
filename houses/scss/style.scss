@@ -458,7 +458,20 @@
   }
 }
 //MAIN-INFORMATION
+.transfers {
+  padding-bottom: 50px;
+}
 
+.transfer-list-block {
+
+  &__elem {
+
+    &:nth-of-type(2n){
+      flex-direction: row-reverse;
+    }
+  }
+}
+//TRANSFERS
 
 
 

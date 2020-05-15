@@ -289,3 +289,9 @@
     animation-delay: 1.2s; }
     .scroll-button-block__arrow:nth-of-type(2) {
       animation-delay: 1s; }
+
+.transfers {
+  padding-bottom: 50px; }
+
+.transfer-list-block__elem:nth-of-type(2n) {
+  flex-direction: row-reverse; }

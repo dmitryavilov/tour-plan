@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', function(){
                             Услуга, направленная на разработку интерьеров помещений с
                             целью обеспечить удобство и эстетически приятное ощущение у
                             человека при нахождении в помещении`,
-                        imgLink: 'img/transfer/1.jpg'
+                        imgLink: 'img/transfer/1.webp'
                     },
                     {
                         title: 'Дизайн экстерьера',
@@ -192,7 +192,7 @@ document.addEventListener('DOMContentLoaded', function(){
                             Услуга, направленная на разработку дизайна прилегающих элементов 
                             зданий, а также дизайн самих зданий, позволяющая обе 
                             спечить удобство людей при нахождении на территории`,
-                        imgLink: 'img/transfer/2.jpg'
+                        imgLink: 'img/transfer/2.webp'
                     },
                     {
                         title: 'Визуализация',
@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', function(){
                             Услуга, направленная на визуализацию помещений с
                             понять, как оно будет выглядеть в итоге. Это позволяет
                             исключить ошибки при выборе дизайна`,
-                        imgLink: 'img/transfer/3.jpg'
+                        imgLink: 'img/transfer/3.webp'
                     }
                 ]
             }

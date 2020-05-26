@@ -4,8 +4,11 @@ document.addEventListener('DOMContentLoaded', function(){
         //HEADER
     //VARS
     const container = {
+        props: {
+            styles: String
+        },
         template: `
-        <div style="max-width:1140px; overflow:hidden; margin:0 auto; width: 95%">
+        <div :style="" style="max-width:1140px; overflow:hidden; margin:0 auto; width: 95%">
              <slot></slot>
         </div>`
     }
@@ -45,7 +48,9 @@ document.addEventListener('DOMContentLoaded', function(){
                     border: 'none',
                     borderRadius: '30px',
                     fontFamily: 'Roboto',
-                    fontWeight: '400'
+                    fontWeight: '400',
+                    position: 'relative',
+                    zIndex: 0
                 }
             }
         },
@@ -75,10 +80,10 @@ document.addEventListener('DOMContentLoaded', function(){
                 },
                 menuElems: [
                     {text: 'Наши услуги', link: '#block-1'},
-                    {text: 'Рассчитать стоимость', link: '#'},
-                    {text: 'Портфолио', link: '#'},
-                    {text: 'Почему мы', link: '#'},
-                    {text: 'Процесс взаимодействия', link: '#'},
+                    {text: 'Рассчитать стоимость', link: '#block-2'},
+                    {text: 'Портфолио', link: '#block-3'},
+                    {text: 'Почему мы', link: '#block-4'},
+                    {text: 'Процесс взаимодействия', link: '#block-5'},
                     {text: 'Компании', link: '#'},
                     {text: 'Наша Команда', link: '#'},
                     {text: 'Наши услуги', link: '#'},
@@ -116,7 +121,9 @@ document.addEventListener('DOMContentLoaded', function(){
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'space-between',
-                    alignItems: 'center'
+                    alignItems: 'center',
+                    marginTop: '62px',
+                    marginBottom: '30px'
                 },
                 lineStyles: {
                     width: '377px',
@@ -130,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function(){
             lineColor: String
         },
         template: `
-        <div class="page-title-block" style="margin-top: 62px; margin-bottom: 30px" :style="blockStyles">
+        <div class="page-title-block" :style="blockStyles">
             <h2 class="page-title-block__text" :style="{color: textColor}" style="font-size: 36px; font-family: 'Roboto';font-weight: 400">{{text}}</h2>
             <div class="page-title-block__underline" :style="[lineStyles, {backgroundColor: lineColor}]"></div>
         </div>`
@@ -221,6 +228,136 @@ document.addEventListener('DOMContentLoaded', function(){
             </div>
         </div>`
     }
+
+    const tabulation = {
+        data(){
+            return {
+                tabs: [
+                    {text: 'ВСЕ ПРОЕКТЫ', class:"tabulation-block_tab_active tabulation-block_tab_1"},
+                    {text: 'ЭКСТЕРЬЕРЫ', class:"tabulation-block_tab_2"},
+                    {text: 'ЖИЛЫЕ ИНТЕРЬЕРЫ', class: "tabulation-block_tab_3"},
+                    {text: 'ОБЩЕСТВЕННЫЕ ИНТЕРЬЕРЫ', class: "tabulation-block_tab_4"}
+                ],
+                allProjects: [
+                    {img: 'img/portfolio/1.webp'},
+                    {img: 'img/portfolio/2.webp'},
+                    {img: 'img/portfolio/3.webp'},
+                    {img: 'img/portfolio/4.webp'},
+                    {img: 'img/portfolio/5.webp'},
+                    {img: 'img/portfolio/6.webp'}
+                ],
+                exteriors: [
+                    {img: 'img/portfolio/1.webp'},
+                    {img: 'img/portfolio/2.webp'},
+                    {img: 'img/portfolio/3.webp'},
+                    {img: 'img/portfolio/6.webp'}
+                ],
+                liveInteriors: [
+                    {img: 'img/portfolio/1.webp'},
+                    {img: 'img/portfolio/2.webp'},
+                    {img: 'img/portfolio/4.webp'},
+                    {img: 'img/portfolio/5.webp'},
+                    {img: 'img/portfolio/6.webp'}
+                ],
+                publicInteriors: [
+                    {img: 'img/portfolio/5.webp'},
+                    {img: 'img/portfolio/4.webp'},
+                    {img: 'img/portfolio/6.webp'}
+                ],
+            }
+        },
+        methods: {
+            tabToggle(e){
+                const tabs = document.querySelectorAll('.tabulation-block__tab');
+                const projects = document.querySelectorAll('.tabulation-block__projects-wrapper');
+                for (i=0; i<tabs.length; i++){
+                    tabs[i].classList.remove('tabulation-block_tab_active');
+                    projects[i].classList.remove('tabulation-block_projects_active');
+                }
+                let t = event.target;
+                t.closest('.tabulation-block__tab').classList.add('tabulation-block_tab_active');
+                if(t.closest('.tabulation-block__tab').classList.contains('tabulation-block_tab_1')){
+                    projects[0].classList.add('tabulation-block_projects_active');
+                } else if(t.closest('.tabulation-block__tab').classList.contains('tabulation-block_tab_2')){
+                    projects[1].classList.add('tabulation-block_projects_active');
+                } else if(t.closest('.tabulation-block__tab').classList.contains('tabulation-block_tab_3')){
+                    projects[2].classList.add('tabulation-block_projects_active');
+                } else if(t.closest('.tabulation-block__tab').classList.contains('tabulation-block_tab_4')){
+                    projects[3].classList.add('tabulation-block_projects_active');
+                }
+            }
+        },
+        template: `
+        <div class="tabulation-block">
+            <div class="tabulation-block__tabs-wrapper">
+                <div :class="tab.class" class="tabulation-block__tab" @click="tabToggle($event)" v-for="tab in tabs">
+                    <h2 class="tabulation-block__tab-text">{{tab.text}}</h2>
+                </div>
+            </div>
+            <div class="tabulation-block__content-wrapper">
+                <div class="tabulation-block__projects-wrapper tabulation-block_projects_active animation fade-in">
+                    <img v-for="project in allProjects" class="tabulation-block__project" :src="project.img">
+                </div>
+                <div class="tabulation-block__projects-wrapper animation fade-in">
+                    <img v-for="project in exteriors" class="tabulation-block__project" :src="project.img">
+                </div>
+                <div class="tabulation-block__projects-wrapper animation fade-in">
+                    <img v-for="project in liveInteriors" class="tabulation-block__project" :src="project.img">
+                </div>
+                <div class="tabulation-block__projects-wrapper animation fade-in">
+                    <img v-for="project in publicInteriors" class="tabulation-block__project" :src="project.img">
+                </div>          
+            </div>
+        </div>`
+    }
+
+    const advantages = {
+        data(){
+            return {
+                advantages: [
+                    {img: "img/advantages/1.png", text: `Профессиональные дизайнеры и визуализаторы с зарубежной практикой работы`, width: "73px", height: "58px"},
+                    {img: "img/advantages/2.png", text: `Интеративный подход, работаем до полного согласования с Вами`, width: "75px", height: "65px"},
+                    {img: "img/advantages/3.png", text: `Решаем вопрос закупки, берем авторский надзор на себя (пакет Full)`, width: "60px", height: "57px"},
+                    {img: "img/advantages/4.png", text: `Над проектом работает группа специалистов под началом project менеджера в ERP системе`, width: "70px", height: "61px"},
+                    {img: "img/advantages/5.png", text: `Выполнение раньше установленных сроков`, width: "70px", height: "64px"},
+                    {img: "img/advantages/6.png", text: `Дарим альбом проекта, вместе с 25% скидкой на следующее обращение`, width: "74px", height: "64px"}
+                ]
+            }
+        },
+        template: `
+        <div class="advantages-block">
+            <div class="advantages-block__advantage" v-for="advantage in advantages">
+                <div class="advantages-block__img-wrapper">
+                    <img class="advantages-block__img" :style="{height: advantage.height, width: advantage.width}" :src="advantage.img">
+                </div>
+                <p class="advantages-block__text">
+                    {{advantage.text}}
+                </p>
+            </div>
+        </div>`
+    }
+
+    const processList = {
+        data(){
+            return {
+                items:[
+                    {text:"Заполнение брифа", img: "img/process/1.webp"},
+                    {text:"Исследование", img: "img/process/2.webp"},
+                    {text:"Идея", img: "img/process/3.webp"},
+                    {text:"Завершение", img: "img/process/4.webp"},
+                ]
+            }
+        },
+        template: `
+        <div class="process-list-block">
+            <div class="process-list-block__item" v-for="item in items">
+                <img class="process-list-block__img" :src="item.img">
+                <div class="process-list-block__text-wrapper">
+                    <h2 class="process-list-block__text">{{item.text}}</h2>
+                </div>
+            </div>
+        </div>`
+    }
     //COMPONENTS
 
     VueScrollTo.setDefaults({
@@ -240,8 +377,10 @@ document.addEventListener('DOMContentLoaded', function(){
     new Vue({
         el: '.wrapper',
         data: {
-          menuBl: document.querySelector('.navigation-block'),
-          menuBtn: menuBtn
+            meter: 5,
+            defaultPrice: 4850,
+            objectPrice: 48500,
+            finalPrice: 64020
         },
         components: {
             container,
@@ -249,7 +388,15 @@ document.addEventListener('DOMContentLoaded', function(){
             btn,
             menuNavigation,
             blockTitle,
-            transferList
+            transferList,
+            tabulation,
+            advantages,
+            processList
+        },
+        filters: {
+            format(value) {
+              return value.toString().replace(/(\d)(?=(\d{3})+([^\d]|$))/g, '$1 ');
+            },
         },
         methods: {
             menuToggle(){
@@ -257,6 +404,31 @@ document.addEventListener('DOMContentLoaded', function(){
                 document.querySelectorAll('.phone-and-menu-block__elem')[0].classList.toggle('phone-and-menu-block_elem_1_active');
                 document.querySelectorAll('.phone-and-menu-block__elem')[1].classList.toggle('phone-and-menu-block_elem_2_active');
                 document.querySelectorAll('.phone-and-menu-block__elem')[2].classList.toggle('phone-and-menu-block_elem_3_active');
+            },
+            calcBtnActive(e){
+                const btns = document.querySelectorAll('.calculator-block__button');
+                for (i=0; i<btns.length; i++){
+                    btns[i].classList.remove('calculator-block_button_active');
+                }
+                t = event.target.closest('.calculator-block__button');
+                t.classList.add('calculator-block_button_active');
+                if(btns[0].classList.contains('calculator-block_button_active')){
+                    return this.finalPrice = ((+this.defaultPrice + +this.objectPrice) * 3) / 5
+                } else if(btns[1].classList.contains('calculator-block_button_active')){
+                    return this.finalPrice = ((+this.defaultPrice + +this.objectPrice) * 6) / 5
+                } else if(btns[2].classList.contains('calculator-block_button_active')){
+                    return this.finalPrice = ((+this.defaultPrice + +this.objectPrice) * 9) / 5
+                }    
+            },
+            resultToggleOn(){
+                if(document.querySelector('.calculator-block__result-wrapper-sm').classList.contains('calculator-block_result-wrapper-sm_active')){
+                    return;
+                } else {
+                    document.querySelector('.calculator-block__result-wrapper-sm').classList.add('calculator-block_result-wrapper-sm_active');
+                }                
+            },
+            resultToggleOff(){
+                document.querySelector('.calculator-block__result-wrapper-sm').classList.remove('calculator-block_result-wrapper-sm_active');
             }
         }
     });

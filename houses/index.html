@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/libcss/animate.css">
     <link rel="stylesheet" href="css/libcss/reset.css">
     <link rel="stylesheet" href="css/libcss/swiper.min.css">
+    <link rel="stylesheet" href="css/libcss/motion.min.css">
     <link rel="stylesheet" href="css/main.css">   
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <title>Document</title>
@@ -93,14 +94,148 @@
             </section>
             <section class="transfers" id="block-1">
                 <container>
-                    <block-title text="Наши услуги" text-color="black" line-color="#19b5fe"></block-title>
+                    <block-title text="Наши услуги" text-color="#363636" line-color="#19b5fe"></block-title>
                     <transfer-list>
                         <btn width="181" height="51" btn-text="Оcтавить заявку!" classes="button_effect transfer-list-block_btn" text-size="14" bgc="#19b5fe"></btn>
                     </transfer-list>
                 </container>
                 <!-- /.container -->
             </section>
-            <!-- /.transfer -->
+            <!-- /.transfers -->
+            <section class="calculator" id="block-2">
+                <container style="overflow: visible">
+                    <block-title text="Рассчитать стоимость" text-color="white" line-color="white"></block-title>
+                    <div class="calculator-description-block calculator-description-block_bottom">
+                        <p class="calculator-description-block__description">
+                            Рассчитайте предварительную стоимость разработки интерьера
+                        </p>
+                    </div>
+                    <!-- /.calculator-description-block -->
+                    <div class="calculator-block calculator-block_top">
+                        <div class="calculator-block__main-content">
+                            <div class="calculator-block__calculator-wrapper">
+                                <h2 class="calculator-block__calculator-title">
+                                    Площадь помещения:
+                                </h2>
+                                <div class="calculator-block__calculator">
+                                    <div class="calculator-block__checkbox-wrapper">
+                                        <input v-model="meter" @click="resultToggleOn()" name="calculator-checkbox" id="checkbox1" type="radio" value="2" class="calculator-block__checkbox">
+                                        <label for="checkbox1" class="calculator-block__checkbox-label calculator-block_checkbox-label_first">
+                                            <p class="calculator-block__checkbox-label-text">100м<span class="calculator-block__checkbox-label-up">2</span></p>
+                                        </label>
+                                    </div>
+                                    <div class="calculator-block__checkbox-wrapper">
+                                        <input v-model="meter" @click="resultToggleOn()" name="calculator-checkbox" id="checkbox2" type="radio" value="5" class="calculator-block__checkbox">
+                                        <label for="checkbox2" class="calculator-block__checkbox-label">
+                                            <p class="calculator-block__checkbox-label-text">10 000м<span class="calculator-block__checkbox-label-up">2</span></p>
+                                        </label>
+                                    </div>
+                                    <div class="calculator-block__checkbox-wrapper">
+                                        <input v-model="meter" @click="resultToggleOn()" name="calculator-checkbox" id="checkbox3" type="radio" value="20" class="calculator-block__checkbox">
+                                        <label for="checkbox3" class="calculator-block__checkbox-label">
+                                            <p class="calculator-block__checkbox-label-text">250 000м<span class="calculator-block__checkbox-label-up">2</span></p>
+                                        </label>
+                                    </div>
+                                    <div class="calculator-block__checkbox-wrapper">
+                                        <input v-model="meter" @click="resultToggleOn()" name="calculator-checkbox" id="checkbox4" type="radio" value="40" class="calculator-block__checkbox">
+                                        <label for="checkbox4" class="calculator-block__checkbox-label calculator-block_checkbox-label_last">
+                                            <p class="calculator-block__checkbox-label-text calculator-block_checkbox-label-text_last">500 000м<span class="calculator-block__checkbox-label-up">2</span></p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calculator-block__packets-list">
+                                <h2 class="calculator-block__calculator-title">
+                                    Выберите пакет:
+                                </h2>
+                                <div class="calculator-block__buttons-wrapper">
+                                    <div class="calculator-block__button"  @click="resultToggleOn();calcBtnActive($event)" value="3">
+                                        <h2 class="calculator-block__button-text">Light</h2>
+                                        <div class="calculator-block__button-modal animation fade-in">
+                                            <p class="calculator-block__button-modal-text">
+                                                План расстановки мебели. Пакет рекомендуется для<br>
+                                                маленьких помещений.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="calculator-block__button calculator-block_button_active"  @click="resultToggleOn();calcBtnActive($event)"  value="6">
+                                        <h2 class="calculator-block__button-text">Medium</h2>
+                                        <div class="calculator-block__button-modal animation fade-in">
+                                            <p class="calculator-block__button-modal-text">
+                                                План расстановки мебели. 3D визуализация.<br>
+                                                Пакет рекомендуется для средних<br>
+                                                маленьких помещений.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="calculator-block__button"  @click="resultToggleOn();calcBtnActive($event)" value="9">
+                                        <h2 class="calculator-block__button-text">Full</h2>
+                                        <div class="calculator-block__button-modal animation fade-in">
+                                            <p class="calculator-block__button-modal-text">
+                                                План расстановки мебели. 3D визуализация. Все рабочие<br>
+                                                чертежи (план полов, план потолка, развертки по стенам,<br>
+                                                план электросетей)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="calculator-block__result">Результат: <span class="calculator-block__result-price">{{finalPrice*meter|format }}</span> тг.</h2>
+                            <div class="calculator-block__result-wrapper-sm">
+                                <h2 class="calculator-block__result-sm">
+                                    Результат: <span class="calculator-block__result-price">{{finalPrice*meter|format }}</span> тг.
+                                </h2>
+                                <div class="calculator-block__close-btn" @click="resultToggleOff()"></div>
+                            </div>
+                            
+                        </div>                       
+                        <div class="calculator-block__results-wrapper">
+                            <h2 class="calculator-block__results-title">Площадь помещения</h2>
+                            <p class="calculator-block__results-description">
+                                1 000м<span class="calculator-block__results-description-up">2</span>
+                            </p>
+                            <h2 class="calculator-block__results-title">
+                                Средняя стоимость м<span class="calculator-block__results-title-up">2</span>:
+                            </h2>
+                            <p class="calculator-block__results-description">
+                                4 850 тг.
+                            </p>
+                            <h2 class="calculator-block__results-title">Средняя стоимость объекта: </h2>
+                            <p class="calculator-block__results-description">48 500 тг.</p>
+                            <btn width="309" height="51" btn-text="Получить консультацию специалиста" classes="button_effect calculator-block__btn" text-size="14" bgc="#19b5fe"></btn>
+                            <p class="calculator-block__results-phone">или позвоните нам по телефону:<br>
+                                <a href="tel:+77273887177" class="calculator-block__results-phone-link">+ 7 727 388 71 77</a>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /.calculator-block -->
+                </container>
+                <!-- /.container -->
+            </section>
+            <section class="portfolio" id="block-3">
+                <container>
+                    <block-title text="Портфолио" text-color="#363636" line-color="#19b5fe"></block-title>
+                    <tabulation></tabulation>
+                </container>
+                <!-- /.container -->
+            </section>
+            <!-- /.portfolio -->
+            <section class="advantages" id="block-4">
+                <container>
+                    <block-title text="Почему мы лучшие?" text-color="#363636" line-color="#19b5fe"></block-title>
+                    <advantages></advantages>
+                </container>
+                <!-- /.container -->
+            </section>
+            <!-- /.advantages -->
+            <section class="process" id="block-5">
+                <container>
+                    <block-title text="Процесс взаимодействия" text-color="#363636" line-color="#19b5fe"></block-title>
+                    <process-list></process-list>
+                </container>
+                <!-- /.container -->
+            </section>
+            <!-- /.process -->
         </main>
         <!-- /.main -->
     </div>

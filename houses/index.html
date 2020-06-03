@@ -80,7 +80,7 @@
                         </div>
                         <!-- /.main-garanty-block -->
                         <div class="scroll-button-block scroll-button-block_top">
-                            <div class="scroll-button-block__button" title="Связаться с нами">
+                            <div class="scroll-button-block__button" title="Связаться с нами" v-scroll-to="'#block-8'">
                                 <div class="scroll-button-block__mouse"></div>
                                 <div class="scroll-button-block__arrow"></div>
                                 <div class="scroll-button-block__arrow"></div>
@@ -236,15 +236,108 @@
                 <!-- /.container -->
             </section>
             <!-- /.process -->
+            <section class="team" id="block-6">
+                <container>
+                    <block-title text="Наша команда" text-color="#363636" line-color="#19b5fe"></block-title>
+                    <team-list></team-list>
+                    <div class="credit-block credit-block_top">
+                        <h2 class="credit-block__title">Ты - то, что ты делаешь!</h2>
+                        <p class="credit-block__credit">
+                            То, что мы делаем, определяет то, кем мы являемся. Люди чувствуют старание и чувствуют неаккуратность. Это
+                            связано с уважением друг к другу, так что небрежность - это неуважение к самому себе.
+                        </p>
+                        <h2 class="credit-block__name">Ирина Притыкина</h2>
+                        <p class="credit-block__description">Директор</p>
+                        <div class="credit-block__quotes"></div>
+                        <div class="credit-block__quotes"></div>
+                    </div>
+                    <!-- /.credit -->
+                </container>
+                <!-- /.container -->
+            </section>
+            <!-- /.team -->
+            <section class="blog" id="block-7">
+                <container>
+                    <block-title text="Блог" text-color="#363636" line-color="#19b5fe"></block-title>
+                    <blog></blog>
+                </container>
+                <!-- /.container -->
+            </section>
+            <!-- /.blog -->
+            <section class="contacts" id="block-8">
+                <container>
+                    <block-title text="Остались вопросы?" text-color="white" line-color="white"></block-title>
+                    <p class="contacts-description">Задайте их в форме ниже, и наши специалисты свяжутся с Вами!</p>
+                    <div class="contacts-wrapper contacts-wrapper_top">
+                        <form class="contacts-feedback contacts-feedback_sm">
+                            <div class="contacts-feedback__small-field-wrapper">
+                                <input type="text" required aria-required="true" class="contacts-feedback__small-field" placeholder="Ваше имя">
+                                <input type="text" required aria-required="true" class="contacts-feedback__small-field" placeholder="Ваш e-mail">
+                                <input type="text" required aria-required="true" class="contacts-feedback__small-field" placeholder="Ваш номер телефона">
+                            </div>
+                            <textarea required aria-required="true" class="contacts-feedback__textarea" placeholder="Ваше сообщение"></textarea>
+                            <div class="contacts-feedback__btn-wrapper">
+                                <btn width="213" height="56" btn-text="Оcтавить заявку!" classes="button_effect contacts-feedback__btn" text-size="15" bgc="#19b5fe"></btn>
+                            </div>
+                        </form>
+                        <!-- /.contacts-feedback -->
+                        <contacts-list>
+                            <p class="contacts-variants__description">График работы: с 9-00 до 18-00. Пн.-Пт.</p>
+                        </contacts-list>
+                    </div>
+                    <!-- /.contacts-wrapper -->        
+                </container>
+                <!-- /.container -->
+            </section>
+            <!-- /.contacts -->
+            <section class="map">
+                <div class="map-block">
+                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/biznes_tsentr_respublika/237423108148/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Бизнес-центр Республика</a><a href="https://yandex.ru/maps/162/almaty/category/business_center/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Бизнес-центр в Алматы</a><a href="https://yandex.ru/maps/162/almaty/category/real_estate_agency/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Агентство недвижимости в Алматы</a><iframe src="https://yandex.ru/map-widget/v1/-/CCQdBXTsoC" width="100%" height="600px" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                </div>
+            </section>
+            <!-- /.map -->
+            <footer class="footer">
+                <container>
+                    <div class="footer-menu-block footer-menu-block_top">
+                        <div class="footer-menu-block__elems-wrapper">
+                            <div class="footer-menu-block__elems-group">
+                                <a href="#" class="footer-menu-block__elem">Главная</a>
+                                <a href="#" class="footer-menu-block__elem">Тарифы</a>
+                            </div>
+                            <div class="footer-menu-block__elems-group">
+                                <a href="#" class="footer-menu-block__elem">Вопросы-ответы</a>
+                                <a href="#" class="footer-menu-block__elem">Личный кабинет</a>
+                            </div>
+                            <div class="footer-menu-block__elems-group">
+                                <a href="#" class="footer-menu-block__elem">Новости</a>
+                                <a href="#" class="footer-menu-block__elem">Договор публичной аферты</a>
+                            </div>
+                        </div>
+                        <!-- /.footer-menu-block__elems-wrapper -->
+                        <div class="social-links-wrapper">
+                            <p class="social-links-wrapper__text">Мы в социальных сетях:</p>
+                            <div class="social-links-wrapper__links-wrapper">
+                                <a href="#" class="social-links-wrapper__link"><div class="social-links-wrapper__img social-links-wrapper_img_1"></div></a>
+                                <a href="#" class="social-links-wrapper__link"><div class="social-links-wrapper__img social-links-wrapper_img_2"></div></a>
+                                <a href="#" class="social-links-wrapper__link"><div class="social-links-wrapper__img social-links-wrapper_img_3"></div></a>
+                            </div>
+                        </div>
+                        <!-- /.social-links-block -->
+                    </div>
+                    <!-- /.footer-menu-block -->
+                </container>
+                <!-- /.container -->
+            </footer>
+            <!-- /.footer -->
         </main>
         <!-- /.main -->
     </div>
     <!-- /.scripts -->
-    <script src="js/index.js"></script> 
     <script src="js/libjs/swiper.min.js"></script>
     <script src="js/libjs/wow.min.js"></script>
     <script src="js/libjs/vue.js"></script>
     <script src="js/libjs/vue-scrollto.js"></script>
+    <script src="js/index.js"></script> 
     <script>
         new WOW().init();
     </script>   

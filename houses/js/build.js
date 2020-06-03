@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(){
+
+
         const menuBlock = document.querySelector('.navigation-block'),
               menuBtn = document.querySelector('.phone-and-menu-block__menu-btn-wrapper');
         //HEADER
@@ -84,10 +86,9 @@ document.addEventListener('DOMContentLoaded', function(){
                     {text: 'Портфолио', link: '#block-3'},
                     {text: 'Почему мы', link: '#block-4'},
                     {text: 'Процесс взаимодействия', link: '#block-5'},
-                    {text: 'Компании', link: '#'},
-                    {text: 'Наша Команда', link: '#'},
-                    {text: 'Наши услуги', link: '#'},
-                    {text: 'Обратная связь', link: '#'}               
+                    {text: 'Наша Команда', link: '#block-6'},
+                    {text: 'Наш блог', link: '#block-7'},
+                    {text: 'Обратная связь', link: '#block-8'}               
                 ]
             }        
         },
@@ -358,7 +359,81 @@ document.addEventListener('DOMContentLoaded', function(){
             </div>
         </div>`
     }
+
+    const teamList = {
+        data(){
+            return {
+                team: [
+                    {img:"img/team/1.webp", name: "Ирина Притыкина", desc: "Директор компании"},
+                    {img:"img/team/2.webp", name: "Игорь Карий", desc: "Финансовый директор"},
+                    {img:"img/team/3.webp", name: "Илья Кондрашин", desc: "Инженер модельер"},
+                    {img:"img/team/4.webp", name: "Маргарита Гордеева", desc: "3D дизайнер"},
+                    {img:"img/team/5.webp", name: "Светлана Коток", desc: "Дизайнер интерьеров"},
+                    {img:"img/team/6.webp", name: "Максим Ковальский", desc: "Дизайнер ландшафтов"}
+                ]
+            }
+        },
+        template: `
+        <div class="team-block">
+            <div class="team-block__person" v-for="item in team">
+                <img :src="item.img" class="team-block__img">
+                <h2 class="team-block__title">{{item.name}}</h2>
+                <p class="team-block__description">{{item.desc}}</p>
+            </div>
+        </div>`
+    }
+
+    const blog = {
+        data() {
+            return {
+                blogList: [
+                    {
+                        img: "img/blog/1.webp",
+                        text: "Минимализм – это самый простой, практичный и «спорный» стиль в дизайне интерьеров",
+                        link: "#"
+                    },
+                    {
+                        img: "img/blog/2.webp",
+                        text: "Прованс - это спокойный южный регион Франции, с великолепнейшей природой",
+                        link: "#"
+                    }
+                ]
+            }
+        },
+        template: `
+        <div class="blog-block">
+            <div class="blog-block__elem" v-for="item in blogList">
+                <img class="blog-block__img" :src="item.img">
+                <a :href="item.link" class="blog-block__link"><span class="blog-block__text">{{item.text}}</span></a>
+            </div>
+        </div>`
+    }
+
+    const contactsList = {
+        data() {
+            return {
+                variants: [
+                    {img: "img/contacts/1.png", text: "+ 7 896 876 66 77"},
+                    {img: "img/contacts/2.png", text: "+ 7 896 876 66 77"},
+                    {img: "img/contacts/3.png", text: "sales@23degree.kz"},
+                    {img: "img/contacts/4.png", text: "skype: 23degree"},
+                    {img: "img/contacts/5.png", text: "telegram: 23degree"}
+                ]
+            }
+        },
+        template: `
+        <div class="contacts-variants contacts-variants_left">
+            <div class="contacts-variants__elem" v-for="elem in variants">
+                <div class="contacts-variants__img-wrapper">
+                    <img class="contacts-variants__img" :src="elem.img">
+                </div>
+                <p class="contacts-variants__text">{{elem.text}}</p>
+            </div>
+            <slot></slot>
+        </div>`
+    }
     //COMPONENTS
+    
 
     VueScrollTo.setDefaults({
         container: "body",
@@ -372,7 +447,7 @@ document.addEventListener('DOMContentLoaded', function(){
         onCancel: false,
         x: false,
         y: true
-    })
+    });
 
     new Vue({
         el: '.wrapper',
@@ -391,7 +466,10 @@ document.addEventListener('DOMContentLoaded', function(){
             transferList,
             tabulation,
             advantages,
-            processList
+            processList,
+            teamList,
+            blog,
+            contactsList
         },
         filters: {
             format(value) {
@@ -433,3 +511,4 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     });
 });
+

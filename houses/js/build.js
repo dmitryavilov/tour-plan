@@ -1,9 +1,4 @@
 document.addEventListener('DOMContentLoaded', function(){
-
-
-        const menuBlock = document.querySelector('.navigation-block'),
-              menuBtn = document.querySelector('.phone-and-menu-block__menu-btn-wrapper');
-        //HEADER
     //VARS
     const container = {
         props: {

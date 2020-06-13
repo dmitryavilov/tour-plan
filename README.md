@@ -19,6 +19,7 @@
   ### JQuery
   ### Vue/Vue CLI
   ### БЭМ
+  ### Babel
   ### GULP/WEBPACK
   ### BOOTSTRAP 3,4
   ### GIT

@@ -1,0 +1,20 @@
+/* @import '~normalize.css'; - Импорт библиотеки из Node_modules  */
+@import 'fonts.scss';
+
+.title {
+    color: greenyellow;
+    font-family: 'Robota', sans-serif;
+
+    &__span {
+        color: red;
+    }
+}
+
+.img {
+    background-image: url('../img/ad.png');
+    background-size: cover;
+    width: 2020px;
+    height: 1081px;
+    display: flex;
+    flex-direction: column;
+}

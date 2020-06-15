@@ -5,6 +5,7 @@ const path = require('path'),
       MiniCssExtractPlugin = require('mini-css-extract-plugin'),
       OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin'),
       TerserWebpackPlugin = require('terser-webpack-plugin'),
+      { VueLoaderPlugin } = require('vue-loader'),
       isDev = process.env.NODE_ENV === "development",
       isProd = !isDev,
       optimization = () => {
@@ -47,8 +48,14 @@ module.exports = {
         }),
         new MiniCssExtractPlugin({
             filename: '[name].[contenthash].css'
-        })
+        }),
+        new VueLoaderPlugin
     ],
+    resolve: {
+        alias: {
+            'vue$': 'vue/dist/vue.js'
+        }
+    },
     module: {
         rules: [
             {
@@ -122,6 +129,15 @@ module.exports = {
                     presets: [
                         '@babel/preset-env'
                     ]
+                }
+            },
+            {
+                test: /\.vue$/,
+                loader: 'vue-loader',
+                options: {
+                    loader: {
+                        scss: 'vue-style-loader!css-loader!sass-loader'
+                    }
                 }
             }
         ]

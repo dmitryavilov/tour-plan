@@ -1,0 +1,210 @@
+.main-information {
+    width: 100%;
+    height: 937px;
+    @include image(1920px 937px, center center);
+    overflow: hidden;
+}
+
+.menu-btn {
+    display: flex;
+    @include flex-jc-spb-col();
+    height: 34px;
+    width: 46px;
+    cursor: pointer;
+
+    &__line {
+        width: 100%;
+        height: 5px;
+        background-color: #fff;
+        transition: 0.4s;
+    }
+
+    &:hover &__line {
+        background-color: rgb(255, 251, 191);
+        transition: 0.4s;
+    }
+
+    &_line_short {
+        width: 50%;
+    }
+
+    &_top {
+        padding-top: 57px;
+    }
+
+    &_line_active {
+        transform: rotate(44deg) translateY(20px);
+        transition: 0.4s;
+
+        &:nth-child(2) {
+            opacity: 0;
+        }
+
+        &:last-child {
+            transform: rotate(-44deg) translateY(-20px);
+            width: 100%;
+        }
+    }
+}
+
+.main-information-block {
+    display: flex;
+
+    &__title {
+        @include fw($mont, 80px, white, 400);
+        letter-spacing: 0.05em;
+    }
+
+    &__text-wrapper {
+        margin-top: 301px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__profession {
+        @include fw($mont, 23px, rgb(223, 223, 223), 300);
+        letter-spacing: 0.05em;
+        margin-top: 32px;
+    }
+
+    &__description {
+        @include f($mont, 25px, white, 400, 132%);
+        letter-spacing: 0.02em;
+        max-width: 639px;
+        margin-top: 25px
+    }
+
+    &__photo {
+        width: 437px;
+        height: 700px;
+        background-image: url('../img/mainInformation/ava.jpg');
+        @include image(437px 700px, center center);
+    }
+
+    &__border-photo {
+        width: 436.46px;
+        height: 700px;
+        overflow: hidden;
+        border-radius: 72px;
+        border: 8px solid rgba(0, 0, 0, 0.41);
+        margin-left: 148px;
+        margin-top: 46px;
+    }
+
+    &_btn {
+        width: 392px;
+        height: 85px;
+        border-width: 4px;
+        border-color: #FFB800;
+        font-size: 23px;
+        font-weight: 300;
+        letter-spacing: 0.09em;
+        color: white;
+        margin-top: 30px;
+        transition: 0.4s;
+
+        &:hover {
+            box-shadow: 0 0 6px 0 #FFB800;
+            color: #ffebb8;
+        }
+    }
+}
+
+.social-networks {
+    position: absolute;
+    top: 0;
+    right: 86px;
+    width: 30px;
+    display: flex;
+    @include flex-center();
+    flex-direction: column;
+    height: inherit;
+
+    &__line {
+        width: 5px;
+        height: 280px;
+        position: absolute;
+        background-color: white;
+        border-radius: 0px 0px 70px 0px;
+
+        &:first-child {
+            top: 0;
+        }
+
+        &:last-child {
+            transform: rotate(180deg) scale(1, 1);
+            bottom: 0;
+        }
+    }
+
+    &__links {
+        height: 249px;
+        display: flex;
+        @include flex-jc-spb-col();
+    }
+
+    &__link-icon {
+        height: 30px;
+        width: 30px;
+        fill: #fff;
+        transition: 0.8s;
+
+        &:hover {
+            fill: khaki;
+        }
+    }
+}
+
+.navigation-block {
+    position: fixed;
+    display: flex;
+    @include flex-center();
+    top: 0;
+    width: 250px;
+    background-color: rgba(#1b120a, 0.95);
+    height: 100vh;
+    border-left: 7px solid white;
+    right: -800px;
+    transition: 0.4s;
+    z-index: 999;
+
+    &_active {
+        right: 0;
+    }
+
+    &__items-list {
+        width: 100%;
+        display: flex;
+        @include flex-ai-cent-col();
+        text-align: center;
+    }
+
+    &__item {
+        margin: 18px 0;
+        max-width: 192px;
+        ;
+
+        &-link {
+            @include fw($mont, 20px, white, 400);
+            text-decoration: none;
+            text-align: center;
+            line-height: 28px;
+        }
+
+        &::after {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 0;
+            height: 7px;
+            background-color: white;
+            left: 0;
+            transition: 0.3s;
+            transform: translateY(5px);
+        }
+
+        &:hover:after {
+            width: 100%;
+        }
+    }
+}

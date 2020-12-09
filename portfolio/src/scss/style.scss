@@ -1,0 +1,24 @@
+/* @import '~normalize.css'; - Импорт библиотеки из Node_modules  */
+@import '.../~animate.css/source/animate.css';
+@import '.../~animate.css/source/_base.css';
+@import '.../~animate.css/source/attention_seekers/flash.css';
+@import 'mixins';
+@import 'reset';
+// VARIABLES
+@import 'variables';
+// SETTINGS
+@import 'settings';
+// BLOCKS
+@import 'blocks/main';
+@import 'blocks/about';
+@import 'blocks/skills';
+@import 'blocks/advantages';
+@import 'blocks/portfolio';
+@import 'blocks/calculator';
+@import 'blocks/feedback';
+@import 'blocks/footer';
+// PAGES
+@import 'pages/privacy';
+@import 'pages/single';
+// MEDIA
+@import 'media';

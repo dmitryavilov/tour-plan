@@ -1,0 +1,95 @@
+@mixin flex-center {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @mixin flex-jc-cent-col{
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  @mixin flex-jc-spb-col {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  @mixin flex-jc-end-col {
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  @mixin flex-jc-st-col {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  @mixin flex-ai-cent-col {
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  @mixin flex-ai-end-col {
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  
+  @mixin flex-ai-start-col {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  
+  @mixin flex-ai-spb-col {
+    align-items: space-between;
+    flex-direction: column;
+  }
+  
+  @mixin flex-st-cent{
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  @mixin flex-end-cent{
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  @mixin flex-cent-end{
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  @mixin flex-spb-center{
+    justify-content: space-between;
+    align-items: center
+  }
+  
+  @mixin flex-center-spb{
+    justify-content: center;
+    align-items: space-between;
+  }
+  
+  @mixin flex-spb-end{
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  @mixin image($size, $pos) {
+    background-position: $pos;
+    background-size: $size;
+    background-repeat: no-repeat;
+  }
+  
+  @mixin f($font, $size, $color, $weight, $lh) {
+    font-family: $font;
+    font-size: $size;
+    color: $color;
+    line-height: $lh;
+    font-weight: $weight;
+  }
+  
+  @mixin fw($font, $size, $color, $weight) {
+    font-family: $font;
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+  }

@@ -1,0 +1,424 @@
+.feedback {
+    width: 100%;
+    min-height: 789px;
+    background-position-y: 50%;
+    overflow: hidden;
+}
+
+.feedback-block {
+    display: flex;
+    justify-content: space-between;
+
+    &__social-link {
+        &:not(:last-child) {
+            margin-bottom: 22px;
+        }
+    }
+
+    &_top {
+        margin-top: 55px;
+    }
+
+    &__title {
+        font-size: 50px;
+        line-height: 68px;
+        letter-spacing: -0.03em;
+        color: white;
+    }
+
+    &__social-links {
+        width: 474px;
+        box-sizing: border-box;
+        position: relative;
+        padding: 28px 0;
+        margin-top: 16px;
+    }
+
+    &__line {
+        width: 100%;
+        height: 3px;
+        position: absolute;
+        background: linear-gradient(90deg, #FFFFFF 63.2%, rgba(255, 255, 255, 0) 98.31%);
+
+        &:nth-of-type(1) {
+            top: 0;
+            left: 0;
+        }
+
+        &:nth-of-type(2) {
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    &__other {
+        margin-top: 15px;
+    }
+
+    &__second-title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 41px;
+        line-height: 56px;
+        letter-spacing: -0.03em;
+        color: white;
+    }
+
+    &__other-links {
+        min-height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 324px;
+        position: relative;
+
+        &-wrapper {
+            margin-top: 10px;
+            display: flex;
+        }
+    }
+
+    &__round-links {
+        min-height: 120px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        margin-left: 28px;
+    }
+
+    &__other-line {
+        width: 3px;
+        height: 100%;
+        background: #FFFFFF;
+        border-radius: 40%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &__form {
+        width: 449px;
+        border-radius: 30px;
+        min-height: 554px;
+    }
+}
+
+.form {
+    background-color: #fff;
+    border: 2px solid #402A17;
+    box-sizing: border-box;
+    box-shadow: 20px 20px 0px rgba(64, 42, 23, 0.85);
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__underline {
+        height: 6px;
+        width: 100%;
+        background-color: $brown;
+        position: absolute;
+        bottom: 23px;
+        left: 0;
+    }
+
+    &__input {
+        background-image: url('../img/feedback/user.svg');
+
+        &s-group {
+            margin-top: 81px;
+            width: 356px;
+        }
+
+        &-wrapper {
+            position: relative;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__line {
+        position: absolute;
+        left: 55px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 60%;
+        background-color: $brown;
+    }
+
+    &__drop-list {
+        padding: 15px 0 15px 74px;
+        width: 100%;
+        font-size: 15px;
+        letter-spacing: -0.03em;
+        background-position: 17px center;
+        background-size: 22px 15px;
+    }
+
+    &__border {
+        left: 55px;
+    }
+
+    &__btn {
+        border: 3px solid $brown;
+        width: 259px;
+        min-height: 61px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 27px;
+        letter-spacing: -0.03em;
+        transition: 0.4s;
+        color: $brown;
+
+        &-wrapper {
+            margin-top: 55px;
+        }
+
+        &:hover {
+            border-color: darkgreen;
+            color: darkgreen;
+        }
+        &_disabled {
+            border-color: lightgray;
+            color: lightgray;
+
+            &:hover {
+                border-color: darkred;
+                color: darkred;
+            }
+        }
+    }
+
+    &__privacy {
+        width: 356px;
+        margin-top: 35px;
+        display: flex;
+        position: relative;
+        align-items: center;
+
+        &-text {
+            font-size: 13.5px;
+            letter-spacing: -0.03em;
+            margin-left: auto;
+            transform: translateX(-2px);
+        }
+
+        &-link {
+            text-decoration: none;
+            color: $aqua;
+            padding-bottom: 1px;
+
+            &:hover {
+                border-bottom: 1px solid $aqua;
+            }
+        }
+    }
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__checkbox:checked+&__checkbox-label:before {
+        content: '';
+        background-image: url('../img/feedback/checking-mark.svg');
+        @include image(12px 12px, center center);
+        fill: white;
+    }
+
+    &__checkbox-label {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        font-size: 17px;
+        letter-spacing: -0.03em;
+        display: flex;
+        align-items: center;
+
+        &:before {
+            border-radius: 3px;
+            background-color: $aqua;
+            content: '';
+            left: 0;
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+.input {
+    max-width: 356px;
+    width: 100%;
+    padding-left: 74px;
+    height: 50px;
+    background-color: #EDEDED;
+    border: 2px solid #402A17;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-position: 17px center;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    font-style: normal;
+    letter-spacing: -0.03em;
+    color: $brown;
+
+    &::placeholder {
+        color: #A0A0A0;
+    }
+}
+
+.drop-list-min {
+    position: absolute;
+    left: 0;
+    appearance: none;
+    height: 100%;
+    width: 56px;
+    background-color: $brown;
+    border: 2px solid #402A17;
+    border-radius: 8px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-sizing: border-box;
+    padding-left: 9px;
+    background-image: url('../img/feedback/arb.svg');
+    background-repeat: no-repeat;
+    background-position: 35px center;
+    cursor: pointer;
+    font-size: 0;
+    z-index: 2;
+    color: $brown;
+
+    &__item {
+        color: white;
+        font-size: 14px;
+    }
+
+    &__icon {
+        fill: white;
+        width: 22px;
+        position: absolute;
+        height: 22px;
+        left: 9px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 3;
+    }
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    max-width: 440px;
+    height: 43px;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 0px 13px 13px 0px;
+
+    &__icon {
+        width: 26px;
+        height: 26px;
+        fill: white;
+
+        &-wrapper {
+            background-color: $brown;
+            height: 100%;
+            width: 45px;
+            display: flex;
+            @include flex-center;
+        }
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: normal;
+        padding-left: 29px;
+        user-select: all;
+        font-size: 17px;
+        line-height: 23px;
+        letter-spacing: 0.05em;
+    }
+
+    &__btn {
+        width: 71px;
+        height: 100%;
+        background-color: $aqua;
+        font-weight: 500;
+        font-size: 18px;
+        border: none;
+        line-height: 25px;
+        font-family: 'Montserrat'sans-serif;
+        color: white;
+        display: flex;
+        @include flex-center;
+        font-style: normal;
+        letter-spacing: -0.03em;
+        transition: 0.4s;
+
+        &:hover {
+            color: rgb(255, 248, 184);
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        height: 100%;
+        margin-left: auto;
+    }
+}
+
+.other-link {
+    max-width: 293px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 2px solid #402A17;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        width: 23px;
+        height: 23px;
+        fill: $brown;
+
+        &-wrapper {
+            display: flex;
+            @include flex-center;
+            height: 100%;
+            width: 43px;
+            border-right: 2px solid #402A17;
+        }
+    }
+
+    &__text {
+        color: $brown;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 27px;
+        letter-spacing: 1.5px;
+        padding-left: 14px;
+        transition: 0.4s;
+        user-select: all;
+    }
+}
+
+.round-link {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: #402A17;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    display: flex;
+    @include flex-center;
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        fill: white;
+    }
+}

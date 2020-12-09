@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Дмитрий Авилов - Фрилансер</title>
+  </head>
+
+  <body>
+    <div class="wrapper" @click="click($event)">
+      <main
+        class="main-information"
+        style="background-image: url('images/bg.jpg');"
+      >
+        <container-big classes="main-information_lg">
+          <div
+            class="menu-btn menu-btn_top"
+            @click="toggleMenu();disableScroll();"
+          >
+            <div class="menu-btn__line"></div>
+            <div class="menu-btn__line"></div>
+            <div class="menu-btn__line menu-btn_line_short"></div>
+          </div>
+          <div class="main-information-block">
+            <div class="main-information-block__text-wrapper">
+              <h1
+                class="main-information-block__title wow fadeIn"
+                data-wow-duration="2s"
+                data-wow-delay="0.5s"
+              >
+                Дмитрий Авилов
+              </h1>
+              <p
+                class="main-information-block__profession wow fadeIn"
+                data-wow-duration="2s"
+                data-wow-delay="1s"
+              >
+                Фрилансер. Frontend-разработчик и Web-дизайнер.
+              </p>
+              <p
+                class="main-information-block__description wow fadeIn"
+                data-wow-duration="2s"
+                data-wow-delay="1.5s"
+              >
+                Занимаюсь созданием сайтов по готовым дизайн-макетам. Умею
+                разрабатывать дизайн самостоятельно.
+              </p>
+              <btn
+                classes="main-information-block_btn wow fadeIn"
+                data-wow-duration="2s"
+                data-wow-delay="2s"
+                >Связаться со мной</btn
+              >
+            </div>
+            <div class="main-information-block__border-photo">
+              <div class="main-information-block__photo"></div>
+            </div>
+          </div>
+        </container-big>
+        <div class="social-networks">
+          <div class="social-networks__line"></div>
+          <div class="social-networks__links">
+            <a
+              href="https://vk.com/ddd2305"
+              class="social-networks__link wow fadeIn"
+              data-wow-duration="1s"
+              data-wow-delay="3s"
+              ><svg class="social-networks__link-icon">
+                <use xlink:href="images/sprite.svg#2"></use>
+              </svg> </a
+            ><a
+              href="#"
+              class="social-networks__link wow fadeIn"
+              data-wow-duration="1s"
+              data-wow-delay="3.2s"
+              ><svg class="social-networks__link-icon">
+                <use xlink:href="images/sprite.svg#3"></use>
+              </svg> </a
+            ><a
+              href="#"
+              class="social-networks__link wow fadeIn"
+              data-wow-duration="1s"
+              data-wow-delay="3.4s"
+              ><svg class="social-networks__link-icon">
+                <use xlink:href="images/sprite.svg#4"></use>
+              </svg> </a
+            ><a
+              data-wow-duration="1s"
+              data-wow-delay="3.6s"
+              href="https://www.facebook.com/profile.php?id=100026762172794"
+              class="social-networks__link wow fadeIn"
+              ><svg class="social-networks__link-icon">
+                <use xlink:href="images/sprite.svg#1"></use></svg
+            ></a>
+          </div>
+          <div class="social-networks__line"></div>
+        </div>
+        <nav class="navigation-block">
+          <ul class="navigation-block__items-list">
+            <li class="navigation-block__item">
+              <a class="navigation-block__item-link" href="#about">Обо мне</a>
+            </li>
+            <li class="navigation-block__item">
+              <a class="navigation-block__item-link" href="#">Мои навыки</a>
+            </li>
+            <li class="navigation-block__item">
+              <a class="navigation-block__item-link" href="#">Преимущества</a>
+            </li>
+            <li class="navigation-block__item">
+              <a class="navigation-block__item-link" href="#">Портфолио</a>
+            </li>
+            <li class="navigation-block__item">
+              <a class="navigation-block__item-link" href="#"
+                >Калькулятор цены</a
+              >
+            </li>
+            <li class="navigation-block__item">
+              <a class="navigation-block__item-link" href="#">Обратная связь</a>
+            </li>
+          </ul>
+        </nav>
+      </main>
+      <section class="about" id="about">
+        <container-big>
+          <title-one number="01">Немного обо мне</title-one>
+          <container>
+            <div class="about-block about-block_top">
+              <div class="about-block__content-wrapper">
+                <img
+                  src="images/about.png"
+                  alt="#"
+                  class="about-block__photo"
+                />
+                <div class="about-block__text-wrapper">
+                  <h2 class="about-block__title">Привет!</h2>
+                  <p class="about-block__description">
+                    Меня зовут Дмитрий – я<br />Frontend-разработчик и
+                    Web-дизайнер в одном лице.
+                  </p>
+                  <div class="about-block__benefit">
+                    <div class="about-block__benefit-round">
+                      <p class="about-block__benefit-number">1</p>
+                    </div>
+                    <p class="about-block__benefit-text">
+                      В сфере веб-разработки более 1.5 лет
+                    </p>
+                  </div>
+                  <div class="about-block__benefit">
+                    <div class="about-block__benefit-round">
+                      <p class="about-block__benefit-number">2</p>
+                    </div>
+                    <p class="about-block__benefit-text">
+                      Мне нравится то, чем я занимаюсь
+                    </p>
+                  </div>
+                  <div class="about-block__benefit">
+                    <div class="about-block__benefit-round">
+                      <p class="about-block__benefit-number">3</p>
+                    </div>
+                    <p class="about-block__benefit-text">
+                      Я хочу быть лучшим в свой профессии
+                    </p>
+                  </div>
+                  <p class="about-block__description">
+                    Я один из немногих людей, которым нравится работать, потому
+                    что я выбрал ту профессию, которая мне нравится, а не ту,
+                    которую мне пытались навязать.
+                  </p>
+                  <btn classes="about-block_btn">Написать мне</btn>
+                </div>
+              </div>
+            </div>
+          </container>
+        </container-big>
+      </section>
+      <section
+        class="skills"
+        style="background-image: url('images/keyboard.jpg');"
+      >
+        <container-big classes="container_skills">
+          <title-two
+            class="wow fadeIn"
+            data-wow-duration="1s"
+            data-wow-delay="0.3s"
+            >Мои знания</title-two
+          >
+          <div class="skills-block skills-block_top">
+            <container
+              class="container_def"
+              an-class="skills-block__items-wrapper"
+            >
+              <div
+                class="skills-block__item wow fadeIn"
+                data-wow-duration="0.01s"
+              >
+                <span class="skills-block__item-text">HTML</span>
+                <div class="skills-block__number-wrapper">
+                  <span class="skills-block__number" data-max="93">0</span
+                  ><span class="skills-block__procent">%</span>
+                </div>
+                <div
+                  class="skills-block__item-loading skills-block_item-loading_lg"
+                >
+                  <vue-ellipse-progress
+                    class="1"
+                    :progress="93"
+                    line="butt"
+                    :angle="-270"
+                    color="green"
+                    :size="100"
+                    :thickness="8"
+                    :empty-thickness="0"
+                    :gap="10"
+                    dot="0"
+                  >
+                  </vue-ellipse-progress>
+                </div>
+                <div
+                  class="skills-block__item-loading skills-block_item-loading_sm"
+                >
+                  <vue-ellipse-progress
+                    class="1"
+                    :progress="93"
+                    line="butt"
+                    :angle="-270"
+                    color="green"
+                    :size="75"
+                    :thickness="6"
+                    :empty-thickness="0"
+                    :gap="10"
+                    dot="0"
+                  >
+                  </vue-ellipse-progress>
+                </div>
+              </div>
+              <div
+                class="skills-block__item wow fadeIn"
+                data-wow-duration="0.01s"
+              >
+                <span class="skills-block__item-text">CSS</span>
+                <div class="skills-block__number-wrapper">
+                  <span class="skills-block__number" data-max="90">0</span
+                  ><span class="skills-block__procent">%</span>
+                </div>
+                <div
+                  class="skills-block__item-loading skills-block_item-loading_lg"
+                >
+                  <vue-ellipse-progress
+                    :progress="90"
+                    line="butt"
+                    :angle="-270"
+                    color="green"
+                    :size="100"
+                    :thickness="8"
+                    :empty-thickness="0"
+                    :gap="10"
+                    dot="0"
+                  ></vue-ellipse-progress>
+                </div>
+                <div
+                  class="skills-block__item-loading skills-block_item-loading_sm"
+                >
+                  <vue-ellipse-progress
+                    class="1"
+                    :progress="90"
+                    line="butt"
+                    :angle="-270"
+                    color="green"
+                    :size="75"
+                    :thickness="6"
+                    :empty-thickness="0"
+                    :gap="10"
+                    dot="0"
+                  >
+                  </vue-ellipse-progress>
+                </div>
+              </div>
+              <div
+                class="skills-block__item wow fadeIn"
+                data-wow-duration="0.01s"
+              >
+                <span class="skills-block__item-text">JavaScript</span>
+                <div class="skills-block__number-wrapper">
+                  <span class="skills-block__number" data-max="83">0</span
+                  ><span class="skills-block__procent">%</span>
+                </div>
+                <div
+                  class="skills-block__item-loading skills-block_item-loading_lg"
+                >
+                  <vue-ellipse-progress
+                    :progress="83"
+                    line="butt"
+                    :angle="-270"
+                    color="green"
+                    :size="100"
+                    :thickness="8"
+                    :empty-thickness="0"
+                    :gap="10"
+                    dot="0"
+                  ></vue-ellipse-progress>
+                </div>
+                <div
+                  class="skills-block__item-loading skills-block_item-loading_sm"
+                >
+                  <vue-ellipse-progress
+                    class="1"
+                    :progress="83"
+                    line="butt"
+                    :angle="-270"
+                    color="green"
+                    :size="75"
+                    :thickness="6"
+                    :empty-thickness="0"
+                    :gap="10"
+                    dot="0"
+                  >
+                  </vue-ellipse-progress>
+                </div>
+              </div>
+              <div
+                class="skills-block__item wow fadeIn"
+                data-wow-duration="0.01s"
+              >
+                <span class="skills-block__item-text">Vue.js</span>
+                <div class="skills-block__number-wrapper">
+                  <span class="skills-block__number" data-max="81">0</span
+                  ><span class="skills-block__procent">%</span>
+                </div>
+                <div
+                  class="skills-block__item-loading skills-block_item-loading_lg"
+                >
+                  <vue-ellipse-progress
+                    :progress="81"
+                    line="butt"
+                    :angle="-270"
+                    color="green"
+                    :size="100"
+                    :thickness="8"
+                    :empty-thickness="0"
+                    :gap="10"
+                    dot="0"
+                  ></vue-ellipse-progress>
+                </div>
+                <div
+                  class="skills-block__item-loading skills-block_item-loading_sm"
+                >
+                  <vue-ellipse-progress
+                    class="1"
+                    :progress="81"
+                    line="butt"
+                    :angle="-270"
+                    color="green"
+                    :size="75"
+                    :thickness="6"
+                    :empty-thickness="0"
+                    :gap="10"
+                    dot="0"
+                  >
+                  </vue-ellipse-progress>
+                </div>
+              </div>
+              <div
+                class="skills-block__item wow fadeIn"
+                data-wow-duration="0.01s"
+              >
+                <span class="skills-block__item-text">WordPress</span>
+                <div class="skills-block__number-wrapper">
+                  <span class="skills-block__number" data-max="75">0</span
+                  ><span class="skills-block__procent">%</span>
+                </div>
+                <div
+                  class="skills-block__item-loading skills-block_item-loading_lg"
+                >
+                  <vue-ellipse-progress
+                    :progress="75"
+                    line="butt"
+                    :angle="-270"
+                    color="green"
+                    :size="100"
+                    :thickness="8"
+                    :empty-thickness="0"
+                    :gap="10"
+                    dot="0"
+                  ></vue-ellipse-progress>
+                </div>
+                <div
+                  class="skills-block__item-loading skills-block_item-loading_sm"
+                >
+                  <vue-ellipse-progress
+                    class="1"
+                    :progress="75"
+                    line="butt"
+                    :angle="-270"
+                    color="green"
+                    :size="75"
+                    :thickness="6"
+                    :empty-thickness="0"
+                    :gap="10"
+                    dot="0"
+                  >
+                  </vue-ellipse-progress>
+                </div>
+              </div>
+            </container>
+            <div class="skills-block__underline"></div>
+          </div>
+        </container-big>
+      </section>
+      <section class="advantages">
+        <container-big>
+          <title-one
+            number="03"
+            classes="title-block_reverse"
+            data-wow-duration="0.5s"
+            >Мои преимущества</title-one
+          >
+          <container
+            class="container_def"
+            an-class="advantages-block advantages-block_top"
+          >
+            <div class="advantages-block__item">
+              <svg class="advantages-block__icon">
+                <use xlink:href="images/sprite.svg#b2"></use>
+              </svg>
+              <p class="advantages-block__text">
+                Выполню работу быстро и качественно. Уложусь в поставленные
+                сроки
+              </p>
+            </div>
+            <div class="advantages-block__item">
+              <svg class="advantages-block__icon">
+                <use xlink:href="images/sprite.svg#b3"></use>
+              </svg>
+              <p class="advantages-block__text">
+                Сделаю расчёт цены и объясню, как она складывается
+              </p>
+            </div>
+            <div class="advantages-block__item">
+              <svg class="advantages-block__icon">
+                <use xlink:href="images/sprite.svg#b1"></use>
+              </svg>
+              <p class="advantages-block__text">
+                Буду показывать работу поэтапно, а не в последний момент
+              </p>
+            </div>
+            <div class="advantages-block__item">
+              <svg class="advantages-block__icon">
+                <use xlink:href="images/sprite.svg#b4"></use>
+              </svg>
+              <p class="advantages-block__text">
+                Если мы договорились о цене, в неё будут входить Хостинг + SSL
+                сертификат
+              </p>
+            </div>
+            <div class="advantages-block__item">
+              <svg class="advantages-block__icon">
+                <use xlink:href="images/sprite.svg#b5"></use>
+              </svg>
+              <p class="advantages-block__text">
+                Код, написанный мной, будет годен для внесения в него изменений
+              </p>
+            </div>
+            <div class="advantages-block__item">
+              <svg class="advantages-block__icon">
+                <use xlink:href="images/sprite.svg#b6"></use>
+              </svg>
+              <p class="advantages-block__text">
+                Научу вас пользоваться сайтом, запишу
+                <span style="white-space: nowrap;">видео-инструкцию</span>.
+              </p>
+            </div>
+          </container>
+        </container-big>
+      </section>
+      <section
+        class="portfolio"
+        style="background-image: url('images/pbg.jpg');"
+      >
+        <container-big>
+          <title-two
+            class="wow fadeIn"
+            data-wow-duration="1s"
+            data-wow-delay="0.3s"
+            >Моё портфолио</title-two
+          >
+          <div
+            class="portfolio-block portfolio-block_pos"
+            data-simplebar
+            data-simplebar-auto-hide="false"
+          >
+            <container
+              class="container_def"
+              an-class="portfolio-block__wrapper"
+            >
+              <article class="portfolio-item">
+                <img
+                  src="images/project.png"
+                  alt="Портфолио: Картинка проекта"
+                  class="portfolio-item__photo"
+                />
+                <div class="portfolio-item__footer">
+                  <div class="portfolio-item__tabs-wrapper">
+                    <a href="#" class="portfolio-item__tab-link">
+                      <div class="portfolio-item__tab">
+                        <svg class="portfolio-item__tab-icon">
+                          <use xlink:href="images/sprite.svg#b5"></use>
+                        </svg>
+                        <span class="portfolio-item__tab-text"
+                          >Посмотреть код</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="portfolio-item__footer-wrapper">
+                    <div class="portfolio-item__text-wrapper">
+                      <h3 class="portfolio-item__title">23 Degree</h3>
+                      <span class="portfolio-item__description"
+                        >Строительная компания</span
+                      >
+                    </div>
+                    <a href="single.html" class="portfolio-item__btn-link">
+                      <div class="portfolio-item__btn">
+                        <svg class="portfolio-item__arrow">
+                          <use xlink:href="images/sprite.svg#arrow"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <article class="portfolio-item">
+                <img
+                  src="images/project.png"
+                  alt="Портфолио: Картинка проекта"
+                  class="portfolio-item__photo"
+                />
+                <div class="portfolio-item__footer">
+                  <div class="portfolio-item__tabs-wrapper">
+                    <a href="#" class="portfolio-item__tab-link">
+                      <div class="portfolio-item__tab">
+                        <svg class="portfolio-item__tab-icon">
+                          <use xlink:href="images/sprite.svg#b5"></use>
+                        </svg>
+                        <span class="portfolio-item__tab-text"
+                          >Посмотреть код</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="portfolio-item__footer-wrapper">
+                    <div class="portfolio-item__text-wrapper">
+                      <h3 class="portfolio-item__title">23 Degree</h3>
+                      <span class="portfolio-item__description"
+                        >Строительная компания</span
+                      >
+                    </div>
+                    <a href="single.html" class="portfolio-item__btn-link">
+                      <div class="portfolio-item__btn">
+                        <svg class="portfolio-item__arrow">
+                          <use xlink:href="images/sprite.svg#arrow"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <article class="portfolio-item">
+                <img
+                  src="images/project.png"
+                  alt="Портфолио: Картинка проекта"
+                  class="portfolio-item__photo"
+                />
+                <div class="portfolio-item__footer">
+                  <div class="portfolio-item__tabs-wrapper">
+                    <a href="#" class="portfolio-item__tab-link">
+                      <div class="portfolio-item__tab">
+                        <svg class="portfolio-item__tab-icon">
+                          <use xlink:href="images/sprite.svg#b5"></use>
+                        </svg>
+                        <span class="portfolio-item__tab-text"
+                          >Посмотреть код</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="portfolio-item__footer-wrapper">
+                    <div class="portfolio-item__text-wrapper">
+                      <h3 class="portfolio-item__title">23 Degree</h3>
+                      <span class="portfolio-item__description"
+                        >Строительная компания</span
+                      >
+                    </div>
+                    <a href="single.html" class="portfolio-item__btn-link">
+                      <div class="portfolio-item__btn">
+                        <svg class="portfolio-item__arrow">
+                          <use xlink:href="images/sprite.svg#arrow"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <article class="portfolio-item">
+                <img
+                  src="images/project.png"
+                  alt="Портфолио: Картинка проекта"
+                  class="portfolio-item__photo"
+                />
+                <div class="portfolio-item__footer">
+                  <div class="portfolio-item__tabs-wrapper">
+                    <a href="#" class="portfolio-item__tab-link">
+                      <div class="portfolio-item__tab">
+                        <svg class="portfolio-item__tab-icon">
+                          <use xlink:href="images/sprite.svg#b5"></use>
+                        </svg>
+                        <span class="portfolio-item__tab-text"
+                          >Посмотреть код</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="portfolio-item__footer-wrapper">
+                    <div class="portfolio-item__text-wrapper">
+                      <h3 class="portfolio-item__title">23 Degree</h3>
+                      <span class="portfolio-item__description"
+                        >Строительная компания</span
+                      >
+                    </div>
+                    <a href="single.html" class="portfolio-item__btn-link">
+                      <div class="portfolio-item__btn">
+                        <svg class="portfolio-item__arrow">
+                          <use xlink:href="images/sprite.svg#arrow"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <article class="portfolio-item">
+                <img
+                  src="images/project.png"
+                  alt="Портфолио: Картинка проекта"
+                  class="portfolio-item__photo"
+                />
+                <div class="portfolio-item__footer">
+                  <div class="portfolio-item__tabs-wrapper">
+                    <a href="#" class="portfolio-item__tab-link">
+                      <div class="portfolio-item__tab">
+                        <svg class="portfolio-item__tab-icon">
+                          <use xlink:href="images/sprite.svg#b5"></use>
+                        </svg>
+                        <span class="portfolio-item__tab-text"
+                          >Посмотреть код</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="portfolio-item__footer-wrapper">
+                    <div class="portfolio-item__text-wrapper">
+                      <h3 class="portfolio-item__title">23 Degree</h3>
+                      <span class="portfolio-item__description"
+                        >Строительная компания</span
+                      >
+                    </div>
+                    <a href="single.html" class="portfolio-item__btn-link">
+                      <div class="portfolio-item__btn">
+                        <svg class="portfolio-item__arrow">
+                          <use xlink:href="images/sprite.svg#arrow"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <article class="portfolio-item">
+                <img
+                  src="images/project.png"
+                  alt="Портфолио: Картинка проекта"
+                  class="portfolio-item__photo"
+                />
+                <div class="portfolio-item__footer">
+                  <div class="portfolio-item__tabs-wrapper">
+                    <a href="#" class="portfolio-item__tab-link">
+                      <div class="portfolio-item__tab">
+                        <svg class="portfolio-item__tab-icon">
+                          <use xlink:href="images/sprite.svg#b5"></use>
+                        </svg>
+                        <span class="portfolio-item__tab-text"
+                          >Посмотреть код</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="portfolio-item__footer-wrapper">
+                    <div class="portfolio-item__text-wrapper">
+                      <h3 class="portfolio-item__title">23 Degree</h3>
+                      <span class="portfolio-item__description"
+                        >Строительная компания</span
+                      >
+                    </div>
+                    <a href="single.html" class="portfolio-item__btn-link">
+                      <div class="portfolio-item__btn">
+                        <svg class="portfolio-item__arrow">
+                          <use xlink:href="images/sprite.svg#arrow"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <article class="portfolio-item">
+                <img
+                  src="images/project.png"
+                  alt="Портфолио: Картинка проекта"
+                  class="portfolio-item__photo"
+                />
+                <div class="portfolio-item__footer">
+                  <div class="portfolio-item__tabs-wrapper">
+                    <a href="#" class="portfolio-item__tab-link">
+                      <div class="portfolio-item__tab">
+                        <svg class="portfolio-item__tab-icon">
+                          <use xlink:href="images/sprite.svg#b5"></use>
+                        </svg>
+                        <span class="portfolio-item__tab-text"
+                          >Посмотреть код</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="portfolio-item__footer-wrapper">
+                    <div class="portfolio-item__text-wrapper">
+                      <h3 class="portfolio-item__title">23 Degree</h3>
+                      <span class="portfolio-item__description"
+                        >Строительная компания</span
+                      >
+                    </div>
+                    <a href="single.html" class="portfolio-item__btn-link">
+                      <div class="portfolio-item__btn">
+                        <svg class="portfolio-item__arrow">
+                          <use xlink:href="images/sprite.svg#arrow"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </container>
+          </div>
+        </container-big>
+      </section>
+      <section class="calculator">
+        <container-big>
+          <title-one number="05">Узнайте примерную цену</title-one>
+          <container class="container_def">
+            <div class="calculator-block calculator-block_top">
+              <div class="calculator-block__variants-wrapper">
+                <div class="calculator-block__variant">
+                  <h3 class="calculator-block__variant-title">
+                    Что нужно сделать?
+                  </h3>
+                  <div class="drop-list-wrapper">
+                    <div class="drop-list-border drop-list-border_calc"></div>
+                    <select
+                      class="drop-list drop-list_calc"
+                      v-model="what"
+                      @input="resActive()"
+                    >
+                      <option value="1" disabled="disabled" selected="selected"
+                        >Выберите, что нужно сделать</option
+                      >
+                      <option value="1.75">Дизайн</option>
+                      <option value="2">Вёрстка</option>
+                      <option value="3.75">Вёрстка и Дизайн</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="calculator-block__variant">
+                  <h3 class="calculator-block__variant-title">
+                    В какие сроки нужно уложиться?
+                  </h3>
+                  <div class="drop-list-wrapper">
+                    <div class="drop-list-border drop-list-border_calc"></div>
+                    <select
+                      class="drop-list drop-list_calc"
+                      v-model="time"
+                      @input="resActive()"
+                    >
+                      <option
+                        value="0.5"
+                        disabled="disabled"
+                        selected="selected"
+                        >Выберите срок выполнения</option
+                      >
+                      <option value="15">1-3 дня</option>
+                      <option value="13">3-5 дней</option>
+                      <option value="3">1 неделя</option>
+                      <option value="2">2 недели</option>
+                      <option value="1">Больше</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="calculator-block__variant">
+                  <h3 class="calculator-block__variant-title">Тип сайта</h3>
+                  <div class="drop-list-wrapper">
+                    <div class="drop-list-border drop-list-border_calc"></div>
+                    <select
+                      class="drop-list drop-list_calc"
+                      @input="unblock($event);resActive()"
+                      v-model="type"
+                    >
+                      <option
+                        value="0.5"
+                        disabled="disabled"
+                        selected="selected"
+                        >Выберите тип сайта
+                      </option>
+                      <option value="1">Одностраничный</option>
+                      <option value="2">Многостраничный</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="calculator-block__variant">
+                  <h3 class="calculator-block__variant-title">
+                    Количество страниц
+                  </h3>
+                  <div class="drop-list-wrapper">
+                    <div class="drop-list-border drop-list-border_calc"></div>
+                    <select
+                      class="drop-list drop-list_calc"
+                      v-model="count"
+                      @input="resActive()"
+                    >
+                      <option
+                        value="1.001"
+                        disabled="disabled"
+                        selected="selected"
+                        >Выберите количество страниц</option
+                      >
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">6+</option>
+                    </select>
+                  </div>
+                  <div class="calculator-block__variant-blocked"></div>
+                </div>
+              </div>
+              <div
+                class="calculator-block__variant calculator-block_variant_last"
+              >
+                <h3 class="calculator-block__variant-title">
+                  Нужна ли посадка на систему управления?
+                  (&nbsp;WordPress&nbsp;)
+                </h3>
+                <div class="calculator-block__radio-wrapper">
+                  <input
+                    id="checkbox-1"
+                    v-model="wp"
+                    value="2"
+                    type="radio"
+                    name="ch"
+                    class="calculator-block__checkbox"
+                    @input="resActive()"
+                  />
+                  <label class="calculator-block__label" for="checkbox-1"
+                    >Да</label
+                  >
+                </div>
+                <div class="calculator-block__radio-wrapper">
+                  <input
+                    id="checkbox-2"
+                    v-model="wp"
+                    value="1"
+                    type="radio"
+                    name="ch"
+                    class="calculator-block__checkbox"
+                    @input="resActive()"
+                  />
+                  <label class="calculator-block__label" for="checkbox-2"
+                    >Нет</label
+                  >
+                </div>
+              </div>
+              <div
+                class="points-block calculator-block__points points-block_pos"
+              >
+                <div class="points-block__point calculator-block__point"></div>
+                <div class="points-block__point calculator-block__point"></div>
+                <div class="points-block__point calculator-block__point"></div>
+              </div>
+              <div class="calculator-block__result-wrapper">
+                <div class="calculator-block__rectangle">
+                  <div class="calculator-block__text-wrapper">
+                    <span class="calculator-block__result">Результат:</span>
+                    <span class="calculator-block__result-tag"
+                      >{{finalPrice | format}} руб.</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="calculator-block__result-sm-wrapper">
+                <span class="calculator-block__result-sm"
+                  >Результат:
+                  <span class="calculator-block_result-sm_bold"
+                    >{{finalPrice | format}}</span
+                  >
+                  руб.</span
+                >
+                <div class="calculator-block__close-btn-wrapper">
+                  <svg class="calculator-block__close-btn" @click="resDis()">
+                    <use xlink:href="images/sprite.svg#cancel"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </container>
+        </container-big>
+      </section>
+      <section
+        class="feedback"
+        style="background-image: url('./images/fbg.jpg');"
+      >
+        <container class="container_def">
+          <title-two
+            class="wow fadeIn"
+            data-wow-duration="1s"
+            data-wow-delay="0.3s"
+            >Оставьте заявку</title-two
+          >
+          <div class="feedback-block feedback-block_top">
+            <form
+              action="mail.php"
+              method="POST"
+              class="form feedback-block__form"
+            >
+              <div class="points-block points-block_pos form__points">
+                <div class="points-block__point form__point"></div>
+                <div class="points-block__point form__point"></div>
+                <div class="points-block__point form__point"></div>
+              </div>
+              <div class="form__underline"></div>
+              <div class="form__inputs-group">
+                <div class="form__input-wrapper">
+                  <input
+                    placeholder="Введите ваши Имя и Отчество"
+                    required
+                    aria-required="true"
+                    name="user_name"
+                    class="input form__input"
+                  />
+                  <div class="form__line"></div>
+                </div>
+                <div class="form__input-wrapper">
+                  <input
+                    v-if="fb==1"
+                    placeholder="Введите ссылку на ваш VK"
+                    required
+                    aria-required="true"
+                    class="input"
+                    name="vk"
+                  />
+                  <input
+                    v-if="fb==2"
+                    placeholder="Введите ваш номер телефона"
+                    v-phone
+                    required
+                    aria-required="true"
+                    name="phone"
+                    class="input"
+                  />
+                  <input
+                    v-if="fb==3"
+                    placeholder="Введите ваш WhatsApp"
+                    required
+                    aria-required="true"
+                    name="whatsapp"
+                    class="input"
+                  />
+                  <select class="drop-list-min" v-model="fb">
+                    <option value="1" class="drop-list-min__item"
+                      >ВКонтакте</option
+                    >
+                    <option value="2" class="drop-list-min__item"
+                      >Телефон</option
+                    >
+                    <option value="3" class="drop-list-min__item"
+                      >WhatsApp</option
+                    >
+                  </select>
+                  <svg class="drop-list-min__icon" v-if="fb==1">
+                    <use xlink:href="images/sprite.svg#2"></use>
+                  </svg>
+                  <svg class="drop-list-min__icon" v-if="fb==2">
+                    <use xlink:href="images/sprite.svg#phone"></use>
+                  </svg>
+                  <svg class="drop-list-min__icon" v-if="fb==3">
+                    <use xlink:href="images/sprite.svg#whatsapp"></use>
+                  </svg>
+                </div>
+                <div class="drop-list-wrapper">
+                  <div class="drop-list-border form__border"></div>
+                  <select
+                    name="todo"
+                    class="drop-list form__drop-list"
+                    @input="unblocked()"
+                  >
+                    <option value="0" disabled="disabled" selected="selected"
+                      >Выберите, что нужно сделать</option
+                    >
+                    <option value="Вёрстка">Вёрстка</option>
+                    <option value="Дизайн">Дизайн</option>
+                    <option value="Вёрстка и дизайн">Вёрстка и дизайн</option>
+                    <option value="Верстка, дизайн, посадка на WP"
+                      >Верстка, дизайн, посадка на WP
+                    </option>
+                    <option value="Вёрстка, посадка на WP"
+                      >Вёрстка, посадка на WP</option
+                    >
+                    <option value="Посадка на WP">Посадка на WP</option>
+                  </select>
+                </div>
+                <div class="form__privacy">
+                  <input
+                    type="checkbox"
+                    @click="unblocked()"
+                    class="form__checkbox"
+                    id="form-checkbox"
+                    aria
+                    aria-required="true"
+                  />
+                  <label
+                    for="form-checkbox"
+                    class="form__checkbox-label"
+                  ></label>
+                  <span class="form__privacy-text"
+                    >Я согласен на
+                    <a
+                      href="privacy.html"
+                      class="form__privacy-link"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      >обработку персональных данных</a
+                    ></span
+                  >
+                </div>
+              </div>
+              <div class="form__btn-wrapper" @click="unblockTwo()">
+                <btn type="submit" classes="form__btn form__btn_disabled"
+                  >Оставить заявку
+                </btn>
+              </div>
+            </form>
+            <div class="feedback-block__links-wrapper">
+              <div class="feedback-block__variant">
+                <h2 class="feedback-block__title">Я в соц сетях</h2>
+                <div class="feedback-block__social-links">
+                  <div class="feedback-block__line"></div>
+                  <div class="feedback-block__line"></div>
+                  <div class="social-link feedback-block__social-link">
+                    <div class="social-link__icon-wrapper">
+                      <svg class="social-link__icon">
+                        <use xlink:href="images/sprite.svg#2"></use>
+                      </svg>
+                    </div>
+                    <span class="social-link__text">vk.com/ddd2305</span>
+                    <a href="https://vk.com/ddd2305" class="social-link__link"
+                      ><button class="social-link__btn">GO !</button></a
+                    >
+                  </div>
+                  <div class="social-link feedback-block__social-link">
+                    <div class="social-link__icon-wrapper">
+                      <svg class="social-link__icon">
+                        <use xlink:href="images/sprite.svg#1"></use>
+                      </svg>
+                    </div>
+                    <span class="social-link__text">fb.com/d_avilov</span>
+                    <a href="https://fb.com/d_avilov" class="social-link__link"
+                      ><button class="social-link__btn">GO !</button></a
+                    >
+                  </div>
+                  <div class="social-link feedback-block__social-link">
+                    <div class="social-link__icon-wrapper">
+                      <svg class="social-link__icon">
+                        <use xlink:href="images/sprite.svg#3"></use>
+                      </svg>
+                    </div>
+                    <span class="social-link__text">instagram.com/ddd2122</span>
+                    <a
+                      href="https://instagram.com/ddd2122"
+                      class="social-link__link"
+                      ><button class="social-link__btn">GO !</button></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="feedback-block__other">
+                <h2 class="feedback-block__second-title">
+                  Другие способы связи
+                </h2>
+                <div class="feedback-block__other-links-wrapper">
+                  <div class="feedback-block__other-links">
+                    <div class="other-link">
+                      <div class="other-link__icon-wrapper">
+                        <svg class="other-link__icon">
+                          <use xlink:href="images/sprite.svg#phone"></use>
+                        </svg>
+                      </div>
+                      <a href="tel:+79667891731" class="other-link__text"
+                        >+7-966-789-17-31</a
+                      >
+                    </div>
+                    <div class="other-link">
+                      <div class="other-link__icon-wrapper">
+                        <svg class="other-link__icon">
+                          <use xlink:href="images/sprite.svg#mail"></use>
+                        </svg>
+                      </div>
+                      <a href="mailto:d.av89@yandex.ru" class="other-link__text"
+                        >d.av89@yandex.ru</a
+                      >
+                    </div>
+                    <div class="feedback-block__other-line"></div>
+                  </div>
+                  <div class="feedback-block__round-links">
+                    <a href="#" class="feedback-block__link">
+                      <div class="round-link">
+                        <svg class="round-link__icon">
+                          <use xlink:href="images/sprite.svg#twitter"></use>
+                        </svg>
+                      </div> </a
+                    ><a href="#" class="feedback-block__link">
+                      <div class="round-link">
+                        <svg class="round-link__icon">
+                          <use xlink:href="images/sprite.svg#telegram"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </container>
+      </section>
+      <footer class="footer">
+        <nav class="footer-navigation">
+          <ul class="footer-navigation__list">
+            <li class="footer-navigation__item">
+              <a href="#" class="footer-navigation__link">Обо мне</a>
+            </li>
+            <li class="footer-navigation__item">
+              <a href="#" class="footer-navigation__link">Умения</a>
+            </li>
+            <li class="footer-navigation__item">
+              <a href="#" class="footer-navigation__link">Преимущества</a>
+            </li>
+            <li class="footer-navigation__item">
+              <a href="#" class="footer-navigation__link">Портфолио</a>
+            </li>
+            <li class="footer-navigation__item">
+              <a href="#" class="footer-navigation__link">Цена</a>
+            </li>
+            <li class="footer-navigation__item">
+              <a href="#" class="footer-navigation__link">Обратная связь</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="copyright footer__copyright">
+          <svg class="copyright__icon">
+            <use xlink:href="images/sprite.svg#copyright"></use>
+          </svg>
+          <span class="copyright__text">Д. С. Авилов, 2020-2025</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

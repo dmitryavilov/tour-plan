@@ -1,0 +1,28 @@
+.greetings
+    padding: 60px 0
+    &__title
+        margin-bottom: 60px
+    &__btn
+        width: 144px
+        padding: 20px 10px
+        text-align: center
+        background-color: $primary
+        font-style: normal
+        font-weight: bold
+        font-size: 12px
+        line-height: 15px
+        color: white
+        border-radius: 4px
+        font-family: 'Mulish'
+        text-overflow: ellipsis
+        overflow-x: hidden
+        &-link
+            text-decoration: none
+@media (min-width: 992px)
+    .greetings
+        &__btn
+            transition: 0.4s
+            white-space: nowrap
+            &:hover
+                color: #ffffe0
+                box-shadow: 0 0 12px $primary

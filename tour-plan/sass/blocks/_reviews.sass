@@ -1,0 +1,96 @@
+.reviews
+    padding: 10px 0 35px 0
+    &__title
+        font-style: normal
+        font-weight: bold
+        font-size: 36px
+        line-height: 45px
+        text-align: center
+        text-transform: uppercase
+        margin-bottom: 70px
+    &-slider
+        &__item
+            display: flex
+            flex-direction: column
+            align-items: center
+            background-color: #fff
+            border-radius: 8px
+            max-width: 730px
+            margin: 45px auto 0
+            padding: 0 60px 30px 64px
+            min-height: 293px
+            position: relative
+            &:before
+                content: ''
+                background-image: url('../img/reviews/quote.svg')
+                background-repeat: no-repeat
+                position: absolute
+                left: 62px
+                top: 13px
+                width: 70px
+                height: 47px
+            &:after
+                content: ''
+                background-image: url('../img/reviews/quote.svg')
+                background-repeat: no-repeat
+                position: absolute
+                right: 60px
+                bottom: 125px
+                transform: scale(-1, -1)
+                width: 70px
+                height: 47px
+        &__button
+            position: absolute
+            top: 44%
+            transform: translateY(-50%)
+            width: 30px
+            height: 30px
+            background-repeat: no-repeat
+            z-index: 99
+            outline: none
+            background-color: transparent
+            border: none
+            cursor: pointer
+            &:hover
+                box-shadow: 0 0 0px
+            &_prev
+                background-image: url('../img/reviews/arrow.svg')
+                left: 18px
+            &_next
+                right: 18px
+                transform: scale(-1, 1) translateY(-50%)
+                background-image: url('../img/reviews/arrow.svg')
+        &__profile
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-top: -45px
+            margin-bottom: 18px
+        &__avatar
+            width: 90px
+            height: 90px
+            border-radius: 50%
+            object-fit: cover
+        &__username
+            font-style: normal
+            font-weight: 700
+            font-size: 12px
+            line-height: 15px
+            color: $primary
+            margin-bottom: 10px
+        &__date
+            font-style: normal
+            font-weight: normal
+            font-size: 10px
+            line-height: 13px
+            margin-bottom: 4px
+        &__text
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 19px
+            text-align: justify
+            color: $color
+            overflow-y: auto
+            max-height: 114px
+            max-width: 537px

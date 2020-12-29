@@ -1,0 +1,219 @@
+.comments
+    padding-top: 92px
+    &-wrapper
+        transition: 0.5s
+        display: block
+        animation: tileOn 1.5s
+        animation-fill-mode: forwards
+        &--hidden
+            display: none
+    &__info-wrapper
+        display: flex
+        margin-bottom: 29px
+    &__title
+        font-style: normal
+        font-weight: bold
+        font-size: 40px
+        line-height: 125%
+        white-space: nowrap
+        max-width: 95%
+        overflow-x: auto
+        font-family: $roboto
+        padding-right: 10px
+        color: $darkGray
+        overflow-y: hidden
+    &__counter
+        font-style: normal
+        font-weight: normal
+        font-size: 40px
+        line-height: 125%
+        color: #939699
+    &__btn
+        padding: 0 19px
+        height: 42px
+        margin-left: 172px
+        margin-top: 3px
+        border-radius: 30px
+        border: 1px solid #D9DADB
+        background-color: #fff
+        margin-left: 171px
+        display: flex
+        align-items: center
+        &-icon
+            width: 20px
+            height: 20px
+            fill: #BCBFC2
+            margin-right: 11px
+        &-text
+            font-style: normal
+            font-weight: 900
+            font-size: 14px
+            line-height: 143%
+            color: $darkGray
+            max-width: 180px
+            text-overflow: ellipsis
+            overflow-x: hidden
+            white-space: nowrap
+.comment
+    display: flex
+    padding: 20px 0 30px
+    border-top: 1px solid #d9dadb
+    &--answer
+        padding-left: 90px
+    &__avatar
+        width: 75px
+        height: 75px
+        border-radius: 50%
+        object-fit: cover
+    &__title-wrapper
+        display: flex
+        align-items: center
+    &__text-wrapper
+        margin-left: 15px
+        display: flex
+        flex-direction: column
+    &__name
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 156%
+        color: $darkGray
+        font-family: $roboto
+        white-space: nowrap
+        padding-right: 10px
+    &__date
+        font-size: 12px
+        line-height: 125%
+        color: #939699
+    &__text
+        max-width: 570px
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 167%
+        color: $darkGray
+        padding-top: 10px
+        padding-bottom: 15px
+        &--difficult
+            padding-bottom: 46px
+    &__counters-wrapper
+        display: flex
+    &__number
+        color: $darkGray
+        &--success
+            color: #3DC47E
+        &--unsuccess
+            color: #FF4F52
+        &--lc
+            margin: 0 10px
+    &__icon
+        &--like
+            margin-right: 0
+        &--dislike
+            transform: translateY(-1px) scale(-1, -1)
+    &__counter
+        margin-right: 15px
+.comments-load
+    padding-top: 15px
+    padding-bottom: 15px
+    padding-left: 330px
+    padding-right: 304px
+    display: flex
+    background-color: #fff
+    border: 1px solid #D9DADB
+    box-sizing: border-box
+    border-radius: 25px
+    &__icon
+        width: 15px
+        height: 15px
+        fill: #BCBFC2
+        margin-right: 7px
+    &__text
+        font-style: normal
+        font-weight: 900
+        font-size: 14px
+        line-height: 143%
+        white-space: nowrap
+        max-width: 70%
+.comment-form
+    max-width: 750px
+    padding: 27px 0 35px
+    background-color: #F5F5F5
+    border-radius: 10px
+    position: relative
+    &--top
+        margin-top: 60px
+        margin-bottom: 30px
+    &__avatar
+        width: 75px
+        height: 75px
+        border-radius: 50%
+        object-fit: cover
+        position: absolute
+        top: 70px
+        left: 30px
+    &__content-wrapper
+        margin-left: 127px
+    &__title
+        font-style: normal
+        font-weight: bold
+        font-size: 20px
+        line-height: 125%
+        color: $darkGray
+        font-family: $roboto
+        max-width: 75%
+        padding-bottom: 15px
+    &__message
+        width: 595px
+        height: 130px
+        background-image: url('../img/comments/shape.svg')
+        background-size: cover
+        resize: none
+        background-color: transparent
+        border: none
+        padding: 10px 25px
+        transform: translateX(-10px)
+    &__button
+        margin-top: 15px
+        &-text
+            padding-right: 8px
+            max-width: 130px
+.hidden-block
+    display: none
+@media (min-width: 992px)
+    .comments
+        &__btn
+            transition: 0.4s
+            &-text, &-icon
+                transition: 0.4s
+            &:hover &-text, &-icon
+                opacity: 0.8
+            &:hover
+                box-shadow: 0 0 12px #939699
+    .comment
+        &__name
+            transition: 0.4s
+            &:hover
+                color: lightgray
+        &__avatar
+            transition: 0.4s
+            &:hover
+                box-shadow: 0 0 12px $blue
+        &-form
+            &__avatar
+                transition: 0.4s
+                &:hover
+                    box-shadow: 0 0 15px $blue
+    a.comment
+        &__number
+            transition: 0.4s
+            &:hover
+                color: lightgray
+    .comments-load
+        transition: 0.4s
+        &:hover
+            box-shadow: 0 0 12px #939699
+        &__icon
+            transition: 0.4s
+        &:hover &__icon
+            fill: black

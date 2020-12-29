@@ -1,0 +1,204 @@
+.footer
+    &__footer-lists-wrapper
+        padding-bottom: 48px
+.mailing
+    padding: 60px 0 65px 0
+    display: flex
+    align-items: center
+    flex-direction: column
+    &__title
+        font-style: normal
+        font-weight: bold
+        font-size: 40px
+        line-height: 50px
+        font-family: $roboto
+        max-width: 750px
+        word-break: break-all
+        white-space: nowrap
+        overflow-x: hidden
+        overflow-y: hidden
+        text-overflow: ellipsis
+        margin-bottom: 25px
+    &-form
+        width: 459px
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        &__input
+            width: 313px
+            max-height: 40px
+            padding: 11px 5px 10px 13px
+            border: 1px solid #D9DADB
+            border-radius: 5px
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            margin-bottom: 5px
+            &-wrapper
+                max-width: 313px
+    &__button
+        padding: 10px 27px !important
+.footer-lists-wrapper
+    display: grid
+    grid-template-columns: repeat(5, calc( 100% / 6 + 5px)) 165px
+    justify-content: space-between
+.footer-list
+    padding-top: 30px
+    border-top: 5px solid
+    &--news
+        border-color: #FF4F52
+    &--articles
+        border-color: #AC8EE3
+    &--videos
+        border-color: #4592FF
+    &--courses
+        border-color: #FFA34D
+    &--information
+        border-color: #3DC47E
+    &--categories
+        border-color: #6E99AE
+    &__title
+        color: $darkGray
+        font-style: normal
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        margin-bottom: 25px
+        max-width: 165px
+        white-space: nowrap
+        overflow-x: hidden
+        text-overflow: ellipsis
+    &__item
+        margin-bottom: 15px
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        max-width: 170px
+        white-space: nowrap
+        overflow-x: hidden
+        text-overflow: ellipsis
+    &__link
+        color: $lightGray
+.invalid
+    border-color: red !important
+    color: red
+    &::placeholder
+        color: red !important
+.bottom-links
+    padding-top: 30px
+    padding-bottom: 29px
+    display: flex
+    align-items: center
+    border-top: 1px solid #d9dadb
+    border-bottom: 1px solid #d9dadb
+    &__content
+        display: flex
+        align-items: center
+    &__logo
+        width: 50px
+        height: 50px
+        &--sm
+            display: none
+    &__navigation
+        margin-left: 30px
+    &__social-links
+        margin-left: auto
+.bottom-navigation
+    &__list
+        display: flex
+    &__item
+        font-style: normal
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        letter-spacing: 0.5px
+        text-transform: uppercase
+        max-width: 145px
+        text-overflow: ellipsis
+        white-space: nowrap
+        overflow-x: hidden
+        color: $darkGray
+        margin-right: 28px
+        cursor: pointer
+        &-link
+            color: inherit
+    &--sm
+        display: none
+.social-links
+    display: flex
+    width: 206px
+    justify-content: space-between
+    &__link
+        width: 20px
+        height: 20px
+        fill: white
+        &-bg
+            width: 40px
+            height: 40px
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            cursor: pointer
+            &--facebook
+                background-color: #4267B2
+            &--twitter
+                background-color: #1DA1F2
+            &--youtube
+                background-color: #FF0000
+            &--instagram
+                background-color: #262626
+.copy-info
+    padding-top: 40px
+    padding-bottom: 55px
+    width: 100%
+    display: flex
+    justify-content: space-between
+    &__about
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        color: #939699
+        max-width: 750px
+        max-height: 45px
+        overflow-x: hidden
+        overflow-y: auto
+    &__copyright
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        color: #939699
+        max-width: 263px
+        white-space: nowrap
+        overflow-x: hidden
+        text-overflow: ellipsis
+        word-break: break-all
+
+@media (min-width: 992px)
+    .footer-list
+        &__link
+            transition: 0.4s
+            &:hover
+                color: lightgray
+    .bottom-navigation
+        &--sm
+            display: none
+        &__item-link
+            transition: 0.4s
+            &:hover
+                color: lightgray
+    .social-links
+        &__link-bg
+            transition: 0.4s
+            &--facebook:hover
+                box-shadow: 0 0 18px #4267b2
+            &--twitter:hover
+                box-shadow: 0 0 18px #1DA1F2
+            &--youtube:hover
+                box-shadow: 0 0 18px #FF0000
+            &--instagram:hover
+                box-shadow: 0 0 18px #262626

@@ -1,0 +1,279 @@
+.header
+    &--article
+        background-color: #fff
+        border-bottom: 1px solid gray
+        box-shadow: 0 0 13px gray
+.navigation
+    &__link
+        color: #939699
+    &--article
+        background-color: #fff !important
+.search-form
+    &__input
+        &--article
+            background-color: #F5F5F5 !important
+            color: black
+            &::placeholder
+                color: #939699
+
+.mobile-button
+    &__line--article
+        background-color: $darkGray
+.article-main
+    position: relative
+    padding: 72px 0 70px 3px
+    padding-top: 60px
+    &__flag-icon
+        position: absolute
+        left: -97.5px
+        top: 89px
+        width: 30px
+        height: 30px
+        fill: #fff
+        cursor: pointer
+        opacity: 0.5
+        transition: 0.4s
+        &--active
+            fill: red
+    &__content
+        position: relative
+    &__bg
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
+        z-index: -2
+        object-fit: cover
+        &-wrapper
+            &:after
+                content: ''
+                position: absolute
+                left: 0
+                top: 0
+                bottom: 0
+                right: 0
+                width: 100%
+                height: 100%
+                background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75))
+                z-index: -1
+    &__category
+        font-style: normal
+        font-weight: 900
+        font-size: 12px
+        line-height: 15px
+        letter-spacing: 0.5px
+        text-transform: uppercase
+        color: $blue
+        &--css
+            color: #3BBDC4
+        &--html
+            color: #AC8EE3
+        &--web
+            color: #FFA34D
+    &__title
+        font-style: normal
+        font-weight: bold
+        font-size: 55px
+        line-height: 132%
+        font-family: $roboto
+        color: white
+        &-wrapper
+            max-width: 764px
+            overflow-x: hidden
+            padding-top: 49px
+    &__description
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 167%
+        color: white
+        max-width: 632px
+        overflow-x: hidden
+        overflow-y: auto
+        padding-top: 30px
+    &__other
+        margin-top: 43px
+        display: flex
+        align-items: center
+    &__time
+        &-wrapper
+            display: flex
+            align-items: center
+            margin-right: 20px
+        &-icon
+            width: 15px
+            height: 15px
+            fill: white
+            opacity: 0.4
+            margin-right: 5px
+            transform: translateY(-1px)
+        &-text
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            opacity: 0.85
+            color: white
+    &__counter
+        margin-right: 20px
+        &-icon
+            opacity: 0.4
+            fill: white
+        &-number
+            color: white
+.articles-navigation
+    display: flex
+    position: absolute
+    align-items: center
+    right: 0
+    &__home
+        &-icon
+            width: 20px
+            height: 20px
+            transform: translateY(-1px)
+            fill: white
+        &-link
+            display: flex
+            align-items: center
+            margin-right: 30px
+    &__text
+        font-style: normal
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        color: white
+        margin-left: 5px
+    &__arrow
+        width: 20px
+        height: 20px
+        fill: white
+    &__prev
+        &-link
+            display: flex
+            align-items: center
+            margin-right: 16px
+        &-icon
+            transform: scale(-1, -1) translateY(1px)
+    &__next
+        &-link
+            display: flex
+            align-items: center
+        &-icon
+            transform: translateY(-1px)
+            margin-left: 5px
+.modal
+    width: 100%
+    height: 100vh
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 1200
+    display: none
+    align-items: center
+    justify-content: center
+    transition: 1s
+    opacity: 0
+    &--active
+        display: flex
+        animation: tileOn 1.5s
+        animation-fill-mode: forwards
+    &__bg
+        width: 100%
+        height: 100vh
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background-color: rgba($blue, 0.5)
+        z-index: 1201
+.modal-form
+    z-index: 1202
+    width: 450px
+    height: 550px
+    background-color: $darkGray
+    display: flex
+    justify-content: center
+    border-radius: 20px
+    padding: 0 5px
+    text-align: center
+    position: relative
+    &__close-btn
+        position: absolute
+        top: 15px
+        cursor: pointer
+        right: 20px
+        width: 15px
+        height: 15px
+        fill: white
+    &__content
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__title
+        color: white
+        font-size: 24px
+        text-transform: uppercase
+        padding-top: 40px
+        white-space: nowrap
+        overflow-x: auto
+        max-width: 85%
+        padding-bottom: 10px
+    &__input
+        width: 70%
+        padding: 15px 20px
+        border: 1px solid $darkGray
+        border-radius: 20px
+        background-color: #fff
+        margin-top: 20px
+        margin-bottom: 5px
+    &__message
+        width: 70%
+        height: 150px
+        resize: none
+        margin-top: 25px
+        border-radius: 20px
+        padding: 15px 20px
+        margin-bottom: 5px
+    &__button
+        margin-top: 20px
+        padding: 12px 30px
+        &-text
+            padding-right: 5px
+@media (min-width: 992px)
+    .navigation
+        &__link
+            &--article
+                &:hover
+                    color: lightgray
+    .articles-navigation
+        & svg, span
+            transition: 0.4s
+        &__home-link:hover span, &__prev-link:hover span, &__next-link:hover span
+            color: $yellow
+        &__home-link:hover svg, &__prev-link:hover svg, &__next-link:hover svg
+            fill: $yellow
+    .article-main
+        &__category
+            transition: 0.4s
+            &:hover
+                color: $yellow
+        &__flag-icon
+            &:hover
+                fill: #FF4F52
+    .modal-form
+        &__close-btn
+            transition: 0.4s
+            &:hover
+                fill: $yellow
+    .search-form
+        &__btn-icon
+            &--article
+                &:hover
+                    fill: gray

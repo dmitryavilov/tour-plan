@@ -1,0 +1,13 @@
+* {
+    font-family: 'Futura' !important;
+    &:focus {
+        outline: none;
+        border: none;
+    }
+}
+
+.container {
+    max-width: 1761px;
+    margin: 0 auto;
+    width: 93%;
+}

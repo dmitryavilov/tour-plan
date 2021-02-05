@@ -1,0 +1,65 @@
+.header {
+    padding: 40px 0;
+    &__container {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+}
+
+.logo {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    text-transform: uppercase;
+    &__link {
+        color: $gold;
+        text-decoration: none;
+    }
+}
+
+.portfolio-btn {
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    &__text {
+        color: $gold;
+        text-transform: uppercase;
+        padding-right: 8px;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 23px;
+        transition: 0.4s;
+    }
+
+    &__icon {
+        width: 23px;
+        height: 23px;
+        transition: 0.4s;
+    }
+}
+
+@media (min-width: 992px) {
+    .logo {
+        &__link {
+            transition: 0.4s;
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .portfolio-btn {
+        &:hover &__text {
+            opacity: 0.5;
+        }
+
+        &:hover &__icon {
+            opacity: 0.5;
+            transform: translateX(5px);
+        }
+    }
+}

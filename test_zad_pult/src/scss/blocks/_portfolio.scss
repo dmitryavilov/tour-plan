@@ -1,0 +1,159 @@
+.portfolio-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 40px;
+    &__arrow {
+        position: absolute;
+        top: 230px;
+        width: 80px;
+        height: 80px;
+        background-image: url('../img/portfolio/arrow.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 80px 80px;
+        background-repeat: no-repeat;
+        border: none;
+        background-color: white;
+        &--next {
+            transform: scale(-1, 1);
+            right: -8px;
+        }
+
+        &--prev {
+            left: -8px;
+        }
+    }
+
+    &__pagination {
+        bottom: 170px;
+        width: auto;
+        justify-content: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        &-bullet {
+            width: 12px;
+            height: 12px;
+            background-color: #F2F2F2;
+            border-radius: 50%;
+            margin: 0 10px;
+            &--active {
+                background-color: $gold;
+            }
+        }
+    }
+
+    &__buttons {
+        width: 760px;
+        display: flex;
+        justify-content: space-between;
+        &-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+    }
+
+    &__pagination {
+        display: none;
+    }
+}
+
+.card {
+    width: 410px;
+
+    &__img {
+        margin-bottom: 20px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    &__title {
+        &-link {
+            text-decoration: none;
+            font-size: 32px;
+            line-height: 100%;
+            font-style: normal;
+            color: $gold;
+            font-weight: 600;
+        }
+    }
+
+    &__nowrap-text {
+        white-space: nowrap;
+    }
+
+    &__description {
+        font-style: normal;
+        font-size: 20px;
+        line-height: 150%;
+        padding-top: 20px;
+        color: #575757;
+        padding-bottom: 7px;
+    }
+}
+
+.button {
+    padding: 18.5px 0;
+    width: 360px;
+    border: 1px solid $gold;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+
+    &__text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 23px;
+        text-transform: uppercase;
+        color: $gold;
+        max-width: 280px;
+        overflow-x: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    &--active {
+        background-color: $gold;
+        & p {
+            color: white;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .portfolio {
+        &__arrow {
+            transition: 0.4s;
+            &:hover {
+                opacity: 0.3;
+            }
+        }
+    }
+
+    .card {
+        &__title {
+            &-link {
+                transition: 0.4s;
+
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+
+    .button {
+        transition: 0.4s;
+        &:hover {
+            box-shadow: 0 0 15px $gold;
+        }
+    }
+}

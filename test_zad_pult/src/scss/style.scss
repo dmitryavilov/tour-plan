@@ -1,0 +1,22 @@
+/* @import '~normalize.css'; - Импорт библиотеки из Node_modules  */
+@import '.../~animate.css/source/animate.css';
+@import '.../~animate.css/source/_base.css';
+@import '.../~animate.css/source/attention_seekers/flash.css';
+@import 'mixins';
+@import 'reset';
+// VARIABLES
+@import 'variables';
+// SETTINGS
+@import 'settings';
+// BLOCKS
+@import 'blocks/header';
+@import 'blocks/portfolio';
+// PAGES
+
+// FONTS
+@import 'fonts';
+
+// MEDIA
+@import 'media';
+
+@import '.../~swiper/swiper-bundle.css'

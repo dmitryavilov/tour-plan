@@ -7,15 +7,16 @@
 ### -HTML
 ### -CSS(Grid, Flexbox, Animations)
 ### -SASS/SCSS
-### -JavaScript
+### -JavaScript + (AJAX, Canvas и тд)
 ### -Немного jQuery
-### -Vue.js/ Vue CLI
-### -Bootstrap 3/4
+### -Умею работать с Vue.js и Angular 2+
+### -Bootstrap 3/4/5
+### -Webpack
+### -Babel
 ### -GIT
 ### -WordPress
 ### -Методология БЭМ
 
-### При верстке использую Webpack, но так же могу работать и с Gulp'ом(раньше использовал именно его).
 ## Контакты:
 
 ### VK - https://vk.com/ddd2305
